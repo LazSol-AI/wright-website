@@ -1,10 +1,38 @@
 :root {
-    --primary-color: #007AFF;
+    /* Advanced color system with HSL for better color manipulation */
+    --primary-hsl: 211, 100%, 50%;
+    --primary-color: hsl(var(--primary-hsl));
     --primary-color-rgb: 0, 122, 255;
-    --secondary-color: #5856D6;
+    --secondary-hsl: 241, 54%, 59%;
+    --secondary-color: hsl(var(--secondary-hsl));
     --secondary-color-rgb: 88, 86, 214;
-    --accent-color: #FF2D55;
+    --accent-hsl: 346, 100%, 60%;
+    --accent-color: hsl(var(--accent-hsl));
     --accent-color-rgb: 255, 45, 85;
+    
+    /* Enhanced shadow system with multiple layers */
+    --card-shadow: 
+        0 20px 40px rgba(0,0,0,0.06),
+        0 0 0 1px rgba(0,0,0,0.02),
+        0 10px 20px -10px rgba(var(--primary-color-rgb), 0.1);
+    --hover-shadow: 
+        0 30px 60px rgba(0,0,0,0.12),
+        0 0 0 2px rgba(var(--primary-color-rgb), 0.1),
+        0 20px 30px -15px rgba(var(--secondary-color-rgb), 0.15);
+    --text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+    /* Advanced glass effects */
+    --glass-light: rgba(255, 255, 255, 0.7);
+    --glass-strong: rgba(255, 255, 255, 0.9);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    
+    /* Premium animation curves */
+    --bounce: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    --smooth: cubic-bezier(0.65, 0, 0.35, 1);
+    --swift: cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-fast: 0.3s var(--smooth);
+    --transition-normal: 0.5s var(--swift);
+    --transition-slow: 0.8s var(--bounce);
     --success-color: #34C759;
     --text-color: #2C2C2C;
     --text-secondary: #666;
@@ -12,24 +40,13 @@
     --border-radius: 12px;
     --border-radius-lg: 24px;
     --border-light: 1px solid rgba(0,0,0,0.08);
-    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    --card-shadow: 
-        0 20px 40px rgba(0,0,0,0.06),
-        0 0 0 1px rgba(0,0,0,0.02);
-    --hover-shadow: 
-        0 30px 60px rgba(0,0,0,0.12),
-        0 0 0 2px rgba(var(--primary-color-rgb), 0.1);
-    --subtle-shadow: 
-        0 2px 8px rgba(0,0,0,0.04),
-        0 0 0 1px rgba(0,0,0,0.01);
-    --glass-effect: rgba(255, 255, 255, 0.8);
+    --hover-transform: translateY(-8px) scale(1.01);
+    --micro-hover: translateY(-2px) scale(1.005);
     --space-xs: 0.25rem;
     --space-sm: 0.5rem;
     --space-md: 1rem;
     --space-lg: 2rem;
     --space-xl: 4rem;
-    --hover-transform: translateY(-8px) scale(1.01);
-    --micro-hover: translateY(-2px) scale(1.005);
 }
 
 * {
@@ -122,48 +139,55 @@ nav {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    perspective: 1000px;
+    perspective: 2000px;
     transform-style: preserve-3d;
+    isolation: isolate;
 }
 
 .hero::before {
     content: '';
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(
-        circle at center,
-        rgba(var(--primary-color-rgb), 0.08) 0%,
-        rgba(var(--secondary-color-rgb), 0.04) 50%,
-        transparent 100%
-    );
+    inset: -100%;
+    background: 
+        radial-gradient(
+            circle at 50% -50%,
+            hsla(var(--primary-hsl), 0.1) 0%,
+            hsla(var(--secondary-hsl), 0.05) 30%,
+            transparent 70%
+        ),
+        radial-gradient(
+            circle at 80% 50%,
+            hsla(var(--accent-hsl), 0.08) 0%,
+            transparent 50%
+        );
+    animation: ambientGradient 20s var(--smooth) infinite alternate;
     z-index: -1;
-    animation: rotate 60s linear infinite;
 }
 
 .hero-content {
     flex: 0.6;
-    transform: translateZ(50px);
+    transform: translateZ(80px) scale(0.92);
     will-change: transform;
+    transition: var(--transition-normal);
 }
 
 .hero h1 {
-    font-size: 5.5rem;
-    line-height: 1;
-    margin-bottom: var(--space-lg);
-    background: linear-gradient(120deg, 
-        var(--primary-color), 
+    background: linear-gradient(
+        120deg, 
+        var(--primary-color) 0%,
         var(--secondary-color) 45%,
-        var(--accent-color)
+        var(--accent-color) 90%
     );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-size: clamp(3rem, 8vw, 5.5rem);
     font-weight: 800;
+    line-height: 1;
     letter-spacing: -0.04em;
-    animation: gradientFlow 8s ease infinite;
+    animation: gradientFlow 8s var(--smooth) infinite;
+    text-shadow: var(--text-shadow);
+    margin-bottom: var(--space-lg);
 }
 
 .subtitle {
@@ -182,6 +206,9 @@ nav {
     height: auto;
     border-radius: var(--border-radius);
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 /* Buttons */
@@ -201,21 +228,20 @@ nav {
 }
 
 .primary-btn {
-    background: linear-gradient(135deg,
+    background: linear-gradient(
+        135deg,
         var(--primary-color),
         var(--secondary-color)
     );
     color: white;
     padding: 1.2rem 2.4rem;
-    border-radius: var(--border-radius);
     font-weight: 600;
     letter-spacing: 0.5px;
-    box-shadow: 
-        0 4px 15px rgba(var(--primary-color-rgb), 0.3),
-        0 0 0 1px rgba(255,255,255,0.1) inset;
+    border-radius: 12px;
     position: relative;
-    overflow: hidden;
     isolation: isolate;
+    overflow: hidden;
+    transition: var(--transition-normal);
 }
 
 .primary-btn::before,
@@ -223,17 +249,36 @@ nav {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(120deg,
+    transition: var(--transition-normal);
+}
+
+.primary-btn::before {
+    background: linear-gradient(
+        120deg,
         transparent,
-        rgba(255,255,255,0.3),
+        rgba(255,255,255,0.4),
         transparent
     );
-    transform: translateX(-100%);
-    transition: transform 0.6s ease;
+    transform: translateX(-100%) skewX(-20deg);
+}
+
+.primary-btn::after {
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.2),
+        transparent
+    );
+    transform: translateX(-100%) skewX(-15deg);
+    transition-delay: 0.1s;
 }
 
 .primary-btn:hover::before {
-    transform: translateX(100%);
+    transform: translateX(100%) skewX(-20deg);
+}
+
+.primary-btn:hover::after {
+    transform: translateX(100%) skewX(-15deg);
 }
 
 .secondary-btn {
@@ -259,15 +304,15 @@ nav {
     gap: 60px;
     margin: 80px 0;
     padding: 40px;
-    background: var(--glass-effect);
+    background: var(--glass-light);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-radius: var(--border-radius-lg);
-    border: 1px solid rgba(255,255,255,0.4);
-    box-shadow: 
-        0 4px 24px -1px rgba(0,0,0,0.1),
-        0 0 0 1px rgba(255,255,255,0.5) inset;
-    transition: var(--transition);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--card-shadow);
+    transform: perspective(1000px) rotateX(0deg);
+    transition: 
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
 }
 
 .feature-row.reverse {
@@ -275,7 +320,11 @@ nav {
 }
 
 .feature-row:hover {
-    transform: var(--hover-transform);
+    transform: 
+        perspective(1000px)
+        rotateX(2deg)
+        translateY(-8px)
+        scale(1.01);
     box-shadow: var(--hover-shadow);
     border-color: rgba(var(--primary-color-rgb), 0.2);
 }
@@ -401,10 +450,10 @@ nav {
 
 .benefit-item {
     padding: var(--space-xl);
-    background: rgba(255,255,255,0.95);
-    backdrop-filter: blur(10px);
-    border-radius: var(--border-radius);
-    transition: var(--transition);
+    background: var(--glass-strong);
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+    transition: var(--transition-normal);
     position: relative;
     isolation: isolate;
 }
@@ -415,7 +464,8 @@ nav {
     inset: -1px;
     border-radius: inherit;
     padding: 1px;
-    background: linear-gradient(135deg,
+    background: linear-gradient(
+        135deg,
         var(--primary-color),
         var(--secondary-color)
     );
@@ -425,11 +475,16 @@ nav {
                  linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
+    opacity: 0;
+    transition: var(--transition-normal);
 }
 
 .benefit-item:hover {
-    transform: var(--hover-transform);
-    box-shadow: var(--card-shadow);
+    transform: translateY(-8px);
+}
+
+.benefit-item:hover::before {
+    opacity: 1;
 }
 
 .benefit-icon {
@@ -579,24 +634,23 @@ html {
 }
 
 /* Keyframe animations */
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
+@keyframes ambientGradient {
+    0% {
+        transform: rotate(0deg) scale(1);
     }
-    to {
-        transform: rotate(360deg);
+    100% {
+        transform: rotate(360deg) scale(1.5);
     }
 }
 
 @keyframes gradientFlow {
-    0% {
-        background-position: 0% 50%;
+    0%, 100% {
+        background-size: 200% 200%;
+        background-position: left center;
     }
     50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
+        background-size: 200% 200%;
+        background-position: right center;
     }
 }
 
@@ -611,8 +665,12 @@ html {
 
 /* Enhanced scrollbar */
 ::-webkit-scrollbar {
-    width: 10px;
-    background: var(--light-gray);
+    width: 12px;
+    background: 
+        linear-gradient(
+            var(--glass-light),
+            var(--glass-light)
+        ) padding-box;
 }
 
 ::-webkit-scrollbar-track {
@@ -620,12 +678,14 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(
-        var(--primary-color),
-        var(--secondary-color)
-    );
-    border-radius: 5px;
-    border: 2px solid var(--light-gray);
+    background: 
+        linear-gradient(
+            var(--primary-color),
+            var(--secondary-color)
+        );
+    border: 3px solid transparent;
+    border-radius: 6px;
+    background-clip: padding-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -633,4 +693,21 @@ html {
         var(--secondary-color),
         var(--accent-color)
     );
+}
+
+/* Performance optimizations */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.feature-demo img,
+.hero-image img {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 } 
