@@ -34,7 +34,7 @@ header {
 nav {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1.25rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,11 +43,11 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
 }
 
 .logo-image {
-    height: 32px;
+    height: 48px;
     width: auto;
     /* Ensure crisp logo on retina displays */
     -webkit-font-smoothing: antialiased;
@@ -55,9 +55,9 @@ nav {
 }
 
 .logo-text {
-    font-weight: 600;
-    font-size: 1.25rem;
-    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--text-color);
 }
 
 .nav-links a {
@@ -219,7 +219,7 @@ nav {
     height: auto;
     display: block;
     object-fit: cover;
-    aspect-ratio: 16 / 14;
+    aspect-ratio: 18 / 11;
 }
 
 /* Responsive adjustments */
