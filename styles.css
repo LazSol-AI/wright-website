@@ -788,4 +788,186 @@ html {
     transform: translateZ(0);
     backface-visibility: hidden;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));
+}
+
+/* Premium Benefits Section Styling */
+.benefits-section {
+    padding: var(--space-xl) 0;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.benefits-section::before {
+    content: '';
+    position: absolute;
+    inset: -100%;
+    background: 
+        radial-gradient(
+            circle at 0% 0%,
+            hsla(var(--primary-hsl), 0.03) 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 100% 100%,
+            hsla(var(--secondary-hsl), 0.03) 0%,
+            transparent 50%
+        );
+    z-index: -1;
+    animation: subtleFloat 20s var(--ease-out-1) infinite alternate;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.benefit-item {
+    background: var(--glass-background);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-radius: 24px;
+    padding: 2.5rem;
+    position: relative;
+    isolation: isolate;
+    transition: all 0.5s var(--ease-out-2);
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+}
+
+.benefit-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity 0.5s var(--ease-out-2);
+    z-index: -1;
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: linear-gradient(
+        135deg,
+        hsla(var(--primary-light-hsl), 0.1),
+        hsla(var(--secondary-light-hsl), 0.1)
+    );
+    transition: transform 0.5s var(--ease-out-2);
+}
+
+.benefit-item:hover .benefit-icon {
+    transform: scale(1.1) translateY(-4px);
+}
+
+.benefit-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(
+        135deg,
+        hsl(var(--primary-hsl)),
+        hsl(var(--secondary-hsl))
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.5s var(--ease-out-2);
+}
+
+.benefit-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 1.1rem;
+    transition: all 0.5s var(--ease-out-2);
+}
+
+.benefit-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-floating);
+    border-color: transparent;
+}
+
+.benefit-item:hover::before {
+    opacity: 0.03;
+}
+
+/* Shimmer effect on hover */
+.benefit-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-shimmer);
+    transform: translateX(-100%) rotate(45deg);
+    transition: transform 0.7s var(--ease-out-1);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.benefit-item:hover::after {
+    transform: translateX(100%) rotate(45deg);
+}
+
+/* Section title styling */
+.benefits-section h2 {
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    background: linear-gradient(
+        135deg,
+        hsl(var(--primary-hsl)),
+        hsl(var(--secondary-hsl))
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+.benefits-section .subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+/* Responsive design */
+@media (max-width: 968px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .benefit-item {
+        padding: 2rem;
+    }
+}
+
+/* Animation keyframes */
+@keyframes subtleFloat {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    100% {
+        transform: rotate(3deg) scale(1.1);
+    }
 } 
