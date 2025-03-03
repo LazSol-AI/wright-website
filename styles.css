@@ -577,37 +577,128 @@ nav {
 
 .download-options {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
     margin: 2rem 0;
 }
 
-.download-btn, .support-btn {
+.app-store-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--gradient-primary);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.4s var(--ease-out-2);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-elevated);
+}
+
+.app-store-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-shimmer);
+    transform: translateX(-100%) skewX(-15deg);
+    transition: transform 0.6s var(--ease-out-1);
+}
+
+.app-store-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-floating);
+}
+
+.app-store-btn:hover::before {
+    transform: translateX(100%) skewX(-15deg);
+}
+
+.apple-logo {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s var(--ease-out-1);
+}
+
+.app-store-btn:hover .apple-logo {
+    transform: scale(1.1);
+}
+
+/* App Information Styling */
+.app-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.verified-badge {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 1rem 2rem;
-    font-weight: 600;
-    transition: var(--transition);
+    padding: 0.5rem 1rem;
+    background: linear-gradient(
+        to right,
+        hsla(var(--success-hsl), 0.1),
+        hsla(var(--success-hsl), 0.05)
+    );
+    border-radius: 100px;
+    color: hsl(var(--success-hsl));
+    font-weight: 500;
 }
 
-.download-btn:hover, .support-btn:hover {
-    transform: var(--hover-transform);
+.verify-icon {
+    color: hsl(var(--success-hsl));
 }
 
-.download-btn {
-    background: var(--primary-color);
-    color: white;
-}
-
-.support-btn {
-    background: var(--secondary-color);
-    color: white;
+.app-size {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
 }
 
 .privacy-note {
-    color: #666;
+    margin-top: 1.5rem;
+    color: var(--text-secondary);
     font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Download Section Background */
+.download {
+    position: relative;
+    isolation: isolate;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        hsla(var(--primary-hsl), 0.03)
+    );
+}
+
+.download::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-glow);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+    .app-store-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .app-info {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* Footer */
