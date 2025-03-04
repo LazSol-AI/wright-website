@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM API Key Setup Guide | API密钥设置指南</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #1f2937;
+            --bg-color: #ffffff;
+            --section-bg: #f8fafc;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .provider-section {
+            background: var(--section-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .step {
+            margin-bottom: 1rem;
+        }
+
+        .step-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: -1rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .security-notes {
+            background: #fef2f2;
+            border: 1px solid #fee2e2;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .security-notes h2 {
+            color: #dc2626;
+        }
+
+        .language-switch {
+            text-align: right;
+            margin-bottom: 1rem;
+        }
+
+        .language-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .language-btn:hover {
+            opacity: 0.9;
+        }
+
+        [data-lang] {
+            display: none;
+        }
+
+        [data-lang].active {
+            display: block;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .provider-section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <button class="language-btn" onclick="toggleLanguage()">
+                <span data-lang="en" class="active">切换到中文</span>
+                <span data-lang="zh">Switch to English</span>
+            </button>
+        </div>
+
+        <!-- English Content -->
+        <div data-lang="en" class="active">
+            <h1>LLM API Key Setup Guide</h1>
+
+            <div class="provider-section">
+                <h2>OpenAI (ChatGPT) API Key</h2>
+                <div class="step">
+                    <div class="step-title">1. Account Setup</div>
+                    <ul>
+                        <li>Visit <a href="https://platform.openai.com" target="_blank">OpenAI Platform</a></li>
+                        <li>Sign up for a new account or log in to existing account</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-title">2. Generate API Key</div>
+                    <ul>
+                        <li>Navigate to "API keys" section</li>
+                        <li>Click "Create new secret key"</li>
+                        <li>Give your key a name (optional)</li>
+                        <li>Copy the key immediately (it won't be shown again)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="provider-section">
+                <h2>Groq API Key</h2>
+                <div class="step">
+                    <div class="step-title">1. Account Setup</div>
+                    <ul>
+                        <li>Visit <a href="https://console.groq.com" target="_blank">Groq Console</a></li>
+                        <li>Sign up for a new account or log in to existing account</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-title">2. Generate API Key</div>
+                    <ul>
+                        <li>Navigate to "API Keys" section</li>
+                        <li>Click "Create API Key"</li>
+                        <li>Name your key (recommended)</li>
+                        <li>Copy the key immediately (it won't be shown again)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="provider-section">
+                <h2>Grok API Key</h2>
+                <div class="step">
+                    <div class="step-title">1. Account Setup</div>
+                    <ul>
+                        <li>Visit Grok <a href="https://ide.x.ai" target="_blank">PromptIDE</a></li>
+                        <li>Sign in using your X (Twitter) account</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-title">2. Generate API Key</div>
+                    <ul>
+                        <li>Click your username in the top right corner</li>
+                        <li>Select "API Keys" from the dropdown</li>
+                        <li>Click "Create API Key"</li>
+                        <li>Set permissions (e.g., chat:write for Grok access)</li>
+                        <li>Copy the key immediately (it won't be shown again)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="provider-section">
+                <h2>DeepSeek API Key</h2>
+                <div class="step">
+                    <div class="step-title">1. Account Setup</div>
+                    <ul>
+                        <li>Visit <a href="https://platform.deepseek.com" target="_blank">DeepSeek Platform</a></li>
+                        <li>Sign up for a new account or log in to existing account</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-title">2. Generate API Key</div>
+                    <ul>
+                        <li>Navigate to "API Keys" section in the dashboard</li>
+                        <li>Click "Create new API key"</li>
+                        <li>Name your key (optional)</li>
+                        <li>Copy the key immediately (it won't be shown again)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="provider-section">
+                <h2>Google Gemini API Key</h2>
+                <div class="step">
+                    <div class="step-title">1. Account Setup</div>
+                    <ul>
+                        <li>Visit <a href="https://ai.google.dev/aistudio" target="_blank">Google AI Studio</a></li>
+                        <li>Sign in with your Google account or create one</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-title">2. Generate API Key</div>
+                    <ul>
+                        <li>Click "Get API key" in the left navigation panel</li>
+                        <li>Click "Create API key"</li>
+                        <li>Choose to create in a new or existing Google Cloud project</li>
+                        <li>Follow the prompts if creating a new project</li>
+                        <li>Copy the key immediately (it won't be shown again)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="security-notes">
+                <h2>Important Security Notes</h2>
+                <ul>
+                    <li>Never share your API keys or expose them in public repositories</li>
+                    <li>Store API keys securely (e.g., use environment variables)</li>
+                    <li>Rotate keys periodically for better security</li>
+                    <li>Monitor API usage to avoid unexpected charges</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Chinese Content -->
+        <div data-lang="zh">
+            <h1>LLM API密钥设置指南</h1>
+
+            <div class="provider-section">
+                <h2>OpenAI (ChatGPT) API密钥</h2>
+                <div class="step">
+                    <div class="step-title">1. 账户设置</div>
+                    <ul>
+                        <li>访问 <a href="https://platform.openai.com" target="_blank">OpenAI平台</a></li>
+                        <li>注册新账户或登录现有账户</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-title">2. 生成API密钥</div>
+                    <ul>
+                        <li>导航至"API keys"部分</li>
+                        <li>点击"Create new secret key"</li>
+                        <li>为密钥命名（可选）</li>
+                        <li>立即复制密钥（之后将不会再显示）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="provider-section">
+                <h2>Groq API密钥</h2>
+                <div class="step">
+                    <div class="step-title">1. 账户设置</div>
+                    <ul>
+                        <li>访问 <a href="https://console.groq.com" target="_blank">Groq控制台</a></li>
+                        <li>注册新账户或登录现有账户</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-title">2. 生成API密钥</div>
+                    <ul>
+                        <li>导航至"API Keys"部分</li>
+                        <li>点击"Create API Key"</li>
+                        <li>为密钥命名（推荐）</li>
+                        <li>立即复制密钥（之后将不会再显示）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="provider-section">
+                <h2>Grok API密钥</h2>
+                <div class="step">
+                    <div class="step-title">1. 账户设置</div>
+                    <ul>
+                        <li>访问 <a href="https://ide.x.ai" target="_blank">PromptIDE</a></li>
+                        <li>使用您的X（Twitter）账户登录</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-title">2. 生成API密钥</div>
+                    <ul>
+                        <li>点击右上角的用户名</li>
+                        <li>从下拉菜单中选择"API Keys"</li>
+                        <li>点击"Create API Key"</li>
+                        <li>设置权限（例如，chat:write用于Grok访问）</li>
+                        <li>立即复制密钥（之后将不会再显示）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="provider-section">
+                <h2>DeepSeek API密钥</h2>
+                <div class="step">
+                    <div class="step-title">1. 账户设置</div>
+                    <ul>
+                        <li>访问 <a href="https://platform.deepseek.com" target="_blank">DeepSeek平台</a></li>
+                        <li>注册新账户或登录现有账户</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-title">2. 生成API密钥</div>
+                    <ul>
+                        <li>导航至仪表板中的"API Keys"部分</li>
+                        <li>点击"Create new API key"</li>
+                        <li>为密钥命名（可选）</li>
+                        <li>立即复制密钥（之后将不会再显示）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="provider-section">
+                <h2>Google Gemini API密钥</h2>
+                <div class="step">
+                    <div class="step-title">1. 账户设置</div>
+                    <ul>
+                        <li>访问 <a href="https://ai.google.dev/aistudio" target="_blank">Google AI Studio</a></li>
+                        <li>使用您的Google账户或创建一个</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-title">2. 生成API密钥</div>
+                    <ul>
+                        <li>点击左侧导航面板中的"Get API key"</li>
+                        <li>点击"Create API key"</li>
+                        <li>选择在新的或现有的Google Cloud项目中创建</li>
+                        <li>如果创建新项目，请按照提示操作</li>
+                        <li>立即复制密钥（之后将不会再显示）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="security-notes">
+                <h2>重要安全注意事项</h2>
+                <ul>
+                    <li>永远不要分享您的API密钥或将其暴露在公共存储库中</li>
+                    <li>安全地存储API密钥（例如，使用环境变量）</li>
+                    <li>定期轮换密钥以提高安全性</li>
+                    <li>监控API使用情况以避免意外费用</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            const elements = document.querySelectorAll('[data-lang]');
+            elements.forEach(el => {
+                el.classList.toggle('active');
+            });
+            
+            // Update HTML lang attribute
+            document.documentElement.lang = 
+                document.documentElement.lang === 'en' ? 'zh' : 'en';
+        }
+    </script>
+</body>
+</html> 
