@@ -712,25 +712,16 @@ footer {
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    padding: 2rem 0;
+    text-align: center;
 }
 
-.footer-links {
-    display: flex;
-    gap: 1rem;
-}
-
-.footer-links a {
-    color: var(--text-color);
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: var(--primary-color);
+.footer-content p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
 }
 
 /* Responsive Design */
@@ -751,12 +742,6 @@ footer {
 
     .nav-links {
         display: none;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
     }
 
     .demo-container {
