@@ -247,13 +247,13 @@ nav {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-size: clamp(3.5rem, 10vw, 6rem);
-    font-weight: 800;
-    line-height: 1;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
     letter-spacing: -0.04em;
     animation: gradientShift 8s var(--ease-out-soft) infinite;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-    margin-bottom: var(--space-lg);
 }
 
 .subtitle {
@@ -497,12 +497,18 @@ nav {
     }
 
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .benefits-grid {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
     }
 }
 
@@ -733,7 +739,7 @@ footer {
     }
 
     .hero h1 {
-        font-size: clamp(2.5rem, 8vw, 4rem);
+        font-size: 2rem;
     }
 
     .cta-buttons {
@@ -1103,5 +1109,49 @@ html {
     .download-options {
         flex-direction: row;
         justify-content: center;
+    }
+}
+
+/* Language Toggle Styling */
+.language-toggle {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-toggle:hover {
+    background: var(--light-gray);
+    color: var(--text-primary);
+}
+
+/* Language Display Control */
+[class*="lang-"] {
+    display: none;
+}
+
+[class*="lang-"].active {
+    display: inline-block;
+}
+
+p[class*="lang-"].active,
+h1[class*="lang-"].active,
+h2[class*="lang-"].active,
+h3[class*="lang-"].active {
+    display: block;
+}
+
+/* Responsive adjustments for language toggle */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .language-toggle {
+        margin-left: auto;
     }
 } 

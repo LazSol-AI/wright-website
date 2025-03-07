@@ -40,13 +40,16 @@
     <meta name="application-name" content="Wright">
     <meta name="apple-mobile-web-app-title" content="Wright">
     
+    <!-- Add this meta tag for language support -->
+    <meta name="language" content="English, Chinese">
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header Section with Language Toggle -->
     <header>
         <nav>
             <div class="logo">
@@ -54,9 +57,16 @@
                 <span class="logo-text">Wright</span>
             </div>
             <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#benefits">Benefits</a>
-                <a href="#download">Download</a>
+                <a href="#features" class="lang-en active">Features</a>
+                <a href="#features" class="lang-zh">功能</a>
+                <a href="#benefits" class="lang-en active">Benefits</a>
+                <a href="#benefits" class="lang-zh">优势</a>
+                <a href="#download" class="lang-en active">Download</a>
+                <a href="#download" class="lang-zh">下载</a>
+                <button class="language-toggle" onclick="toggleLanguage()">
+                    <span class="lang-en active">中文</span>
+                    <span class="lang-zh">English</span>
+                </button>
             </div>
         </nav>
     </header>
@@ -64,8 +74,10 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Write with Confidence</h1>
-            <p class="subtitle">Your AI Writing Assistant for macOS. Summon it anywhere with a simple keyboard shortcut, get instant writing help anytime.</p>
+            <h1 class="lang-en active">Write in English with Confidence</h1>
+            <h1 class="lang-zh">用英语自信表达</h1>
+            <p class="subtitle lang-en active">Your AI Writing Assistant for macOS. Summon it anywhere with a simple keyboard shortcut, get instant writing help anytime.</p>
+            <p class="subtitle lang-zh">您的macOS AI英文表达助手。按下快捷键，随时随地获得即时写作帮助。</p>
             <div class="cta-buttons">
                 <a href="https://apps.apple.com/app/your-app-id" 
                     class="app-store-btn" 
@@ -74,7 +86,8 @@
                     <svg class="apple-logo" viewBox="0 0 384 512" width="16" height="16">
                         <path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
                     </svg>
-                    <span>Download for macOS</span>
+                    <span class="lang-en active">Download for macOS</span>
+                    <span class="lang-zh">下载macOS版本</span>
                 </a>
             </div>
         </div>
@@ -90,14 +103,17 @@
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Key Features</h2>
+            <h2 class="section-title lang-en active">Key Features</h2>
+            <h2 class="section-title lang-zh">主要功能</h2>
             
             <!-- Feature 1: Text Enhancement -->
             <div class="feature-row">
                 <div class="feature-content">
                     <div class="feature-icon">✨ ⌘+Control+P</div>
-                    <h3>Text Polish & Enhancement</h3>
-                    <p>Write with Confidence, Effortlessly! No more grammar worries—just express yourself. With a simple keyboard shortcut, instantly fix typos, grammar mistakes, and enhance your writing to sound natural in any context.</p>
+                    <h3 class="lang-en active">Text Polish & Enhancement</h3>
+                    <h3 class="lang-zh">文本润色与增强</h3>
+                    <p class="lang-en active">Write with Confidence, Effortlessly! No more grammar worries—just express yourself. With a simple keyboard shortcut, instantly fix typos, grammar mistakes, and enhance your writing to sound natural in any context.</p>
+                    <p class="lang-zh">轻松自信地用英文表达！不再担心语法问题——尽情表达自己。在任何地方按下快捷键，立即修复拼写错误、语法错误，并增强您的写作。自动识别语境，智能匹配表达语气让沟通自然流畅。</p>
                 </div>
                 <div class="feature-demo">
                     <div class="demo-container">
@@ -110,8 +126,10 @@
             <div class="feature-row reverse">
                 <div class="feature-content">
                     <div class="feature-icon">🌐 ⌘+Control+T</div>
-                    <h3>Universal Translation</h3>
-                    <p>No more fear of misunderstanding! Call your AI translator with a keyboard shortcut to get instant explanations in your language. Understand any vocabulary, slang, or phrase effortlessly.</p>
+                    <h3 class="lang-en active">Translation</h3>
+                    <h3 class="lang-zh">翻译与解释</h3>
+                    <p class="lang-en active">No more fear of misunderstanding! Call your AI translator with a keyboard shortcut to get instant explanations in your language. Understand any vocabulary, slang, or phrase effortlessly.</p>
+                    <p class="lang-zh">不再害怕理解偏误！按下快捷键即可调用您的AI翻译器，获取即时翻译。轻松理解任何词汇、俚语或短语。</p>
                 </div>
                 <div class="feature-demo">
                     <div class="demo-container">
@@ -124,8 +142,10 @@
             <div class="feature-row">
                 <div class="feature-content">
                     <div class="feature-icon">🤖 ⌘+Control+C</div>
-                    <h3>Quick Chat with LLM</h3>
-                    <p>Get Insights from Your Role Model-Instantly! No hassle, no prompts-just call it up with a keyboard shortcut and start chatting right away.</p>
+                    <h3 class="lang-en active">Quick Chat with LLM</h3>
+                    <h3 class="lang-zh">快速与LLM聊天</h3>
+                    <p class="lang-en active">Get Insights from Your Role Model-Instantly! No hassle, no prompts-just call it up with a keyboard shortcut and start chatting right away.</p>
+                    <p class="lang-zh">一键开启与您的角色模型聊天！无需设置复杂角色提示词——按下快捷键立马开始聊天。</p>
                 </div>
                 <div class="feature-demo">
                     <div class="demo-container">
@@ -138,12 +158,17 @@
             <div class="feature-row reverse">
                 <div class="feature-content">
                     <div class="feature-icon">💻 Customisable</div>
-                    <h3>Native macOS Experience</h3>
-                    <p>Clean interface that feels native to macOS. Designed to integrate seamlessly with your workflow.</p>
+                    <h3 class="lang-en active">Native macOS Experience</h3>
+                    <h3 class="lang-zh">原生macOS体验</h3>
+                    <p class="lang-en active">Clean interface that feels native to macOS. Designed to integrate seamlessly with your workflow.</p>
+                    <p class="lang-zh">原生的macOS应用，随时随地启用，与您的工作流程无缝连接。</p>
                     <ul class="feature-list">
-                        <li>Global keyboard shortcuts</li>
-                        <li>Multiple AI model support</li>
-                        <li>Customisable AI Roles</li>
+                        <li class="lang-en active">Global keyboard shortcuts</li>
+                        <li class="lang-zh">定制你的键盘快捷键</li>
+                        <li class="lang-en active">Multiple AI model support</li>
+                        <li class="lang-zh">多AI模型支持</li>
+                        <li class="lang-en active">Customisable AI Roles</li>
+                        <li class="lang-zh">自定义和保存你喜欢的AI角色</li>
                     </ul>
                 </div>
                 <div class="feature-demo">
@@ -159,23 +184,31 @@
 
     <!-- Benefits Section -->
     <section id="benefits" class="benefits-section">
-        <h2>Why Choose Wright?</h2>
-        <p class="subtitle">Experience the perfect blend of efficiency and elegance in your writing workflow</p>
+        <h2 class="lang-en active">Why Choose Wright?</h2>
+        <h2 class="lang-zh">为什么选择Wright？</h2>
+        <p class="subtitle lang-en active">Experience the perfect blend of efficiency and elegance in your writing workflow</p>
+        <p class="subtitle lang-zh">体验写作工作流程中效率与优雅的完美结合</p>
         <div class="benefits-grid">
             <div class="benefit-item">
                 <div class="benefit-icon">⚡️</div>
-                <h3>Save Time</h3>
-                <p>Quick improvements and translations without switching apps</p>
+                <h3 class="lang-en active">Save Time</h3>
+                <h3 class="lang-zh">节省时间</h3>
+                <p class="lang-en active">Quick improvements and translations without switching apps</p>
+                <p class="lang-zh">无需切换应用程序即可快速改进和翻译</p>
             </div>
             <div class="benefit-item">
                 <div class="benefit-icon">✨</div>
-                <h3>Improve Quality</h3>
-                <p>Consistent tone and reduced errors in all your writing</p>
+                <h3 class="lang-en active">Improve Quality</h3>
+                <h3 class="lang-zh">提高质量</h3>
+                <p class="lang-en active">Consistent tone and reduced errors in all your writing</p>
+                <p class="lang-zh">在所有写作中保持一致的语气并减少错误</p>
             </div>
             <div class="benefit-item">
                 <div class="benefit-icon">🎯</div>
-                <h3>Stay Focused</h3>
-                <p>Minimal interface disruption keeps you in your flow</p>
+                <h3 class="lang-en active">Stay Focused</h3>
+                <h3 class="lang-zh">保持专注</h3>
+                <p class="lang-en active">Minimal interface disruption keeps you in your flow</p>
+                <p class="lang-zh">最小化界面中断以保持您的流程</p>
             </div>
         </div>
     </section>
@@ -184,8 +217,10 @@
     <section id="download" class="download">
         <div class="container">
             <div class="download-content">
-                <h2>Get Started Today</h2>
-                <p>Download Wright for free and access all functions at no cost</p>
+                <h2 class="lang-en active">Get Started Today</h2>
+                <h2 class="lang-zh">立即开始</h2>
+                <p class="lang-en active">Download Wright for free and access all functions at no cost</p>
+                <p class="lang-zh">欢迎下载Wright，期待成为您的高效工具。</p>
                 <div class="download-options">
                     <a href="https://apps.apple.com/app/your-app-id" 
                        class="app-store-btn" 
@@ -194,7 +229,8 @@
                         <svg class="apple-logo" viewBox="0 0 384 512" width="16" height="16">
                             <path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
                         </svg>
-                        <span>Download for macOS</span>
+                        <span class="lang-en active">Download for macOS</span>
+                        <span class="lang-zh">下载macOS版本</span>
                     </a>
                     <a href="keysetup.html" 
                        class="setup-guide-btn" 
@@ -203,7 +239,8 @@
                         <svg class="guide-icon" viewBox="0 0 512 512" width="16" height="16">
                             <path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
                         </svg>
-                        <span>API Key Setup Guide</span>
+                        <span class="lang-en active">API Key Setup Guide</span>
+                        <span class="lang-zh">API密钥设置指南</span>
                     </a>
                 </div>
                 <div class="app-info">
@@ -211,7 +248,8 @@
                         <svg class="verify-icon" viewBox="0 0 512 512" width="14" height="14">
                             <path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/>
                         </svg>
-                        Verified by Apple
+                        <span class="lang-en active">Verified by Apple</span>
+                        <span class="lang-zh">由Apple验证</span>
                     </span>
                     <span class="app-size">Download size: 12.4 MB</span>
                 </div>
@@ -223,7 +261,8 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>© 2025 Wright. All rights reserved.</p>
+            <p class="lang-en active">© 2025 Wright. All rights reserved.</p>
+            <p class="lang-zh">© 2025 Wright. 保留所有权利。</p>
         </div>
     </footer>
 
@@ -236,6 +275,30 @@
                 window.scrollTo(0, 0);
             }, 1);
         }
+        
+        // Language toggle functionality
+        function toggleLanguage() {
+            const enElements = document.querySelectorAll('.lang-en');
+            const zhElements = document.querySelectorAll('.lang-zh');
+            
+            enElements.forEach(el => el.classList.toggle('active'));
+            zhElements.forEach(el => el.classList.toggle('active'));
+            
+            // Update HTML lang attribute
+            document.documentElement.lang = 
+                document.documentElement.lang === 'en' ? 'zh' : 'en';
+                
+            // Store language preference
+            localStorage.setItem('language', document.documentElement.lang);
+        }
+        
+        // Check for saved language preference
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLanguage = localStorage.getItem('language');
+            if (savedLanguage === 'zh') {
+                toggleLanguage();
+            }
+        });
     </script>
 
     <!-- Add structured data for SEO -->
