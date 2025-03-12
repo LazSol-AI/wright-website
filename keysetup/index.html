@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -140,8 +141,27 @@
                 padding: 1rem;
             }
         }
+
+        .setup-image {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .settings-screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .image-caption {
+            margin-top: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="language-switch">
@@ -153,6 +173,44 @@
 
         <!-- English Content -->
         <div data-lang="en" class="active">
+            <h1>Setup LLM Model in Wright</h1>
+
+            <div class="provider-section">
+                <h2>Setup LLM Key in Wright</h2>
+                <div class="step">
+                    <div class="step-title">1. Access Settings</div>
+                    <ul>
+                        <li>Open Wright app - a welcome page will appear on first launch</li>
+                        <li>Click "API Key Settings" on the welcome page, or</li>
+                        <li>Alternatively: Click the app menu → Settings</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">2. Configure API Key</div>
+                    <ul>
+                        <li>In the Settings window, go to "LLM Model" tab</li>
+                        <li>Select your desired LLM provider</li>
+                        <li>Paste your API key in the corresponding field</li>
+                        <li>Click Save to securely store your key</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">3. Model Selection</div>
+                    <ul>
+                        <li>After saving your API key, you can select your preferred model version</li>
+                        <li>The model will be ready to use immediately</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="setup-image">
+                <img src="assets/images/key_setting.png" alt="Wright LLM Model Settings Interface"
+                    class="settings-screenshot">
+                <p data-lang="en" class="active">Wright LLM Model Settings Interface</p>
+            </div>
+
             <h1>LLM API Key Setup Guide</h1>
 
             <div class="provider-section">
@@ -270,6 +328,45 @@
 
         <!-- Chinese Content -->
         <div data-lang="zh">
+
+            <h1>在Wright中设置LLM密钥</h1>
+
+            <div class="provider-section">
+                <h2>在Wright中设置LLM密钥</h2>
+                <div class="step">
+                    <div class="step-title">1. 访问设置</div>
+                    <ul>
+                        <li>打开Wright应用 - 首次启动时会显示欢迎页面</li>
+                        <li>点击欢迎页面上的"API密钥设置"，或</li>
+                        <li>或者：点击应用菜单 → 设置</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">2. 配置API密钥</div>
+                    <ul>
+                        <li>在设置窗口中，转到"LLM模型"标签</li>
+                        <li>选择您想要使用的LLM提供商</li>
+                        <li>在相应字段中粘贴您的API密钥</li>
+                        <li>点击保存以安全存储您的密钥</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">3. 模型选择</div>
+                    <ul>
+                        <li>保存API密钥后，您可以选择首选的模型版本</li>
+                        <li>模型将立即可以使用</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="setup-image">
+                <img src="assets/images/key_setting.png" alt="Wright LLM Model Settings Interface"
+                    class="settings-screenshot">
+                <p data-lang="zh">Wright LLM模型设置界面</p>
+            </div>
+
             <h1>LLM API密钥设置指南</h1>
 
             <div class="provider-section">
@@ -384,19 +481,20 @@
                 </ul>
             </div>
         </div>
-    </div>
 
+    </div>
     <script>
         function toggleLanguage() {
             const elements = document.querySelectorAll('[data-lang]');
             elements.forEach(el => {
                 el.classList.toggle('active');
             });
-            
+
             // Update HTML lang attribute
-            document.documentElement.lang = 
+            document.documentElement.lang =
                 document.documentElement.lang === 'en' ? 'zh' : 'en';
         }
     </script>
 </body>
-</html> 
+
+</html>
