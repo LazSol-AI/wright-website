@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wright User Guide | Wright用户指南</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #1f2937;
+            --bg-color: #ffffff;
+            --section-bg: #f8fafc;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .provider-section {
+            background: var(--section-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .step {
+            margin-bottom: 1rem;
+        }
+
+        .step-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-title-zh {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: -1rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .security-notes {
+            background: #fef2f2;
+            border: 1px solid #fee2e2;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .security-notes h2 {
+            color: #dc2626;
+        }
+
+        .language-switch {
+            text-align: right;
+            margin-bottom: 1rem;
+        }
+
+        .language-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .language-btn:hover {
+            opacity: 0.9;
+        }
+
+        [data-lang] {
+            display: none;
+        }
+
+        [data-lang].active {
+            display: block;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .provider-section {
+                padding: 1rem;
+            }
+        }
+
+        .setup-image {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .settings-screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .image-caption {
+            margin-top: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .quick-start-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .content-block {
+            margin-bottom: 4rem;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+
+        .step-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-title-zh {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+
+        .bilingual-content {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .zh-content {
+            border-top: 1px solid #eee;
+            padding-top: 1.5rem;
+        }
+
+        .setup-image {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .settings-screenshot {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+
+        .provider-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .provider-section ul li {
+            margin-bottom: 0.75rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .provider-section ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+
+        .provider-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 2rem 0 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .provider-section {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+
+        .provider-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .provider-section a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .provider-section a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <button class="language-btn" onclick="toggleLanguage()">
+                <span data-lang="en" class="active">切换到中文</span>
+                <span data-lang="zh">Switch to English</span>
+            </button>
+        </div>
+
+        <!-- English Content -->
+        <div data-lang="en" class="active">
+            <div class="content-block">
+                <h1 class="section-title">Quick Start</h1>
+
+                <div class="provider-section">
+                    <div class="step">
+                        <div class="step-title">NOTE: Accessibility Permissions Required</div>
+                        <p>Wright needs accessibility permissions to monitor global keyboard shortcuts. After the application is installed, a window will appear requesting your permission to configure the necessary accessibility settings for Wright.</p>
+                        <p>Alternatively, you can manually enable these settings by navigating to System Settings > Privacy & Security > Accessibility and activating Wright.</p>
+                        <p>You may need to quit the application and restart it for the settings to take effect.</p>
+                    </div>
+                </div>
+
+                <div class="setup-image">
+                    <img src="assets/images/assessibility_permission.png" alt="Wright LLM Accessibility Permission" class="settings-screenshot">
+                </div>
+            </div>
+
+            <div class="content-block">
+                <div class="provider-section">
+                    <div class="step">
+                        <div class="step-title">Using Wright via Keyboard Shortcuts</div>
+                        <p>You can use Wright's polishing, translation, and quick chat functions with keyboard shortcuts. The default shortcuts are listed below, and you can customize them in the Settings.</p>
+                    </div>
+                </div>
+
+                <div class="setup-image">
+                    <img src="assets/images/shortcut_setting.png" alt="Wright LLM Shortcuts Settings Interface" class="settings-screenshot">
+                </div>
+            </div>
+
+            <div class="content-block">
+                <div class="provider-section">
+                    <div class="step">
+                        <div class="step-title">Using Wright via Apple Menu Bar</div>
+                        <p>You can also use Wright from your menu bar</p>
+                    </div>
+                </div>
+
+                <div class="setup-image">
+                    <img src="assets/images/menu_bar.png" alt="Wright LLM Menu Bar" class="settings-screenshot">
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h1 class="section-title">How to Configure Your LLM Models</h1>
+
+                <div class="provider-section">
+                    <div class="step">
+                        <div class="step-title">1. Access Settings</div>
+                        <ul>
+                            <li>Open Wright app</li>
+                            <li>Click the app menu → Settings</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-title">2. Configure API Key</div>
+                        <ul>
+                            <li>In the Settings window, go to "LLM Model" tab</li>
+                            <li>Select your desired LLM provider</li>
+                            <li>Paste your API key in the corresponding field</li>
+                            <li>Click Save to securely store your key</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-title">3. Model Selection</div>
+                        <ul>
+                            <li>After saving your API key, you can select your preferred model version</li>
+                            <li>Then your model will be ready to use</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="setup-image">
+                    <img src="assets/images/key_setting.png" alt="Wright LLM Model Settings Interface" class="settings-screenshot">
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h1 class="section-title">How to Get Your LLM API Key</h1>
+
+                <div class="provider-section">
+                    <h2 class="provider-title">OpenAI (ChatGPT)</h2>
+                    <div class="step">
+                        <div class="step-title">1. Account Setup</div>
+                        <ul>
+                            <li>Visit <a href="https://platform.openai.com" target="_blank">OpenAI Platform</a></li>
+                            <li>Sign up for a new account or log in to existing account</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-title">2. Generate API Key</div>
+                        <ul>
+                            <li>Navigate to "API keys" section</li>
+                            <li>Click "Create new secret key"</li>
+                            <li>Give your key a name (optional)</li>
+                            <li>Copy the key immediately (it won't be shown again)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="provider-section">
+                    <h2 class="provider-title">Groq</h2>
+                    <div class="step">
+                        <div class="step-title">1. Account Setup</div>
+                        <ul>
+                            <li>Visit <a href="https://console.groq.com" target="_blank">Groq Console</a></li>
+                            <li>Sign up for a new account or log in to existing account</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-title">2. Generate API Key</div>
+                        <ul>
+                            <li>Navigate to "API Keys" section</li>
+                            <li>Click "Create API Key"</li>
+                            <li>Name your key (recommended)</li>
+                            <li>Copy the key immediately (it won't be shown again)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="provider-section">
+                    <h2 class="provider-title">Grok</h2>
+                    <div class="step">
+                        <div class="step-title">1. Account Setup</div>
+                        <ul>
+                            <li>Visit Grok <a href="https://ide.x.ai" target="_blank">PromptIDE</a></li>
+                            <li>Sign in using your X (Twitter) account</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-title">2. Generate API Key</div>
+                        <ul>
+                            <li>Click your username in the top right corner</li>
+                            <li>Select "API Keys" from the dropdown</li>
+                            <li>Click "Create API Key"</li>
+                            <li>Set permissions (e.g., chat:write for Grok access)</li>
+                            <li>Copy the key immediately (it won't be shown again)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="provider-section">
+                    <h2 class="provider-title">DeepSeek</h2>
+                    <div class="step">
+                        <div class="step-title">1. Account Setup</div>
+                        <ul>
+                            <li>Visit <a href="https://platform.deepseek.com" target="_blank">DeepSeek Platform</a></li>
+                            <li>Sign up for a new account or log in to existing account</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-title">2. Generate API Key</div>
+                        <ul>
+                            <li>Navigate to "API Keys" section in the dashboard</li>
+                            <li>Click "Create new API key"</li>
+                            <li>Name your key (optional)</li>
+                            <li>Copy the key immediately (it won't be shown again)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="provider-section">
+                    <h2 class="provider-title">Google Gemini</h2>
+                    <div class="step">
+                        <div class="step-title">1. Account Setup</div>
+                        <ul>
+                            <li>Visit <a href="https://ai.google.dev/aistudio" target="_blank">Google AI Studio</a></li>
+                            <li>Sign in with your Google account or create one</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-title">2. Generate API Key</div>
+                        <ul>
+                            <li>Go to "Get API key" in the top navigation</li>
+                            <li>Click "Create API key"</li>
+                            <li>Copy the key immediately</li>
+                            <li>Configure your project and enable the Gemini API if prompted</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="security-notes">
+                <h2>Important Security Notes</h2>
+                <ul>
+                    <li>Never share your API keys or expose them in public repositories</li>
+                    <li>Store API keys securely (e.g., use environment variables)</li>
+                    <li>Rotate keys periodically for better security</li>
+                    <li>Monitor API usage to avoid unexpected charges</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Chinese Content -->
+        <div data-lang="zh">
+            <div class="content-block">
+                <h1 class="section-title">快速开始</h1>
+
+                <div class="provider-section">
+                    <div class="step">
+                        <div class="step-title">注意：需要辅助功能权限</div>
+                        <p>Wright 需要辅助功能权限来监控全局键盘快捷键。安装应用程序后，会出现一个窗口，请求您的权限来配置 Wright 所需的辅助功能设置。</p>
+                        <p>您也可以通过进入 系统设置 > 隐私与安全性 > 辅助功能 并启用 Wright 来手动开启这些设置。</p>
+                        <p>您可能需要退出应用程序并重新启动才能使设置生效。</p>
+                    </div>
+                </div>
+
+                <div class="setup-image">
+                    <img src="assets/images/assessibility_permission.png" alt="Wright LLM 辅助功能权限" class="settings-screenshot">
+                </div>
+            </div>
+
+            <div class="content-block">
+                <div class="provider-section">
+                    <div class="step">
+                        <div class="step-title">使用键盘快捷键</div>
+                        <p>您可以使用键盘快捷键来使用 Wright 的润色、翻译和快速对话功能。默认快捷键如下所示，您可以在设置中自定义这些快捷键。</p>
+                    </div>
+                </div>
+
+                <div class="setup-image">
+                    <img src="assets/images/shortcut_setting.png" alt="Wright LLM 快捷键设置界面" class="settings-screenshot">
+                </div>
+            </div>
+
+            <div class="content-block">
+                <div class="provider-section">
+                    <div class="step">
+                        <div class="step-title">通过 Apple 菜单栏使用</div>
+                        <p>您也可以通过菜单栏使用 Wright</p>
+                    </div>
+                </div>
+
+                <div class="setup-image">
+                    <img src="assets/images/menu_bar.png" alt="Wright LLM 菜单栏" class="settings-screenshot">
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h1 class="section-title">如何配置 LLM 模型</h1>
+
+                <div class="provider-section">
+                    <div class="step">
+                        <div class="step-title">1. 访问设置</div>
+                        <ul>
+                            <li>打开 Wright 应用</li>
+                            <li>点击应用菜单 → 设置</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-title">2. 配置 API 密钥</div>
+                        <ul>
+                            <li>在设置窗口中，进入"LLM 模型"选项卡</li>
+                            <li>选择您想要使用的 LLM 提供商</li>
+                            <li>在对应的字段中粘贴您的 API 密钥</li>
+                            <li>点击保存以安全存储您的密钥</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-title">3. 模型选择</div>
+                        <ul>
+                            <li>保存 API 密钥后，您可以选择您偏好的模型版本</li>
+                            <li>然后您的模型就可以使用了</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="setup-image">
+                    <img src="assets/images/key_setting.png" alt="Wright LLM 模型设置界面" class="settings-screenshot">
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h1 class="section-title">如何获取 LLM API 密钥</h1>
+
+                <div class="provider-section">
+                    <h2 class="provider-title">OpenAI (ChatGPT)</h2>
+                    <div class="step">
+                        <div class="step-title">1. 账户设置</div>
+                        <ul>
+                            <li>访问 <a href="https://platform.openai.com" target="_blank">OpenAI 平台</a></li>
+                            <li>注册新账户或登录现有账户</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-title">2. 生成 API 密钥</div>
+                        <ul>
+                            <li>导航到"API keys"部分</li>
+                            <li>点击"Create new secret key"</li>
+                            <li>为您的密钥命名（可选）</li>
+                            <li>立即复制密钥（之后将不会再显示）</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="provider-section">
+                    <h2 class="provider-title">Groq</h2>
+                    <div class="step">
+                        <div class="step-title">1. 账户设置</div>
+                        <ul>
+                            <li>访问 <a href="https://console.groq.com" target="_blank">Groq 控制台</a></li>
+                            <li>注册新账户或登录现有账户</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-title">2. 生成 API 密钥</div>
+                        <ul>
+                            <li>导航到"API Keys"部分</li>
+                            <li>点击"Create API Key"</li>
+                            <li>为您的密钥命名（推荐）</li>
+                            <li>立即复制密钥（之后将不会再显示）</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="provider-section">
+                    <h2 class="provider-title">Grok</h2>
+                    <div class="step">
+                        <div class="step-title">1. 账户设置</div>
+                        <ul>
+                            <li>访问 Grok <a href="https://ide.x.ai" target="_blank">PromptIDE</a></li>
+                            <li>使用您的 X（Twitter）账户登录</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-title">2. 生成 API 密钥</div>
+                        <ul>
+                            <li>点击右上角的用户名</li>
+                            <li>从下拉菜单中选择"API Keys"</li>
+                            <li>点击"Create API Key"</li>
+                            <li>设置权限（例如，用于 Grok 访问的 chat:write）</li>
+                            <li>立即复制密钥（之后将不会再显示）</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="provider-section">
+                    <h2 class="provider-title">DeepSeek</h2>
+                    <div class="step">
+                        <div class="step-title">1. 账户设置</div>
+                        <ul>
+                            <li>访问 <a href="https://platform.deepseek.com" target="_blank">DeepSeek 平台</a></li>
+                            <li>注册新账户或登录现有账户</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-title">2. 生成 API 密钥</div>
+                        <ul>
+                            <li>在仪表板中导航到"API Keys"部分</li>
+                            <li>点击"Create new API key"</li>
+                            <li>为您的密钥命名（可选）</li>
+                            <li>立即复制密钥（之后将不会再显示）</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="provider-section">
+                    <h2 class="provider-title">Google Gemini</h2>
+                    <div class="step">
+                        <div class="step-title">1. 账户设置</div>
+                        <ul>
+                            <li>访问 <a href="https://ai.google.dev/aistudio" target="_blank">Google AI Studio</a></li>
+                            <li>使用您的 Google 账户登录或创建一个</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-title">2. 生成 API 密钥</div>
+                        <ul>
+                            <li>在顶部导航栏中找到"Get API key"</li>
+                            <li>点击"Create API key"</li>
+                            <li>立即复制密钥</li>
+                            <li>如果提示，请配置您的项目并启用 Gemini API</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="security-notes">
+                <h2>重要安全注意事项</h2>
+                <ul>
+                    <li>永远不要分享您的 API 密钥或将其暴露在公共存储库中</li>
+                    <li>安全地存储 API 密钥（例如，使用环境变量）</li>
+                    <li>定期轮换密钥以提高安全性</li>
+                    <li>监控 API 使用情况以避免意外费用</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleLanguage() {
+            const elements = document.querySelectorAll('[data-lang]');
+            elements.forEach(el => {
+                el.classList.toggle('active');
+            });
+
+            // Update HTML lang attribute
+            document.documentElement.lang =
+                document.documentElement.lang === 'en' ? 'zh' : 'en';
+        }
+    </script>
+</body>
+
+</html>

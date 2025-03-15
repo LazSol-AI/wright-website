@@ -2,7 +2,7 @@
 
 > Write with confidence, communicate with clarity - Wright is your AI writing partner.
 
-Wright is an intelligent writing companion designed for macOS that seamlessly enhances your writing experience across all applications. Whether you're composing emails, writing documents, or crafting messages, Wright is there to help you communicate more effectively.
+[Wright](https://wright.lazsol.com) is an intelligent writing companion designed for macOS that seamlessly enhances your writing experience across all applications. Whether you're composing emails, writing documents, or crafting messages, Wright is there to help you communicate more effectively.
 
 ## Key Features
 
@@ -20,7 +20,7 @@ Wright is an intelligent writing companion designed for macOS that seamlessly en
 - Maintains formatting and structure during translation
 - Works in any application - from Messages to Microsoft Word
 
-### 🤖 Quich Chat with LLM with customisable roles
+### 🤖 Quick Chat with LLM with customisable roles
 
 - Customizable AI roles to start a quick chat with your favourite AI models
 - Fast and reliable processing with streaming responses
@@ -65,8 +65,4 @@ Content creators and writers
 Anyone who writes in English or Chinese
 Professionals working in international environments
 
-## Free with all Functions
-
-Download for free and access all functions at no cost.
-Maintain full control of your LLM API key, which is stored solely in your encrypted keychain.  
-You have the option to "buy me a coffee" to unlock customized AI roles.
+[User Guide](https://wright.lazsol.com/guide/)
