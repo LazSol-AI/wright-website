@@ -103,68 +103,164 @@
             padding-top: 2rem;
             border-top: 1px solid var(--border-color);
         }
+
+        /* Language toggle styles */
+        .language-switch {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 1rem;
+        }
+
+        .language-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        [data-lang] {
+            display: none;
+        }
+
+        [data-lang].active {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Wright Support Center</h1>
-        
-        <section>
-            <h2>Quick Support Links</h2>
-            <div class="support-links">
-                <div class="support-card">
-                    <h3>Setup Guide</h3>
-                    <p>Learn how to set up your API keys and get started with Wright</p>
-                    <a href="/guide" class="button">View Setup Guide</a>
+        <div class="language-switch">
+            <button class="language-btn" onclick="toggleLanguage()">
+                <span data-lang="en" class="active">切换到中文</span>
+                <span data-lang="zh">Switch to English</span>
+            </button>
+        </div>
+
+        <!-- English Content -->
+        <div data-lang="en" class="active">
+            <h1>Wright Support Center</h1>
+            
+            <section>
+                <h2>Quick Support Links</h2>
+                <div class="support-links">
+                    <div class="support-card">
+                        <h3>Setup Guide</h3>
+                        <p>Learn how to set up your API keys and get started with Wright</p>
+                        <a href="/guide" class="button">View Setup Guide</a>
+                    </div>
+                    <div class="support-card">
+                        <h3>Report an Issue</h3>
+                        <p>Having problems? Let us know and we'll help you out</p>
+                        <a href="https://github.com/LazSol-AI/wright-website/issues" class="button">Submit Issue</a>
+                    </div>
                 </div>
-                <div class="support-card">
-                    <h3>Report an Issue</h3>
-                    <p>Having problems? Let us know and we'll help you out</p>
-                    <a href="https://github.com/LazSol-AI/wright-website/issues" class="button">Submit Issue</a>
+            </section>
+
+            <section>
+                <h2>Contact Information</h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>General Support</h3>
+                        <p>Email: <a href="mailto:wright.support@lazsol.com">wright.support@lazsol.com</a></p>
+                        <p>Response Time: Within 24 hours</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <h2>Contact Information</h2>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <h3>General Support</h3>
-                    <p>Email: <a href="mailto:wright.support@lazsol.com">wright.support@lazsol.com</a></p>
-                    <p>Response Time: Within 24 hours</p>
+            <section>
+                <h2>Frequently Asked Questions</h2>
+                <h3>How do I set up my API keys?</h3>
+                <p>Visit our <a href="/guide">API Key Setup Guide</a> for detailed instructions on how to set up and secure your API keys.</p>
+
+                <h3>Which LLM services are supported?</h3>
+                <p>Wright currently supports:</p>
+                <ul>
+                    <li>OpenAI (ChatGPT)</li>
+                    <li>Groq</li>
+                    <li>Grok (xAI)</li>
+                    <li>DeepSeek</li>
+                    <li>Gemini (Google)</li>
+                </ul>
+
+                <h3>Is my data secure?</h3>
+                <p>Yes! Wright does not collect or store any of your data. Your API keys are securely stored in your macOS Keychain. Read our <a href="/privacy">Privacy Policy</a> for more details.</p>
+            </section>
+        </div>
+
+        <!-- Chinese Content -->
+        <div data-lang="zh">
+            <h1>Wright 帮助中心</h1>
+            
+            <section>
+                <h2>快速帮助链接</h2>
+                <div class="support-links">
+                    <div class="support-card">
+                        <h3>设置指南</h3>
+                        <p>了解如何设置您的 API 密钥并开始使用 Wright</p>
+                        <a href="/guide" class="button">查看设置指南</a>
+                    </div>
+                    <div class="support-card">
+                        <h3>报告问题</h3>
+                        <p>遇到问题？让我们知道，我们会帮助您解决</p>
+                        <a href="https://github.com/LazSol-AI/wright-website/issues" class="button">提交问题</a>
+                    </div>
                 </div>
+            </section>
 
-                <div class="contact-card">
-                    <h3>Business Address</h3>
-                    <p>11 Jurong Lake Link </p>
-                    <p>Singapore</p>
-                    <p>648155</p>
+            <section>
+                <h2>联系信息</h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>一般支持</h3>
+                        <p>电子邮件：<a href="mailto:wright.support@lazsol.com">wright.support@lazsol.com</a></p>
+                        <p>响应时间：24小时内</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <h2>Frequently Asked Questions</h2>
-            <h3>How do I set up my API keys?</h3>
-            <p>Visit our <a href="/guide">API Key Setup Guide</a> for detailed instructions on how to set up and secure your API keys.</p>
+            <section>
+                <h2>常见问题</h2>
+                <h3>如何设置我的 API 密钥？</h3>
+                <p>访问我们的<a href="/guide">API 密钥设置指南</a>，获取有关如何设置和保护 API 密钥的详细说明。</p>
 
-            <h3>Which LLM services are supported?</h3>
-            <p>Wright currently supports:</p>
-            <ul>
-                <li>OpenAI (ChatGPT)</li>
-                <li>Groq</li>
-                <li>Grok (xAI)</li>
-                <li>DeepSeek</li>
-                <li>Gemini (Google)</li>
-            </ul>
+                <h3>支持哪些 LLM 服务？</h3>
+                <p>Wright 目前支持：</p>
+                <ul>
+                    <li>OpenAI (ChatGPT)</li>
+                    <li>Groq</li>
+                    <li>Grok (xAI)</li>
+                    <li>DeepSeek</li>
+                    <li>Gemini (Google)</li>
+                </ul>
 
-            <h3>Is my data secure?</h3>
-            <p>Yes! Wright does not collect or store any of your data. Your API keys are securely stored in your macOS Keychain. Read our <a href="/privacy">Privacy Policy</a> for more details.</p>
-        </section>
+                <h3>我的数据安全吗？</h3>
+                <p>是的！Wright 不会收集或存储您的任何数据。您的 API 密钥安全地存储在您的 macOS 钥匙串中。阅读我们的<a href="/privacy">隐私政策</a>了解更多详情。</p>
+            </section>
+        </div>
 
         <div class="footer">
-            <p>© 2025 Wright. All rights reserved.</p>
+            <p>&copy; 2025 Wright. All rights reserved.</p>
         </div>
     </div>
+
+    <script>
+        function toggleLanguage() {
+            const enElements = document.querySelectorAll('[data-lang="en"]');
+            const zhElements = document.querySelectorAll('[data-lang="zh"]');
+            
+            if (enElements[0].classList.contains('active')) {
+                // Switch to Chinese
+                enElements.forEach(el => el.classList.remove('active'));
+                zhElements.forEach(el => el.classList.add('active'));
+            } else {
+                // Switch to English
+                zhElements.forEach(el => el.classList.remove('active'));
+                enElements.forEach(el => el.classList.add('active'));
+            }
+        }
+    </script>
 </body>
 </html>
