@@ -27,7 +27,7 @@
         {
             "name": "Grok",
             "rawValue": ".grok",
-            "versions": ["grok-2-latest"],
+            "versions": ["grok-3-beta", "grok-3-mini-fast-beta", "grok-3-mini-beta", "grok-2-latest"],
             "apiURL": "https://api.x.ai/v1/chat/completions"
         },
         {
