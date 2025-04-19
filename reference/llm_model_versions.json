@@ -29,12 +29,6 @@
             "rawValue": ".grok",
             "versions": ["grok-3-beta", "grok-3-mini-fast-beta", "grok-3-mini-beta", "grok-2-latest"],
             "apiURL": "https://api.x.ai/v1/chat/completions"
-        },
-        {
-            "name": "Gemini",
-            "rawValue": ".googleGemini",
-            "versions": ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-1.5-flash-8b"],
-            "apiURL": "https://generativelanguage.googleapis.com"
         }
     ]
 }
