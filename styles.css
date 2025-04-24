@@ -579,7 +579,24 @@ nav {
 .download {
     padding: 4rem 2rem;
     text-align: center;
+    position: relative;
+    isolation: isolate;
+    /* background: linear-gradient(
+        to bottom,
+        transparent,
+        hsla(var(--primary-hsl), 0.03)
+    ); */
     background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.05), rgba(var(--secondary-color-rgb), 0.05));
+}
+
+
+.download::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-glow);
+    opacity: 0.5;
+    z-index: -1;
 }
 
 .download-options {
@@ -676,26 +693,6 @@ nav {
     color: var(--text-secondary);
     font-size: 0.9rem;
     text-align: center;
-}
-
-/* Download Section Background */
-.download {
-    position: relative;
-    isolation: isolate;
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        hsla(var(--primary-hsl), 0.03)
-    );
-}
-
-.download::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: var(--gradient-glow);
-    opacity: 0.5;
-    z-index: -1;
 }
 
 /* Responsive Adjustments */
