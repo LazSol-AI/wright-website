@@ -3,13 +3,13 @@
         {
             "name": "Wright",
             "rawValue": ".Wright",
-            "versions": ["gemma2-9b-it"],
+            "versions": ["openai/gpt-oss-20b"],
             "apiURL": "https://api.groq.com/openai/v1/chat/completions"
         },
         {
             "name": "Groq",
             "rawValue": ".Groq",
-            "versions": ["gemma2-9b-it", "llama-3.1-8b-instant", "llama-3.3-70b-versatile"],
+            "versions": ["openai/gpt-oss-20b", "llama-3.1-8b-instant", "llama-3.3-70b-versatile"],
             "apiURL": "https://api.groq.com/openai/v1/chat/completions"
         },
         {
