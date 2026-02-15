@@ -1,266 +1,570 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support | Wright</title>
+    <title>Support | Wright — AI Writing Assistant for macOS</title>
+    <meta name="description"
+        content="Get help with Wright — setup guides, FAQs, and contact information for the AI writing assistant for macOS.">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/wright_logo32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/wright_logo16.png">
     <style>
         :root {
             --primary-color: #2563eb;
+            --primary-hsl: 220, 80%, 53%;
+            --secondary-color: #7c3aed;
             --text-color: #1f2937;
+            --text-secondary: #6b7280;
             --bg-color: #ffffff;
             --section-bg: #f8fafc;
             --border-color: #e2e8f0;
+            --gradient-primary: linear-gradient(135deg, #2563eb, #7c3aed);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
             color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
+            background: linear-gradient(135deg, #f0f4ff 0%, #faf5ff 50%, #f0f4ff 100%);
+            min-height: 100vh;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
-        h1 {
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .header-left img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .header-left span {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .header-right a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .header-right a:hover {
             color: var(--primary-color);
-            font-size: 2rem;
-            margin-bottom: 1rem;
         }
 
-        h2 {
-            color: var(--primary-color);
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        section {
-            background: var(--section-bg);
+        .language-btn {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 0.4rem 1rem;
             border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: opacity 0.2s;
         }
 
-        .contact-grid {
+        .language-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Container */
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 2.5rem 2rem 4rem;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Support Cards Grid */
+        .support-links {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
+            gap: 1.25rem;
+            margin-bottom: 3rem;
         }
 
-        .contact-card {
-            background: white;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
+        .support-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .support-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .support-card .card-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .support-card h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .support-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
         }
 
         .button {
             display: inline-block;
-            background: var(--primary-color);
+            background: var(--gradient-primary);
             color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 6px;
+            padding: 0.65rem 1.5rem;
+            border-radius: 10px;
             text-decoration: none;
-            margin: 0.5rem 0;
-            transition: opacity 0.2s ease;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
         }
 
         .button:hover {
-            opacity: 0.9;
+            opacity: 0.92;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
         }
 
-        .support-links {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-
-        .support-card {
+        .button-outline {
             background: white;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.5rem;
-            text-align: center;
+            color: var(--primary-color);
+            border: 1.5px solid var(--primary-color);
+            box-shadow: none;
         }
 
-        .support-card h3 {
-            margin-top: 0;
+        .button-outline:hover {
+            background: var(--section-bg);
+            opacity: 1;
         }
 
+        /* FAQ Section */
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(37, 99, 235, 0.15);
+        }
+
+        .faq-list {
+            margin-bottom: 3rem;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 0.75rem;
+            transition: all 0.2s ease;
+        }
+
+        .faq-item:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .faq-item h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .faq-item p,
+        .faq-item ul {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .faq-item ul {
+            padding-left: 1.25rem;
+            margin-top: 0.5rem;
+        }
+
+        .faq-item li {
+            margin-bottom: 0.25rem;
+        }
+
+        .faq-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .faq-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        .contact-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .contact-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .contact-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
         .footer {
             text-align: center;
-            margin-top: 3rem;
             padding-top: 2rem;
-            border-top: 1px solid var(--border-color);
-        }
-
-        /* Language toggle styles */
-        .language-switch {
-            display: flex;
-            justify-content: flex-end;
-            margin-bottom: 1rem;
-        }
-
-        .language-btn {
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            cursor: pointer;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            color: var(--text-secondary);
             font-size: 0.9rem;
         }
 
-        [data-lang] {
+        .footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Language toggle */
+        .lang-en,
+        .lang-zh {
             display: none;
         }
 
-        [data-lang].active {
+        .lang-en.active,
+        .lang-zh.active {
             display: block;
+        }
+
+        span.lang-en,
+        span.lang-zh {
+            display: none;
+        }
+
+        span.lang-en.active,
+        span.lang-zh.active {
+            display: inline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem 1rem 3rem;
+            }
+
+            .header {
+                padding: 0.75rem 1rem;
+            }
+
+            .header-right {
+                gap: 1rem;
+            }
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="language-switch">
+    <!-- Header -->
+    <div class="header">
+        <a href="../" class="header-left">
+            <img src="../assets/logo.png" alt="Wright">
+            <span>Wright</span>
+        </a>
+        <div class="header-right">
+            <a href="../#features" class="lang-en active">Features</a>
+            <a href="../#features" class="lang-zh">功能</a>
+            <a href="../guide/" class="lang-en active">User Guide</a>
+            <a href="../guide/" class="lang-zh">指南</a>
             <button class="language-btn" onclick="toggleLanguage()">
-                <span data-lang="en" class="active">切换到中文</span>
-                <span data-lang="zh">Switch to English</span>
+                <span class="lang-en active">中文</span>
+                <span class="lang-zh">English</span>
             </button>
         </div>
+    </div>
 
+    <div class="container">
         <!-- English Content -->
-        <div data-lang="en" class="active">
-            <h1>Wright Support Center</h1>
-            
-            <section>
-                <h2>Quick Support Links</h2>
-                <div class="support-links">
-                    <div class="support-card">
-                        <h3>Setup Guide</h3>
-                        <p>Learn how to set up your API keys and get started with Wright</p>
-                        <a href="/guide" class="button">View Setup Guide</a>
-                    </div>
-                    <div class="support-card">
-                        <h3>Report an Issue</h3>
-                        <p>Having problems? Let us know and we'll help you out</p>
-                        <a href="https://github.com/LazSol-AI/wright-website/issues" class="button">Submit Issue</a>
-                    </div>
+        <div class="lang-en active">
+            <h1 class="page-title">Support Center</h1>
+            <p class="page-subtitle">Find answers, get help, and reach out to us.</p>
+
+            <div class="support-links">
+                <div class="support-card">
+                    <div class="card-icon">📖</div>
+                    <h3>User Guide</h3>
+                    <p>Step-by-step setup: accessibility permissions, keyboard shortcuts, and custom roles.</p>
+                    <a href="../guide/" class="button">View Guide</a>
                 </div>
-            </section>
-
-            <section>
-                <h2>Contact Information</h2>
-                <div class="contact-grid">
-                    <div class="contact-card">
-                        <h3>General Support</h3>
-                        <p>Email: <a href="mailto:wright.support@lazsol.com">wright.support@lazsol.com</a></p>
-                        <p>Response Time: Within 24 hours</p>
-                    </div>
+                <div class="support-card">
+                    <div class="card-icon">🐛</div>
+                    <h3>Report an Issue</h3>
+                    <p>Found a bug or have a suggestion? Open an issue on GitHub.</p>
+                    <a href="https://github.com/LazSol-AI/wright-website/issues" class="button button-outline">Submit
+                        Issue</a>
                 </div>
-            </section>
+            </div>
 
-            <section>
-                <h2>Frequently Asked Questions</h2>
-                <h3>How do I set up my API keys?</h3>
-                <p>Visit our <a href="/guide">API Key Setup Guide</a> for detailed instructions on how to set up and secure your API keys.</p>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>What can Wright do?</h3>
+                    <p>Wright is an AI writing assistant for macOS. It provides three core functions you can trigger
+                        from any app via keyboard shortcuts or PopClip:</p>
+                    <ul>
+                        <li><strong>Rewrite</strong> — Polish selected text for grammar, tone, and clarity while keeping
+                            your original meaning.</li>
+                        <li><strong>Translate</strong> — Translate selected text between languages instantly.</li>
+                        <li><strong>Chat</strong> — Ask questions and have a conversation with AI, with the option to
+                            transition from a quick Quick View to a full Chat interface.</li>
+                    </ul>
+                </div>
 
-                <h3>Which LLM services are supported?</h3>
-                <p>Wright currently supports:</p>
-                <ul>
-                    <li>OpenAI (ChatGPT)</li>
-                    <li>Groq</li>
-                    <li>Grok (xAI)</li>
-                    <li>DeepSeek</li>
-                    <li>Gemini (Google)</li>
-                </ul>
 
-                <h3>Is my data secure?</h3>
-                <p>Yes! Wright does not collect or store any of your data. Your API keys are securely stored in your macOS Keychain. Read our <a href="/privacy">Privacy Policy</a> for more details.</p>
-            </section>
+
+                <div class="faq-item">
+                    <h3>Which AI models are supported?</h3>
+                    <p>Wright is powered by leading AI models:</p>
+                    <ul>
+                        <li>OpenAI (GPT-4o, GPT-4o mini, etc.)</li>
+                        <li>Google Gemini</li>
+                        <li>Groq</li>
+                        <li>Grok (xAI)</li>
+                        <li>DeepSeek</li>
+                    </ul>
+                    <p>You can switch between models at any time without losing your configuration.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What are Custom AI Roles?</h3>
+                    <p>Custom Roles let you create specialized AI personas with their own system prompts. For example,
+                        you can set up a "Code Reviewer" role, a "Copywriter" role, or a "Translator" role — each
+                        behaves differently based on the instructions you define. Switch between roles instantly from
+                        the Quick View or Chat.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How does PopClip integration work?</h3>
+                    <p>If you have <a href="https://www.popclip.app" target="_blank">PopClip</a> installed, Wright adds
+                        actions to PopClip's popup menu. Select text in any app, and PopClip will show options to
+                        rewrite, translate, or chat — no keyboard shortcut needed. You can download the PopClip
+                        extension from Wright's Settings.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is my data secure?</h3>
+                    <p>Yes. Wright does not collect or store your personal data. Your text is processed by the AI and
+                        the result is returned directly — Wright does not log or retain your content. See our
+                        <a href="../privacy/">Privacy Policy</a> for details.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What are the system requirements?</h3>
+                    <p>Wright requires macOS 14.0 (Sonoma) or later. It needs Accessibility permissions to read and
+                        replace selected text system-wide. The app is lightweight (~2.4 MB) and runs as a menu bar app.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do keyboard shortcuts work?</h3>
+                    <p>Wright uses global keyboard shortcuts that work in any app. The default shortcuts can be
+                        customized in Settings → Shortcuts. Select text anywhere, press the shortcut, and the result
+                        appears instantly — you can copy, insert, or expand into a Chat session.</p>
+                </div>
+            </div>
+
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-card">
+                <h3>Email Support</h3>
+                <p><a href="mailto:wright.support@lazsol.com">wright.support@lazsol.com</a></p>
+                <p>We typically respond within 24 hours.</p>
+            </div>
         </div>
 
         <!-- Chinese Content -->
-        <div data-lang="zh">
-            <h1>Wright 帮助中心</h1>
-            
-            <section>
-                <h2>快速帮助链接</h2>
-                <div class="support-links">
-                    <div class="support-card">
-                        <h3>设置指南</h3>
-                        <p>了解如何设置您的 API 密钥并开始使用 Wright</p>
-                        <a href="/guide" class="button">查看设置指南</a>
-                    </div>
-                    <div class="support-card">
-                        <h3>报告问题</h3>
-                        <p>遇到问题？让我们知道，我们会帮助您解决</p>
-                        <a href="https://github.com/LazSol-AI/wright-website/issues" class="button">提交问题</a>
-                    </div>
+        <div class="lang-zh">
+            <h1 class="page-title">帮助中心</h1>
+            <p class="page-subtitle">查找问题解答，获取帮助，与我们联系。</p>
+
+            <div class="support-links">
+                <div class="support-card">
+                    <div class="card-icon">📖</div>
+                    <h3>使用指南</h3>
+                    <p>分步设置：辅助功能权限、键盘快捷键和自定义角色。</p>
+                    <a href="../guide/" class="button">查看指南</a>
                 </div>
-            </section>
-
-            <section>
-                <h2>联系信息</h2>
-                <div class="contact-grid">
-                    <div class="contact-card">
-                        <h3>一般支持</h3>
-                        <p>电子邮件：<a href="mailto:wright.support@lazsol.com">wright.support@lazsol.com</a></p>
-                        <p>响应时间：24小时内</p>
-                    </div>
+                <div class="support-card">
+                    <div class="card-icon">🐛</div>
+                    <h3>报告问题</h3>
+                    <p>发现 Bug 或有建议？在 GitHub 上提交 Issue。</p>
+                    <a href="https://github.com/LazSol-AI/wright-website/issues" class="button button-outline">提交问题</a>
                 </div>
-            </section>
+            </div>
 
-            <section>
-                <h2>常见问题</h2>
-                <h3>如何设置我的 API 密钥？</h3>
-                <p>访问我们的<a href="/guide">API 密钥设置指南</a>，获取有关如何设置和保护 API 密钥的详细说明。</p>
+            <h2 class="section-title">常见问题</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>Wright 可以做什么？</h3>
+                    <p>Wright 是 macOS 上的 AI 写作助手。它提供三个核心功能，可通过键盘快捷键或 PopClip 在任意应用中触发：</p>
+                    <ul>
+                        <li><strong>改写</strong> — 润色选中文本的语法、语气和清晰度，同时保留原意。</li>
+                        <li><strong>翻译</strong> — 即时翻译选中文本。</li>
+                        <li><strong>对话</strong> — 向 AI 提问并进行对话，可从快捷视图无缝切换到完整聊天界面。</li>
+                    </ul>
+                </div>
 
-                <h3>支持哪些 LLM 服务？</h3>
-                <p>Wright 目前支持：</p>
-                <ul>
-                    <li>OpenAI (ChatGPT)</li>
-                    <li>Groq</li>
-                    <li>Grok (xAI)</li>
-                    <li>DeepSeek</li>
-                    <li>Gemini (Google)</li>
-                </ul>
 
-                <h3>我的数据安全吗？</h3>
-                <p>是的！Wright 不会收集或存储您的任何数据。您的 API 密钥安全地存储在您的 macOS 钥匙串中。阅读我们的<a href="/privacy">隐私政策</a>了解更多详情。</p>
-            </section>
+
+                <div class="faq-item">
+                    <h3>支持哪些 AI 模型？</h3>
+                    <p>Wright 由领先的 AI 模型驱动：</p>
+                    <ul>
+                        <li>OpenAI (GPT-4o, GPT-4o mini 等)</li>
+                        <li>Google Gemini</li>
+                        <li>Groq</li>
+                        <li>Grok (xAI)</li>
+                        <li>DeepSeek</li>
+                    </ul>
+                    <p>可随时切换模型，无需重新配置。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>什么是自定义 AI 角色？</h3>
+                    <p>自定义角色允许您创建具有专属系统提示词的 AI 人设。例如，您可以设置"代码审查"角色、"文案写手"角色或"翻译"角色——每个角色根据您定义的指令有不同的行为。可在快捷视图或聊天中即时切换角色。
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>PopClip 集成如何使用？</h3>
+                    <p>如果您安装了 <a href="https://www.popclip.app" target="_blank">PopClip</a>，Wright 会在 PopClip
+                        的弹出菜单中添加操作。在任意应用中选中文本，PopClip 将显示改写、翻译或对话选项——无需键盘快捷键。您可以在 Wright 设置中下载 PopClip 扩展。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>我的数据安全吗？</h3>
+                    <p>是的。Wright 不会收集或存储您的个人数据。您的文本由 AI 处理后直接返回结果——Wright 不会记录或保留您的内容。详情请参阅<a
+                            href="../privacy/">隐私政策</a>。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>系统要求是什么？</h3>
+                    <p>Wright 需要 macOS 14.0 (Sonoma) 或更高版本。需要辅助功能权限以在系统范围内读取和替换选中文本。应用轻量（约 2.4 MB），以菜单栏应用方式运行。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>键盘快捷键如何使用？</h3>
+                    <p>Wright 使用全局键盘快捷键，在任意应用中均可使用。默认快捷键可以在设置 → 快捷键中自定义。在任何地方选中文本，按下快捷键，结果即时显示——您可以复制、插入或展开为聊天会话。</p>
+                </div>
+            </div>
+
+            <h2 class="section-title">联系我们</h2>
+            <div class="contact-card">
+                <h3>邮箱支持</h3>
+                <p><a href="mailto:wright.support@lazsol.com">wright.support@lazsol.com</a></p>
+                <p>通常在 24 小时内回复。</p>
+            </div>
         </div>
 
         <div class="footer">
-            <p>&copy; 2025 Wright. All rights reserved.</p>
+            <p class="lang-en active">© 2026 Wright. All rights reserved. <a href="../">Home</a> | <a
+                    href="../privacy/">Privacy Policy</a></p>
+            <p class="lang-zh">© 2026 Wright. 保留所有权利。 <a href="../">首页</a> | <a href="../privacy/">隐私政策</a></p>
         </div>
     </div>
 
     <script>
         function toggleLanguage() {
-            const enElements = document.querySelectorAll('[data-lang="en"]');
-            const zhElements = document.querySelectorAll('[data-lang="zh"]');
-            
+            const enElements = document.querySelectorAll('.lang-en');
+            const zhElements = document.querySelectorAll('.lang-zh');
+
             if (enElements[0].classList.contains('active')) {
-                // Switch to Chinese
                 enElements.forEach(el => el.classList.remove('active'));
                 zhElements.forEach(el => el.classList.add('active'));
             } else {
-                // Switch to English
                 zhElements.forEach(el => el.classList.remove('active'));
                 enElements.forEach(el => el.classList.add('active'));
             }
         }
     </script>
 </body>
+
 </html>
