@@ -1311,21 +1311,7 @@ html {
     color: var(--text-primary);
 }
 
-/* Language Display Control */
-[class*="lang-"] {
-    display: none;
-}
 
-[class*="lang-"].active {
-    display: inline-block;
-}
-
-p[class*="lang-"].active,
-h1[class*="lang-"].active,
-h2[class*="lang-"].active,
-h3[class*="lang-"].active {
-    display: block;
-}
 
 /* Responsive adjustments for language toggle */
 @media (max-width: 768px) {
@@ -1337,9 +1323,7 @@ h3[class*="lang-"].active {
         margin-left: auto;
     }
 
-    .language-toggle {
-        margin-left: auto;
-    }
+
 }
 
 /* Pricing Section Styles */
@@ -1565,4 +1549,122 @@ h3[class*="lang-"].active {
         transform: rotate(90deg);
         padding: 0.5rem 0;
     }
+}
+
+/* Language Dropdown Styles */
+.language-dropdown {
+    position: relative;
+    margin-left: 1.5rem;
+}
+
+/* Invisible bridge for hover stability */
+.language-dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    /* Covers the gap to the menu */
+}
+
+.language-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    transition: all 0.2s ease;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.language-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.globe-icon {
+    font-size: 1.1em;
+}
+
+.arrow-icon {
+    font-size: 0.8em;
+    opacity: 0.6;
+    transition: transform 0.2s ease;
+}
+
+.language-dropdown:hover .arrow-icon {
+    transform: rotate(180deg);
+}
+
+.language-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 200px;
+    /* Wider to accommodate longer names */
+    max-height: 400px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1000;
+    padding: 6px;
+}
+
+.language-dropdown:hover .language-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.language-option:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--primary-color);
+}
+
+.language-option.active {
+    background: rgba(var(--primary-color-rgb), 0.1);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Scrollbar for language menu */
+.language-menu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.language-menu::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.language-menu::-webkit-scrollbar-track {
+    background: transparent;
 }

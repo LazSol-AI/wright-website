@@ -85,20 +85,110 @@
             color: var(--primary-color);
         }
 
+        /* Language Dropdown Styles */
+        .language-dropdown {
+            position: relative;
+            margin-left: 1.5rem;
+        }
+
         .language-btn {
-            background: var(--gradient-primary);
-            color: white;
-            border: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
             padding: 0.4rem 1rem;
-            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
             cursor: pointer;
-            font-size: 0.85rem;
-            font-weight: 500;
-            transition: opacity 0.2s;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            transition: all 0.2s ease;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
         }
 
         .language-btn:hover {
-            opacity: 0.9;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .globe-icon {
+            font-size: 1.1em;
+        }
+
+        .arrow-icon {
+            font-size: 0.8em;
+            opacity: 0.6;
+            transition: transform 0.2s ease;
+        }
+
+        .language-dropdown:hover .arrow-icon {
+            transform: rotate(180deg);
+        }
+
+        .language-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            width: 200px;
+            max-height: 400px;
+            overflow-y: auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 12px;
+            box-shadow:
+                0 4px 20px rgba(0, 0, 0, 0.1),
+                0 0 0 1px rgba(0, 0, 0, 0.05);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 1000;
+            padding: 6px;
+        }
+
+        .language-dropdown:hover .language-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .language-option {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            border-radius: 8px;
+            transition: background 0.2s ease;
+        }
+
+        .language-option:hover {
+            background: rgba(0, 0, 0, 0.05);
+            color: var(--primary-color);
+        }
+
+        .language-option.active {
+            background: rgba(var(--primary-color-rgb), 0.1);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* Scrollbar for language menu */
+        .language-menu::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .language-menu::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+        }
+
+        .language-menu::-webkit-scrollbar-track {
+            background: transparent;
         }
 
         /* Container */
@@ -306,26 +396,6 @@
         }
 
         /* Language toggle */
-        .lang-en,
-        .lang-zh {
-            display: none;
-        }
-
-        .lang-en.active,
-        .lang-zh.active {
-            display: block;
-        }
-
-        span.lang-en,
-        span.lang-zh {
-            display: none;
-        }
-
-        span.lang-en.active,
-        span.lang-zh.active {
-            display: inline;
-        }
-
         @media (max-width: 600px) {
             .container {
                 padding: 1.5rem 1rem 3rem;
@@ -350,221 +420,139 @@
             <span>Wright</span>
         </a>
         <div class="header-right">
-            <a href="../#features" class="lang-en active">Features</a>
-            <a href="../#features" class="lang-zh">功能</a>
-            <a href="../guide/" class="lang-en active">User Guide</a>
-            <a href="../guide/" class="lang-zh">指南</a>
-            <button class="language-btn" onclick="toggleLanguage()">
-                <span class="lang-en active">中文</span>
-                <span class="lang-zh">English</span>
-            </button>
+            <a href="../#features" data-i18n="nav.features">Features</a>
+            <a href="../guide/" data-i18n="nav.guide">User Guide</a>
+            <div class="language-dropdown">
+                <button class="language-btn">
+                    <span class="globe-icon">🌐</span>
+                    <span class="text">English</span>
+                    <span class="arrow-icon">▼</span>
+                </button>
+                <div class="language-menu">
+                    <a href="#" class="language-option" data-lang-switch="en">English</a>
+                    <a href="#" class="language-option" data-lang-switch="zh">中文</a>
+                    <a href="#" class="language-option" data-lang-switch="es">Español</a>
+                    <a href="#" class="language-option" data-lang-switch="fr">Français</a>
+                    <a href="#" class="language-option" data-lang-switch="de">Deutsch</a>
+                    <a href="#" class="language-option" data-lang-switch="ja">日本語</a>
+                    <a href="#" class="language-option" data-lang-switch="ko">한국어</a>
+                    <a href="#" class="language-option" data-lang-switch="ru">Русский</a>
+                    <a href="#" class="language-option" data-lang-switch="pt">Português</a>
+                    <a href="#" class="language-option" data-lang-switch="it">Italiano</a>
+                    <a href="#" class="language-option" data-lang-switch="hi">हिन्दी</a>
+                    <a href="#" class="language-option" data-lang-switch="ar">العربية</a>
+                    <a href="#" class="language-option" data-lang-switch="tr">Türkçe</a>
+                    <a href="#" class="language-option" data-lang-switch="vi">Tiếng Việt</a>
+                    <a href="#" class="language-option" data-lang-switch="nl">Nederlands</a>
+                    <a href="#" class="language-option" data-lang-switch="pl">Polski</a>
+                    <a href="#" class="language-option" data-lang-switch="id">Bahasa Indonesia</a>
+                    <a href="#" class="language-option" data-lang-switch="th">ไทย</a>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="container">
-        <!-- English Content -->
-        <div class="lang-en active">
-            <h1 class="page-title">Support Center</h1>
-            <p class="page-subtitle">Find answers, get help, and reach out to us.</p>
+        <h1 class="page-title" data-i18n="support.title">Support Center</h1>
+        <p class="page-subtitle" data-i18n="support.subtitle">Find answers, get help, and reach out to us.</p>
 
-            <div class="support-links">
-                <div class="support-card">
-                    <div class="card-icon">📖</div>
-                    <h3>User Guide</h3>
-                    <p>Step-by-step setup: accessibility permissions, keyboard shortcuts, and custom roles.</p>
-                    <a href="../guide/" class="button">View Guide</a>
-                </div>
-                <div class="support-card">
-                    <div class="card-icon">🐛</div>
-                    <h3>Report an Issue</h3>
-                    <p>Found a bug or have a suggestion? Open an issue on GitHub.</p>
-                    <a href="https://github.com/LazSol-AI/wright-website/issues" class="button button-outline">Submit
-                        Issue</a>
-                </div>
+        <div class="support-links">
+            <div class="support-card">
+                <div class="card-icon">📖</div>
+                <h3 data-i18n="support.links.guide.title">User Guide</h3>
+                <p data-i18n="support.links.guide.desc">Step-by-step setup: accessibility permissions, keyboard
+                    shortcuts, and custom roles.</p>
+                <a href="../guide/" class="button" data-i18n="support.links.guide.cta">View Guide</a>
             </div>
-
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <h3>What can Wright do?</h3>
-                    <p>Wright is an AI writing assistant for macOS. It provides three core functions you can trigger
-                        from any app via keyboard shortcuts or PopClip:</p>
-                    <ul>
-                        <li><strong>Rewrite</strong> — Polish selected text for grammar, tone, and clarity while keeping
-                            your original meaning.</li>
-                        <li><strong>Translate</strong> — Translate selected text between languages instantly.</li>
-                        <li><strong>Chat</strong> — Ask questions and have a conversation with AI, with the option to
-                            transition from a quick Quick View to a full Chat interface.</li>
-                    </ul>
-                </div>
-
-
-
-                <div class="faq-item">
-                    <h3>Which AI models are supported?</h3>
-                    <p>Wright is powered by leading AI models:</p>
-                    <ul>
-                        <li>OpenAI (GPT-4o, GPT-4o mini, etc.)</li>
-                        <li>Google Gemini</li>
-                        <li>Groq</li>
-                        <li>Grok (xAI)</li>
-                        <li>DeepSeek</li>
-                    </ul>
-                    <p>You can switch between models at any time without losing your configuration.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>What are Custom AI Roles?</h3>
-                    <p>Custom Roles let you create specialized AI personas with their own system prompts. For example,
-                        you can set up a "Code Reviewer" role, a "Copywriter" role, or a "Translator" role — each
-                        behaves differently based on the instructions you define. Switch between roles instantly from
-                        the Quick View or Chat.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>How does PopClip integration work?</h3>
-                    <p>If you have <a href="https://www.popclip.app" target="_blank">PopClip</a> installed, Wright adds
-                        actions to PopClip's popup menu. Select text in any app, and PopClip will show options to
-                        rewrite, translate, or chat — no keyboard shortcut needed. You can download the PopClip
-                        extension from Wright's Settings.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Is my data secure?</h3>
-                    <p>Yes. Wright does not collect or store your personal data. Your text is processed by the AI and
-                        the result is returned directly — Wright does not log or retain your content. See our
-                        <a href="../privacy/">Privacy Policy</a> for details.
-                    </p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>What are the system requirements?</h3>
-                    <p>Wright requires macOS 14.0 (Sonoma) or later. It needs Accessibility permissions to read and
-                        replace selected text system-wide. The app is lightweight (~2.4 MB) and runs as a menu bar app.
-                    </p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>How do keyboard shortcuts work?</h3>
-                    <p>Wright uses global keyboard shortcuts that work in any app. The default shortcuts can be
-                        customized in Settings → Shortcuts. Select text anywhere, press the shortcut, and the result
-                        appears instantly — you can copy, insert, or expand into a Chat session.</p>
-                </div>
-            </div>
-
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-card">
-                <h3>Email Support</h3>
-                <p><a href="mailto:wright.support@lazsol.com">wright.support@lazsol.com</a></p>
-                <p>We typically respond within 24 hours.</p>
+            <div class="support-card">
+                <div class="card-icon">🐛</div>
+                <h3 data-i18n="support.links.issue.title">Report an Issue</h3>
+                <p data-i18n="support.links.issue.desc">Found a bug or have a suggestion? Open an issue on GitHub.</p>
+                <a href="https://github.com/LazSol-AI/wright-website/issues" class="button button-outline"
+                    data-i18n="support.links.issue.cta">Submit Issue</a>
             </div>
         </div>
 
-        <!-- Chinese Content -->
-        <div class="lang-zh">
-            <h1 class="page-title">帮助中心</h1>
-            <p class="page-subtitle">查找问题解答，获取帮助，与我们联系。</p>
-
-            <div class="support-links">
-                <div class="support-card">
-                    <div class="card-icon">📖</div>
-                    <h3>使用指南</h3>
-                    <p>分步设置：辅助功能权限、键盘快捷键和自定义角色。</p>
-                    <a href="../guide/" class="button">查看指南</a>
-                </div>
-                <div class="support-card">
-                    <div class="card-icon">🐛</div>
-                    <h3>报告问题</h3>
-                    <p>发现 Bug 或有建议？在 GitHub 上提交 Issue。</p>
-                    <a href="https://github.com/LazSol-AI/wright-website/issues" class="button button-outline">提交问题</a>
-                </div>
+        <h2 class="section-title" data-i18n="support.faq.title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <h3 data-i18n="support.faq.q1.q">What can Wright do?</h3>
+                <p data-i18n="support.faq.q1.a">Wright is an AI writing assistant for macOS. It provides three core
+                    functions you can trigger from any app via keyboard shortcuts or PopClip:</p>
+                <ul>
+                    <li data-i18n="support.faq.q1.list.0"><strong>Rewrite</strong> — Polish selected text for grammar,
+                        tone, and clarity while keeping your original meaning.</li>
+                    <li data-i18n="support.faq.q1.list.1"><strong>Translate</strong> — Translate selected text between
+                        languages instantly.</li>
+                    <li data-i18n="support.faq.q1.list.2"><strong>Chat</strong> — Ask questions and have a conversation
+                        with AI, with the option to transition from a quick Quick View to a full Chat interface.</li>
+                </ul>
             </div>
 
-            <h2 class="section-title">常见问题</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <h3>Wright 可以做什么？</h3>
-                    <p>Wright 是 macOS 上的 AI 写作助手。它提供三个核心功能，可通过键盘快捷键或 PopClip 在任意应用中触发：</p>
-                    <ul>
-                        <li><strong>改写</strong> — 润色选中文本的语法、语气和清晰度，同时保留原意。</li>
-                        <li><strong>翻译</strong> — 即时翻译选中文本。</li>
-                        <li><strong>对话</strong> — 向 AI 提问并进行对话，可从快捷视图无缝切换到完整聊天界面。</li>
-                    </ul>
-                </div>
-
-
-
-                <div class="faq-item">
-                    <h3>支持哪些 AI 模型？</h3>
-                    <p>Wright 由领先的 AI 模型驱动：</p>
-                    <ul>
-                        <li>OpenAI (GPT-4o, GPT-4o mini 等)</li>
-                        <li>Google Gemini</li>
-                        <li>Groq</li>
-                        <li>Grok (xAI)</li>
-                        <li>DeepSeek</li>
-                    </ul>
-                    <p>可随时切换模型，无需重新配置。</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>什么是自定义 AI 角色？</h3>
-                    <p>自定义角色允许您创建具有专属系统提示词的 AI 人设。例如，您可以设置"代码审查"角色、"文案写手"角色或"翻译"角色——每个角色根据您定义的指令有不同的行为。可在快捷视图或聊天中即时切换角色。
-                    </p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>PopClip 集成如何使用？</h3>
-                    <p>如果您安装了 <a href="https://www.popclip.app" target="_blank">PopClip</a>，Wright 会在 PopClip
-                        的弹出菜单中添加操作。在任意应用中选中文本，PopClip 将显示改写、翻译或对话选项——无需键盘快捷键。您可以在 Wright 设置中下载 PopClip 扩展。</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>我的数据安全吗？</h3>
-                    <p>是的。Wright 不会收集或存储您的个人数据。您的文本由 AI 处理后直接返回结果——Wright 不会记录或保留您的内容。详情请参阅<a
-                            href="../privacy/">隐私政策</a>。</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>系统要求是什么？</h3>
-                    <p>Wright 需要 macOS 14.0 (Sonoma) 或更高版本。需要辅助功能权限以在系统范围内读取和替换选中文本。应用轻量（约 2.4 MB），以菜单栏应用方式运行。</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>键盘快捷键如何使用？</h3>
-                    <p>Wright 使用全局键盘快捷键，在任意应用中均可使用。默认快捷键可以在设置 → 快捷键中自定义。在任何地方选中文本，按下快捷键，结果即时显示——您可以复制、插入或展开为聊天会话。</p>
-                </div>
+            <div class="faq-item">
+                <h3 data-i18n="support.faq.q2.q">Which AI models are supported?</h3>
+                <p data-i18n="support.faq.q2.a">Wright is powered by leading AI models:</p>
+                <ul data-i18n-list="support.faq.q2.list">
+                    <li data-i18n-index="0">OpenAI (GPT-4o, GPT-4o mini, etc.)</li>
+                    <li data-i18n-index="1">Google Gemini</li>
+                    <li data-i18n-index="2">Groq</li>
+                    <li data-i18n-index="3">Grok (xAI)</li>
+                </ul>
             </div>
 
-            <h2 class="section-title">联系我们</h2>
-            <div class="contact-card">
-                <h3>邮箱支持</h3>
-                <p><a href="mailto:wright.support@lazsol.com">wright.support@lazsol.com</a></p>
-                <p>通常在 24 小时内回复。</p>
+            <div class="faq-item">
+                <h3 data-i18n="support.faq.q3.q">What are Custom AI Roles?</h3>
+                <p data-i18n="support.faq.q3.a">Custom Roles let you create specialized AI personas with their own
+                    system prompts. For example, you can set up a "Code Reviewer" role, a "Copywriter" role, or a
+                    "Translator" role — each behaves differently based on the instructions you define. Switch between
+                    roles instantly from the Quick View or Chat.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 data-i18n="support.faq.q4.q">How does PopClip integration work?</h3>
+                <p data-i18n="support.faq.q4.a">If you have <a href="https://www.popclip.app"
+                        target="_blank">PopClip</a> installed, Wright adds actions to PopClip's popup menu. Select text
+                    in any app, and PopClip will show options to rewrite, translate, or chat — no keyboard shortcut
+                    needed. You can download the PopClip extension from Wright's Settings.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 data-i18n="support.faq.q5.q">Is my data secure?</h3>
+                <p data-i18n="support.faq.q5.a">Yes. Wright does not collect or store your personal data. Your text is
+                    processed by the AI and the result is returned directly — Wright does not log or retain your
+                    content. See our <a href="../privacy/">Privacy Policy</a> for details.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 data-i18n="support.faq.q6.q">What are the system requirements?</h3>
+                <p data-i18n="support.faq.q6.a">Wright requires macOS 14.0 (Sonoma) or later. It needs Accessibility
+                    permissions to read and replace selected text system-wide. The app is lightweight (~2.4 MB) and runs
+                    as a menu bar app.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 data-i18n="support.faq.q7.q">How do keyboard shortcuts work?</h3>
+                <p data-i18n="support.faq.q7.a">Wright uses global keyboard shortcuts that work in any app. The default
+                    shortcuts can be customized in Settings → Shortcuts. Select text anywhere, press the shortcut, and
+                    the result appears instantly — you can copy, insert, or expand into a Chat session.</p>
             </div>
         </div>
 
-        <div class="footer">
-            <p class="lang-en active">© 2026 Wright. All rights reserved. <a href="../">Home</a> | <a
-                    href="../privacy/">Privacy Policy</a></p>
-            <p class="lang-zh">© 2026 Wright. 保留所有权利。 <a href="../">首页</a> | <a href="../privacy/">隐私政策</a></p>
+        <h2 class="section-title" data-i18n="support.contact.title">Contact Us</h2>
+        <div class="contact-card">
+            <h3 data-i18n="support.contact.email">Email Support</h3>
+            <p><a href="mailto:wright.support@lazsol.com">wright.support@lazsol.com</a></p>
+            <p data-i18n="support.contact.response">We typically respond within 24 hours.</p>
         </div>
     </div>
 
-    <script>
-        function toggleLanguage() {
-            const enElements = document.querySelectorAll('.lang-en');
-            const zhElements = document.querySelectorAll('.lang-zh');
+    <div class="footer">
+        <p><span data-i18n="footer.rights">© 2026 Wright. All rights reserved.</span> <a href="../"
+                data-i18n="nav.features">Home</a> | <a href="../privacy/" data-i18n="footer.privacy">Privacy Policy</a>
+        </p>
+    </div>
 
-            if (enElements[0].classList.contains('active')) {
-                enElements.forEach(el => el.classList.remove('active'));
-                zhElements.forEach(el => el.classList.add('active'));
-            } else {
-                zhElements.forEach(el => el.classList.remove('active'));
-                enElements.forEach(el => el.classList.add('active'));
-            }
-        }
-    </script>
+    <script src="../assets/js/translations.js"></script>
 </body>
 
 </html>

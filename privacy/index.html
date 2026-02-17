@@ -1,125 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Wright</title>
+    <title data-i18n="privacy.meta.title">Privacy Policy | Wright</title>
+    <meta name="description" data-i18n-attr="content=privacy.meta.desc"
+        content="Wright's Privacy Policy. We do not collect personal usage data.">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/wright_logo32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/wright_logo16.png">
     <style>
         :root {
             --primary-color: #2563eb;
+            --primary-hsl: 220, 80%, 53%;
+            --secondary-color: #7c3aed;
             --text-color: #1f2937;
+            --text-secondary: #6b7280;
             --bg-color: #ffffff;
             --section-bg: #f8fafc;
             --border-color: #e2e8f0;
+            --gradient-primary: linear-gradient(135deg, #2563eb, #7c3aed);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
             color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
+            background: linear-gradient(135deg, #f0f4ff 0%, #faf5ff 50%, #f0f4ff 100%);
+            min-height: 100vh;
         }
 
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .header-left img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .header-left span {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .header-right a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .header-right a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Language Dropdown Styles */
+        .language-dropdown {
+            position: relative;
+            margin-left: 1.5rem;
+        }
+
+        .language-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.4rem 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            transition: all 0.2s ease;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        .language-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .globe-icon {
+            font-size: 1.1em;
+        }
+
+        .arrow-icon {
+            font-size: 0.8em;
+            opacity: 0.6;
+            transition: transform 0.2s ease;
+        }
+
+        .language-dropdown:hover .arrow-icon {
+            transform: rotate(180deg);
+        }
+
+        .language-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            width: 200px;
+            max-height: 400px;
+            overflow-y: auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 12px;
+            box-shadow:
+                0 4px 20px rgba(0, 0, 0, 0.1),
+                0 0 0 1px rgba(0, 0, 0, 0.05);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 1000;
+            padding: 6px;
+        }
+
+        .language-dropdown:hover .language-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .language-option {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            border-radius: 8px;
+            transition: background 0.2s ease;
+        }
+
+        .language-option:hover {
+            background: rgba(0, 0, 0, 0.05);
+            color: var(--primary-color);
+        }
+
+        .language-option.active {
+            background: rgba(var(--primary-color-rgb), 0.1);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* Scrollbar for language menu */
+        .language-menu::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .language-menu::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+        }
+
+        .language-menu::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        /* Container */
         .container {
-            max-width: 800px;
+            max-width: 860px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 2.5rem 2rem 4rem;
         }
 
         h1 {
-            color: var(--primary-color);
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        h2 {
-            color: var(--primary-color);
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        section {
-            background: var(--section-bg);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
         }
 
         .date {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        section p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        section ul {
+            padding-left: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        section li {
+            margin-bottom: 0.5rem;
         }
 
         .highlight {
-            background: #f0f9ff;
+            background: rgba(37, 99, 235, 0.05);
             border-left: 4px solid var(--primary-color);
-            padding: 1rem;
-            margin: 1rem 0;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .highlight strong {
+            display: block;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+
+        .footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem 1rem 3rem;
+            }
+
+            .header {
+                padding: 0.75rem 1rem;
+            }
+
+            .header-right {
+                gap: 1rem;
+            }
         }
     </style>
 </head>
+
 <body>
+    <!-- Header -->
+    <div class="header">
+        <a href="../" class="header-left">
+            <img src="../assets/logo.png" alt="Wright">
+            <span>Wright</span>
+        </a>
+        <div class="header-right">
+            <a href="../#features" data-i18n="nav.features">Features</a>
+            <a href="../guide/" data-i18n="nav.guide">User Guide</a>
+            <a href="../support/" data-i18n="nav.support">Support</a>
+            <div class="language-dropdown">
+                <button class="language-btn">
+                    <span class="globe-icon">🌐</span>
+                    <span class="text">English</span>
+                    <span class="arrow-icon">▼</span>
+                </button>
+                <div class="language-menu">
+                    <a href="#" class="language-option" data-lang-switch="en">English</a>
+                    <a href="#" class="language-option" data-lang-switch="zh">中文</a>
+                    <a href="#" class="language-option" data-lang-switch="es">Español</a>
+                    <a href="#" class="language-option" data-lang-switch="fr">Français</a>
+                    <a href="#" class="language-option" data-lang-switch="de">Deutsch</a>
+                    <a href="#" class="language-option" data-lang-switch="ja">日本語</a>
+                    <a href="#" class="language-option" data-lang-switch="ko">한국어</a>
+                    <a href="#" class="language-option" data-lang-switch="ru">Русский</a>
+                    <a href="#" class="language-option" data-lang-switch="pt">Português</a>
+                    <a href="#" class="language-option" data-lang-switch="it">Italiano</a>
+                    <a href="#" class="language-option" data-lang-switch="hi">हिन्दी</a>
+                    <a href="#" class="language-option" data-lang-switch="ar">العربية</a>
+                    <a href="#" class="language-option" data-lang-switch="tr">Türkçe</a>
+                    <a href="#" class="language-option" data-lang-switch="vi">Tiếng Việt</a>
+                    <a href="#" class="language-option" data-lang-switch="nl">Nederlands</a>
+                    <a href="#" class="language-option" data-lang-switch="pl">Polski</a>
+                    <a href="#" class="language-option" data-lang-switch="id">Bahasa Indonesia</a>
+                    <a href="#" class="language-option" data-lang-switch="th">ไทย</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
-        <h1>Privacy Policy for Wright</h1>
-        <p class="date">Last Updated: March 2024</p>
+        <h1 data-i18n="privacy.title">Privacy Policy for Wright</h1>
+        <p class="date" data-i18n="privacy.lastUpdated">Last Updated: March 2024</p>
 
         <section>
-            <h2>Our Commitment to Privacy</h2>
-            <p>Wright is designed with your privacy in mind. We believe in transparency and are committed to protecting your privacy and personal information.</p>
-            
+            <h2 data-i18n="privacy.commitment.title">Our Commitment to Privacy</h2>
+            <p data-i18n="privacy.commitment.text">Wright is designed with your privacy in mind. We believe in
+                transparency and are committed to protecting your privacy and personal information.</p>
+
             <div class="highlight">
-                <strong>Key Privacy Points:</strong>
-                <ul>
-                    <li>We do not collect any personal information</li>
-                    <li>We do not track your usage</li>
-                    <li>We do not store any of your data</li>
+                <strong data-i18n="privacy.commitment.keyPoints.title">Key Privacy Points:</strong>
+                <ul data-i18n-list="privacy.commitment.keyPoints.list">
+                    <li data-i18n-index="0">We do not collect any personal information</li>
+                    <li data-i18n-index="1">We do not track your usage</li>
+                    <li data-i18n-index="2">We do not store any of your data</li>
                 </ul>
             </div>
         </section>
 
         <section>
-            <h2>Data Collection and Storage</h2>
-            <p>Wright does not collect, store, or transmit any personal information about our users. The app operates entirely on your local device.</p>
-            
-            <h3>API Keys</h3>
-            <p>The only data you need to provide is your API key for the Language Learning Model (LLM) services you wish to use. These API keys are:</p>
-            <ul>
-                <li>Stored securely in your macOS Keychain</li>
-                <li>Never transmitted to our servers</li>
-                <li>Only used to communicate directly with your chosen LLM services</li>
-                <li>Can be removed at any time through the app or your Keychain Access</li>
+            <h2 data-i18n="privacy.dataCollection.title">Data Collection and Storage</h2>
+            <p data-i18n="privacy.dataCollection.text">Wright does not collect, store, or transmit any personal
+                information about our users. The app operates entirely on your local device.</p>
+
+            <h3 data-i18n="privacy.dataCollection.apiKeys.title">API Keys</h3>
+            <p data-i18n="privacy.dataCollection.apiKeys.text">The only data you need to provide is your API key for the
+                Language Learning Model (LLM) services you wish to use. These API keys are:</p>
+            <ul data-i18n-list="privacy.dataCollection.apiKeys.list">
+                <li data-i18n-index="0">Stored securely in your macOS Keychain</li>
+                <li data-i18n-index="1">Never transmitted to our servers</li>
+                <li data-i18n-index="2">Only used to communicate directly with your chosen LLM services</li>
+                <li data-i18n-index="3">Can be removed at any time through the app or your Keychain Access</li>
             </ul>
         </section>
 
         <section>
-            <h2>Third-Party Services</h2>
-            <p>When you use Wright to interact with LLM services (such as OpenAI, Groq, etc.), your interactions are governed by the privacy policies of those services. We recommend reviewing the privacy policies of the LLM services you choose to use:</p>
-            <ul>
-                <li><a href="https://openai.com/privacy" target="_blank">OpenAI Privacy Policy</a></li>
-                <li><a href="https://groq.com/privacy" target="_blank">Groq Privacy Policy</a></li>
-                <li><a href="https://platform.deepseek.com/privacy" target="_blank">DeepSeek Privacy Policy</a></li>
+            <h2 data-i18n="privacy.thirdParty.title">Third-Party Services</h2>
+            <p data-i18n="privacy.thirdParty.text">When you use Wright to interact with LLM services (such as OpenAI,
+                Groq, etc.), your interactions are governed by the privacy policies of those services. We recommend
+                reviewing the privacy policies of the LLM services you choose to use:</p>
+            <ul data-i18n-list="privacy.thirdParty.list">
+                <li data-i18n-index="0"><a href="https://openai.com/privacy" target="_blank">OpenAI Privacy Policy</a>
+                </li>
+                <li data-i18n-index="1"><a href="https://wow.groq.com/privacy-policy/" target="_blank">Groq Privacy
+                        Policy</a></li>
+                <li data-i18n-index="2"><a href="https://x.ai/privacy" target="_blank">xAI Privacy Policy</a></li>
             </ul>
         </section>
 
         <section>
-            <h2>Data Security</h2>
-            <p>Your API keys are stored securely in the macOS Keychain, which provides encrypted storage for sensitive data. This is the same system that macOS uses to store passwords and other secure information.</p>
+            <h2 data-i18n="privacy.security.title">Data Security</h2>
+            <p data-i18n="privacy.security.text">Your API keys are stored securely in the macOS Keychain, which provides
+                encrypted storage for sensitive data. This is the same system that macOS uses to store passwords and
+                other secure information.</p>
         </section>
 
         <section>
-            <h2>Changes to This Privacy Policy</h2>
-            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+            <h2 data-i18n="privacy.changes.title">Changes to This Privacy Policy</h2>
+            <p data-i18n="privacy.changes.text">We may update our Privacy Policy from time to time. We will notify you
+                of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
         </section>
 
         <section>
-            <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+            <h2 data-i18n="privacy.contact.title">Contact Us</h2>
+            <p data-i18n="privacy.contact.text">If you have any questions about this Privacy Policy, please contact us
+                at:</p>
             <p><a href="mailto:ops@lazsol.com">ops@lazsol.com</a></p>
         </section>
     </div>
+
+    <div class="footer">
+        <p><span data-i18n="footer.rights">© 2026 Wright. All rights reserved.</span> <a href="../"
+                data-i18n="nav.features">Home</a> | <a href="../support/" data-i18n="nav.support">Support</a></p>
+    </div>
+
+    <script src="../assets/js/translations.js"></script>
 </body>
+
 </html>
