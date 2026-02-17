@@ -181,7 +181,7 @@ nav {
 
 /* Ultra-modern hero section with advanced 3D effects */
 .hero {
-    padding: 8rem 2rem 4rem;
+    padding: 8rem 2rem 2rem;
     display: flex;
     align-items: center;
     max-width: 1200px;
@@ -353,7 +353,7 @@ nav {
 
 /* How It Works Section */
 .how-it-works {
-    padding: 100px 0 80px;
+    padding: 40px 0 80px;
     background: linear-gradient(to bottom, #fff, var(--light-gray));
     overflow: hidden;
 }
