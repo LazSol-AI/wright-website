@@ -5308,14 +5308,36 @@ const translations = {
 
 class I18n {
     constructor() {
-        this.currentLang = localStorage.getItem('language') || 'en';
+
         this.languages = {
             en: "English", zh: "中文", es: "Español", fr: "Français", de: "Deutsch",
             ja: "日本語", ko: "한국어", ru: "Русский", pt: "Português", it: "Italiano",
             hi: "हिन्दी", ar: "العربية", tr: "Türkçe", vi: "Tiếng Việt", nl: "Nederlands",
             pl: "Polski", id: "Bahasa Indonesia", th: "ไทย"
         };
+        this.currentLang = this.detectLanguage();
         this.init();
+    }
+
+    detectLanguage() {
+        // 1. Check saved preference
+        const savedLang = localStorage.getItem('language');
+        if (savedLang && this.languages[savedLang]) {
+            return savedLang;
+        }
+
+        // 2. Check browser languages
+        const browserLangs = navigator.languages || [navigator.language];
+        for (const lang of browserLangs) {
+            // Get base language code (e.g., 'en-US' -> 'en', 'zh-CN' -> 'zh')
+            const baseLang = lang.split('-')[0].toLowerCase();
+            if (this.languages[baseLang]) {
+                return baseLang;
+            }
+        }
+
+        // 3. Fallback to English
+        return 'en';
     }
 
     init() {
