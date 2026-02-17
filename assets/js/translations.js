@@ -274,11 +274,11 @@ const translations = {
             subtitle: "A native macOS assistant that stays out of your way until you need it",
             everywhere: {
                 title: "Works Everywhere",
-                description: "Global keyboard shortcuts and PopClip integration mean Wright works in any app — Mail, Notes, Slack, your browser, or any text field on your Mac."
+                description: "Global keyboard shortcuts and PopClip integration, works in any app — Mail, Notes, Slack, your browser, or any text field on your Mac."
             },
             free: {
                 title: "Free to Start",
-                description: "Download and start using Wright immediately — no API key, no configuration. A free plan is included so you can try every feature before upgrading."
+                description: "No API key, no configuration. A free plan is included so you can try every feature before upgrading."
             }
         },
         download: {
@@ -569,11 +569,11 @@ const translations = {
             subtitle: "原生 macOS 助手，在您需要之前绝不打扰",
             everywhere: {
                 title: "随处可用",
-                description: "全局键盘快捷键和 PopClip 集成意味着 Wright 可在任何应用中工作——邮件、备忘录、Slack、浏览器或您 Mac 上的任何文本字段。"
+                description: "全局键盘快捷键和 PopClip 集成，在任何应用程序中都能使用——邮件、笔记、Slack、你的浏览器，或你 Mac 上的任何文本字段。"
             },
             free: {
                 title: "免费开始",
-                description: "立即下载并开始使用 Wright——无需 API 密钥，无需配置。包含免费计划，因此您可以在升级前试用每个功能。"
+                description: "无需 API 密钥，无需配置。包含免费计划，因此您可以在升级前试用每个功能。"
             }
         },
         download: {
@@ -1036,53 +1036,53 @@ const translations = {
                 title: "Confidentialité | Wright",
                 desc: "Politique de confidentialité de Wright."
             },
-            lastUpdated: "Dernière MAJ : Mars 2024",
+            lastUpdated: "Dernière mise à jour : Mars 2024",
             commitment: {
-                title: "Notre Engagement",
-                text: "Nous protégeons votre vie privée.",
+                title: "Notre Engagement de Confidentialité",
+                text: "Wright est conçu avec votre confidentialité à l'esprit. Nous croyons en la transparence et minimisons la collecte de données au strict nécessaire.",
                 keyPoints: {
-                    title: "Points Clés :",
+                    title: "Points Clés de Confidentialité :",
                     list: [
-                        "Pas de collecte de données personnelles",
-                        "Pas de suivi d'utilisation",
-                        "Pas de stockage de vos données"
+                        "Nous n'accédons ni ne stockons le contenu de vos conversations",
+                        "Nous collectons uniquement votre e-mail pour la gestion du compte",
+                        "Nous utilisons un minimum de connexions pour la fourniture du service"
                     ]
                 }
             },
             dataCollection: {
-                title: "Collecte de Données",
-                text: "Wright ne collecte aucune information personnelle.",
+                title: "Collecte de Données et Architecture",
+                text: "Wright utilise un service API backend sécurisé pour traiter vos demandes. Nous ne stockons pas l'historique ou le contenu de vos conversations.",
                 apiKeys: {
-                    title: "Clés API",
-                    text: "Seules les clés API sont nécessaires.",
+                    title: "Architecture de Service",
+                    text: "Toutes les interactions sont traitées via notre API sécurisée. Votre contenu est transmis uniquement pour générer des réponses et n'est jamais sauvegardé.",
                     list: [
-                        "Stockées dans le Trousseau macOS",
-                        "Jamais transmises à nos serveurs",
-                        "Communication directe avec les LLM",
-                        "Supprimables à tout moment"
+                        "Nous collectons uniquement l'e-mail de votre compte",
+                        "Données minimales utilisées pour le dépannage",
+                        "Aucune conservation des données de conversation",
+                        "Mise en œuvre sécurisée"
                     ]
                 }
             },
             thirdParty: {
                 title: "Services Tiers",
-                text: "Vos interactions avec les LLM dépendent de leurs politiques.",
+                text: "Lorsque vous utilisez Wright pour interagir avec des services LLM (tels que OpenAI, Groq, etc.), vos interactions sont régies par les politiques de confidentialité de ces services. Nous vous recommandons de consulter les politiques de confidentialité des services LLM que vous choisissez d'utiliser :",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Politique de Confidentialité OpenAI</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Politique de Confidentialité Groq</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Politique de Confidentialité xAI</a>"
                 ]
             },
             security: {
                 title: "Sécurité des Données",
-                text: "Clés stockées dans le Trousseau macOS chiffré."
+                text: "Vos informations de compte sont stockées en toute sécurité. Nous utilisons des mesures de sécurité standard de l'industrie pour protéger vos données."
             },
             changes: {
-                title: "Changements",
-                text: "Nous notifierons des mises à jour."
+                title: "Modifications de cette Politique de Confidentialité",
+                text: "Nous pouvons mettre à jour notre Politique de Confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle Politique de Confidentialité sur cette page et en mettant à jour la date de \"Dernière mise à jour\"."
             },
             contact: {
-                title: "Contact",
-                text: "Questions ?"
+                title: "Contactez-nous",
+                text: "Si vous avez des questions concernant cette Politique de Confidentialité, veuillez nous contacter à :"
             }
         },
         howItWorks: {
@@ -1332,51 +1332,51 @@ const translations = {
             },
             lastUpdated: "Zuletzt aktualisiert: März 2024",
             commitment: {
-                title: "Unser Versprechen",
-                text: "Wir schützen Ihre Privatsphäre.",
+                title: "Unser Engagement für den Datenschutz",
+                text: "Wright wurde mit Blick auf Ihre Privatsphäre entwickelt. Wir glauben an Transparenz und minimieren die Datenerfassung auf das absolut Notwendige.",
                 keyPoints: {
-                    title: "Wichtige Punkte:",
+                    title: "Wichtige Datenschutzpunkte:",
                     list: [
-                        "Keine Sammlung persönlicher Daten",
-                        "Kein Tracking",
-                        "Keine Datenspeicherung"
+                        "Wir greifen nicht auf Ihre Gesprächsinhalte zu und speichern diese nicht",
+                        "Wir erfassen nur Ihre E-Mail für die Kontoverwaltung",
+                        "Wir verwenden minimale Verbindungen für die Servicebereitstellung"
                     ]
                 }
             },
             dataCollection: {
-                title: "Datenerfassung",
-                text: "Wright sammelt keine persönlichen Informationen.",
+                title: "Datenerfassung & Architektur",
+                text: "Wright nutzt einen sicheren Backend-API-Service, um Ihre Anfragen zu verarbeiten. Wir speichern weder Ihren Gesprächsverlauf noch dessen Inhalt.",
                 apiKeys: {
-                    title: "API-Keys",
-                    text: "Nur API-Keys sind erforderlich.",
+                    title: "Service-Architektur",
+                    text: "Alle Interaktionen werden über unsere sichere API verarbeitet. Ihr Inhalt wird ausschließlich zur Generierung von Antworten durchgeleitet und niemals gespeichert.",
                     list: [
-                        "Sicher im macOS-Schlüsselbund gespeichert",
-                        "Niemals an unsere Server übertragen",
-                        "Direkte Kommunikation mit LLMs",
-                        "Jederzeit entfernbar"
+                        "Wir erfassen nur Ihre Konto-E-Mail",
+                        "Minimale Daten für die Fehlerbehebung",
+                        "Keine Speicherung von Gesprächsdaten",
+                        "Sichere Implementierung"
                     ]
                 }
             },
             thirdParty: {
-                title: "Drittanbieter-Dienste",
-                text: "Interaktionen unterliegen deren Richtlinien.",
+                title: "Dienste von Drittanbietern",
+                text: "Wenn Sie Wright verwenden, um mit LLM-Diensten (wie OpenAI, Groq usw.) zu interagieren, unterliegen Ihre Interaktionen den Datenschutzrichtlinien dieser Dienste. Wir empfehlen, die Datenschutzrichtlinien der von Ihnen gewählten LLM-Dienste zu lesen:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI Datenschutzerklärung</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq Datenschutzerklärung</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI Datenschutzerklärung</a>"
                 ]
             },
             security: {
                 title: "Datensicherheit",
-                text: "Keys verschlüsselt im macOS-Schlüsselbund."
+                text: "Ihre Kontoinformationen werden sicher gespeichert. Wir setzen branchenübliche Sicherheitsmaßnahmen ein, um Ihre Daten zu schützen."
             },
             changes: {
-                title: "Änderungen",
-                text: "Wir informieren über Updates."
+                title: "Änderungen an dieser Datenschutzerklärung",
+                text: "Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzerklärung auf dieser Seite veröffentlichen und das Datum \"Zuletzt aktualisiert\" aktualisieren."
             },
             contact: {
-                title: "Kontakt",
-                text: "Fragen?"
+                title: "Kontaktieren Sie uns",
+                text: "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter:"
             }
         },
         howItWorks: {
@@ -1620,58 +1620,58 @@ const translations = {
             }
         },
         privacy: {
-            title: "プライバシーポリシー",
+            title: "隐私政策",
             meta: {
-                title: "プライバシー | Wright",
-                desc: "Wrightのプライバシーポリシー。"
+                title: "隐私 | Wright",
+                desc: "Wright 的隐私政策。"
             },
-            lastUpdated: "最終更新：2024年3月",
+            lastUpdated: "最后更新：2024年3月",
             commitment: {
-                title: "私たちの約束",
-                text: "プライバシーを保護します。",
+                title: "我们的隐私承诺",
+                text: "Wright 的设计充分考虑了您的隐私。我们信奉透明度，并将数据收集减少到绝对必要的最低限度。",
                 keyPoints: {
-                    title: "キーポイント：",
+                    title: "隐私要点：",
                     list: [
-                        "個人情報を収集しません",
-                        "使用状況を追跡しません",
-                        "データを保存しません"
+                        "我们不访问或存储您的对话内容",
+                        "我们仅收集您的电子邮件用于账户管理",
+                        "我们使用最少的连接来提供服务"
                     ]
                 }
             },
             dataCollection: {
-                title: "データ収集",
-                text: "Wrightは個人情報を収集しません。",
+                title: "数据收集与架构",
+                text: "Wright 使用安全的后端 API 服务来处理您的请求。我们不存储您的对话历史或内容。",
                 apiKeys: {
-                    title: "APIキー",
-                    text: "APIキーのみ必要です。",
+                    title: "服务架构",
+                    text: "所有交互均通过我们的安全 API 处理。您的内容仅用于生成响应，绝不会被保存。",
                     list: [
-                        "macOSキーチェーンに安全に保存",
-                        "サーバーに送信されません",
-                        "LLMと直接通信",
-                        "いつでも削除可能"
+                        "我们仅收集您的账户电子邮件",
+                        "最少的数据用于故障排除",
+                        "不保留对话数据",
+                        "安全的实施"
                     ]
                 }
             },
             thirdParty: {
-                title: "サードパーティサービス",
-                text: "LLMとのやり取りは各社のポリシーに従います。",
+                title: "第三方服务",
+                text: "当您使用 Wright 与 LLM 服务（如 OpenAI、Groq 等）交互时，您的交互受这些服务的隐私政策管辖。我们建议您查看您选择使用的 LLM 服务的隐私政策：",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI 隐私政策</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq 隐私政策</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI 隐私政策</a>"
                 ]
             },
             security: {
-                title: "データセキュリティ",
-                text: "キーは暗号化されたmacOSキーチェーンに保存されます。"
+                title: "数据安全",
+                text: "您的账户信息存储安全。我们要采用行业标准的安全措施来保护您的数据。"
             },
             changes: {
-                title: "変更",
-                text: "更新をお知らせします。"
+                title: "本隐私政策的变更",
+                text: "我们可能会不时更新我们的隐私政策。我们将通过在此页面发布新的隐私政策并更新“最后更新”日期来通知您任何变更。"
             },
             contact: {
-                title: "お問い合わせ",
-                text: "質問がありますか？"
+                title: "联系我们",
+                text: "如果您对本隐私政策有任何疑问，请联系我们："
             }
         },
         howItWorks: {
@@ -1899,7 +1899,7 @@ const translations = {
                     a: "네. 개인 데이터를 수집하거나 저장하지 않습니다."
                 },
                 q6: {
-                    q: "시스템 요구 사항?",
+                    q: "시스템 요구 사항은?",
                     a: "macOS 14.0 (Sonoma) 이상."
                 },
                 q7: {
@@ -1916,56 +1916,56 @@ const translations = {
         privacy: {
             title: "개인정보 처리방침",
             meta: {
-                title: "개인정보 | Wright",
+                title: "개인정보 보호 | Wright",
                 desc: "Wright의 개인정보 처리방침."
             },
             lastUpdated: "최종 업데이트: 2024년 3월",
             commitment: {
-                title: "우리의 약속",
-                text: "저희는 귀하의 개인정보를 보호합니다.",
+                title: "저희의 개인정보 보호 약속",
+                text: "Wright는 귀하의 개인정보를 염두에 두고 설계되었습니다. 저희는 투명성을 믿으며 데이터 수집을 절대적으로 필요한 최소한으로 줄입니다.",
                 keyPoints: {
-                    title: "주요 사항:",
+                    title: "주요 개인정보 보호 사항:",
                     list: [
-                        "개인정보 수집 안 함",
-                        "사용 추적 안 함",
-                        "데이터 저장 안 함"
+                        "저희는 귀하의 대화 내용에 접근하거나 저장하지 않습니다",
+                        "저희는 계정 관리를 위해 귀하의 이메일만 수집합니다",
+                        "저희는 서비스 제공을 위해 최소한의 연결을 사용합니다"
                     ]
                 }
             },
             dataCollection: {
-                title: "데이터 수집",
-                text: "Wright는 개인정보를 수집하지 않습니다.",
+                title: "데이터 수집 및 아키텍처",
+                text: "Wright는 귀하의 요청을 처리하기 위해 안전한 백엔드 API 서비스를 활용합니다. 저희는 귀하의 대화 기록이나 내용을 저장하지 않습니다.",
                 apiKeys: {
-                    title: "API 키",
-                    text: "API 키만 필요합니다.",
+                    title: "서비스 아키텍처",
+                    text: "모든 상호 작용은 저희의 안전한 API를 통해 처리됩니다. 귀하의 내용은 응답 생성을 위해서만 전달되며 절대 저장되지 않습니다.",
                     list: [
-                        "macOS 키체인에 안전하게 저장",
-                        "서버로 전송되지 않음",
-                        "LLM과 직접 통신",
-                        "언제든지 삭제 가능"
+                        "저희는 귀하의 계정 이메일만 수집합니다",
+                        "문제 해결을 위해 최소한의 데이터가 사용됩니다",
+                        "대화 데이터는 보관되지 않습니다",
+                        "안전한 구현"
                     ]
                 }
             },
             thirdParty: {
                 title: "타사 서비스",
-                text: "LLM과의 상호작용은 해당 정책을 따릅니다.",
+                text: "Wright를 사용하여 LLM 서비스(예: OpenAI, Groq 등)와 상호 작용할 때, 귀하의 상호 작용은 해당 서비스의 개인정보 처리방침에 따릅니다. 귀하가 사용하기로 선택한 LLM 서비스의 개인정보 처리방침을 검토하는 것이 좋습니다:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI 개인정보 처리방침</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq 개인정보 처리방침</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI 개인정보 처리방침</a>"
                 ]
             },
             security: {
                 title: "데이터 보안",
-                text: "키는 암호화된 macOS 키체인에 저장됩니다."
+                text: "귀하의 계정 정보는 안전하게 저장됩니다. 저희는 귀하의 데이터를 보호하기 위해 업계 표준 보안 조치를 사용합니다."
             },
             changes: {
-                title: "변경 사항",
-                text: "업데이트 시 알림."
+                title: "본 개인정보 처리방침의 변경",
+                text: "저희는 때때로 개인정보 처리방침을 업데이트할 수 있습니다. 저희는 이 페이지에 새로운 개인정보 처리방침을 게시하고 \"최종 업데이트\" 날짜를 업데이트하여 변경 사항을 알려드릴 것입니다."
             },
             contact: {
-                title: "문의",
-                text: "질문이 있으신가요?"
+                title: "문의하기",
+                text: "본 개인정보 처리방침에 대해 질문이 있으시면 다음으로 문의하십시오:"
             }
         },
         howItWorks: {
@@ -2216,51 +2216,51 @@ const translations = {
             },
             lastUpdated: "Обновлено: Март 2024",
             commitment: {
-                title: "Наши обязательства",
-                text: "Мы защищаем вашу приватность.",
+                title: "Наше обязательство по конфиденциальности",
+                text: "Wright разработан с учетом вашей конфиденциальности. Мы верим в прозрачность и минимизируем сбор данных до абсолютно необходимого минимума.",
                 keyPoints: {
-                    title: "Главное:",
+                    title: "Ключевые моменты конфиденциальности:",
                     list: [
-                        "Не собираем личные данные",
-                        "Не отслеживаем использование",
-                        "Не храним данные"
+                        "Мы не получаем доступ и не храним содержимое ваших разговоров",
+                        "Мы собираем только вашу электронную почту для управления учетной записью",
+                        "Мы используем минимальное количество подключений для предоставления услуг"
                     ]
                 }
             },
             dataCollection: {
-                title: "Сбор данных",
-                text: "Wright не собирает личную информацию.",
+                title: "Сбор данных и архитектура",
+                text: "Wright использует безопасный серверный API-сервис для обработки ваших запросов. Мы не храним историю ваших разговоров или их содержимое.",
                 apiKeys: {
-                    title: "API ключи",
-                    text: "Нужны только ключи API.",
+                    title: "Архитектура сервиса",
+                    text: "Все взаимодействия обрабатываются через наш безопасный API. Ваш контент передается исключительно для генерации ответов и никогда не сохраняется.",
                     list: [
-                        "Хранятся в Связке ключей macOS",
-                        "Не передаются на наши серверы",
-                        "Прямая связь с LLM",
-                        "Удаление в любой момент"
+                        "Мы собираем только электронную почту вашей учетной записи",
+                        "Минимальные данные используются для устранения неполадок",
+                        "Отсутствие хранения данных разговоров",
+                        "Безопасная реализация"
                     ]
                 }
             },
             thirdParty: {
                 title: "Сторонние сервисы",
-                text: "Взаимодействие с LLM регулируется их политиками.",
+                text: "Когда вы используете Wright для взаимодействия с LLM-сервисами (такими как OpenAI, Groq и т. д.), ваши взаимодействия регулируются политиками конфиденциальности этих сервисов. Мы рекомендуем ознакомиться с политиками конфиденциальности LLM-сервисов, которые вы решите использовать:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Политика конфиденциальности OpenAI</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Политика конфиденциальности Groq</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Политика конфиденциальности xAI</a>"
                 ]
             },
             security: {
                 title: "Безопасность данных",
-                text: "Ключи зашифрованы в Связке ключей macOS."
+                text: "Информация вашей учетной записи хранится в безопасности. Мы применяем стандартные отраслевые меры безопасности для защиты ваших данных."
             },
             changes: {
-                title: "Изменения",
-                text: "Мы уведомим об обновлениях."
+                title: "Изменения в настоящей Политике конфиденциальности",
+                text: "Мы можем время от времени обновлять нашу Политику конфиденциальности. Мы уведомим вас о любых изменениях, опубликовав новую Политику конфиденциальности на этой странице и обновив дату «Последнее обновление»."
             },
             contact: {
-                title: "Контакт",
-                text: "Вопросы?"
+                title: "Связаться с нами",
+                text: "Если у вас есть какие-либо вопросы относительно настоящей Политики конфиденциальности, пожалуйста, свяжитесь с нами по адресу:"
             }
         },
         howItWorks: {
@@ -2268,7 +2268,7 @@ const translations = {
             subtitle: "Шорткаты или PopClip.",
             step1: {
                 title: "Выбрать",
-                description: "Выделите текст."
+                description: "Выделите tekst."
             },
             step2: {
                 title: "Нажать",
@@ -2510,51 +2510,51 @@ const translations = {
             },
             lastUpdated: "Atualizado: Março 2024",
             commitment: {
-                title: "Compromisso",
-                text: "Protegemos sua privacidade.",
+                title: "Nosso Compromisso com a Privacidade",
+                text: "O Wright foi projetado com sua privacidade em mente. Acreditamos na transparência e minimizamos a coleta de dados ao essencial.",
                 keyPoints: {
-                    title: "Pontos Chave:",
+                    title: "Pontos Chave de Privacidade:",
                     list: [
-                        "Sem coleta de dados pessoais",
-                        "Sem rastreamento",
-                        "Sem armazenamento de dados"
+                        "Não acessamos nem armazenamos o conteúdo de suas conversas",
+                        "Coletamos apenas seu e-mail para gerenciamento de conta",
+                        "Usamos conexões mínimas para a entrega do serviço"
                     ]
                 }
             },
             dataCollection: {
-                title: "Coleta de Dados",
-                text: "Wright não coleta informações pessoais.",
+                title: "Coleta de Dados e Arquitetura",
+                text: "O Wright utiliza um serviço de API de backend seguro para processar suas solicitações. Não armazenamos seu histórico de conversas ou conteúdo.",
                 apiKeys: {
-                    title: "Chaves API",
-                    text: "Apenas chaves API.",
+                    title: "Arquitetura de Serviço",
+                    text: "Todas as interações são processadas através de nossa API segura. Seu conteúdo é transmitido apenas para gerar respostas e nunca é salvo.",
                     list: [
-                        "Armazenadas no Keychain do macOS",
-                        "Nunca transmitidas aos nossos servidores",
-                        "Comunicação direta com LLM",
-                        "Removíveis a qualquer momento"
+                        "Coletamos apenas o e-mail da sua conta",
+                        "Dados mínimos usados para solução de problemas",
+                        "Sem retenção de dados de conversas",
+                        "Implementação segura"
                     ]
                 }
             },
             thirdParty: {
                 title: "Serviços de Terceiros",
-                text: "Interações regidas por suas políticas.",
+                text: "Quando você usa o Wright para interagir com serviços LLM (como OpenAI, Groq, etc.), suas interações são regidas pelas políticas de privacidade desses serviços. Recomendamos revisar as políticas de privacidade dos serviços LLM que você escolher usar:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Política de Privacidade da OpenAI</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Política de Privacidade da Groq</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Política de Privacidade da xAI</a>"
                 ]
             },
             security: {
                 title: "Segurança de Dados",
-                text: "Chaves criptografadas no Keychain."
+                text: "Suas informações de conta são armazenadas com segurança. Empregamos medidas de segurança padrão da indústria para proteger seus dados."
             },
             changes: {
-                title: "Mudanças",
-                text: "Notificaremos atualizações."
+                title: "Alterações a esta Política de Privacidade",
+                text: "Podemos atualizar nossa Política de Privacidade de tempos em tempos. Notificaremos você sobre quaisquer alterações publicando a nova Política de Privacidade nesta página e atualizando a data de \"Última atualização\"."
             },
             contact: {
-                title: "Contato",
-                text: "Dúvidas?"
+                title: "Entre em Contato Conosco",
+                text: "Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco em:"
             }
         },
         howItWorks: {
@@ -2805,51 +2805,51 @@ const translations = {
             },
             lastUpdated: "Aggiornato: Marzo 2024",
             commitment: {
-                title: "Impegno",
-                text: "Proteggiamo la tua privacy.",
+                title: "Il nostro impegno per la privacy",
+                text: "Wright è progettato pensando alla tua privacy. Crediamo nella trasparenza e minimizziamo la raccolta dei dati all'essenziale.",
                 keyPoints: {
-                    title: "Punti Chiave:",
+                    title: "Punti chiave sulla privacy:",
                     list: [
-                        "Niente dati personali",
-                        "Niente tracciamento",
-                        "Niente archiviazione dati"
+                        "Non accediamo né memorizziamo il contenuto delle tue conversazioni",
+                        "Raccogliamo solo la tua email per la gestione dell'account",
+                        "Utilizziamo connessioni minime per l'erogazione del servizio"
                     ]
                 }
             },
             dataCollection: {
-                title: "Raccolta Dati",
-                text: "Wright non raccoglie informazioni personali.",
+                title: "Raccolta dati e architettura",
+                text: "Wright utilizza un servizio API backend sicuro per elaborare le tue richieste. Non memorizziamo la cronologia delle tue conversazioni o il loro contenuto.",
                 apiKeys: {
-                    title: "Chiavi API",
-                    text: "Solo chiavi API.",
+                    title: "Architettura del servizio",
+                    text: "Tutte le interazioni vengono elaborate tramite la nostra API sicura. Il tuo contenuto viene trasmesso esclusivamente per generare risposte e non viene mai salvato.",
                     list: [
-                        "Salvate nel Portachiavi macOS",
-                        "Mai trasmesse ai nostri server",
-                        "Comunicazione diretta con LLM",
-                        "Rimuovibili sempre"
+                        "Raccogliamo solo l'email del tuo account",
+                        "Dati minimi utilizzati per la risoluzione dei problemi",
+                        "Nessuna conservazione dei dati delle conversazioni",
+                        "Implementazione sicura"
                     ]
                 }
             },
             thirdParty: {
-                title: "Servizi Terzi",
-                text: "Interazioni regolate dalle loro policy.",
+                title: "Servizi di terze parti",
+                text: "Quando utilizzi Wright per interagire con i servizi LLM (come OpenAI, Groq, ecc.), le tue interazioni sono regolate dalle politiche sulla privacy di tali servizi. Ti consigliamo di rivedere le politiche sulla privacy dei servizi LLM che scegli di utilizzare:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Informativa sulla privacy di OpenAI</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Informativa sulla privacy di Groq</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Informativa sulla privacy di xAI</a>"
                 ]
             },
             security: {
-                title: "Sicurezza Dati",
-                text: "Chiavi criptate nel Portachiavi."
+                title: "Sicurezza dei dati",
+                text: "Le informazioni del tuo account sono archiviate in modo sicuro. Adottiamo misure di sicurezza standard del settore per proteggere i tuoi dati."
             },
             changes: {
-                title: "Modifiche",
-                text: "Notificheremo aggiornamenti."
+                title: "Modifiche a questa politica sulla privacy",
+                text: "Potremmo aggiornare la nostra politica sulla privacy di tanto in tanto. Ti informeremo di eventuali modifiche pubblicando la nuova politica sulla privacy su questa pagina e aggiornando la data di \"Ultimo aggiornamento\"."
             },
             contact: {
-                title: "Contatti",
-                text: "Domande?"
+                title: "Contattaci",
+                text: "Se hai domande su questa politica sulla privacy, contattaci all'indirizzo:"
             }
         },
         howItWorks: {
@@ -3100,51 +3100,51 @@ const translations = {
             },
             lastUpdated: "अंतिम अपडेट: मार्च 2024",
             commitment: {
-                title: "हमारा वादा",
-                text: "हम आपकी गोपनीयता की रक्षा करते हैं।",
+                title: "हमारी गोपनीयता के प्रति प्रतिबद्धता",
+                text: "Wright को आपकी गोपनीयता को ध्यान में रखकर डिज़ाइन किया गया है। हम पारदर्शिता में विश्वास करते हैं और डेटा संग्रह को बिल्कुल आवश्यक न्यूनतम तक कम करते हैं।",
                 keyPoints: {
-                    title: "मुख्य बिंदु:",
+                    title: "मुख्य गोपनीयता बिंदु:",
                     list: [
-                        "कोई व्यक्तिगत डेटा संग्रह नहीं",
-                        "कोई ट्रैकिंग नहीं",
-                        "कोई डेटा संग्रहण नहीं"
+                        "हम आपकी बातचीत की सामग्री तक नहीं पहुँचते और न ही उसे संग्रहीत करते हैं",
+                        "हम केवल खाता प्रबंधन के लिए आपका ईमेल एकत्र करते हैं",
+                        "हम सेवा वितरण के लिए न्यूनतम कनेक्शन का उपयोग करते हैं"
                     ]
                 }
             },
             dataCollection: {
-                title: "डेटा संग्रह",
-                text: "Wright व्यक्तिगत जानकारी एकत्र नहीं करता है।",
+                title: "डेटा संग्रह और वास्तुकला",
+                text: "Wright आपके अनुरोधों को संसाधित करने के लिए एक सुरक्षित बैकएंड API सेवा का उपयोग करता है। हम आपकी बातचीत का इतिहास या सामग्री संग्रहीत नहीं करते हैं।",
                 apiKeys: {
-                    title: "API कुंजियाँ",
-                    text: "केवल API कुंजियाँ आवश्यक हैं।",
+                    title: "सेवा वास्तुकला",
+                    text: "सभी इंटरैक्शन हमारे सुरक्षित API के माध्यम से संसाधित होते हैं। आपकी सामग्री केवल प्रतिक्रियाएँ उत्पन्न करने के लिए भेजी जाती है और कभी भी सहेजी नहीं जाती है।",
                     list: [
-                        "macOS कीचेन में सुरक्षित",
-                        "सर्वर पर कभी नहीं भेजी जातीं",
-                        "LLM के साथ सीधा संचार",
-                        "कभी भी हटा सकते हैं"
+                        "हम केवल आपके खाते का ईमेल एकत्र करते हैं",
+                        "समस्या निवारण के लिए न्यूनतम डेटा का उपयोग किया जाता है",
+                        "बातचीत डेटा का कोई प्रतिधारण नहीं",
+                        "सुरक्षित कार्यान्वयन"
                     ]
                 }
             },
             thirdParty: {
                 title: "तीसरे पक्ष की सेवाएँ",
-                text: "LLM इंटरैक्शन उनकी नीतियों द्वारा शासित होते हैं।",
+                text: "जब आप LLM सेवाओं (जैसे OpenAI, Groq, आदि) के साथ इंटरैक्ट करने के लिए Wright का उपयोग करते हैं, तो आपके इंटरैक्शन उन सेवाओं की गोपनीयता नीतियों द्वारा शासित होते हैं। हम आपको उन LLM सेवाओं की गोपनीयता नीतियों की समीक्षा करने की सलाह देते हैं जिनका आप उपयोग करना चुनते हैं:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI गोपनीयता नीति</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq गोपनीयता नीति</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI गोपनीयता नीति</a>"
                 ]
             },
             security: {
                 title: "डेटा सुरक्षा",
-                text: "कीचेन में एन्क्रिप्टेड कुंजियाँ।"
+                text: "आपकी खाता जानकारी सुरक्षित रूप से संग्रहीत है। हम आपके डेटा को सुरक्षित रखने के लिए उद्योग-मानक सुरक्षा उपायों का उपयोग करते हैं।"
             },
             changes: {
-                title: "परिवर्तन",
-                text: "हम अपडेट के बारे में सूचित करेंगे।"
+                title: "इस गोपनीयता नीति में परिवर्तन",
+                text: "हम समय-समय पर अपनी गोपनीयता नीति को अपडेट कर सकते हैं। हम इस पृष्ठ पर नई गोपनीयता नीति पोस्ट करके और \"अंतिम अपडेट\" तिथि को अपडेट करके आपको किसी भी बदलाव के बारे में सूचित करेंगे।"
             },
             contact: {
-                title: "संपर्क",
-                text: "कोई प्रश्न?"
+                title: "हमसे संपर्क करें",
+                text: "यदि आपके पास इस गोपनीयता नीति के बारे में कोई प्रश्न है, तो कृपया हमसे संपर्क करें:"
             }
         },
         howItWorks: {
@@ -3306,7 +3306,7 @@ const translations = {
                 grok: {
                     title: "Grok",
                     step1: { title: "1. الحساب", list: ["زر Grok <a href=\"https://ide.x.ai\" target=\"_blank\">PromptIDE</a>", "سجل الدخول بـ X"] },
-                    step2: { title: "2. المفتاح", list: ["اسم المستخدم ← \"API Keys\"", "\"Create API Key\"", "نسخ المفتاح"] }
+                    step2: { title: "2. المفتاح", list: ["اسم المستخدم → \"API Keys\"", "\"Create API Key\"", "نسخ المفتاح"] }
                 },
                 deepseek: {
                     title: "DeepSeek",
@@ -3395,51 +3395,51 @@ const translations = {
             },
             lastUpdated: "آخر تحديث: مارس 2024",
             commitment: {
-                title: "التزامنا",
-                text: "نحمي خصوصيتك.",
+                title: "التزامنا بالخصوصية",
+                text: "تم تصميم Wright مع مراعاة خصوصيتك. نحن نؤمن بالشفافية ونقلل جمع البيانات إلى الحد الأدنى الضروري للغاية.",
                 keyPoints: {
-                    title: "نقاط رئيسية:",
+                    title: "نقاط الخصوصية الرئيسية:",
                     list: [
-                        "لا نجمع بيانات شخصية",
-                        "لا نتتبع الاستخدام",
-                        "لا نخزن البيانات"
+                        "نحن لا نصل إلى محتوى محادثاتك أو نخزنه",
+                        "نحن نجمع بريدك الإلكتروني فقط لإدارة الحساب",
+                        "نحن نستخدم الحد الأدنى من الاتصالات لتقديم الخدمة"
                     ]
                 }
             },
             dataCollection: {
-                title: "جمع البيانات",
-                text: "لا يجمع Wright معلومات شخصية.",
+                title: "جمع البيانات والهندسة المعمارية",
+                text: "يستخدم Wright خدمة API خلفية آمنة لمعالجة طلباتك. نحن لا نخزن سجل محادثاتك أو محتواها.",
                 apiKeys: {
-                    title: "مفاتيح API",
-                    text: "مفاتيح API فقط مطلوبة.",
+                    title: "هندسة الخدمة",
+                    text: "تتم معالجة جميع التفاعلات من خلال واجهة برمجة التطبيقات الآمنة الخاصة بنا. يتم تمرير المحتوى الخاص بك فقط لإنشاء الردود ولا يتم حفظه أبدًا.",
                     list: [
-                        "محفوظة في سلسلة مفاتيح macOS",
-                        "لا ترسل أبدًا إلى خوادمنا",
-                        "اتصال مباشر مع LLM",
-                        "يمكن إزالتها في أي وقت"
+                        "نحن نجمع فقط البريد الإلكتروني لحسابك",
+                        "يتم استخدام الحد الأدنى من البيانات لاستكشاف الأخطاء وإصلاحها",
+                        "لا يوجد احتفاظ ببيانات المحادثة",
+                        "تنفيذ آمن"
                     ]
                 }
             },
             thirdParty: {
                 title: "خدمات الطرف الثالث",
-                text: "تخضع التفاعلات لسياساتهم.",
+                text: "عند استخدامك لـ Wright للتفاعل مع خدمات LLM (مثل OpenAI، Groq، إلخ)، تخضع تفاعلاتك لسياسات الخصوصية لتلك الخدمات. نوصي بمراجعة سياسات الخصوصية لخدمات LLM التي تختار استخدامها:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">سياسة خصوصية OpenAI</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">سياسة خصوصية Groq</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">سياسة خصوصية xAI</a>"
                 ]
             },
             security: {
                 title: "أمان البيانات",
-                text: "المفاتيح مشفرة في سلسلة المفاتيح."
+                text: "يتم تخزين معلومات حسابك بشكل آمن. نحن نستخدم تدابير أمنية قياسية في الصناعة لحماية بياناتك."
             },
             changes: {
-                title: "التغييرات",
-                text: "سنبلغ عن التحديثات."
+                title: "التغييرات على سياسة الخصوصية هذه",
+                text: "قد نقوم بتحديث سياسة الخصوصية الخاصة بنا من وقت لآخر. سنبلغك بأي تغييرات عن طريق نشر سياسة الخصوصية الجديدة على هذه الصفحة وتحديث تاريخ \"آخر تحديث\"."
             },
             contact: {
-                title: "اتصال",
-                text: "أسئلة؟"
+                title: "اتصل بنا",
+                text: "إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى الاتصال بنا على:"
             }
         },
         howItWorks: {
@@ -3689,51 +3689,51 @@ const translations = {
             },
             lastUpdated: "Son güncelleme: Mart 2024",
             commitment: {
-                title: "Taahhüdümüz",
-                text: "Gizliliğinizi koruyoruz.",
+                title: "Gizliliğe Bağlılığımız",
+                text: "Wright, gizliliğiniz göz önünde bulundurularak tasarlanmıştır. Şeffaflığa inanıyor ve veri toplamayı kesinlikle gerekli olan minimuma indiriyoruz.",
                 keyPoints: {
-                    title: "Önemli Noktalar:",
+                    title: "Temel Gizlilik Noktaları:",
                     list: [
-                        "Kişisel veri toplama yok",
-                        "İzleme yok",
-                        "Veri depolama yok"
+                        "Konuşma içeriğinize erişmiyoruz veya saklamıyoruz",
+                        "Yalnızca hesap yönetimi için e-postanızı topluyoruz",
+                        "Hizmet sunumu için minimum bağlantı kullanıyoruz"
                     ]
                 }
             },
             dataCollection: {
-                title: "Veri Toplama",
-                text: "Wright kişisel bilgileri toplamaz.",
+                title: "Veri Toplama ve Mimari",
+                text: "Wright, isteklerinizi işlemek için güvenli bir arka uç API hizmeti kullanır. Konuşma geçmişinizi veya içeriğinizi saklamıyoruz.",
                 apiKeys: {
-                    title: "API Anahtarları",
-                    text: "Yalnızca API anahtarları gereklidir.",
+                    title: "Hizmet Mimarisi",
+                    text: "Tüm etkileşimler güvenli API'mız aracılığıyla işlenir. İçeriğiniz yalnızca yanıt oluşturmak için iletilir ve asla kaydedilmez.",
                     list: [
-                        "macOS Anahtar Zincirinde saklanır",
-                        "Asla sunucularımıza iletilmez",
-                        "LLM ile doğrudan iletişim",
-                        "İstediğiniz zaman kaldırılabilir"
+                        "Yalnızca hesap e-postanızı topluyoruz",
+                        "Sorun giderme için minimum veri kullanılır",
+                        "Konuşma verilerinin saklanması yok",
+                        "Güvenli uygulama"
                     ]
                 }
             },
             thirdParty: {
                 title: "Üçüncü Taraf Hizmetleri",
-                text: "Etkileşimler onların politikalarına tabidir.",
+                text: "Wright'ı LLM hizmetleriyle (OpenAI, Groq vb.) etkileşim kurmak için kullandığınızda, etkileşimleriniz bu hizmetlerin gizlilik politikalarına tabidir. Kullanmayı seçtiğiniz LLM hizmetlerinin gizlilik politikalarını incelemenizi öneririz:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI Gizlilik Politikası</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq Gizlilik Politikası</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI Gizlilik Politikası</a>"
                 ]
             },
             security: {
                 title: "Veri Güvenliği",
-                text: "Anahtarlar Anahtar Zincirinde şifrelenir."
+                text: "Hesap bilgileriniz güvenli bir şekilde saklanır. Verilerinizi korumak için endüstri standardı güvenlik önlemleri kullanıyoruz."
             },
             changes: {
-                title: "Değişiklikler",
-                text: "Güncellemeleri bildireceğiz."
+                title: "Bu Gizlilik Politikasındaki Değişiklikler",
+                text: "Gizlilik Politikamızı zaman zaman güncelleyebiliriz. Yeni Gizlilik Politikasını bu sayfada yayınlayarak ve \"Son güncelleme\" tarihini güncelleyerek herhangi bir değişiklik hakkında sizi bilgilendireceğiz."
             },
             contact: {
-                title: "İletişim",
-                text: "Sorularınız mı var?"
+                title: "Bize Ulaşın",
+                text: "Bu Gizlilik Politikası hakkında herhangi bir sorunuz varsa, lütfen bize şu adresten ulaşın:"
             }
         },
         howItWorks: {
@@ -3984,51 +3984,51 @@ const translations = {
             },
             lastUpdated: "Cập nhật lần cuối: Tháng 3 2024",
             commitment: {
-                title: "Cam kết của chúng tôi",
-                text: "Chúng tôi bảo vệ quyền riêng tư của bạn.",
+                title: "Cam kết của chúng tôi về Quyền riêng tư",
+                text: "Wright được thiết kế với quyền riêng tư của bạn trong tâm trí. Chúng tôi tin vào sự minh bạch và giảm thiểu việc thu thập dữ liệu đến mức tối thiểu tuyệt đối cần thiết.",
                 keyPoints: {
-                    title: "Điểm chính:",
+                    title: "Các điểm chính về Quyền riêng tư:",
                     list: [
-                        "Không thu thập dữ liệu cá nhân",
-                        "Không theo dõi",
-                        "Không lưu trữ dữ liệu"
+                        "Chúng tôi không truy cập hoặc lưu trữ nội dung cuộc trò chuyện của bạn",
+                        "Chúng tôi chỉ thu thập email của bạn để quản lý tài khoản",
+                        "Chúng tôi sử dụng các kết nối tối thiểu để cung cấp dịch vụ"
                     ]
                 }
             },
             dataCollection: {
-                title: "Thu thập Dữ liệu",
-                text: "Wright không thu thập thông tin cá nhân.",
+                title: "Thu thập Dữ liệu & Kiến trúc",
+                text: "Wright sử dụng một dịch vụ API backend an toàn để xử lý các yêu cầu của bạn. Chúng tôi không lưu trữ lịch sử cuộc trò chuyện hoặc nội dung của bạn.",
                 apiKeys: {
-                    title: "Khóa API",
-                    text: "Chỉ cần khóa API.",
+                    title: "Kiến trúc Dịch vụ",
+                    text: "Tất cả các tương tác được xử lý thông qua API an toàn của chúng tôi. Nội dung của bạn chỉ được truyền đi để tạo phản hồi và không bao giờ được lưu.",
                     list: [
-                        "Lưu trữ trong Keychain macOS",
-                        "Không bao giờ gửi đến máy chủ của chúng tôi",
-                        "Giao tiếp trực tiếp với LLM",
-                        "Có thể xóa bất cứ lúc nào"
+                        "Chúng tôi chỉ thu thập email tài khoản của bạn",
+                        "Dữ liệu tối thiểu được sử dụng để khắc phục sự cố",
+                        "Không lưu giữ dữ liệu cuộc trò chuyện",
+                        "Triển khai an toàn"
                     ]
                 }
             },
             thirdParty: {
                 title: "Dịch vụ của Bên thứ ba",
-                text: "Tương tác tuân theo chính sách của họ.",
+                text: "Khi bạn sử dụng Wright để tương tác với các dịch vụ LLM (như OpenAI, Groq, v.v.), các tương tác của bạn được điều chỉnh bởi chính sách quyền riêng tư của các dịch vụ đó. Chúng tôi khuyên bạn nên xem xét chính sách quyền riêng tư của các dịch vụ LLM mà bạn chọn sử dụng:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Chính sách Quyền riêng tư của OpenAI</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Chính sách Quyền riêng tư của Groq</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Chính sách Quyền riêng tư của xAI</a>"
                 ]
             },
             security: {
                 title: "Bảo mật Dữ liệu",
-                text: "Khóa được mã hóa trong Keychain."
+                text: "Thông tin tài khoản của bạn được lưu trữ an toàn. Chúng tôi áp dụng các biện pháp bảo mật tiêu chuẩn ngành để bảo vệ dữ liệu của bạn."
             },
             changes: {
-                title: "Thay đổi",
-                text: "Chúng tôi sẽ thông báo cập nhật."
+                title: "Thay đổi đối với Chính sách Quyền riêng tư này",
+                text: "Chúng tôi có thể cập nhật Chính sách Quyền riêng tư của mình theo thời gian. Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi nào bằng cách đăng Chính sách Quyền riêng tư mới trên trang này và cập nhật ngày \"Cập nhật lần cuối\"."
             },
             contact: {
-                title: "Liên hệ",
-                text: "Câu hỏi?"
+                title: "Liên hệ với chúng tôi",
+                text: "Nếu bạn có bất kỳ câu hỏi nào về Chính sách Quyền riêng tư này, vui lòng liên hệ với chúng tôi tại:"
             }
         },
         howItWorks: {
@@ -4274,55 +4274,55 @@ const translations = {
             title: "Privacybeleid",
             meta: {
                 title: "Privacy | Wright",
-                desc: "Wright privacybeleid."
+                desc: "Wright's Privacybeleid."
             },
-            lastUpdated: "Laatst bigewerkt: Maart 2024",
+            lastUpdated: "Laatst bijgewerkt: Maart 2024",
             commitment: {
-                title: "Onze Belofte",
-                text: "Wij beschermen uw privacy.",
+                title: "Onze Toewijding aan Privacy",
+                text: "Wright, is ontworpen met uw privacy in gedachten. Wij geloven in transparantie en minimaliseren gegevensverzameling tot het absolute noodzakelijke.",
                 keyPoints: {
-                    title: "Belangrijkste Punten:",
+                    title: "Belangrijkste Privacy Punten:",
                     list: [
-                        "Geen verzameling van persoonlijke gegevens",
-                        "Geen tracking",
-                        "Geen gegevensopslag"
+                        "Wij hebben geen toegang tot of slaan uw gespreksinhoud op",
+                        "Wij verzamelen alleen uw e-mail voor accountbeheer",
+                        "Wij gebruiken minimale verbindingen voor servicelevering"
                     ]
                 }
             },
             dataCollection: {
-                title: "Gegevensverzameling",
-                text: "Wright verzamelt geen persoonlijke informatie.",
+                title: "Gegevensverzameling & Architectuur",
+                text: "Wright maakt gebruik van een veilige backend API-service om uw verzoeken te verwerken. Wij slaan uw gespreksgeschiedenis of inhoud niet op.",
                 apiKeys: {
-                    title: "API-sleutels",
-                    text: "Alleen API-sleutels nodig.",
+                    title: "Service Architectuur",
+                    text: "Alle interacties worden verwerkt via onze veilige API. Uw inhoud wordt uitsluitend doorgestuurd voor het genereren van antwoorden en wordt nooit opgeslagen.",
                     list: [
-                        "Opgeslagen in macOS Sleutelhanger",
-                        "Nooit verzonden naar onze servers",
-                        "Directe communicatie met LLM",
-                        "Op elk moment te verwijderen"
+                        "Wij verzamelen alleen uw account-e-mail",
+                        "Minimale gegevens gebruikt voor probleemoplossing",
+                        "Geen retentie van gespreksgegevens",
+                        "Veilige implementatie"
                     ]
                 }
             },
             thirdParty: {
                 title: "Diensten van Derden",
-                text: "Interacties vallen onder hun beleid.",
+                text: "Wanneer u Wright gebruikt om te communiceren met LLM-diensten (zoals OpenAI, Groq, enz.), worden uw interacties beheerst door de privacybeleidsregels van die diensten. Wij raden u aan de privacybeleidsregels van de LLM-diensten die u kiest te gebruiken, te raadplegen:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI Privacybeleid</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq Privacybeleid</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI Privacybeleid</a>"
                 ]
             },
             security: {
                 title: "Gegevensbeveiliging",
-                text: "Sleutels versleuteld in Sleutelhanger."
+                text: "Uw accountinformatie wordt veilig opgeslagen. Wij passen industriestandaard beveiligingsmaatregelen toe om uw gegevens te beschermen."
             },
             changes: {
-                title: "Wijzigingen",
-                text: "We zullen updates melden."
+                title: "Wijzigingen in dit Privacybeleid",
+                text: "Wij kunnen ons Privacybeleid van tijd tot tijd bijwerken. Wij zullen u op de hoogte stellen van eventuele wijzigingen door het nieuwe Privacybeleid op deze pagina te plaatsen en de datum van \"Laatst bijgewerkt\" bij te werken."
             },
             contact: {
-                title: "Contact",
-                text: "Vragen?"
+                title: "Neem Contact Met Ons Op",
+                text: "Als u vragen heeft over dit Privacybeleid, neem dan contact met ons op via:"
             }
         },
         howItWorks: {
@@ -4569,55 +4569,55 @@ const translations = {
             title: "Polityka Prywatności",
             meta: {
                 title: "Prywatność | Wright",
-                desc: "Polityka prywatności Wright."
+                desc: "Polityka Prywatności Wright."
             },
             lastUpdated: "Ostatnia aktualizacja: Marzec 2024",
             commitment: {
-                title: "Nasze Zobowiązanie",
-                text: "Chronimy Twoją prywatność.",
+                title: "Nasze Zobowiązanie do Prywatności",
+                text: "Wright został zaprojektowany z myślą o Twojej prywatności. Wierzymy w przejrzystość i ograniczamy gromadzenie danych do absolutnego minimum.",
                 keyPoints: {
-                    title: "Kluczowe Punkty:",
+                    title: "Kluczowe Punkty Prywatności:",
                     list: [
-                        "Brak zbierania danych osobowych",
-                        "Brak śledzenia",
-                        "Brak przechowywania danych"
+                        "Nie mamy dostępu do treści Twoich rozmów ani ich nie przechowujemy",
+                        "Gromadzimy Twój adres e-mail wyłącznie do zarządzania kontem",
+                        "Używamy minimalnych połączeń do świadczenia usług"
                     ]
                 }
             },
             dataCollection: {
-                title: "Zbieranie Danych",
-                text: "Wright nie zbiera danych osobowych.",
+                title: "Gromadzenie Danych i Architektura",
+                text: "Wright wykorzystuje bezpieczną usługę API backendu do przetwarzania Twoich żądań. Nie przechowujemy historii Twoich rozmów ani ich treści.",
                 apiKeys: {
-                    title: "Klucze API",
-                    text: "Tylko klucze API są wymagane.",
+                    title: "Architektura Usługi",
+                    text: "Wszystkie interakcje są przetwarzane przez nasze bezpieczne API. Twoje treści są przekazywane wyłącznie w celu generowania odpowiedzi i nigdy nie są zapisywane.",
                     list: [
-                        "Przechowywane w pęku kluczy macOS",
-                        "Nigdy nie wysyłane na nasze serwery",
-                        "Bezpośrednia komunikacja z LLM",
-                        "Możliwość usunięcia w każdej chwili"
+                        "Gromadzimy tylko adres e-mail Twojego konta",
+                        "Minimalne dane używane do rozwiązywania problemów",
+                        "Brak przechowywania danych rozmów",
+                        "Bezpieczne wdrożenie"
                     ]
                 }
             },
             thirdParty: {
                 title: "Usługi Stron Trzecich",
-                text: "Interakcje podlegają ich politykom.",
+                text: "Kiedy używasz Wright do interakcji z usługami LLM (takimi jak OpenAI, Groq itp.), Twoje interakcje podlegają politykom prywatności tych usług. Zalecamy zapoznanie się z politykami prywatności usług LLM, z których korzystasz:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Polityka Prywatności OpenAI</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Polityka Prywatności Groq</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Polityka Prywatności xAI</a>"
                 ]
             },
             security: {
                 title: "Bezpieczeństwo Danych",
-                text: "Klucze szyfrowane w pęku kluczy."
+                text: "Twoje informacje o koncie są bezpiecznie przechowywane. Stosujemy standardowe w branży środki bezpieczeństwa, aby chronić Twoje dane."
             },
             changes: {
-                title: "Zmiany",
-                text: "Powiadomimy o aktualizacjach."
+                title: "Zmiany w tej Polityce Prywatności",
+                text: "Od czasu do czasu możemy aktualizować naszą Politykę Prywatności. Powiadomimy Cię o wszelkich zmianach, publikując nową Politykę Prywatności na tej stronie i aktualizując datę \"Ostatnia aktualizacja\"."
             },
             contact: {
-                title: "Kontakt",
-                text: "Pytania?"
+                title: "Skontaktuj się z Nami",
+                text: "Jeśli masz jakiekolwiek pytania dotyczące tej Polityki Prywatności, skontaktuj się z nami pod adresem:"
             }
         },
         howItWorks: {
@@ -4864,55 +4864,55 @@ const translations = {
             title: "Kebijakan Privasi",
             meta: {
                 title: "Privasi | Wright",
-                desc: "Kebijakan privasi Wright."
+                desc: "Kebijakan Privasi Wright."
             },
-            lastUpdated: "Terakhir diperbarui: Maret 2024",
+            lastUpdated: "Terakhir Diperbarui: Maret 2024",
             commitment: {
-                title: "Komitmen Kami",
-                text: "Kami melindungi privasi Anda.",
+                title: "Komitmen Kami terhadap Privasi",
+                text: "Wright dirancang dengan mempertimbangkan privasi Anda. Kami percaya pada transparansi dan meminimalkan pengumpulan data hingga batas minimum yang mutlak diperlukan.",
                 keyPoints: {
-                    title: "Poin Utama:",
+                    title: "Poin Privasi Utama:",
                     list: [
-                        "Tidak ada pengumpulan data pribadi",
-                        "Tidak ada pelacakan",
-                        "Tidak ada penyimpanan data"
+                        "Kami tidak mengakses atau menyimpan konten percakapan Anda",
+                        "Kami hanya mengumpulkan email Anda untuk manajemen akun",
+                        "Kami menggunakan koneksi minimum untuk penyediaan layanan"
                     ]
                 }
             },
             dataCollection: {
-                title: "Pengumpulan Data",
-                text: "Wright tidak mengumpulkan informasi pribadi.",
+                title: "Pengumpulan Data & Arsitektur",
+                text: "Wright menggunakan layanan API backend yang aman untuk memproses permintaan Anda. Kami tidak menyimpan riwayat atau konten percakapan Anda.",
                 apiKeys: {
-                    title: "Kunci API",
-                    text: "Hanya kunci API yang diperlukan.",
+                    title: "Arsitektur Layanan",
+                    text: "Semua interaksi diproses melalui API aman kami. Konten Anda diteruskan semata-mata untuk menghasilkan tanggapan dan tidak pernah disimpan.",
                     list: [
-                        "Disimpan di Rantai Kunci macOS",
-                        "Tidak pernah dikirim ke server kami",
-                        "Komunikasi langsung dengan LLM",
-                        "Dapat dihapus kapan saja"
+                        "Kami hanya mengumpulkan email akun Anda",
+                        "Data minimum digunakan untuk pemecahan masalah",
+                        "Tidak ada penyimpanan data percakapan",
+                        "Implementasi aman"
                     ]
                 }
             },
             thirdParty: {
                 title: "Layanan Pihak Ketiga",
-                text: "Interaksi diatur oleh kebijakan mereka.",
+                text: "Saat Anda menggunakan Wright untuk berinteraksi dengan layanan LLM (seperti OpenAI, Groq, dll.), interaksi Anda diatur oleh kebijakan privasi layanan tersebut. Kami menyarankan Anda meninjau kebijakan privasi layanan LLM yang Anda pilih untuk menggunakan:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Kebijakan Privasi OpenAI</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Kebijakan Privasi Groq</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Kebijakan Privasi xAI</a>"
                 ]
             },
             security: {
                 title: "Keamanan Data",
-                text: "Kunci dienkripsi dalam Rantai Kunci."
+                text: "Informasi akun Anda disimpan dengan aman. Kami menerapkan langkah-langkah keamanan standar industri untuk melindungi data Anda."
             },
             changes: {
-                title: "Perubahan",
-                text: "Kami akan memberitahukan pembaruan."
+                title: "Perubahan pada Kebijakan Privasi Ini",
+                text: "Kami dapat memperbarui Kebijakan Privasi kami dari waktu ke waktu. Kami akan memberi tahu Anda tentang perubahan apa pun dengan memposting Kebijakan Privasi baru di halaman ini dan memperbarui tanggal \"Terakhir Diperbarui\"."
             },
             contact: {
-                title: "Kontak",
-                text: "Pertanyaan?"
+                title: "Hubungi Kami",
+                text: "Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini, silakan hubungi kami di:"
             }
         },
         howItWorks: {
@@ -5163,51 +5163,51 @@ const translations = {
             },
             lastUpdated: "อัปเดตล่าสุด: มีนาคม 2024",
             commitment: {
-                title: "ความมุ่งมั่นของเรา",
-                text: "เราปกป้องความเป็นส่วนตัวของคุณ",
+                title: "ความมุ่งมั่นของเราต่อความเป็นส่วนตัว",
+                text: "Wright ได้รับการออกแบบโดยคำนึงถึงความเป็นส่วนตัวของคุณ เราเชื่อในความโปร่งใสและลดการรวบรวมข้อมูลให้เหลือเพียงสิ่งที่จำเป็นที่สุด",
                 keyPoints: {
-                    title: "จุดสำคัญ:",
+                    title: "ประเด็นสำคัญด้านความเป็นส่วนตัว:",
                     list: [
-                        "ไม่มีการเก็บรวบรวมข้อมูลส่วนบุคคล",
-                        "ไม่มีการติดตาม",
-                        "ไม่มีการจัดเก็บข้อมูล"
+                        "เราไม่เข้าถึงหรือจัดเก็บเนื้อหาการสนทนาของคุณ",
+                        "เรารวบรวมเฉพาะอีเมลของคุณสำหรับการจัดการบัญชี",
+                        "เราใช้การเชื่อมต่อขั้นต่ำเพื่อให้บริการ"
                     ]
                 }
             },
             dataCollection: {
-                title: "การเก็บรวบรวมข้อมูล",
-                text: "Wright ไม่เก็บรวบรวมข้อมูลส่วนบุคคล",
+                title: "การรวบรวมข้อมูลและสถาปัตยกรรม",
+                text: "Wright ใช้บริการ API แบ็กเอนด์ที่ปลอดภัยเพื่อประมวลผลคำขอของคุณ เราไม่เก็บประวัติการสนทนาหรือเนื้อหาของคุณ",
                 apiKeys: {
-                    title: "คีย์ API",
-                    text: "ต้องใช้คีย์ API เท่านั้น",
+                    title: "สถาปัตยกรรมบริการ",
+                    text: "การโต้ตอบทั้งหมดได้รับการประมวลผลผ่าน API ที่ปลอดภัยของเรา เนื้อหาของคุณจะถูกส่งผ่านเพื่อสร้างคำตอบเท่านั้นและจะไม่ถูกบันทึก",
                     list: [
-                        "เก็บไว้ใน macOS Keychain",
-                        "ไม่เคยส่งไปยังเซิร์ฟเวอร์ของเรา",
-                        "การสื่อสารโดยตรงกับ LLM",
-                        "ลบได้ตลอดเวลา"
+                        "เรารวบรวมเฉพาะอีเมลบัญชีของคุณ",
+                        "ข้อมูลขั้นต่ำที่ใช้สำหรับการแก้ไขปัญหา",
+                        "ไม่มีการเก็บรักษาข้อมูลการสนทนา",
+                        "การใช้งานที่ปลอดภัย"
                     ]
                 }
             },
             thirdParty: {
                 title: "บริการของบุคคลที่สาม",
-                text: "การโต้ตอบอยู่ภายใต้นโยบายของพวกเขา",
+                text: "เมื่อคุณใช้ Wright เพื่อโต้ตอบกับบริการ LLM (เช่น OpenAI, Groq ฯลฯ) การโต้ตอบของคุณจะอยู่ภายใต้นโยบายความเป็นส่วนตัวของบริการเหล่านั้น เราขอแนะนำให้ตรวจสอบนโยบายความเป็นส่วนตัวของบริการ LLM ที่คุณเลือกใช้:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">นโยบายความเป็นส่วนตัวของ OpenAI</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">นโยบายความเป็นส่วนตัวของ Groq</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">นโยบายความเป็นส่วนตัวของ xAI</a>"
                 ]
             },
             security: {
                 title: "ความปลอดภัยของข้อมูล",
-                text: "คีย์ถูกเข้ารหัสใน Keychain"
+                text: "ข้อมูลบัญชีของคุณถูกจัดเก็บอย่างปลอดภัย เราใช้มาตรการรักษาความปลอดภัยตามมาตรฐานอุตสาหกรรมเพื่อปกป้องข้อมูลของคุณ"
             },
             changes: {
-                title: "การเปลี่ยนแปลง",
-                text: "เราจะแจ้งการอัปเดตให้ทราบ"
+                title: "การเปลี่ยนแปลงนโยบายความเป็นส่วนตัวนี้",
+                text: "เราอาจอัปเดตนโยบายความเป็นส่วนตัวของเราเป็นครั้งคราว เราจะแจ้งให้คุณทราบถึงการเปลี่ยนแปลงใด ๆ โดยการโพสต์นโยบายความเป็นส่วนตัวใหม่ในหน้านี้และอัปเดตวันที่ \"อัปเดตล่าสุด\""
             },
             contact: {
-                title: "ติดต่อ",
-                text: "คำถาม?"
+                title: "ติดต่อเรา",
+                text: "หากคุณมีคำถามใด ๆ เกี่ยวกับนโยบายความเป็นส่วนตัวนี้ โปรดติดต่อเราที่:"
             }
         },
         howItWorks: {

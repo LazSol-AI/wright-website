@@ -123,8 +123,14 @@ nav {
     margin: 0 auto;
     padding: 1.25rem 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 2rem;
 }
 
 .logo {
@@ -148,7 +154,6 @@ nav {
 }
 
 .nav-links a {
-    margin-left: 2rem;
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
