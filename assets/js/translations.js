@@ -150,32 +150,32 @@ const translations = {
             title: "Privacy Policy",
             meta: {
                 title: "Privacy Policy | Wright",
-                desc: "Wright's privacy policy. We do not collect personal usage data."
+                desc: "Wright's Privacy Policy. We do not collect personal usage data."
             },
-            lastUpdated: "Last Updated: March 2024",
+            lastUpdated: "Last Updated: February 2026",
             commitment: {
                 title: "Our Commitment to Privacy",
-                text: "Wright is designed with your privacy in mind. We believe in transparency and are committed to protecting your privacy and personal information.",
+                text: "Wright is designed with your privacy in mind. We believe in transparency and minimize data collection to the absolute essentials.",
                 keyPoints: {
                     title: "Key Privacy Points:",
                     list: [
-                        "We do not collect any personal information",
-                        "We do not track your usage",
-                        "We do not store any of your data"
+                        "We do not access or store your conversation content",
+                        "We only collect your email for account management",
+                        "We use minimum connections for service delivery"
                     ]
                 }
             },
             dataCollection: {
-                title: "Data Collection and Storage",
-                text: "Wright does not collect, store, or transmit any personal information about our users. The app operates entirely on your local device.",
+                title: "Data Collection & Architecture",
+                text: "Wright utilizes a secure backend API service to process your requests. We do not store your conversation history or content.",
                 apiKeys: {
-                    title: "API Keys",
-                    text: "The only data you need to provide is your API key for the Language Learning Model (LLM) services you wish to use. These API keys are:",
+                    title: "Service Architecture",
+                    text: "All interactions are processed through our secure API. Your content is passed through solely for generating responses and is never saved.",
                     list: [
-                        "Stored securely in your macOS Keychain",
-                        "Never transmitted to our servers",
-                        "Only used to communicate directly with your chosen LLM services",
-                        "Can be removed at any time through the app or your Keychain Access"
+                        "We collect only your account email",
+                        "Minimum data used for troubleshooting",
+                        "No retention of conversation data",
+                        "Secure implementation"
                     ]
                 }
             },
@@ -190,7 +190,7 @@ const translations = {
             },
             security: {
                 title: "Data Security",
-                text: "Your API keys are stored securely in the macOS Keychain, which provides encrypted storage for sensitive data. This is the same system that macOS uses to store passwords and other secure information."
+                text: "Your account information is stored securely. We employ industry-standard security measures to protect your data."
             },
             changes: {
                 title: "Changes to This Privacy Policy",
@@ -307,8 +307,8 @@ const translations = {
             toggle: "语言"
         },
         hero: {
-            title: "macOS 上的 AI 助手",
-            subtitle: "Wright 是一款可自定义的 macOS AI 助手。创建专属角色，轻松润色和翻译文本，以及进行对话——所有操作仅需一个快捷键或 PopClip。免费使用。",
+            title: "macOS 上的专属 AI 助手",
+            subtitle: "Wright 是一款可自定义的 macOS AI 助手。您可以创建专属角色，使用快捷键或 PopClip 快速完成文本润色、翻译与对话，全程轻松无缝。免费体验。",
             download: "下载 macOS 版本"
         },
         guide: {
@@ -445,38 +445,38 @@ const translations = {
             title: "隐私政策",
             meta: {
                 title: "隐私政策 | Wright",
-                desc: "Wright 的隐私政策。我们不收集个人使用数据。"
+                desc: "Wright 隐私政策。我们不收集个人使用数据。"
             },
-            lastUpdated: "最后更新：2024年3月",
+            lastUpdated: "最后更新：2026年2月",
             commitment: {
                 title: "我们对隐私的承诺",
-                text: "Wright 的设计充分考虑了您的隐私。我们相信透明度，并致力于保护您的隐私和个人信息。",
+                text: "Wright 的设计充分考虑了您的隐私。我们坚信透明度，并将数据收集限制在绝对必要的范围内。",
                 keyPoints: {
-                    title: "主要隐私点：",
+                    title: "关键隐私点：",
                     list: [
-                        "我们不收集任何个人信息",
-                        "我们不跟踪您的使用情况",
-                        "我们不存储您的任何数据"
+                        "我们不会访问或存储您的对话内容",
+                        "我们仅收集您的邮箱用于账户管理",
+                        "我们使用最少的连接来提供服务"
                     ]
                 }
             },
             dataCollection: {
-                title: "数据收集与存储",
-                text: "Wright 不会收集、存储或传输关于用户的任何个人信息。该应用程序完全在您的本地设备上运行。",
+                title: "数据收集与架构",
+                text: "Wright 使用安全的后端 API 服务来处理您的请求。我们不存储您的对话历史或内容。",
                 apiKeys: {
-                    title: "API 密钥",
-                    text: "您唯一需要提供的数据是您希望使用的 LLM 服务的 API 密钥。这些 API 密钥：",
+                    title: "服务架构",
+                    text: "所有交互均通过我们安全的 API 处理。您的内容仅用于生成回复，绝不会被保存。",
                     list: [
-                        "安全地存储在您的 macOS 钥匙串中",
-                        "从未传输到我们的服务器",
-                        "仅用于直接与您选择的 LLM 服务通信",
-                        "随时可以通过应用程序或钥匙串访问移除"
+                        "我们只收集您的账户邮箱",
+                        "用于故障排除的最少数据",
+                        "不保留对话数据",
+                        "安全可靠的实现"
                     ]
                 }
             },
             thirdParty: {
                 title: "第三方服务",
-                text: "当您使用 Wright 与 LLM 服务（如 OpenAI、Groq 等）交互时，您的互动受这些服务的隐私政策管辖。我们建议查看您选择使用的 LLM 服务的隐私政策：",
+                text: "当您使用 Wright 与 LLM 服务（如 OpenAI、Groq 等）交互时，您的互动受这些服务的隐私政策管辖。我们建议您查看所选 LLM 服务的隐私政策：",
                 list: [
                     "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI 隐私政策</a>",
                     "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq 隐私政策</a>",
@@ -485,11 +485,11 @@ const translations = {
             },
             security: {
                 title: "数据安全",
-                text: "您的 API 密钥安全地存储在 macOS 钥匙串中，该钥匙串为敏感数据提供加密存储。这是 macOS 用于存储密码和其他安全信息的同一系统。"
+                text: "您的账户信息被安全存储。我们采用行业标准的安全措施来保护您的数据。"
             },
             changes: {
                 title: "本隐私政策的变更",
-                text: "我们可能会不时更新我们的隐私政策。我们将通过在此页面上发布新的隐私政策并更新“最后更新”日期来通知您任何变更。"
+                text: "我们可能会不时更新隐私政策。如有任何更改，我们将在本页发布新的隐私政策并更新“最后更新”日期以通知您。"
             },
             contact: {
                 title: "联系我们",
@@ -497,112 +497,112 @@ const translations = {
             }
         },
         howItWorks: {
-            title: "工作原理",
-            subtitle: "使用键盘快捷键或集成 PopClip 以右键访问所有功能。",
+            title: "使用指南",
+            subtitle: "只需快捷键或搭配 PopClip，即可右键一键调用全部功能。",
             step1: {
-                title: "选择文本",
-                description: "在 Mac 上的任何应用中高亮显示任何文本。"
+                title: "选中文本",
+                description: "在 Mac 的任意应用中高亮选中您需要的文本。"
             },
             step2: {
-                title: "按下快捷键",
-                description: "按下您配置的快捷键或使用 PopClip 触发润色、翻译或聊天。"
+                title: "轻按快捷键",
+                description: "按下您设置的快捷键，或通过 PopClip 触发润色、翻译或对话功能。"
             },
             step3: {
                 title: "获取结果",
-                description: "AI 增强的文本即时出现在浮动窗口中。一键复制或替换。"
+                description: "AI 处理后的文本会以悬浮窗的形式立刻呈现，支持一键复制或替换原文。"
             }
         },
         features: {
-            title: "主要功能",
+            title: "核心功能一览",
             quickView: {
-                title: "快速启动，深入交流",
-                description: "在轻量级快速视图中启动快速查询。当对话需要更深入时，切换到完整聊天界面——您的上下文会自动保留。"
+                title: "快速唤出，深度交流",
+                description: "通过轻量级的快速视图（Quick View）发起查询。当对话需要更深入时，可无缝切换到完整聊天界面——上下文会自动保留。"
             },
             rewrite: {
-                title: "一键文本润色",
-                description: "选择文本，按下快捷键，即时获得润色版本。Wright 修复错别字、语法和尴尬的措辞，同时保持您的原意。它会自动检测您正在使用的语言。"
+                title: "一键润色文本",
+                description: "选中文本并按下快捷键，即可获得润色版本。Wright 可修复错别字、语法及生硬的表达，同时保留您的原意。支持自动检测您当前写作的语言。"
             },
             translate: {
-                title: "即时翻译",
-                description: "通过单个快捷键在语言之间翻译选定的文本。Wright 检测源语言并为您翻译——无需切换到单独的应用或浏览器标签页。"
+                title: "瞬时翻译",
+                description: "通过简单的快捷键即可实现不同语言之间的即时翻译。Wright 自动检测原文语言并为您翻译——无需来回切换到翻译软件或浏览器应用。"
             },
             customRoles: {
                 title: "自定义 AI 角色",
-                description: "创建您自己的 AI 角色——例如代码审查、文案撰写、邮件起草或其他任何角色——每个角色都有自己的系统提示和行为。"
+                description: "打造您自己的专属 AI 角色——例如代码审查员、文案编辑、邮件助理等功能各异的角色，每个角色均可配置独立的系统提示词和响应行为。"
             },
             setup: {
-                title: "您的设置，随心所欲",
-                description: "为每个 AI 角色配置快捷键，并自定义界面以适应您的工作流程。Wright 支持多个 LLM 提供商，允许您选择最符合您要求的提供商。",
+                title: "您的专属配置",
+                description: "为不同 AI 角色配置不同的快捷键，根据您的工作流定制界面。Wright 支持多个领先的大语言模型（LLM）提供商，您可以自由选择最契合您需求的模型。",
                 list: [
-                    "可自定义的键盘快捷键",
-                    "多个 AI 模型 (OpenAI, Gemini, Grok, Groq)",
-                    "PopClip 集成"
+                    "支持全自定义键盘快捷键",
+                    "内置多种顶级 AI 模型（OpenAI，Gemini，Grok，Groq）",
+                    "无缝集成 PopClip"
                 ]
             }
         },
         pricing: {
-            title: "选择您的计划",
+            title: "选择您的订阅计划",
             free: {
-                tier: "免费",
-                tokens: "1,000 tokens / 天",
-                reset: "每日重置 (UTC 午夜)",
-                cta: "开始使用"
+                tier: "免费版",
+                tokens: "1,000 token / 天",
+                reset: "每日重置（UTC 午夜）",
+                cta: "开始免费使用"
             },
             basic: {
                 tier: "基础版",
                 period: "/ 年",
-                tokens: "500,000 tokens / 月",
-                reset: "每月1日重置",
-                cta: "订阅"
+                tokens: "500,000 token / 月",
+                reset: "每月 1 日重置",
+                cta: "立即订阅"
             },
             pro: {
                 badge: "最受欢迎",
                 tier: "专业版",
                 period: "/ 月",
-                tokens: "10,000,000 tokens / 月",
-                reset: "每月1日重置",
-                cta: "成为专业版"
+                tokens: "10,000,000 token / 月",
+                reset: "每月 1 日重置",
+                cta: "升级至专业版"
             }
         },
         benefits: {
             title: "为什么选择 Wright？",
-            subtitle: "原生 macOS 助手，在您需要之前绝不打扰",
+            subtitle: "我们是一款原生的 macOS 助手。不在您不需要时打扰，但在您需要时使命必达。",
             everywhere: {
-                title: "随处可用",
-                description: "全局键盘快捷键和 PopClip 集成，在任何应用程序中都能使用——邮件、笔记、Slack、你的浏览器，或你 Mac 上的任何文本字段。"
+                title: "随时随地可用",
+                description: "得益于全局快捷键及 PopClip 融合，不管是邮件、备忘录、Slack 还是浏览器，Wright 可以在 Mac 的任何文本框中稳定运行。"
             },
             free: {
-                title: "免费开始",
-                description: "无需 API 密钥，无需配置。包含免费计划，因此您可以在升级前试用每个功能。"
+                title: "免费零门槛",
+                description: "无需自备 API Key，无需繁杂配置。软件自带免费额度，供您在升级前完整体验全部功能。"
             }
         },
         download: {
-            title: "开始使用",
-            description: "免费下载 Wright 并立即开始使用。",
+            title: "开启您的体验",
+            description: "无论是在工作还是学习中，现在就立刻免费下载并开始使用 Wright 吧。",
             cta: "下载 macOS 版本",
-            guide: "用户指南",
-            note: "包含免费计划 · 无需配置"
+            guide: "查看使用指南",
+            note: "自带免费计划 · 免除配置烦恼"
         },
         footer: {
             rights: "© 2026 Wright. 保留所有权利。",
             privacy: "隐私政策",
-            support: "支持"
+            support: "帮助"
         }
     }, es: {
         meta: {
-            title: "Wright - Asistente de IA para macOS | Reescribir, Traducir y Charlar",
-            description: "Wright es un asistente de IA personalizable para macOS. Cree roles personalizados, reescriba y traduzca textos sin esfuerzo, y charle, todo desde un atajo de teclado o PopClip. Uso gratuito."
+            title: "Wright - Asistente de IA para macOS | Reescriba, Traduzca y Converse",
+            description: "Wright es un asistente de IA personalizable para macOS. Cree roles a medida, reescriba y traduzca texto sin esfuerzo, y chatee, todo con un atajo de teclado o PopClip. Gratuito."
         },
         nav: {
-            features: "Características",
+            features: "Funciones",
             download: "Descargar",
-            support: "Ayuda",
+            support: "Soporte",
             guide: "Guía",
             toggle: "Idioma"
         },
         hero: {
             title: "Tu Asistente de IA para macOS",
-            subtitle: "Wright es un asistente de IA personalizable para macOS. Cree roles personalizados, reescriba y traduzca textos sin esfuerzo, y charle, todo desde un atajo de teclado o PopClip. Uso gratuito.",
+            subtitle: "Wright es un asistente de IA personalizable para macOS. Cree roles a medida, reescriba y traduzca textos sin esfuerzo, y converse, todo desde un atajo de teclado o PopClip. De uso gratuito.",
             download: "Descargar para macOS"
         },
         guide: {
@@ -739,143 +739,143 @@ const translations = {
             title: "Política de Privacidad",
             meta: {
                 title: "Política de Privacidad | Wright",
-                desc: "Política de privacidad de Wright. No recopilamos datos de uso personal."
+                desc: "Política de Privacidad de Wright. No recopilamos datos de uso personal."
             },
-            lastUpdated: "Última Actualización: Marzo 2024",
+            lastUpdated: "Última Actualización: Febrero 2026",
             commitment: {
                 title: "Nuestro Compromiso con la Privacidad",
-                text: "Wright está diseñado pensando en su privacidad. Creemos en la transparencia y estamos comprometidos a proteger su privacidad e información personal.",
+                text: "Wright está diseñado pensando en su privacidad. Creemos en la transparencia y minimizamos la recopilación de datos a lo absolutamente esencial.",
                 keyPoints: {
                     title: "Puntos Clave de Privacidad:",
                     list: [
-                        "No recopilamos información personal",
-                        "No rastreamos su uso",
-                        "No almacenamos ninguno de sus datos"
+                        "No accedemos ni almacenamos el contenido de sus conversaciones",
+                        "Solo recopilamos su correo electrónico para la gestión de su cuenta",
+                        "Utilizamos conexiones mínimas para la prestación del servicio"
                     ]
                 }
             },
             dataCollection: {
-                title: "Recopilación y Almacenamiento de Datos",
-                text: "Wright no recopila, almacena ni transmite ninguna información personal sobre nuestros usuarios. La aplicación opera completamente en su dispositivo local.",
+                title: "Recopilación de Datos y Arquitectura",
+                text: "Wright utiliza un servicio de API backend seguro para procesar sus solicitudes. No almacenamos su historial de conversaciones ni su contenido.",
                 apiKeys: {
-                    title: "Claves API",
-                    text: "El único dato que necesita proporcionar es su clave API para los servicios LLM. Estas claves:",
+                    title: "Arquitectura del Servicio",
+                    text: "Todas las interacciones se procesan a través de nuestra API segura. Su contenido pasa por ella únicamente para generar respuestas y nunca se guarda.",
                     list: [
-                        "Se guardan seguramente en su Llavero de macOS",
-                        "Nunca se transmiten a nuestros servidores",
-                        "Solo se usan para comunicar directamente con sus servicios LLM",
-                        "Se pueden eliminar en cualquier momento"
+                        "Recopilamos únicamente el correo asociado a su cuenta",
+                        "Mínimos datos utilizados para la resolución de problemas",
+                        "Sin retención de datos de conversación",
+                        "Implementación segura"
                     ]
                 }
             },
             thirdParty: {
                 title: "Servicios de Terceros",
-                text: "Cuando usa Wright para interactuar con servicios LLM, sus interacciones se rigen por las políticas de esos servicios. Recomendamos revisar sus políticas:",
+                text: "Cuando utiliza Wright para interactuar con servicios de LLM (como OpenAI, Groq, etc.), sus interacciones se rigen por las políticas de privacidad de esos servicios. Recomendamos revisar las políticas de privacidad de los servicios que decida utilizar:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Política de Privacidad OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Política de Privacidad Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Política de Privacidad xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Política de Privacidad de OpenAI</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Política de Privacidad de Groq</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Política de Privacidad de xAI</a>"
                 ]
             },
             security: {
                 title: "Seguridad de Datos",
-                text: "Sus claves API se almacenan de forma segura en el Llavero de macOS, que proporciona almacenamiento encriptado."
+                text: "La información de su cuenta se almacena de forma segura. Empleamos medidas de seguridad estándar de la industria para proteger sus datos."
             },
             changes: {
-                title: "Cambios en Esta Política",
-                text: "Podemos actualizar nuestra Política de Privacidad de vez en cuando. Le notificaremos de cualquier cambio publicando la nueva política aquí."
+                title: "Cambios en esta Política de Privacidad",
+                text: "Podemos actualizar nuestra Política de Privacidad de vez en cuando. Le notificaremos sobre cualquier cambio publicando la nueva versión en esta página y actualizando la fecha de \"Última Actualización\"."
             },
             contact: {
                 title: "Contáctenos",
-                text: "Si tiene preguntas sobre esta política, contáctenos en:"
+                text: "Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos en:"
             }
         },
         howItWorks: {
             title: "Cómo Funciona",
-            subtitle: "Use atajos o integre con PopClip.",
+            subtitle: "Utilice atajos de teclado o intégrelo con PopClip para acceder a todas las funciones con un clic derecho.",
             step1: {
                 title: "Seleccionar Texto",
-                description: "Resalte cualquier texto en cualquier app en su Mac."
+                description: "Resalte cualquier texto en cualquier aplicación en su Mac."
             },
             step2: {
                 title: "Presionar Atajo",
-                description: "Pulse su atajo configurado o use PopClip para activar funciones."
+                description: "Presione el atajo configurado o use PopClip para activar funciones de reescritura, traducción o chat."
             },
             step3: {
                 title: "Obtener Resultado",
-                description: "Su texto mejorado por IA aparece al instante."
+                description: "Su texto mejorado por IA aparecerá al instante en una ventana flotante. Puede copiarlo o insertarlo con un solo clic."
             }
         },
         features: {
-            title: "Características Clave",
+            title: "Características Principales",
             quickView: {
-                title: "Inicio Rápido",
-                description: "Lance una consulta rápida. Transición a chat completo cuando necesite más profundidad."
+                title: "Inicio Rápido, Funciones Profundas",
+                description: "Inicie una consulta rápida con la ágil Vista Rápida. Cuando la conversación requiera de más profundidad, haga la transición a la interfaz de Chat completa; su contexto se trasladará automáticamente."
             },
             rewrite: {
-                title: "Pulido de Texto",
-                description: "Seleccione texto, presione un atajo y obtenga una versión pulida al instante. Wright corrige errores y mejora la redacción."
+                title: "Pulido de Texto en un Clic",
+                description: "Seleccione un texto, presione un atajo y obtenga una versión revisada al instante. Wright corrige errores tipográficos, gramaticales y frases difíciles manteniendo su significado original. Detecta automáticamente el idioma en el que está escribiendo."
             },
             translate: {
                 title: "Traducción Instantánea",
-                description: "Traduzca texto seleccionado entre idiomas con un solo atajo."
+                description: "Traduzca cualquier texto seleccionado entre numerosos idiomas con un solo atajo. Wright detecta el idioma origen y lo traduce por usted — sin necesidad de cambiar a otra app o buscar en navegador."
             },
             customRoles: {
                 title: "Roles de IA Personalizados",
-                description: "Cree sus propios roles de IA con prompts personalizados."
+                description: "Cree sus propios roles de IA (p. ej. un revisor de código fuente, un redactor publicitario, o lo que necesite) cada uno con su propia instrucción (prompt) y comportamiento específico."
             },
             setup: {
-                title: "Su Configuración",
-                description: "Configure atajos y personalice la interfaz.",
+                title: "Tu Configuración, a tu Manera",
+                description: "Configure atajos para cada uno de sus roles de IA y personalice la interfaz según su flujo de trabajo. Wright soporta múltiples proveedores de LLM, permitiéndole elegir el que mejor se ajuste a sus necesidades.",
                 list: [
-                    "Atajos Personalizables",
-                    "Múltiples Modelos de IA",
-                    "Integración PopClip"
+                    "Atajos de Teclado Personalizables",
+                    "Múltiples Modelos de IA (OpenAI, Gemini, Grok, Groq)",
+                    "Integración total con PopClip"
                 ]
             }
         },
         pricing: {
-            title: "Elija Su Plan",
+            title: "Elige Tu Plan",
             free: {
                 tier: "Gratis",
-                tokens: "1,000 tokens / día",
-                reset: "Reinicio diario",
-                cta: "Empezar"
+                tokens: "1.000 tokens / día",
+                reset: "Reinicio diario (medianoche UTC)",
+                cta: "Comenzar"
             },
             basic: {
                 tier: "Básico",
                 period: "/ año",
-                tokens: "500,000 tokens / mes",
-                reset: "Reinicio mensual",
+                tokens: "500.000 tokens / mes",
+                reset: "Reinicio el 1º de cada mes",
                 cta: "Suscribirse"
             },
             pro: {
                 badge: "Más Popular",
                 tier: "Pro",
                 period: "/ mes",
-                tokens: "10,000,000 tokens / mes",
-                reset: "Reinicio mensual",
-                cta: "Ir a Pro"
+                tokens: "10.000.000 tokens / mes",
+                reset: "Reinicio el 1º de cada mes",
+                cta: "Pasar a Pro"
             }
         },
         benefits: {
             title: "¿Por qué Wright?",
-            subtitle: "Un asistente nativo de macOS",
+            subtitle: "Un asistente nativo de macOS que no molesta hasta que lo necesita.",
             everywhere: {
                 title: "Funciona en Todas Partes",
-                description: "Atajos globales e integración PopClip significan que Wright funciona en cualquier app."
+                description: "Atajos de teclado globales y soporte con PopClip. Funciona en cualquier aplicación: Mail, Notes, Slack, tu navegador o cualquier campo de texto en tu Mac."
             },
             free: {
-                title: "Gratis para Empezar",
-                description: "Descargue y comience a usar Wright inmediatamente."
+                title: "Empiece Gratis",
+                description: "Sin necesidad de clave de API, sin configuración complicada. Hay un plan gratuito activo para que puedas probar cualquier característica de las anteriores antes de decidir mejorar tu plan."
             }
         },
         download: {
-            title: "Empezar",
-            description: "Descargue Wright gratis.",
+            title: "Empieza Ahora",
+            description: "Descargue Wright gratis y comience a usarlo de inmediato.",
             cta: "Descargar para macOS",
             guide: "Guía de Usuario",
-            note: "Plan gratuito incluido"
+            note: "Plan gratuito incluido · No requiere configuración extra"
         },
         footer: {
             rights: "© 2026 Wright. Todos los derechos reservados.",
@@ -885,19 +885,19 @@ const translations = {
     },
     fr: {
         meta: {
-            title: "Wright - Assistant IA pour macOS | Réécrire, Traduire & Discuter",
-            description: "Wright est un assistant IA personnalisable pour macOS. Créez des rôles personnalisés, réécrivez et traduisez du texte sans effort."
+            title: "Wright - Assistant IA pour macOS | Réécriture, Traduction & Chat",
+            description: "Wright est un assistant IA sur-mesure pour macOS. Créez des rôles personnalisés, réécrivez et traduisez des textes, et discutez d'un seul raccourci ou PopClip. Gratuit."
         },
         nav: {
             features: "Fonctionnalités",
             download: "Télécharger",
-            support: "Aide",
+            support: "Support",
             guide: "Guide",
             toggle: "Langue"
         },
         hero: {
             title: "Votre Assistant IA pour macOS",
-            subtitle: "Wright est un assistant IA personnalisable pour macOS. Créez des rôles personnalisés, réécrivez et traduisez du texte sans effort.",
+            subtitle: "Wright est un assistant IA personnalisable. Créez des rôles sur mesure, réécrivez ou traduisez du texte en un clin d'œil, et discutez via un simple raccourci clavier ou un clic droit PopClip. Utilisation gratuite.",
             download: "Télécharger pour macOS"
         },
         guide: {
@@ -1033,33 +1033,33 @@ const translations = {
         privacy: {
             title: "Politique de Confidentialité",
             meta: {
-                title: "Confidentialité | Wright",
-                desc: "Politique de confidentialité de Wright."
+                title: "Politique de Confidentialité | Wright",
+                desc: "Politique de confidentialité de Wright. Nous ne collectons pas de données d'utilisation personnelles."
             },
-            lastUpdated: "Dernière mise à jour : Mars 2024",
+            lastUpdated: "Dernière Mise à Jour : Février 2026",
             commitment: {
-                title: "Notre Engagement de Confidentialité",
-                text: "Wright est conçu avec votre confidentialité à l'esprit. Nous croyons en la transparence et minimisons la collecte de données au strict nécessaire.",
+                title: "Notre Engagement pour la Confidentialité",
+                text: "Wright est conçu en pensant à votre vie privée. Nous croyons en la transparence et réduisons la collecte de données au strict nécessaire.",
                 keyPoints: {
                     title: "Points Clés de Confidentialité :",
                     list: [
-                        "Nous n'accédons ni ne stockons le contenu de vos conversations",
+                        "Nous n'accédons pas ni ne stockons le contenu de vos conversations",
                         "Nous collectons uniquement votre e-mail pour la gestion du compte",
-                        "Nous utilisons un minimum de connexions pour la fourniture du service"
+                        "Nous utilisons des connexions minimales pour la fourniture de services"
                     ]
                 }
             },
             dataCollection: {
-                title: "Collecte de Données et Architecture",
-                text: "Wright utilise un service API backend sécurisé pour traiter vos demandes. Nous ne stockons pas l'historique ou le contenu de vos conversations.",
+                title: "Collecte de Données & Architecture",
+                text: "Wright utilise un service API backend sécurisé pour traiter vos requêtes. Nous ne stockons ni l'historique de vos conversations ni leur contenu.",
                 apiKeys: {
                     title: "Architecture de Service",
-                    text: "Toutes les interactions sont traitées via notre API sécurisée. Votre contenu est transmis uniquement pour générer des réponses et n'est jamais sauvegardé.",
+                    text: "Toutes les interactions sont traitées via notre API sécurisée. Votre contenu ne transite que pour la génération des réponses et n'est jamais sauvegardé.",
                     list: [
                         "Nous collectons uniquement l'e-mail de votre compte",
                         "Données minimales utilisées pour le dépannage",
-                        "Aucune conservation des données de conversation",
-                        "Mise en œuvre sécurisée"
+                        "Aucune rétention des données de conversation",
+                        "Implémentation sécurisée"
                     ]
                 }
             },
@@ -1067,132 +1067,132 @@ const translations = {
                 title: "Services Tiers",
                 text: "Lorsque vous utilisez Wright pour interagir avec des services LLM (tels que OpenAI, Groq, etc.), vos interactions sont régies par les politiques de confidentialité de ces services. Nous vous recommandons de consulter les politiques de confidentialité des services LLM que vous choisissez d'utiliser :",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Politique de Confidentialité OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Politique de Confidentialité Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Politique de Confidentialité xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Politique de confidentialité d'OpenAI</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Politique de confidentialité de Groq</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Politique de confidentialité de xAI</a>"
                 ]
             },
             security: {
                 title: "Sécurité des Données",
-                text: "Vos informations de compte sont stockées en toute sécurité. Nous utilisons des mesures de sécurité standard de l'industrie pour protéger vos données."
+                text: "Les informations de votre compte sont stockées en toute sécurité. Nous employons les mesures de sécurité standard de l'industrie pour protéger vos données."
             },
             changes: {
                 title: "Modifications de cette Politique de Confidentialité",
-                text: "Nous pouvons mettre à jour notre Politique de Confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle Politique de Confidentialité sur cette page et en mettant à jour la date de \"Dernière mise à jour\"."
+                text: "Nous pouvons mettre à jour notre Politique de Confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle Politique sur cette page et en mettant à jour la date de \"Dernière Mise à Jour\"."
             },
             contact: {
-                title: "Contactez-nous",
+                title: "Nous Contacter",
                 text: "Si vous avez des questions concernant cette Politique de Confidentialité, veuillez nous contacter à :"
             }
         },
         howItWorks: {
-            title: "Comment ça marche",
-            subtitle: "Raccourcis ou PopClip.",
+            title: "Comment Çap Fonctionne",
+            subtitle: "Utilisez des raccourcis clavier ou PopClip pour accéder à tout grâce au clic droit.",
             step1: {
-                title: "Sélectionner",
-                description: "Surligner du texte."
+                title: "Sélectionner du Texte",
+                description: "Surlignez n'importe quel texte dans n'importe quelle application de votre Mac."
             },
             step2: {
-                title: "Raccourci",
-                description: "Appuyer sur le raccourci."
+                title: "Appuyer sur le Raccourci",
+                description: "Appuyez sur votre raccourci configuré ou utilisez PopClip pour déclencher la réécriture, la traduction ou le chat."
             },
             step3: {
-                title: "Résultat",
-                description: "Le texte amélioré apparaît."
+                title: "Obtenir le Résultat",
+                description: "Le texte enrichi par l'IA apparaît instantanément dans une fenêtre flottante. Copiez-le ou remplacez la source en seul clic."
             }
         },
         features: {
-            title: "Fonctionnalités",
+            title: "Fonctionnalités Clés",
             quickView: {
-                title: "Vue Rapide",
-                description: "Requêtes rapides."
+                title: "Lancez Rapide, Explorez en Profondeur",
+                description: "Lancez une requête avec la vue rapide (Quick View). Si la conversation nécessite plus de profondeur, basculez vers l'interface de Chat complète : le contexte est automatiquement conservé."
             },
             rewrite: {
-                title: "Polissage",
-                description: "Améliorer le texte instantanément."
+                title: "Amélioration de Texte en 1 Touche",
+                description: "Sélectionnez le texte, appuyez sur un raccourci et obtenez instantanément une version soignée. Wright corrige les fautes de frappe et la grammaire en conservant l'esprit d'origine, et détecte automatiquement votre langue."
             },
             translate: {
-                title: "Traduction",
-                description: "Traduire instantanément."
+                title: "Traduction Instantanée",
+                description: "Traduisez le texte sélectionné entre plusieurs langues par un seul raccourci. Wright détecte la langue source et la traduit pour vous, évitant les passages fatiguants d'une app à l'autre."
             },
             customRoles: {
-                title: "Rôles Personnalisés",
-                description: "Créer vos propres IA."
+                title: "Rôles d'IA Personnalisables",
+                description: "Créez vos propres rôles d'IA, tels qu'un réviseur de code source, copywriter, concepteur d'e-mails — chacun muni de son propre prompt système."
             },
             setup: {
-                title: "Configuration",
-                description: "Personnaliser tout.",
+                title: "Votre Configuration, Vos Choix",
+                description: "Paramétrez vos raccourcis pour chacun des rôles IA et adaptez l'interface à votre goût. Wright prend en charge différents fournisseurs de LLM pour répondre au mieux à vos exigences.",
                 list: [
-                    "Raccourcis",
-                    "Modèles Multiples",
-                    "PopClip"
+                    "Raccourcis Clavier Flexibles",
+                    "Assortiment de Modèles IA (OpenAI, Gemini, Grok, Groq)",
+                    "Intégration via PopClip"
                 ]
             }
         },
         pricing: {
-            title: "Prix",
+            title: "Choisissez Votre Offre",
             free: {
                 tier: "Gratuit",
                 tokens: "1 000 jetons / jour",
-                reset: "Reset quotidien",
-                cta: "Commencer"
+                reset: "Remise à zéro quotidienne",
+                cta: "Démarrer"
             },
             basic: {
                 tier: "Basique",
                 period: "/ an",
                 tokens: "500 000 jetons / mois",
-                reset: "Reset mensuel",
+                reset: "Renouvelé le 1er du mois",
                 cta: "S'abonner"
             },
             pro: {
-                badge: "Populaire",
+                badge: "Le Plus Populaire",
                 tier: "Pro",
                 period: "/ mois",
                 tokens: "10 000 000 jetons / mois",
-                reset: "Reset mensuel",
-                cta: "Passer Pro"
+                reset: "Renouvelé le 1er du mois",
+                cta: "Passer en Pro"
             }
         },
         benefits: {
             title: "Pourquoi Wright ?",
-            subtitle: "Natif macOS.",
+            subtitle: "Un assistant macOS natif qui ne vous encombre pas tant que vous ne l'appelez pas.",
             everywhere: {
-                title: "Partout",
-                description: "Fonctionne dans toutes les apps."
+                title: "Fonctionne Partout",
+                description: "Doté de raccourcis globaux et d'une intégration PopClip, Wright agit dans l'App de votre choix — Mail, Notes, Slack, le navigateur web, ou tout champ texte macOS."
             },
             free: {
-                title: "Gratuit",
-                description: "Télécharger et utiliser."
+                title: "Démarrage Gratuit",
+                description: "Aucune clé API requise pour tester, et pas de setup requis. Ce forfait gratuit permet d'essayer tout avant de passer au stade supérieur."
             }
         },
         download: {
-            title: "Commencer",
-            description: "Télécharger gratuitement.",
+            title: "Démarrer Dès Maintenant",
+            description: "Téléchargez Wright gratuitement et commencez à l'utiliser dès aujourd'hui.",
             cta: "Télécharger pour macOS",
-            guide: "Guide",
-            note: "Plan gratuit inclus"
+            guide: "Guide d'Utilisation",
+            note: "Plan gratuit inclus · Pas de configuration nécessaire"
         },
         footer: {
             rights: "© 2026 Wright. Tous droits réservés.",
-            privacy: "Confidentialité",
+            privacy: "Politique de Confidentialité",
             support: "Support"
         }
     }, de: {
         meta: {
             title: "Wright - KI-Assistent für macOS | Umschreiben, Übersetzen & Chatten",
-            description: "Wright ist ein anpassbarer KI-Assistent für macOS. Erstellen Sie eigene Rollen, schreiben und übersetzen Sie Texte mühelos und chatten Sie – alles über einen Tastaturkurzbefehl oder PopClip. Kostenlos nutzbar."
+            description: "Wright ist ein anpassbarer KI-Assistent für macOS. Erstellen Sie maßgeschneiderte Rollen, lassen Sie Texte mühelos umschreiben und übersetzen und chatten Sie direkt über ein Tastaturkürzel oder PopClip. Kostenlos nutzen."
         },
         nav: {
             features: "Funktionen",
-            download: "Download",
-            support: "Hilfe",
-            guide: "Anleitung",
+            download: "Herunterladen",
+            support: "Support",
+            guide: "Handbuch",
             toggle: "Sprache"
         },
         hero: {
             title: "Ihr KI-Assistent für macOS",
-            subtitle: "Wright ist ein anpassbarer KI-Assistent für macOS. Erstellen Sie eigene Rollen, schreiben und übersetzen Sie Texte mühelos und chatten Sie – alles über einen Tastaturkurzbefehl oder PopClip. Kostenlos nutzbar.",
-            download: "Download für macOS"
+            subtitle: "Wright ist ein voll anpassbarer KI-Assistent. Erstellen Sie bestimmte Akteur-Rollen, lassen Sie unleserliche Texte kinderleicht umschreiben oder chatten Sie nahtlos—alle über PopClip oder einen einfachen Shortcut auf Ihrer Tastatur. Kostenlose Nutzung.",
+            download: "Für macOS herunterladen"
         },
         guide: {
             title: "Wright Benutzerhandbuch",
@@ -1325,45 +1325,45 @@ const translations = {
             }
         },
         privacy: {
-            title: "Datenschutzerklärung",
+            title: "Datenschutzrichtlinie",
             meta: {
-                title: "Datenschutz | Wright",
-                desc: "Datenschutzerklärung von Wright."
+                title: "Datenschutzrichtlinie | Wright",
+                desc: "Datenschutzrichtlinie von Wright. Wir sammeln keine persönlichen Nutzungsdaten."
             },
-            lastUpdated: "Zuletzt aktualisiert: März 2024",
+            lastUpdated: "Zuletzt Aktualisiert: Februar 2026",
             commitment: {
                 title: "Unser Engagement für den Datenschutz",
-                text: "Wright wurde mit Blick auf Ihre Privatsphäre entwickelt. Wir glauben an Transparenz und minimieren die Datenerfassung auf das absolut Notwendige.",
+                text: "Wright ist so konzipiert, dass Ihre Privatsphäre geschützt wird. Wir glauben an Transparenz und beschränken die Datenerfassung auf das absolut Notwendigste.",
                 keyPoints: {
-                    title: "Wichtige Datenschutzpunkte:",
+                    title: "Zentrale Datenschutzpunkte:",
                     list: [
-                        "Wir greifen nicht auf Ihre Gesprächsinhalte zu und speichern diese nicht",
-                        "Wir erfassen nur Ihre E-Mail für die Kontoverwaltung",
-                        "Wir verwenden minimale Verbindungen für die Servicebereitstellung"
+                        "Wir haben keinen Zugriff auf den Inhalt Ihrer Gespräche und speichern diesen nicht",
+                        "Wir erfassen lediglich Ihre E-Mail zur Kontoverwaltung",
+                        "Wir nutzen nur essenzielle Verbindungen zur Bereitstellung der Dienste"
                     ]
                 }
             },
             dataCollection: {
                 title: "Datenerfassung & Architektur",
-                text: "Wright nutzt einen sicheren Backend-API-Service, um Ihre Anfragen zu verarbeiten. Wir speichern weder Ihren Gesprächsverlauf noch dessen Inhalt.",
+                text: "Wright nutzt einen sicheren Backend-API-Dienst zur Verarbeitung Ihrer Anfragen. Weder Ihr Gesprächsverlauf noch dessen Inhalte werden von uns gespeichert.",
                 apiKeys: {
-                    title: "Service-Architektur",
-                    text: "Alle Interaktionen werden über unsere sichere API verarbeitet. Ihr Inhalt wird ausschließlich zur Generierung von Antworten durchgeleitet und niemals gespeichert.",
+                    title: "Dienstarchitektur",
+                    text: "Sämtliche Interaktionen werden über unsere sichere API abgewickelt. Ihre Inhalte werden ausschließlich zur Erstellung von Antworten durchgeleitet und niemals gespeichert.",
                     list: [
-                        "Wir erfassen nur Ihre Konto-E-Mail",
-                        "Minimale Daten für die Fehlerbehebung",
+                        "Wir erfassen lediglich die E-Mail Ihres Kontos",
+                        "Minimal notwendige Daten für die Fehlerbehebung",
                         "Keine Speicherung von Gesprächsdaten",
                         "Sichere Implementierung"
                     ]
                 }
             },
             thirdParty: {
-                title: "Dienste von Drittanbietern",
-                text: "Wenn Sie Wright verwenden, um mit LLM-Diensten (wie OpenAI, Groq usw.) zu interagieren, unterliegen Ihre Interaktionen den Datenschutzrichtlinien dieser Dienste. Wir empfehlen, die Datenschutzrichtlinien der von Ihnen gewählten LLM-Dienste zu lesen:",
+                title: "Drittanbieterdienste",
+                text: "Wenn Sie Wright nutzen, um mit LLM-Diensten (wie z.B. OpenAI, Groq usw.) zu interagieren, unterliegen Ihre Interaktionen den Datenschutzrichtlinien der jeweiligen Anbieter. Wir empfehlen, sich die Datenschutzbestimmungen der von Ihnen gewählten LLM-Dienste durchzulesen:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI Datenschutzerklärung</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq Datenschutzerklärung</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI Datenschutzerklärung</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI Datenschutzrichtlinie</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq Datenschutzrichtlinie</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI Datenschutzrichtlinie</a>"
                 ]
             },
             security: {
@@ -1371,111 +1371,111 @@ const translations = {
                 text: "Ihre Kontoinformationen werden sicher gespeichert. Wir setzen branchenübliche Sicherheitsmaßnahmen ein, um Ihre Daten zu schützen."
             },
             changes: {
-                title: "Änderungen an dieser Datenschutzerklärung",
-                text: "Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzerklärung auf dieser Seite veröffentlichen und das Datum \"Zuletzt aktualisiert\" aktualisieren."
+                title: "Änderungen dieser Datenschutzrichtlinie",
+                text: "Wir können unsere Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Über solche Änderungen werden wir Sie in Kenntnis setzen, indem wir die neue Version auf dieser Seite veröffentlichen und das Datum \"Zuletzt Aktualisiert\" anpassen."
             },
             contact: {
-                title: "Kontaktieren Sie uns",
-                text: "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter:"
+                title: "Kontaktiere Uns",
+                text: "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, wenden Sie sich bitte an:"
             }
         },
         howItWorks: {
-            title: "So funktioniert's",
-            subtitle: "Kurzbefehle oder PopClip.",
+            title: "Wie Es Funktioniert",
+            subtitle: "Nutzen Sie Tastenkürzel oder interagieren Sie über den Rechtsklick mit PopClip.",
             step1: {
-                title: "Text auswählen",
-                description: "Text markieren."
+                title: "Text Auswählen",
+                description: "Markieren Sie einen beliebigen Text auf einer beliebigen Applikation über den Mac."
             },
             step2: {
-                title: "Kurzbefehl drücken",
-                description: "Funktion auslösen."
+                title: "Tastenkürzel Nutzen",
+                description: "Drücken Sie Ihr konfiguriertes Kürzel oder steuern Sie einfach per PopClip ins Rewrite, Translate und den Chat Modus."
             },
             step3: {
-                title: "Ergebnis erhalten",
-                description: "Verbesserter Text erscheint."
+                title: "Ergebnis Erhalten",
+                description: "Die durch KI bearbeitete Version erscheint in Windeseile in einem schmalen Float-Fenster. Sie können alles in die Zwischenablage übertragen oder direkt austauschen."
             }
         },
         features: {
-            title: "Hauptfunktionen",
+            title: "Kernfunktionen",
             quickView: {
-                title: "Schnellansicht",
-                description: "Schnelle Abfragen."
+                title: "Schneller Start, Tiefgehende Details",
+                description: "Erstellen Sie schnelle Anfragen im Quick-View Format. Wenn Sie tiefer blicken möchten, gelangen Sie stets unkompliziert zur vollständigen Chat-Schnittstelle. Es wird jeglicher Kontext beibehalten."
             },
             rewrite: {
-                title: "Umschreiben",
-                description: "Text sofort verbessern."
+                title: "Text auf Hochglanz Polieren",
+                description: "Markieren, Kürzel bedienen, bessere Ausfertigung abrufen. Wright filtert Kommas, Grammatik, Tippfehler oder merkwürdige Redewendungen unmerklich ab, während der eigentliche Kern des Inhalts verbleibt. Erkennt natürlich alle Schreib-Sprachen automatisch."
             },
             translate: {
-                title: "Übersetzen",
-                description: "Sofort übersetzen."
+                title: "Sofortige Übersetzung",
+                description: "Wir übersetzen Ihre erfassten Texte anhand eines einzigen Shortcuts ohne Verzögerung in die gwünschte Sprache. Wright ermittelt Ausgangssprache selbstständig und liefert die Version zurück—sodass Applikations- und Browserwechsel verschwinden."
             },
             customRoles: {
-                title: "Eigene Rollen",
-                description: "Eigene KI erstellen."
+                title: "Personalisierte Rollen",
+                description: "Erstellen Sie Ihre KI-Akteure — ob es darum geht Codepassagen zu rezensieren, einen Werbetext zu verfassen oder Mails als Entwurf anzulegen. Steuern Sie den Befehl der Basis von innen."
             },
             setup: {
-                title: "Einrichtung",
-                description: "Alles anpassen.",
+                title: "Alles nach Ihrem Geschmack",
+                description: "Passen Sie die Tastenanschläge Ihren AI Agenten ganz einfach den eigenen Routinen an. Wright ist mit allen gängigen Modellen von LLM Anbietern kombinierbar und ermöglicht absolute Passgenauigkeit nach Wunsch.",
                 list: [
-                    "Kurzbefehle",
-                    "Mehrere Modelle",
-                    "PopClip"
+                    "Anpassbare und flexible Tastaturkürzel",
+                    "Unterstützte Modelle wie OpenAI, Gemini, Grok, Groq",
+                    "PopClip ist stark integriert"
                 ]
             }
         },
         pricing: {
-            title: "Preise",
+            title: "Wählen Sie Ihren Plan",
             free: {
                 tier: "Kostenlos",
-                tokens: "1.000 Tokens / Tag",
-                reset: "Täglicher Reset",
-                cta: "Starten"
+                tokens: "1.000 Token / Tag",
+                reset: "Täglicher Reset (Mitternacht UTC)",
+                cta: "Loslegen"
             },
             basic: {
-                tier: "Basis",
+                tier: "Basic",
                 period: "/ Jahr",
-                tokens: "500.000 Tokens / Monat",
-                reset: "Monatlicher Reset",
+                tokens: "500.000 Token / Monat",
+                reset: "Reset am 1. jedes Monats",
                 cta: "Abonnieren"
             },
             pro: {
-                badge: "Beliebt",
+                badge: "Am Beliebtesten",
                 tier: "Pro",
                 period: "/ Monat",
-                tokens: "10.000.000 Tokens / Monat",
-                reset: "Monatlicher Reset",
-                cta: "Zu Pro wechseln"
+                tokens: "10.000.000 Token / Monat",
+                reset: "Reset am 1. jedes Monats",
+                cta: "Pro Holen"
             }
         },
         benefits: {
             title: "Warum Wright?",
-            subtitle: "Nativ für macOS.",
+            subtitle: "Es ist eine rein konzipierte Applikation auf macOS Architektur, die stets unauffällig arbeitet und nie zur Plage wird.",
             everywhere: {
-                title: "Überall",
-                description: "Funktioniert in jeder App."
+                title: "Funktioniert Überall",
+                description: "Die globalen Funktionen interagieren dank Apples Popclip mit Mail, Notizen, im Web, Slack oder auf all den denkbaren Anzeigemasken."
             },
             free: {
-                title: "Kostenlos",
-                description: "Einfach herunterladen."
+                title: "Kostenfreier Start",
+                description: "Es gibt weder Schlüsselanforderung von APIs oder verwirrendes Startsetup. Wright inkludiert bereits kostenlos alles um vor der Entscheidung ins Detail zu blicken."
             }
         },
         download: {
-            title: "Loslegen",
-            description: "Kostenlos herunterladen.",
-            cta: "Download für macOS",
-            guide: "Handbuch",
-            note: "Kostenloser Plan inklusive"
+            title: "Jetzt Starten",
+            description: "Installieren Sie Wright kostenfrei um sofort Ihre Gewinne und das Level in die nächste Stufe zu skalieren.",
+            cta: "Herunterladen für macOS",
+            guide: "Benutzerhandbuch",
+            note: "Kostennloses Testen mit inbegriffen · Kein Setup zwingend"
         },
         footer: {
             rights: "© 2026 Wright. Alle Rechte vorbehalten.",
-            privacy: "Datenschutz",
+            privacy: "Datenschutzrichtlinie",
             support: "Support"
         }
     },
     ja: {
         meta: {
-            title: "Wright - macOS向けAIアシスタント | リライト、翻訳、チャット",
-            description: "WrightはmacOS向けのカスタマイズ可能なAIアシスタントです。独自の役割を作成し、テキストを簡単にリライト・翻訳し、チャットも可能です—すべてキーボードショートカットまたはPopClipから。無料で使用できます。"
+            title: "Wright - macOS用 AIアシスタント | リライト、翻訳、チャット",
+            description: "Wrightはカスタマイズ可能なmacOS用AIアシスタントです。独自の役割を作成し、キーボードショートカットやPopClipからテキストのリライト、翻訳、チャットが簡単に行えます。無料でご利用いただけます。"
         },
         nav: {
             features: "機能",
@@ -1485,8 +1485,8 @@ const translations = {
             toggle: "言語"
         },
         hero: {
-            title: "macOSのためのAIアシスタント",
-            subtitle: "WrightはmacOS向けのカスタマイズ可能なAIアシスタントです。独自の役割を作成し、テキストを簡単にリライト・翻訳し、チャットも可能です—すべてキーボードショートカットまたはPopClipから。無料で使用できます。",
+            title: "あなたのmacOS用AIアシスタント",
+            subtitle: "Wrightはカスタマイズ可能なmacOS用AIアシスタントです。専用の役割の作成、テキストの簡単なリライトや翻訳、チャットまで—キーボードショートカットやPopClipからすべて操作可能です。無料でご利用いただけます。",
             download: "macOS版をダウンロード"
         },
         guide: {
@@ -1620,167 +1620,167 @@ const translations = {
             }
         },
         privacy: {
-            title: "隐私政策",
+            title: "プライバシーポリシー",
             meta: {
-                title: "隐私 | Wright",
-                desc: "Wright 的隐私政策。"
+                title: "プライバシーポリシー | Wright",
+                desc: "Wrightのプライバシーポリシーです。個人利用データの収集は行いません。"
             },
-            lastUpdated: "最后更新：2024年3月",
+            lastUpdated: "最終更新日：2026年2月",
             commitment: {
-                title: "我们的隐私承诺",
-                text: "Wright 的设计充分考虑了您的隐私。我们信奉透明度，并将数据收集减少到绝对必要的最低限度。",
+                title: "プライバシーへの取り組み",
+                text: "Wrightはお客様のプライバシーを念頭に置いて設計されています。私たちは透明性を重視し、データ収集を必要最小限に抑えています。",
                 keyPoints: {
-                    title: "隐私要点：",
+                    title: "プライバシーに関する重要ポイント：",
                     list: [
-                        "我们不访问或存储您的对话内容",
-                        "我们仅收集您的电子邮件用于账户管理",
-                        "我们使用最少的连接来提供服务"
+                        "お客様の会話内容へのアクセスや保存は行いません",
+                        "アカウント管理のためにお客様のメールアドレスのみを収集します",
+                        "サービス提供のために必要最小限の接続を使用します"
                     ]
                 }
             },
             dataCollection: {
-                title: "数据收集与架构",
-                text: "Wright 使用安全的后端 API 服务来处理您的请求。我们不存储您的对话历史或内容。",
+                title: "データ収集とアーキテクチャ",
+                text: "Wrightは、お客様のリクエストを処理するために安全なバックエンドAPIサービスを利用しています。会話履歴や内容は一切保存されません。",
                 apiKeys: {
-                    title: "服务架构",
-                    text: "所有交互均通过我们的安全 API 处理。您的内容仅用于生成响应，绝不会被保存。",
+                    title: "サービスアーキテクチャ",
+                    text: "すべてのやり取りは、当社の安全なAPIを介して処理されます。お客様のコンテンツは応答の生成にのみ使用され、保存されることはありません。",
                     list: [
-                        "我们仅收集您的账户电子邮件",
-                        "最少的数据用于故障排除",
-                        "不保留对话数据",
-                        "安全的实施"
+                        "アカウントのメールアドレスのみを収集します",
+                        "トラブルシューティングに使用されるデータは最小限です",
+                        "会話データの保持は行いません",
+                        "安全性の高い実装"
                     ]
                 }
             },
             thirdParty: {
-                title: "第三方服务",
-                text: "当您使用 Wright 与 LLM 服务（如 OpenAI、Groq 等）交互时，您的交互受这些服务的隐私政策管辖。我们建议您查看您选择使用的 LLM 服务的隐私政策：",
+                title: "サードパーティサービス",
+                text: "Wrightを使用してLLMサービス（OpenAI、Groqなど）と対話する場合、それらのやり取りは該当サービスのプライバシーポリシーに準拠します。ご利用になるLLMサービスのプライバシーポリシーを確認することをお勧めします：",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI 隐私政策</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq 隐私政策</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI 隐私政策</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI プライバシーポリシー</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq プライバシーポリシー</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">xAI プライバシーポリシー</a>"
                 ]
             },
             security: {
-                title: "数据安全",
-                text: "您的账户信息存储安全。我们要采用行业标准的安全措施来保护您的数据。"
+                title: "データセキュリティ",
+                text: "お客様のアカウント情報は安全に保存されます。業界標準のセキュリティ対策を用いてお客様のデータを保護します。"
             },
             changes: {
-                title: "本隐私政策的变更",
-                text: "我们可能会不时更新我们的隐私政策。我们将通过在此页面发布新的隐私政策并更新“最后更新”日期来通知您任何变更。"
+                title: "本プライバシーポリシーの変更について",
+                text: "当社は、本プライバシーポリシーを随時更新することがあります。変更があった場合は、このページに新しいプライバシーポリシーを掲載し、「最終更新日」を更新することでお知らせします。"
             },
             contact: {
-                title: "联系我们",
-                text: "如果您对本隐私政策有任何疑问，请联系我们："
+                title: "お問い合わせ",
+                text: "本プライバシーポリシーについてご質問がある場合は、以下までお問い合わせください："
             }
         },
         howItWorks: {
-            title: "仕組み",
-            subtitle: "ショートカットまたはPopClip。",
+            title: "使い方",
+            subtitle: "キーボードショートカットを利用するか、PopClipと連携して右クリックから全機能にアクセスできます。",
             step1: {
-                title: "テキスト選択",
-                description: "テキストをハイライト。"
+                title: "テキストの選択",
+                description: "Mac上のあらゆるアプリでテキストをハイライトします。"
             },
             step2: {
-                title: "ショートカット",
-                description: "ショートカットを押す。"
+                title: "ショートカットを押す",
+                description: "設定したショートカットを押すか、PopClipを使用してリライト、翻訳、またはチャットを起動します。"
             },
             step3: {
-                title: "結果",
-                description: "改善されたテキストが表示されます。"
+                title: "結果を取得",
+                description: "AIによって強化されたテキストがフローティングウィンドウに瞬時に表示されます。ワンクリックでコピーまたは置き換えが可能です。"
             }
         },
         features: {
             title: "主な機能",
             quickView: {
-                title: "クイックビュー",
-                description: "素早い検索。"
+                title: "素早く始め、深く掘り下げる",
+                description: "軽量なQuick Viewでサッと質問を開始します。会話の深掘りが必要なときは、完全なチャットインターフェースに移行でき、コンテキストは自動的に引き継がれます。"
             },
             rewrite: {
-                title: "リライト",
-                description: "文章を即座に改善。"
+                title: "ワンキーで文章を推敲",
+                description: "テキストを選択してショートカットを押すだけで、洗練されたバージョンがすぐに得られます。Wrightは元の意味を保ちつつ、誤字や文法、不自然な言い回しを修正します。入力言語も自動検出します。"
             },
             translate: {
-                title: "翻訳",
-                description: "即座に翻訳。"
+                title: "瞬間翻訳",
+                description: "ワンショートカットで選択したテキストを言語間で翻訳します。Wrightは原文の言語を検出して翻訳するため、別のアプリやブラウザのタブに切り替える必要はありません。"
             },
             customRoles: {
-                title: "カスタムロール",
-                description: "独自のAIを作成。"
+                title: "カスタムAIロール",
+                description: "コードレビュー、コピーライティング、メールの起草など、それぞれに独自のシステムプロンプトと振る舞いを持つ自分専用のAIロールを作成できます。"
             },
             setup: {
-                title: "設定",
-                description: "全てをカスタマイズ。",
+                title: "あなた好みの設定",
+                description: "各AIロールのショートカットを設定し、ワークフローに合わせてインターフェースをカスタマイズできます。Wrightは複数のLLMプロバイダーをサポートしており、ニーズに最適なものを選択できます。",
                 list: [
-                    "ショートカット",
-                    "複数のモデル",
-                    "PopClip連携"
+                    "カスタマイズ可能なキーボードショートカット",
+                    "複数のAIモデル（OpenAI、Gemini、Grok、Groq）",
+                    "PopClipとの統合"
                 ]
             }
         },
         pricing: {
-            title: "料金",
+            title: "プランの選択",
             free: {
                 tier: "無料",
-                tokens: "1,000トークン / 日",
-                reset: "毎日リセット",
-                cta: "開始"
+                tokens: "1,000 トークン / 日",
+                reset: "毎日リセット (UTC 0時)",
+                cta: "はじめる"
             },
             basic: {
                 tier: "ベーシック",
-                period: "/ 年",
-                tokens: "500,000トークン / 月",
-                reset: "毎月リセット",
-                cta: "購読"
+                period: " / 年",
+                tokens: "500,000 トークン / 月",
+                reset: "毎月1日にリセット",
+                cta: "登録する"
             },
             pro: {
-                badge: "人気",
+                badge: "一番人気",
                 tier: "プロ",
-                period: "/ 月",
-                tokens: "10,000,000トークン / 月",
-                reset: "毎月リセット",
-                cta: "プロへアップグレード"
+                period: " / 月",
+                tokens: "10,000,000 トークン / 月",
+                reset: "毎月1日にリセット",
+                cta: "プロにアップグレード"
             }
         },
         benefits: {
-            title: "なぜWright？",
-            subtitle: "macOSネイティブ。",
+            title: "なぜWrightなのか？",
+            subtitle: "必要な時まで邪魔をしない、ネイティブなmacOSアシスタントです。",
             everywhere: {
-                title: "どこでも",
-                description: "全アプリで動作。"
+                title: "どこでも動作",
+                description: "グローバルなキーボードショートカットとPopClip統合により、メール、メモ、Slack、お使いのブラウザなど、Macのあらゆるアプリやテキスト入力欄で利用可能です。"
             },
             free: {
-                title: "無料",
-                description: "ダウンロードして使用。"
+                title: "無料で開始",
+                description: "APIキーも設定も不要です。無料プランが用意されており、アップグレードする前にすべての機能を試すことができます。"
             }
         },
         download: {
-            title: "開始",
-            description: "無料でダウンロード。",
+            title: "すぐにはじめる",
+            description: "Wrightを無料でダウンロードして、今すぐ使い始めましょう。",
             cta: "macOS版をダウンロード",
-            guide: "ガイド",
-            note: "無料プラン込み"
+            guide: "ユーザーガイド",
+            note: "無料プランが含まれています · 設定不要"
         },
         footer: {
             rights: "© 2026 Wright. 無断複写・転載を禁じます。",
-            privacy: "プライバシー",
+            privacy: "プライバシーポリシー",
             support: "サポート"
         }
     }, ko: {
         meta: {
-            title: "Wright - macOS용 AI 어시스턴트 | 윤문, 번역 & 채팅",
-            description: "Wright는 macOS용 맞춤형 AI 어시스턴트입니다. 사용자 지정 역할을 생성하고, 텍스트를 손쉽게 윤문 및 번역하며, 대화할 수 있습니다. 키보드 단축키나 PopClip으로 모든 기능을 무료로 이용하세요."
+            title: "Wright - macOS용 AI 어시스턴트 | 윤문, 번역 및 채팅",
+            description: "Wright는 사용자 정의 가능한 macOS용 AI 어시스턴트입니다. 맞춤형 역할을 만들고 텍스트를 손쉽게 윤문하거나 번역하며 채팅해 보세요—키보드 단축키나 PopClip으로 모든 작업이 가능합니다. 무료 이용."
         },
         nav: {
             features: "기능",
             download: "다운로드",
-            support: "지원",
+            support: "고객지원",
             guide: "가이드",
             toggle: "언어"
         },
         hero: {
-            title: "macOS용 AI 어시스턴트",
-            subtitle: "Wright는 macOS용 맞춤형 AI 어시스턴트입니다. 사용자 지정 역할을 생성하고, 텍스트를 손쉽게 윤문 및 번역하며, 대화할 수 있습니다. 키보드 단축키나 PopClip으로 모든 기능을 무료로 이용하세요.",
+            title: "당신을 위한 macOS AI 어시스턴트",
+            subtitle: "Wright는 사용자 정의 가능한 macOS용 AI 어시스턴트입니다. 맞춤형 역할을 만들고, 텍스트를 손쉽게 다시 쓰거나 번역하고, 채팅을 즐겨보세요—이 모든 것이 키보드 단축키나 PopClip에서 가능합니다. 무료로 사용하세요.",
             download: "macOS용 다운로드"
         },
         guide: {
@@ -1916,39 +1916,39 @@ const translations = {
         privacy: {
             title: "개인정보 처리방침",
             meta: {
-                title: "개인정보 보호 | Wright",
-                desc: "Wright의 개인정보 처리방침."
+                title: "개인정보 처리방침 | Wright",
+                desc: "Wright 개인정보 처리방침. 당사는 개인 사용 데이터를 수집하지 않습니다."
             },
-            lastUpdated: "최종 업데이트: 2024년 3월",
+            lastUpdated: "최근 업데이트: 2026년 2월",
             commitment: {
-                title: "저희의 개인정보 보호 약속",
-                text: "Wright는 귀하의 개인정보를 염두에 두고 설계되었습니다. 저희는 투명성을 믿으며 데이터 수집을 절대적으로 필요한 최소한으로 줄입니다.",
+                title: "개인정보 보호에 대한 약속",
+                text: "Wright는 귀하의 개인정보를 염두에 두고 설계되었습니다. 당사는 투명성을 중시하며 데이터 수집을 절대적으로 필요한 범위로 최소화합니다.",
                 keyPoints: {
-                    title: "주요 개인정보 보호 사항:",
+                    title: "주요 개인정보 보호 내용:",
                     list: [
-                        "저희는 귀하의 대화 내용에 접근하거나 저장하지 않습니다",
-                        "저희는 계정 관리를 위해 귀하의 이메일만 수집합니다",
-                        "저희는 서비스 제공을 위해 최소한의 연결을 사용합니다"
+                        "귀하의 대화 내용에 접근하거나 저장하지 않습니다",
+                        "계정 관리를 위해 귀하의 이메일만 수집합니다",
+                        "서비스 제공을 위해 최소한의 연결만 사용합니다"
                     ]
                 }
             },
             dataCollection: {
                 title: "데이터 수집 및 아키텍처",
-                text: "Wright는 귀하의 요청을 처리하기 위해 안전한 백엔드 API 서비스를 활용합니다. 저희는 귀하의 대화 기록이나 내용을 저장하지 않습니다.",
+                text: "Wright는 귀하의 요청을 처리하기 위해 안전한 백엔드 API 서비스를 이용합니다. 당사는 귀하의 대화 내역이나 내용을 저장하지 않습니다.",
                 apiKeys: {
                     title: "서비스 아키텍처",
-                    text: "모든 상호 작용은 저희의 안전한 API를 통해 처리됩니다. 귀하의 내용은 응답 생성을 위해서만 전달되며 절대 저장되지 않습니다.",
+                    text: "모든 상호 작용은 안전한 API를 통해 처리됩니다. 귀하의 콘텐츠는 응답 생성을 위해서만 전달되며 절대 저장되지 않습니다.",
                     list: [
-                        "저희는 귀하의 계정 이메일만 수집합니다",
-                        "문제 해결을 위해 최소한의 데이터가 사용됩니다",
-                        "대화 데이터는 보관되지 않습니다",
-                        "안전한 구현"
+                        "귀하의 계정 이메일만 수집합니다",
+                        "문제 해결을 위해 최소한의 데이터만 사용합니다",
+                        "대화 데이터를 보관하지 않습니다",
+                        "안전한 구현 방식"
                     ]
                 }
             },
             thirdParty: {
                 title: "타사 서비스",
-                text: "Wright를 사용하여 LLM 서비스(예: OpenAI, Groq 등)와 상호 작용할 때, 귀하의 상호 작용은 해당 서비스의 개인정보 처리방침에 따릅니다. 귀하가 사용하기로 선택한 LLM 서비스의 개인정보 처리방침을 검토하는 것이 좋습니다:",
+                text: "Wright를 사용하여 LLM 서비스(예: OpenAI, Groq 등)와 상호 작용할 때 해당 상호 작용은 해당 서비스의 개인정보 처리방침을 따릅니다. 사용하기로 선택한 LLM 서비스의 개인정보 처리방침을 검토하는 것을 권장합니다:",
                 list: [
                     "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI 개인정보 처리방침</a>",
                     "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq 개인정보 처리방침</a>",
@@ -1957,125 +1957,125 @@ const translations = {
             },
             security: {
                 title: "데이터 보안",
-                text: "귀하의 계정 정보는 안전하게 저장됩니다. 저희는 귀하의 데이터를 보호하기 위해 업계 표준 보안 조치를 사용합니다."
+                text: "귀하의 계정 정보는 안전하게 보관됩니다. 당사는 귀하의 데이터를 보호하기 위해 업계 표준 보안 조치를 적용합니다."
             },
             changes: {
                 title: "본 개인정보 처리방침의 변경",
-                text: "저희는 때때로 개인정보 처리방침을 업데이트할 수 있습니다. 저희는 이 페이지에 새로운 개인정보 처리방침을 게시하고 \"최종 업데이트\" 날짜를 업데이트하여 변경 사항을 알려드릴 것입니다."
+                text: "당사는 개인정보 처리방침을 수시로 업데이트할 수 있습니다. 변경 사항이 있으면 이 페이지에 새로운 개인정보 처리방침을 게시하고 \"최근 업데이트\" 날짜를 갱신하여 알려 드립니다."
             },
             contact: {
                 title: "문의하기",
-                text: "본 개인정보 처리방침에 대해 질문이 있으시면 다음으로 문의하십시오:"
+                text: "본 개인정보 처리방침에 관해 질문이 있으시면 다음으로 연락해 주십시오:"
             }
         },
         howItWorks: {
-            title: "작동 방식",
-            subtitle: "단축키 또는 PopClip.",
+            title: "사용 방법",
+            subtitle: "키보드 단축키를 사용하거나 PopClip과 연동하여 우클릭으로 모든 기능에 액세스하세요.",
             step1: {
                 title: "텍스트 선택",
-                description: "텍스트 강조 표시."
+                description: "Mac의 어떤 앱에서든 원하는 텍스트를 강조표시합니다."
             },
             step2: {
-                title: "단축키",
-                description: "단축키 누르기."
+                title: "단축키 누르기",
+                description: "설정한 단축키를 누르거나 PopClip을 사용하여 윤문, 번역 또는 채팅을 시작합니다."
             },
             step3: {
-                title: "결과",
-                description: "향상된 텍스트 표시."
+                title: "결과 확인",
+                description: "AI가 개선한 텍스트가 즉시 플로팅 창에 나타납니다. 원클릭으로 복사하거나 원래 텍스트와 바꿀 수 있습니다."
             }
         },
         features: {
             title: "주요 기능",
             quickView: {
-                title: "빠른 보기",
-                description: "빠른 쿼리."
+                title: "빠르게 시작, 깊이 있는 대화",
+                description: "가벼운 퀵 뷰(Quick View)에서 빠른 질문을 시작해 보세요. 대화에 더 깊이가 필요할 땐 전체 채팅 인터페이스로 전환할 수 있습니다—맥락은 자동으로 유지됩니다."
             },
             rewrite: {
-                title: "윤문",
-                description: "즉시 텍스트 개선."
+                title: "단축키 한 번으로 텍스트 다듬기",
+                description: "텍스트를 선택하고 단축키를 누르면 즉시 세련된 버전을 얻을 수 있습니다. Wright는 원래 의미를 유지하면서 오탈자, 문법, 어색한 문구를 수정합니다. 사용하는 언어도 자동으로 감지합니다."
             },
             translate: {
-                title: "번역",
-                description: "즉시 번역."
+                title: "즉각적인 번역",
+                description: "단축키 하나로 선택한 텍스트를 다른 언어로 번역하세요. Wright가 원본 언어를 감지하여 번역해주므로 다른 앱이나 브라우저 탭으로 전환할 필요가 없습니다."
             },
             customRoles: {
-                title: "사용자 지정 역할",
-                description: "나만의 AI 만들기."
+                title: "사용자 지정 AI 역할",
+                description: "코드 리뷰, 카피라이팅, 이메일 작성 등 사용자가 원하는 모든 역할의 AI를 만드세요. 각각 고유한 시스템 프롬프트와 동작을 가집니다."
             },
             setup: {
-                title: "설정",
-                description: "모두 사용자 지정.",
+                title: "원하는 방식대로 설정",
+                description: "각 AI 역할에 맞게 단축키를 구성하고 작업 흐름에 맞게 인터페이스를 개인화하세요. Wright는 여러 LLM 공급자를 지원하므로, 사용자 요구사항에 가장 잘 맞는 것을 선택할 수 있습니다.",
                 list: [
-                    "단축키",
-                    "다중 모델",
+                    "사용자 지정 가능한 키보드 단축키",
+                    "다양한 AI 모델 (OpenAI, Gemini, Grok, Groq)",
                     "PopClip 통합"
                 ]
             }
         },
         pricing: {
-            title: "요금제",
+            title: "요금제 선택",
             free: {
                 tier: "무료",
                 tokens: "1,000 토큰 / 일",
-                reset: "매일 초기화",
+                reset: "매일 초기화 (자정 UTC)",
                 cta: "시작하기"
             },
             basic: {
                 tier: "베이직",
                 period: "/ 년",
                 tokens: "500,000 토큰 / 월",
-                reset: "매월 초기화",
+                reset: "매월 1일 초기화",
                 cta: "구독하기"
             },
             pro: {
-                badge: "인기",
+                badge: "가장 인기",
                 tier: "프로",
                 period: "/ 월",
                 tokens: "10,000,000 토큰 / 월",
-                reset: "매월 초기화",
+                reset: "매월 1일 초기화",
                 cta: "프로로 업그레이드"
             }
         },
         benefits: {
             title: "왜 Wright인가요?",
-            subtitle: "macOS 네이티브.",
+            subtitle: "필요할 때까지 알아서 조용히 기다려주는 기본 macOS 어시스턴트",
             everywhere: {
-                title: "어디서나",
-                description: "모든 앱에서 작동."
+                title: "어디서나 작동합니다",
+                description: "전역 키보드 단축키와 PopClip 통합으로 Mail, Notes, Slack, 브라우저 또는 Mac의 어떠한 텍스트 필드에서든 작동합니다."
             },
             free: {
-                title: "무료",
-                description: "다운로드하여 사용."
+                title: "무료로 시작",
+                description: "API 키도, 복잡한 구성도 필요 없습니다. 요금제를 업그레이드하기 전에 모든 기능을 시도해 볼 수 있도록 무료 플랜이 포함되어 있습니다."
             }
         },
         download: {
             title: "시작하기",
-            description: "무료 다운로드.",
+            description: "Wright를 무료로 다운로드하고 바로 사용해 보세요.",
             cta: "macOS용 다운로드",
-            guide: "가이드",
-            note: "무료 플랜 포함"
+            guide: "사용자 가이드",
+            note: "무료 플랜 포함 · 별도 구성 필요 없음"
         },
         footer: {
-            rights: "© 2026 Wright. All rights reserved.",
-            privacy: "개인정보",
+            rights: "© 2026 Wright. 모든 권리 보유.",
+            privacy: "개인정보 처리방침",
             support: "지원"
         }
     },
     ru: {
         meta: {
-            title: "Wright - ИИ-ассистент для macOS | Переписывание, Перевод и Чат",
-            description: "Wright — это настраиваемый ИИ-ассистент для macOS. Создавайте роли, переписывайте и переводите текст, общайтесь — все с клавиатуры или PopClip. Бесплатно."
+            title: "Wright - ИИ-Ассистент для macOS | Переписывание, Перевод и Чат",
+            description: "Wright — настраиваемый ИИ-ассистент для macOS. Создавайте индивидуальные роли, легко переписывайте и переводите текст или общайтесь с помощью сочетания клавиш или PopClip. Бесплатно."
         },
         nav: {
-            features: "Функции",
+            features: "Возможности",
             download: "Скачать",
             support: "Поддержка",
-            guide: "Гайд",
+            guide: "Руководство",
             toggle: "Язык"
         },
         hero: {
             title: "Ваш ИИ-ассистент для macOS",
-            subtitle: "Wright — это настраиваемый ИИ-ассистент для macOS. Создавайте роли, переписывайте и переводите текст, общайтесь — все с клавиатуры или PopClip. Бесплатно.",
+            subtitle: "Wright — настраиваемый ИИ-ассистент для macOS. Создавайте свои роли, легко переписывайте и переводите тексты и общайтесь с помощью горячих клавиш или PopClip. Полностью бесплатно.",
             download: "Скачать для macOS"
         },
         guide: {
@@ -2211,39 +2211,39 @@ const translations = {
         privacy: {
             title: "Политика конфиденциальности",
             meta: {
-                title: "Конфиденциальность | Wright",
-                desc: "Политика конфиденциальности Wright."
+                title: "Политика конфиденциальности | Wright",
+                desc: "Политика конфиденциальности Wright. Мы не собираем личные данные об использовании."
             },
-            lastUpdated: "Обновлено: Март 2024",
+            lastUpdated: "Последнее обновление: Февраль 2026",
             commitment: {
-                title: "Наше обязательство по конфиденциальности",
-                text: "Wright разработан с учетом вашей конфиденциальности. Мы верим в прозрачность и минимизируем сбор данных до абсолютно необходимого минимума.",
+                title: "Наша приверженность конфиденциальности",
+                text: "Wright разработан с учетом вашей конфиденциальности. Мы верим в прозрачность и минимизируем сбор данных до абсолютно необходимого.",
                 keyPoints: {
-                    title: "Ключевые моменты конфиденциальности:",
+                    title: "Ключевые пункты конфиденциальности:",
                     list: [
-                        "Мы не получаем доступ и не храним содержимое ваших разговоров",
-                        "Мы собираем только вашу электронную почту для управления учетной записью",
-                        "Мы используем минимальное количество подключений для предоставления услуг"
+                        "Мы не получаем доступ к содержимому ваших бесед и не храним его",
+                        "Мы собираем только вашу электронную почту для управления аккаунтом",
+                        "Мы используем минимум соединений для предоставления услуг"
                     ]
                 }
             },
             dataCollection: {
                 title: "Сбор данных и архитектура",
-                text: "Wright использует безопасный серверный API-сервис для обработки ваших запросов. Мы не храним историю ваших разговоров или их содержимое.",
+                text: "Wright использует безопасную серверную службу API для обработки ваших запросов. Мы не храним историю или содержание ваших разговоров.",
                 apiKeys: {
                     title: "Архитектура сервиса",
-                    text: "Все взаимодействия обрабатываются через наш безопасный API. Ваш контент передается исключительно для генерации ответов и никогда не сохраняется.",
+                    text: "Все взаимодействия обрабатываются через наш безопасный API. Ваш контент передается исключительно для создания ответов и никогда не сохраняется.",
                     list: [
-                        "Мы собираем только электронную почту вашей учетной записи",
-                        "Минимальные данные используются для устранения неполадок",
-                        "Отсутствие хранения данных разговоров",
+                        "Мы собираем только электронную почту вашего аккаунта",
+                        "Минимум данных, необходимых для устранения неполадок",
+                        "Никакого хранения данных бесед",
                         "Безопасная реализация"
                     ]
                 }
             },
             thirdParty: {
                 title: "Сторонние сервисы",
-                text: "Когда вы используете Wright для взаимодействия с LLM-сервисами (такими как OpenAI, Groq и т. д.), ваши взаимодействия регулируются политиками конфиденциальности этих сервисов. Мы рекомендуем ознакомиться с политиками конфиденциальности LLM-сервисов, которые вы решите использовать:",
+                text: "Когда вы используете Wright для взаимодействия со службами LLM (такими как OpenAI, Groq и т.д.), ваши взаимодействия регулируются политиками конфиденциальности этих служб. Мы рекомендуем ознакомиться с политиками конфиденциальности выбранных вами сервисов:",
                 list: [
                     "<a href=\"https://openai.com/privacy\" target=\"_blank\">Политика конфиденциальности OpenAI</a>",
                     "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Политика конфиденциальности Groq</a>",
@@ -2252,124 +2252,124 @@ const translations = {
             },
             security: {
                 title: "Безопасность данных",
-                text: "Информация вашей учетной записи хранится в безопасности. Мы применяем стандартные отраслевые меры безопасности для защиты ваших данных."
+                text: "Информация о вашей учетной записи хранится в безопасности. Мы применяем стандартные в отрасли меры безопасности для защиты ваших данных."
             },
             changes: {
-                title: "Изменения в настоящей Политике конфиденциальности",
-                text: "Мы можем время от времени обновлять нашу Политику конфиденциальности. Мы уведомим вас о любых изменениях, опубликовав новую Политику конфиденциальности на этой странице и обновив дату «Последнее обновление»."
+                title: "Изменения в Политике конфиденциальности",
+                text: "Мы можем время от времени обновлять нашу Политику конфиденциальности. Мы сообщим вам о любых изменениях, опубликовав новую политику на этой странице и обновив дату \"Последнее обновление\"."
             },
             contact: {
-                title: "Связаться с нами",
-                text: "Если у вас есть какие-либо вопросы относительно настоящей Политики конфиденциальности, пожалуйста, свяжитесь с нами по адресу:"
+                title: "Свяжитесь с нами",
+                text: "Если у вас есть какие-либо вопросы относительно этой Политики конфиденциальности, пожалуйста, свяжитесь с нами по адресу:"
             }
         },
         howItWorks: {
-            title: "Как это работает",
-            subtitle: "Шорткаты или PopClip.",
+            title: "Как Это Работает",
+            subtitle: "Используйте горячие клавиши или интеграцию с PopClip, чтобы получать доступ ко всем функциям через правую кнопку мыши.",
             step1: {
-                title: "Выбрать",
-                description: "Выделите tekst."
+                title: "Выберите Текст",
+                description: "Выделите любой текст в любом приложении на вашем Mac."
             },
             step2: {
-                title: "Нажать",
-                description: "Нажмите шорткат."
+                title: "Нажмите Клавиши",
+                description: "Воспользуйтесь настроенными горячими клавишами или PopClip, чтобы выполнить переписывание, перевод или открыть чат."
             },
             step3: {
-                title: "Результат",
-                description: "Улучшенный текст появится."
+                title: "Получите Результат",
+                description: "Ваш текст, улучшенный ИИ, мгновенно появится в плавающем окне. Скопируйте или замените его в один клик."
             }
         },
         features: {
-            title: "Функции",
+            title: "Основные Функции",
             quickView: {
-                title: "Быстрый просмотр",
-                description: "Быстрые запросы."
+                title: "Быстрый старт, Глубокое погружение",
+                description: "Сделайте быстрый запрос в компактном Быстром виде (Quick View). Когда для разговора потребуется больше деталей, просто перейдите в полноценный интерфейс Чата — весь контекст сохранится автоматически."
             },
             rewrite: {
-                title: "Улучшение",
-                description: "Мгновенное улучшение текста."
+                title: "Доработка текста в Один Клик",
+                description: "Выделите текст, нажмите горячую клавишу и мгновенно получите отполированную версию. Wright исправит опечатки, грамматику и неловкие формулировки, сохранив первоначальный смысл, а также автоматически определит язык, на котором вы пишете."
             },
             translate: {
-                title: "Перевод",
-                description: "Мгновенный перевод."
+                title: "Мгновенный Перевод",
+                description: "Переводите выделенный текст между языками с помощью одного сочетания клавиш. Wright самостоятельно определяет исходный язык и переводит его — больше не нужно переключаться между отдельными приложениями или вкладками браузера."
             },
             customRoles: {
-                title: "Роли",
-                description: "Свои ИИ-персонажи."
+                title: "Пользовательские ИИ-роли",
+                description: "Создавайте свои собственные ИИ-роли — такие как: ревьюер кода, копирайтер, составитель писем или кто угодно другой, наделяя их своими собственными системными промптами и поведением."
             },
             setup: {
-                title: "Настройка",
-                description: "Кастомизация всего.",
+                title: "Настройте под себя",
+                description: "Настраивайте сочетания клавиш для каждой из ваших ИИ-ролей и изменяйте интерфейс, чтобы он подходил вашему рабочему процессу. Wright поддерживает нескольких провайдеров LLM, позволяя вам выбрать тот, который лучше всего соответствует вашим требованиям.",
                 list: [
-                    "Шорткаты",
-                    "Разные модели",
-                    "PopClip"
+                    "Индивидуальные Горячие Клавиши",
+                    "Различные ИИ-модели (OpenAI, Gemini, Grok, Groq)",
+                    "Интеграция с PopClip"
                 ]
             }
         },
         pricing: {
-            title: "Цены",
+            title: "Выберите Ваш План",
             free: {
                 tier: "Бесплатно",
                 tokens: "1,000 токенов / день",
-                reset: "Ежедневный сброс",
-                cta: "Начать"
+                reset: "Ежедневный сброс (Полночь UTC)",
+                cta: "Начать Использовать"
             },
             basic: {
                 tier: "Базовый",
                 period: "/ год",
                 tokens: "500,000 токенов / месяц",
-                reset: "Ежемесячный сброс",
+                reset: "Сброс 1-го числа каждого месяца",
                 cta: "Подписаться"
             },
             pro: {
-                badge: "Популярный",
-                tier: "Про",
+                badge: "Самый Популярный",
+                tier: "ПРО",
                 period: "/ месяц",
                 tokens: "10,000,000 токенов / месяц",
-                reset: "Ежемесячный сброс",
-                cta: "Перейти на Про"
+                reset: "Сброс 1-го числа каждого месяца",
+                cta: "Перейти на ПРО"
             }
         },
         benefits: {
-            title: "Почему Wright?",
-            subtitle: "Нативно для macOS.",
+            title: "Почему именно Wright?",
+            subtitle: "Нативный ассистент для macOS, который не мешает вам, пока не понадобится",
             everywhere: {
-                title: "Везде",
-                description: "Работает во всех приложениях."
+                title: "Работает Везде",
+                description: "Глобальные горячие клавиши и интеграция с PopClip: работает в любом приложении — Mail, Notes, Slack, вашем браузере или любом текстовом поле в Mac."
             },
             free: {
-                title: "Бесплатно",
-                description: "Скачать и использовать."
+                title: "Начать Бесплатно",
+                description: "Не нужен API-ключ, не нужна настройка. Бесплатный план включён, так что вы можете попробовать каждую функцию перед тем, как улучшать версию."
             }
         },
         download: {
             title: "Начать",
-            description: "Скачать бесплатно.",
+            description: "Скачайте Wright бесплатно и начните использовать прямо сейчас.",
             cta: "Скачать для macOS",
-            guide: "Гайд",
-            note: "Бесплатный план включен"
+            guide: "Руководство Пользователя",
+            note: "Включает бесплатный тариф · Не требует настройки"
         },
         footer: {
             rights: "© 2026 Wright. Все права защищены.",
-            privacy: "Конфиденциальность",
+            privacy: "Политика Конфиденциальности",
             support: "Поддержка"
         }
     }, pt: {
         meta: {
             title: "Wright - Assistente de IA para macOS | Reescrever, Traduzir e Conversar",
-            description: "Wright é um assistente de IA personalizável para macOS. Crie funções personalizadas, reescreva e traduza textos sem esforço e converse — tudo a partir de um atalho de teclado ou PopClip. Gratuito para usar."
+            description: "Wright é um assistente de IA personalizável para macOS. Crie papéis sob medida, reescreva e traduza textos sem esforço e converse — tudo usando atalhos de teclado ou PopClip. Grátis para usar."
         },
         nav: {
-            features: "Recursos",
+            features: "Funcionalidades",
             download: "Baixar",
             support: "Suporte",
             guide: "Guia",
             toggle: "Idioma"
         },
         hero: {
-            title: "Seu Assistente de IA para macOS",
-            subtitle: "Wright é um assistente de IA personalizável para macOS. Crie funções personalizadas, reescreva e traduza textos sem esforço e converse — tudo a partir de um atalho de teclado ou PopClip. Gratuito para usar.",
+            title: "O seu Assistente de IA para macOS",
+            subtitle: "Wright é um assistente de IA personalizável para macOS. Crie papéis sob medida, reescreva e traduza textos sem esforço e converse – tudo partir de um atalho de teclado ou PopClip. Grátis para usar.",
             download: "Baixar para macOS"
         },
         guide: {
@@ -2505,39 +2505,39 @@ const translations = {
         privacy: {
             title: "Política de Privacidade",
             meta: {
-                title: "Privacidade | Wright",
-                desc: "Política de privacidade do Wright."
+                title: "Política de Privacidade | Wright",
+                desc: "Política de Privacidade do Wright. Não coletamos dados pessoais de uso."
             },
-            lastUpdated: "Atualizado: Março 2024",
+            lastUpdated: "Última Atualização: Fevereiro de 2026",
             commitment: {
                 title: "Nosso Compromisso com a Privacidade",
-                text: "O Wright foi projetado com sua privacidade em mente. Acreditamos na transparência e minimizamos a coleta de dados ao essencial.",
+                text: "O Wright foi projetado pensando na sua privacidade. Acreditamos na transparência e minimizamos a coleta de dados apenas ao estritamente necessário.",
                 keyPoints: {
-                    title: "Pontos Chave de Privacidade:",
+                    title: "Pontos Chave da Privacidade:",
                     list: [
-                        "Não acessamos nem armazenamos o conteúdo de suas conversas",
-                        "Coletamos apenas seu e-mail para gerenciamento de conta",
-                        "Usamos conexões mínimas para a entrega do serviço"
+                        "Não acessamos nem armazenamos o conteúdo das suas conversas",
+                        "Coletamos apenas o seu e-mail para a gestão da conta",
+                        "Usamos conexões mínimas para a prestação do serviço"
                     ]
                 }
             },
             dataCollection: {
                 title: "Coleta de Dados e Arquitetura",
-                text: "O Wright utiliza um serviço de API de backend seguro para processar suas solicitações. Não armazenamos seu histórico de conversas ou conteúdo.",
+                text: "O Wright utiliza um serviço seguro de API backend para processar as suas solicitações. Não armazenamos o histórico nem o conteúdo das suas conversas.",
                 apiKeys: {
-                    title: "Arquitetura de Serviço",
-                    text: "Todas as interações são processadas através de nossa API segura. Seu conteúdo é transmitido apenas para gerar respostas e nunca é salvo.",
+                    title: "Arquitetura do Serviço",
+                    text: "Todas as interações são processadas através da nossa API segura. O seu conteúdo é transmitido exclusivamente para a geração de respostas e nunca é guardado.",
                     list: [
-                        "Coletamos apenas o e-mail da sua conta",
-                        "Dados mínimos usados para solução de problemas",
-                        "Sem retenção de dados de conversas",
+                        "Coletamos apenas o e-mail associado à sua conta",
+                        "Mínimo de dados utilizados para resolução de problemas",
+                        "Sem retenção de dados de conversa",
                         "Implementação segura"
                     ]
                 }
             },
             thirdParty: {
                 title: "Serviços de Terceiros",
-                text: "Quando você usa o Wright para interagir com serviços LLM (como OpenAI, Groq, etc.), suas interações são regidas pelas políticas de privacidade desses serviços. Recomendamos revisar as políticas de privacidade dos serviços LLM que você escolher usar:",
+                text: "Quando você usa o Wright para interagir com serviços LLM (como OpenAI, Groq, etc.), suas interações são governadas pelas referidas políticas de privacidade. Recomendamos a revisão das políticas de privacidade dos serviços LLM que você escolher:",
                 list: [
                     "<a href=\"https://openai.com/privacy\" target=\"_blank\">Política de Privacidade da OpenAI</a>",
                     "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Política de Privacidade da Groq</a>",
@@ -2546,114 +2546,114 @@ const translations = {
             },
             security: {
                 title: "Segurança de Dados",
-                text: "Suas informações de conta são armazenadas com segurança. Empregamos medidas de segurança padrão da indústria para proteger seus dados."
+                text: "As informações da sua conta são armazenadas de forma segura. Empregamos medidas de segurança padrão do setor para proteger os seus dados."
             },
             changes: {
-                title: "Alterações a esta Política de Privacidade",
-                text: "Podemos atualizar nossa Política de Privacidade de tempos em tempos. Notificaremos você sobre quaisquer alterações publicando a nova Política de Privacidade nesta página e atualizando a data de \"Última atualização\"."
+                title: "Alterações a Esta Política de Privacidade",
+                text: "Podemos atualizar a nossa Política de Privacidade de tempos em tempos. Notificaremos você de quaisquer alterações publicando a nova Política nesta página e atualizando a data de \"Última Atualização\"."
             },
             contact: {
-                title: "Entre em Contato Conosco",
-                text: "Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco em:"
+                title: "Contate-nos",
+                text: "Se tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco em:"
             }
         },
         howItWorks: {
             title: "Como Funciona",
-            subtitle: "Atalhos ou PopClip.",
+            subtitle: "Use atalhos de teclado ou integre com o PopClip para acessar todos os recursos com o clique direito.",
             step1: {
-                title: "Selecionar",
-                description: "Destaque o texto."
+                title: "Selecionar Texto",
+                description: "Selecione qualquer texto em qualquer aplicativo do seu Mac."
             },
             step2: {
-                title: "Atalho",
-                description: "Pressione o atalho."
+                title: "Pressione o Atalho",
+                description: "Aperte seu atalho configurado ou utilize o PopClip para ativar reescrita, tradução ou chat."
             },
             step3: {
-                title: "Resultado",
-                description: "Texto aprimorado aparece."
+                title: "Obter o Resultado",
+                description: "Seu texto otimizado pela IA aparece instantaneamente em uma janela flutuante. Copie ou substitua com um único clique."
             }
         },
         features: {
-            title: "Recursos",
+            title: "Recursos Principais",
             quickView: {
-                title: "Visualização Rápida",
-                description: "Consultas rápidas."
+                title: "Comece Rápido, Vá Longe",
+                description: "Inicie uma consulta rapidamente na interface leve Quick View. Quando a conversa exigir mais profundidade, mude para a interface completa de Chat — seu contexto é transferido automaticamente."
             },
             rewrite: {
-                title: "Reescrever",
-                description: "Melhorar texto instantaneamente."
+                title: "Polimento de Texto Com Uma Tecla",
+                description: "Selecione um texto, pressione o atalho e obterá uma versão mais clara na hora. O Wright corrige falhas, erros de gramática e construções constrangedoras, mantendo seu sentido original. Ele detecta de forma automática o idioma."
             },
             translate: {
-                title: "Traduzir",
-                description: "Tradução instantânea."
+                title: "Tradução Imediata",
+                description: "Traduza o conteúdo marcado entre diversas línguas usando um só atalho. O assistente encontra sozinho o idioma de origem e devolve o texto — não é precisso alterar a janela nem trocar de aba."
             },
             customRoles: {
-                title: "Funções Personalizadas",
-                description: "Crie sua própria IA."
+                title: "Papéis de IA Personalizados",
+                description: "Crie as próprias regras para seu assistente inteligente — tais quais auditor de programação, produtor de textos de venda, redator corporativos ou outras posições —, dando a eles comportamentos correspondentes."
             },
             setup: {
-                title: "Configuração",
-                description: "Personalize tudo.",
+                title: "Do Seu Jeito",
+                description: "Configurando as teclas para seus auxiliares de sistema de inteligência virtual e mudando a estética e modelo seguindo o estilo pessoal e empresarial que atende perfeitamente ao pedido.",
                 list: [
-                    "Atalhos",
-                    "Múltiplos Modelos",
-                    "PopClip"
+                    "Atalhos Totalmente Reconfiguráveis",
+                    "Muitos Modelos Artificiais à Vontade (OpenAI, Gemini, Grok, Groq)",
+                    "Extensão para PopClip"
                 ]
             }
         },
         pricing: {
-            title: "Preços",
+            title: "Escolha Seu Plano",
             free: {
-                tier: "Grátis",
+                tier: "Livre",
                 tokens: "1.000 tokens / dia",
-                reset: "Reset diário",
-                cta: "Começar"
+                reset: "Recarga todo dia (Meia Noite UTC)",
+                cta: "Experimentar Agora"
             },
             basic: {
                 tier: "Básico",
                 period: "/ ano",
                 tokens: "500.000 tokens / mês",
-                reset: "Reset mensal",
+                reset: "Recarga todo dia primeiro do mês",
                 cta: "Assinar"
             },
             pro: {
-                badge: "Popular",
+                badge: "O Mais Popular",
                 tier: "Pro",
                 period: "/ mês",
                 tokens: "10.000.000 tokens / mês",
-                reset: "Reset mensal",
-                cta: "Ir para Pro"
+                reset: "Recarga todo dia primeiro do mês",
+                cta: "Ser Membro Pro"
             }
         },
         benefits: {
-            title: "Por que Wright?",
-            subtitle: "Nativo do macOS.",
+            title: "Por que o Wright?",
+            subtitle: "Um ajudante macOS genuíno preparado para dar tranquilidade, agindo quando houver solicitação.",
             everywhere: {
-                title: "Em todo lugar",
-                description: "Funciona em todos os apps."
+                title: "Onde Você Precisar",
+                description: "Pode intervir pelo atalho de teclas de aplicação primária ou acionando pelo software PopClip. Ajuda sempre em campo de texto onde o Mac consegue intervir: Notas, E-mail, Browser, Slack..."
             },
             free: {
-                title: "Grátis",
-                description: "Baixe e use."
+                title: "Grátis sem Custo",
+                description: "Livre e pronto. Sem configurações desnecessárias ou API. Dá pra provar até os mais ocultos dos recursos pagando absolutamente nada pro início."
             }
         },
         download: {
-            title: "Começar",
-            description: "Baixe gratuitamente.",
-            cta: "Baixar para macOS",
-            guide: "Guia",
-            note: "Plano grátis incluído"
+            title: "Dê o Primeiro Passo",
+            description: "Pegue para sí esta aplicação grátis no seu sistema Mac agora.",
+            cta: "Download App para Sistema Mac",
+            guide: "Como usar",
+            note: "Período gratuito permanente incluso · Preparado na Cópia"
         },
         footer: {
-            rights: "© 2026 Wright. Todos os direitos reservados.",
-            privacy: "Privacidade",
-            support: "Suporte"
+            rights: "© 2026 Wright. Direitos intelectuais totalmente protegidos.",
+            privacy: "Código de Privacidade",
+            support: "Apoio"
         }
     },
     it: {
         meta: {
-            title: "Wright - Assistente AI per macOS | Riscrivi, Traduci e Chatta",
-            description: "Wright è un assistente AI personalizzabile per macOS. Crea ruoli personalizzati, riscrivi e traduci testi senza sforzo e chatta: tutto da una scorciatoia da tastiera o PopClip. Gratuito."
+            title: "Wright - Assistente IA per macOS | Riscrivi, Traduci e Chatta",
+            description: "Wright è un assistente IA personalizzabile per macOS. Crea ruoli su misura, riscrivi e traduci testi senza sforzo e chatta: tutto con una scorciatoia da tastiera o tramite PopClip. Gratuito."
         },
         nav: {
             features: "Funzionalità",
@@ -2663,8 +2663,8 @@ const translations = {
             toggle: "Lingua"
         },
         hero: {
-            title: "Il tuo Assistente AI per macOS",
-            subtitle: "Wright è un assistente AI personalizzabile per macOS. Crea ruoli personalizzati, riscrivi e traduci testi senza sforzo e chatta: tutto da una scorciatoia da tastiera o PopClip. Gratuito.",
+            title: "Il tuo Assistente IA per macOS",
+            subtitle: "Wright è un assistente IA personalizzabile per macOS. Puoi creare ruoli dedicati, riscrivere e tradurre testi con facilità, e conversare: tutto tramite una scorciatoia da tastiera o utilizzando PopClip. Uso gratuito.",
             download: "Scarica per macOS"
         },
         guide: {
@@ -2798,32 +2798,32 @@ const translations = {
             }
         },
         privacy: {
-            title: "Privacy Policy",
+            title: "Informativa sulla Privacy",
             meta: {
-                title: "Privacy | Wright",
-                desc: "Privacy policy di Wright."
+                title: "Informativa sulla Privacy | Wright",
+                desc: "Informativa sulla Privacy di Wright. Non raccogliamo dati di utilizzo personali."
             },
-            lastUpdated: "Aggiornato: Marzo 2024",
+            lastUpdated: "Ultimo Aggiornamento: Febbraio 2026",
             commitment: {
-                title: "Il nostro impegno per la privacy",
-                text: "Wright è progettato pensando alla tua privacy. Crediamo nella trasparenza e minimizziamo la raccolta dei dati all'essenziale.",
+                title: "Il nostro Impegno per la Privacy",
+                text: "Wright è stato progettato tenendo a mente la tua privacy. Crediamo nella trasparenza e riduciamo al minimo assoluto la raccolta dei dati.",
                 keyPoints: {
-                    title: "Punti chiave sulla privacy:",
+                    title: "Punti Chiave sulla Privacy:",
                     list: [
-                        "Non accediamo né memorizziamo il contenuto delle tue conversazioni",
-                        "Raccogliamo solo la tua email per la gestione dell'account",
-                        "Utilizziamo connessioni minime per l'erogazione del servizio"
+                        "Non accediamo e non memorizziamo il contenuto delle tue conversazioni",
+                        "Raccogliamo esclusivamente la tua email per la gestione dell'account",
+                        "Limitiamo al minimo le connessioni per l'erogazione del servizio"
                     ]
                 }
             },
             dataCollection: {
-                title: "Raccolta dati e architettura",
-                text: "Wright utilizza un servizio API backend sicuro per elaborare le tue richieste. Non memorizziamo la cronologia delle tue conversazioni o il loro contenuto.",
+                title: "Raccolta Dati e Architettura",
+                text: "Wright utilizza un servizio API backend sicuro per elaborare le tue richieste. Non salviamo la cronologia né il contenuto delle tue conversazioni.",
                 apiKeys: {
-                    title: "Architettura del servizio",
-                    text: "Tutte le interazioni vengono elaborate tramite la nostra API sicura. Il tuo contenuto viene trasmesso esclusivamente per generare risposte e non viene mai salvato.",
+                    title: "Architettura di Servizio",
+                    text: "Tutte le interazioni vengono gestite tramite la nostra API sicura. I tuoi contenuti ci passano attraverso solo per generare le risposte e non vengono mai salvati.",
                     list: [
-                        "Raccogliamo solo l'email del tuo account",
+                        "Raccogliamo solo la tua email",
                         "Dati minimi utilizzati per la risoluzione dei problemi",
                         "Nessuna conservazione dei dati delle conversazioni",
                         "Implementazione sicura"
@@ -2831,135 +2831,135 @@ const translations = {
                 }
             },
             thirdParty: {
-                title: "Servizi di terze parti",
-                text: "Quando utilizzi Wright per interagire con i servizi LLM (come OpenAI, Groq, ecc.), le tue interazioni sono regolate dalle politiche sulla privacy di tali servizi. Ti consigliamo di rivedere le politiche sulla privacy dei servizi LLM che scegli di utilizzare:",
+                title: "Servizi di Terze Parti",
+                text: "Quando usi Wright per interagire con servizi LLM (come OpenAI, Groq, ecc.), tali interazioni sono disciplinate dalle loro informative sulla privacy. Si consiglia di leggere le informative sulla privacy dei servizi scelti:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Informativa sulla privacy di OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Informativa sulla privacy di Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Informativa sulla privacy di xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Informativa sulla Privacy OpenAI</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Informativa sulla Privacy Groq</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Informativa sulla Privacy xAI</a>"
                 ]
             },
             security: {
-                title: "Sicurezza dei dati",
-                text: "Le informazioni del tuo account sono archiviate in modo sicuro. Adottiamo misure di sicurezza standard del settore per proteggere i tuoi dati."
+                title: "Sicurezza dei Dati",
+                text: "Le informazioni del tuo account vengono conservate in modo sicuro. Adottiamo misure di sicurezza standard del settore per proteggere i tuoi dati."
             },
             changes: {
-                title: "Modifiche a questa politica sulla privacy",
-                text: "Potremmo aggiornare la nostra politica sulla privacy di tanto in tanto. Ti informeremo di eventuali modifiche pubblicando la nuova politica sulla privacy su questa pagina e aggiornando la data di \"Ultimo aggiornamento\"."
+                title: "Modifiche a questa Informativa sulla Privacy",
+                text: "Potremmo aggiornare di tanto in tanto la nostra Informativa sulla Privacy. Ti informeremo di qualsiasi modifica pubblicando la nuova Informativa su questa pagina e aggiornando la data dell'ultimo aggiornamento."
             },
             contact: {
                 title: "Contattaci",
-                text: "Se hai domande su questa politica sulla privacy, contattaci all'indirizzo:"
+                text: "In caso di domande in merito a questa Informativa sulla Privacy, puoi contattarci a:"
             }
         },
         howItWorks: {
             title: "Come Funziona",
-            subtitle: "Scorciatoie o PopClip.",
+            subtitle: "Usa le scorciatoie da tastiera o l'integrazione con PopClip per accedere a tutte le funzionalità con un semplice clic.",
             step1: {
-                title: "Seleziona",
-                description: "Evidenzia testo."
+                title: "Seleziona il Testo",
+                description: "Evidenzia qualsiasi testo in una qualsiasi app sul tuo Mac."
             },
             step2: {
-                title: "Scorciatoia",
-                description: "Premi scorciatoia."
+                title: "Premi la Scorciatoia",
+                description: "Usa la tua scorciatoia configurata o usa PopClip per attivare la riscrittura, la traduzione o la chat."
             },
             step3: {
-                title: "Risultato",
-                description: "Il testo migliorato appare."
+                title: "Ottieni il Risultato",
+                description: "Il tuo testo migliorato dall'IA appare istantaneamente in una finestra fluttuante. Copia o sostituisci con un solo clic."
             }
         },
         features: {
-            title: "Funzionalità",
+            title: "Caratteristiche Principali",
             quickView: {
-                title: "Vista Rapida",
-                description: "Query veloci."
+                title: "Inizia Velocemente, Vai in Profondità",
+                description: "Lancia una rapida query nella leggera Quick View. Quando la conversazione richiede più spazio, passa all'interfaccia completa della Chat: il contesto viene trasferito automaticamente."
             },
             rewrite: {
-                title: "Riscrivi",
-                description: "Migliora testo istantaneamente."
+                title: "Migliora Testi in un Clic",
+                description: "Seleziona il testo, premi una scorciatoia ed ottieni subito una versione revisionata. Wright corregge gli errori di battitura, la grammatica e le frasi poco chiare senza alterare il significato originale. Rileva automaticamente la lingua."
             },
             translate: {
-                title: "Traduci",
-                description: "Traduzione istantanea."
+                title: "Traduzione Istantanea",
+                description: "Traduci il testo selezionato tra varie lingue con una singola scorciatoia. Wright rileva la lingua di partenza e traduce per te: non c'è bisogno di passare a un'altra app o a una scheda del browser."
             },
             customRoles: {
-                title: "Ruoli Personalizzati",
-                description: "Crea la tua AI."
+                title: "Ruoli IA Personalizzati",
+                description: "Crea i tuoi ruoli IA — come revisore di codice, copywriter, addetto alle e-mail o qualsiasi altra cosa — ognuno con i propri prompt e comportamenti di sistema."
             },
             setup: {
-                title: "Configurazione",
-                description: "Personalizza tutto.",
+                title: "Il tuo Setup, a Modo Tuo",
+                description: "Configura le scorciatoie per ciascuno dei tuoi ruoli IA e personalizza l'interfaccia per adattarla al tuo flusso di lavoro. Wright supporta più provider LLM, consentendoti di scegliere quello che meglio si adatta alle tue esigenze.",
                 list: [
-                    "Scorciatoie",
-                    "Modelli Multipli",
-                    "PopClip"
+                    "Scorciatoie da Tastiera Personalizzabili",
+                    "Diversi Modelli di IA (OpenAI, Gemini, Grok, Groq)",
+                    "Integrazione con PopClip"
                 ]
             }
         },
         pricing: {
-            title: "Prezzi",
+            title: "Scegli il tuo Piano",
             free: {
-                tier: "Gratis",
+                tier: "Gratuito",
                 tokens: "1.000 token / giorno",
-                reset: "Reset giornaliero",
+                reset: "Reset giornaliero (mezzanotte UTC)",
                 cta: "Inizia"
             },
             basic: {
                 tier: "Base",
                 period: "/ anno",
                 tokens: "500.000 token / mese",
-                reset: "Reset mensile",
+                reset: "Reset il 1° di ogni mese",
                 cta: "Abbonati"
             },
             pro: {
-                badge: "Popolare",
+                badge: "Più Popolare",
                 tier: "Pro",
                 period: "/ mese",
                 tokens: "10.000.000 token / mese",
-                reset: "Reset mensile",
+                reset: "Reset il 1° di ogni mese",
                 cta: "Passa a Pro"
             }
         },
         benefits: {
             title: "Perché Wright?",
-            subtitle: "Nativo per macOS.",
+            subtitle: "Un assistente macOS nativo che resta in disparte finché non ne hai bisogno.",
             everywhere: {
-                title: "Ovunque",
-                description: "Funziona in tutte le app."
+                title: "Funziona Ovunque",
+                description: "Scorciatoie da tastiera globali e integrazione con PopClip: funziona in qualsiasi app (Mail, Note, Slack, il tuo browser o qualsiasi campo di testo sul tuo Mac)."
             },
             free: {
-                title: "Gratis",
-                description: "Scarica e usa."
+                title: "Inizia Gratis",
+                description: "Nessuna chiave API necessaria, nessuna configurazione. Include un piano gratuito per provare ogni funzionalità prima di passare alla versione Pro."
             }
         },
         download: {
-            title: "Inizia",
-            description: "Scarica gratis.",
+            title: "Inizia Ora",
+            description: "Scarica Wright gratuitamente e inizia a usarlo subito.",
             cta: "Scarica per macOS",
-            guide: "Guida",
-            note: "Piano gratuito incluso"
+            guide: "Guida Utente",
+            note: "Piano gratuito incluso · Nessuna configurazione richiesta"
         },
         footer: {
             rights: "© 2026 Wright. Tutti i diritti riservati.",
-            privacy: "Privacy",
+            privacy: "Informativa sulla Privacy",
             support: "Supporto"
         }
     },
     hi: {
         meta: {
-            title: "Wright - macOS के लिए AI सहायक | रिराइट, अनुवाद और चैट",
-            description: "Wright macOS के लिए एक कस्टमाइज़ेबल AI सहायक है। कस्टम रोल बनाएँ, टेक्स्ट को आसानी से रिराइट और अनुवाद करें, और चैट करें — सब कुछ कीबोर्ड शॉर्टकट या PopClip से। उपयोग करने के लिए मुफ़्त।"
+            title: "Wright - macOS के लिए AI असिस्टेंट | पुनः लिखें, अनुवाद करें और चैट करें",
+            description: "Wright macOS के लिए एक अनुकूलन योग्य AI सहायक है। अनुकूलित भूमिकाएँ बनाएँ, सहजता से टेक्स्ट को फिर से लिखें और उसका अनुवाद करें, और चैट करें - यह सब एक कीबोर्ड शॉर्टकट या PopClip से। उपयोग करने के लिए मुफ़्त।"
         },
         nav: {
-            features: "विशेषताएँ",
+            features: "विशेषताएं",
             download: "डाउनलोड",
             support: "सहायता",
-            guide: "गाइड",
+            guide: "मार्गदर्शिका",
             toggle: "भाषा"
         },
         hero: {
-            title: "macOS के लिए आपका AI सहायक",
-            subtitle: "Wright macOS के लिए एक कस्टमाइज़ेबल AI सहायक है। कस्टम रोल बनाएँ, टेक्स्ट को आसानी से रिराइट और अनुवाद करें, और चैट करें — सब कुछ कीबोर्ड शॉर्टकट या PopClip से। उपयोग करने के लिए मुफ़्त।",
+            title: "macOS के लिए आपका AI असिस्टेंट",
+            subtitle: "Wright macOS के लिए एक अनुकूलन योग्य AI सहायक है। अनुकूलित एआई भूमिकाएँ बनाएँ, सरलता से टेक्स्ट को फिर से लिखें और अनुवाद करें, और चैट करें—यह सब एक कीबोर्ड शॉर्टकट या PopClip से। उपयोग निःशुल्क है।",
             download: "macOS के लिए डाउनलोड करें"
         },
         guide: {
@@ -3095,39 +3095,39 @@ const translations = {
         privacy: {
             title: "गोपनीयता नीति",
             meta: {
-                title: "गोपनीयता | Wright",
-                desc: "Wright की गोपनीयता नीति।"
+                title: "गोपनीयता नीति | Wright",
+                desc: "Wright की गोपनीयता नीति। हम व्यक्तिगत उपयोग डेटा एकत्र नहीं करते हैं।"
             },
-            lastUpdated: "अंतिम अपडेट: मार्च 2024",
+            lastUpdated: "अंतिम अद्यतन: फ़रवरी 2026",
             commitment: {
-                title: "हमारी गोपनीयता के प्रति प्रतिबद्धता",
-                text: "Wright को आपकी गोपनीयता को ध्यान में रखकर डिज़ाइन किया गया है। हम पारदर्शिता में विश्वास करते हैं और डेटा संग्रह को बिल्कुल आवश्यक न्यूनतम तक कम करते हैं।",
+                title: "गोपनीयता के प्रति हमारी प्रतिबद्धता",
+                text: "Wright आपकी गोपनीयता को ध्यान में रखकर तैयार किया गया है। हम पारदर्शिता में विश्वास करते हैं और डेटा संग्रह को केवल अनिवार्य चीजों तक सीमित रखते हैं।",
                 keyPoints: {
-                    title: "मुख्य गोपनीयता बिंदु:",
+                    title: "प्रमुख गोपनीयता बिंदु:",
                     list: [
-                        "हम आपकी बातचीत की सामग्री तक नहीं पहुँचते और न ही उसे संग्रहीत करते हैं",
+                        "हम आपकी वार्तालाप सामग्री तक नहीं पहुंचते या उसे संग्रहीत नहीं करते हैं",
                         "हम केवल खाता प्रबंधन के लिए आपका ईमेल एकत्र करते हैं",
                         "हम सेवा वितरण के लिए न्यूनतम कनेक्शन का उपयोग करते हैं"
                     ]
                 }
             },
             dataCollection: {
-                title: "डेटा संग्रह और वास्तुकला",
-                text: "Wright आपके अनुरोधों को संसाधित करने के लिए एक सुरक्षित बैकएंड API सेवा का उपयोग करता है। हम आपकी बातचीत का इतिहास या सामग्री संग्रहीत नहीं करते हैं।",
+                title: "डेटा संग्रहण एवं आर्किटेक्चर",
+                text: "Wright आपके अनुरोधों को संसाधित करने के लिए एक सुरक्षित बैकएंड API सेवा का उपयोग करता है। हम आपके वार्तालाप का इतिहास या सामग्री संग्रहीत नहीं करते हैं।",
                 apiKeys: {
-                    title: "सेवा वास्तुकला",
-                    text: "सभी इंटरैक्शन हमारे सुरक्षित API के माध्यम से संसाधित होते हैं। आपकी सामग्री केवल प्रतिक्रियाएँ उत्पन्न करने के लिए भेजी जाती है और कभी भी सहेजी नहीं जाती है।",
+                    title: "सेवा आर्किटेक्चर",
+                    text: "सभी इंटरैक्शन हमारे सुरक्षित API के माध्यम से संसाधित किए जाते हैं। आपकी सामग्री को केवल प्रतिक्रियाएं उत्पन्न करने के लिए पारित किया जाता है और कभी भी सहेजा नहीं जाता है।",
                     list: [
-                        "हम केवल आपके खाते का ईमेल एकत्र करते हैं",
-                        "समस्या निवारण के लिए न्यूनतम डेटा का उपयोग किया जाता है",
-                        "बातचीत डेटा का कोई प्रतिधारण नहीं",
+                        "हम केवल आपका खाता ईमेल एकत्र करते हैं",
+                        "समस्या निवारण के लिए प्रयुक्त न्यूनतम डेटा",
+                        "वार्तालाप डेटा का कोई प्रतिधारण नहीं",
                         "सुरक्षित कार्यान्वयन"
                     ]
                 }
             },
             thirdParty: {
-                title: "तीसरे पक्ष की सेवाएँ",
-                text: "जब आप LLM सेवाओं (जैसे OpenAI, Groq, आदि) के साथ इंटरैक्ट करने के लिए Wright का उपयोग करते हैं, तो आपके इंटरैक्शन उन सेवाओं की गोपनीयता नीतियों द्वारा शासित होते हैं। हम आपको उन LLM सेवाओं की गोपनीयता नीतियों की समीक्षा करने की सलाह देते हैं जिनका आप उपयोग करना चुनते हैं:",
+                title: "थर्ड-पार्टी सेवाएं",
+                text: "जब आप LLM सेवाओं (जैसे कि OpenAI, Groq, आदि) के साथ इंटरैक्ट करने के लिए Wright का उपयोग करते हैं, तो आपके इंटरैक्शन उन सेवाओं की गोपनीयता नीतियों द्वारा शासित होते हैं। हम आपको अपने द्वारा चुनी गई LLM सेवाओं की गोपनीयता नीतियों की समीक्षा करने की सलाह देते हैं:",
                 list: [
                     "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI गोपनीयता नीति</a>",
                     "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq गोपनीयता नीति</a>",
@@ -3136,126 +3136,126 @@ const translations = {
             },
             security: {
                 title: "डेटा सुरक्षा",
-                text: "आपकी खाता जानकारी सुरक्षित रूप से संग्रहीत है। हम आपके डेटा को सुरक्षित रखने के लिए उद्योग-मानक सुरक्षा उपायों का उपयोग करते हैं।"
+                text: "आपके खाते की जानकारी सुरक्षित रूप से संग्रहीत की जाती है। हम आपके डेटा की सुरक्षा के लिए उद्योग-मानक सुरक्षा उपायों को अपनाते हैं।"
             },
             changes: {
                 title: "इस गोपनीयता नीति में परिवर्तन",
-                text: "हम समय-समय पर अपनी गोपनीयता नीति को अपडेट कर सकते हैं। हम इस पृष्ठ पर नई गोपनीयता नीति पोस्ट करके और \"अंतिम अपडेट\" तिथि को अपडेट करके आपको किसी भी बदलाव के बारे में सूचित करेंगे।"
+                text: "हम समय-समय पर अपनी गोपनीयता नीति को अपडेट कर सकते हैं। हम इस पृष्ठ पर नई नीति पोस्ट करके और \"अंतिम अद्यतन\" तिथि को बताकर आपको किसी भी बदलाव के बारे में सूचित करेंगे।"
             },
             contact: {
-                title: "हमसे संपर्क करें",
-                text: "यदि आपके पास इस गोपनीयता नीति के बारे में कोई प्रश्न है, तो कृपया हमसे संपर्क करें:"
+                title: "संपर्क करें",
+                text: "यदि इस गोपनीयता नीति के बारे में आपके कोई प्रश्न हैं, तो कृपया हमसे संपर्क करें:"
             }
         },
         howItWorks: {
             title: "यह कैसे काम करता है",
-            subtitle: "शॉर्टकट या PopClip।",
+            subtitle: "कीबोर्ड शॉर्टकट का उपयोग करें या सभी सुविधाओं तक पहुंच के लिए PopClip के साथ एकीकृत करें।",
             step1: {
-                title: "चुनें",
-                description: "टेक्स्ट हाइलाइट करें।"
+                title: "टेक्स्ट चुनें",
+                description: "अपने Mac पर किसी भी ऐप में किसी भी टेक्स्ट को हाइलाइट करें।"
             },
             step2: {
-                title: "शॉर्टकट",
-                description: "शॉर्टकट दबाएँ।"
+                title: "शॉर्टकट दबाएं",
+                description: "रीराइट, अनुवाद या चैट ट्रिगर करने के लिए अपने कॉन्फ़िगर किए गए शॉर्टकट को हिट करें या PopClip का उपयोग करें।"
             },
             step3: {
-                title: "परिणाम",
-                description: "बेहतर टेक्स्ट दिखाई देता है।"
+                title: "परिणाम प्राप्त करें",
+                description: "आपका AI-संवर्धित टेक्स्ट तुरंत एक फ्लोटिंग विंडो में दिखाई देता है। एक क्लिक से कॉपी करें या बदलें।"
             }
         },
         features: {
-            title: "विशेषताएँ",
+            title: "मुख्य विशेषताएं",
             quickView: {
-                title: "त्वरित दृश्य",
-                description: "त्वरित प्रश्न।"
+                title: "तेजी से आरंभ करें, गहराई में जाएं",
+                description: "हल्के क्विक व्यू में एक त्वरित क्वेरी लॉन्च करें। जब बातचीत को अधिक गहराई की आवश्यकता हो, तो पूर्ण चैट इंटरफ़ेस में ट्रांज़िशन करें—आपका संदर्भ स्वचालित रूप से आ जाता है।"
             },
             rewrite: {
-                title: "रिराइट",
-                description: "टेक्स्ट को तुरंत सुधारें।"
+                title: "वन-की टेक्स्ट पॉलिश",
+                description: "टेक्स्ट चुनें, एक शॉर्टकट दबाएं, और तुरंत एक पॉलिश किया हुआ संस्करण प्राप्त करें। Wright आपके मूल अर्थ को बनाए रखते हुए टाइपो, व्याकरण और अजीब वाक्यांशों को ठीक करता है। यह स्वचालित रूप से उस भाषा का पता लगाता है जिसे आप लिख रहे हैं।"
             },
             translate: {
-                title: "अनुवाद",
-                description: "तत्काल अनुवाद।"
+                title: "त्वरित अनुवाद",
+                description: "एक शॉर्टकट के साथ भाषाओं के बीच चयनित टेक्स्ट का अनुवाद करें। Wright स्रोत भाषा का पता लगाता है और आपके लिए इसका अनुवाद करता है—किसी अलग ऐप या ब्राउज़र टैब पर स्विच करने की आवश्यकता नहीं है।"
             },
             customRoles: {
-                title: "कस्टम रोल",
-                description: "अपना खुद का AI बनाएँ।"
+                title: "कस्टम AI भूमिकाएं",
+                description: "अपनी स्वयं की AI भूमिकाएं बनाएं - जैसे कि कोडिंग समीक्षा, कॉपी राइटिंग, ईमेल ड्राफ्टिंग, या कुछ और - प्रत्येक के अपने सिस्टम संकेत और व्यवहार के साथ।"
             },
             setup: {
-                title: "सेटअप",
-                description: "सब कुछ कस्टमाइज़ करें।",
+                title: "आपका सेटअप, आपका तरीका",
+                description: "अपनी प्रत्येक AI भूमिका के लिए शॉर्टकट कॉन्फ़िगर करें और अपने वर्कफ़्लो के अनुरूप इंटरफ़ेस को कस्टमाइज़ करें। Wright कई LLM प्रदाताओं का समर्थन करता है, जिससे आप अपनी आवश्यकताओं को सबसे अच्छी तरह पूरा करने वाले को चुन सकते हैं।",
                 list: [
-                    "शॉर्टकट",
-                    "एकाधिक मॉडल",
-                    "PopClip"
+                    "अनुकूलन योग्य कीबोर्ड शॉर्टकट",
+                    "एकाधिक AI मॉडल (OpenAI, Gemini, Grok, Groq)",
+                    "PopClip एकीकरण"
                 ]
             }
         },
         pricing: {
-            title: "मूल्य निर्धारण",
+            title: "अपनी योजना चुनें",
             free: {
-                tier: "मुफ़्त",
+                tier: "नि: शुल्क",
                 tokens: "1,000 टोकन / दिन",
-                reset: "दैनिक रीसेट",
-                cta: "शुरू करें"
+                reset: "दैनिक रीसेट (मध्यरात्रि UTC)",
+                cta: "आरंभ करें"
             },
             basic: {
-                tier: "बेसिक",
+                tier: "मूल",
                 period: "/ वर्ष",
                 tokens: "500,000 टोकन / महीना",
-                reset: "मासिक रीसेट",
-                cta: "सब्सक्राइब करें"
+                reset: "हर महीने की 1 तारीख को रीसेट होता है",
+                cta: "सदस्यता लें"
             },
             pro: {
-                badge: "लोकप्रिय",
+                badge: "सबसे लोकप्रिय",
                 tier: "प्रो",
                 period: "/ महीना",
                 tokens: "10,000,000 टोकन / महीना",
-                reset: "मासिक रीसेट",
-                cta: "प्रो में अपग्रेड करें"
+                reset: "हर महीने की 1 तारीख को रीसेट होता है",
+                cta: "प्रो प्राप्त करें"
             }
         },
         benefits: {
             title: "Wright क्यों?",
-            subtitle: "macOS के लिए नेटिव।",
+            subtitle: "एक मूल macOS सहायक जब तक आपको इसकी आवश्यकता न हो तब तक आपके रास्ते से दूर रहता है",
             everywhere: {
-                title: "हर जगह",
-                description: "सभी ऐप्स में काम करता है।"
+                title: "हर जगह काम करता है",
+                description: "वैश्विक कीबोर्ड शॉर्टकट और PopClip एकीकरण, किसी भी ऐप में काम करता है - मेल, नोट्स, स्लैक, आपका ब्राउज़र, या आपके Mac पर कोई भी टेक्स्ट फ़ील्ड।"
             },
             free: {
-                title: "मुफ़्त",
-                description: "डाउनलोड करें और उपयोग करें।"
+                title: "आरंभ करने के लिए निःशुल्क",
+                description: "कोई API कुंजी नहीं, कोई कॉन्फ़िगरेशन नहीं। एक निःशुल्क योजना शामिल है ताकि आप अपग्रेड करने से पहले हर सुविधा को आज़मा सकें।"
             }
         },
         download: {
-            title: "शुरू करें",
-            description: "मुफ़्त डाउनलोड करें।",
+            title: "आरंभ करें",
+            description: "Wright को मुफ़्त में डाउनलोड करें और तुरंत इसका उपयोग शुरू करें।",
             cta: "macOS के लिए डाउनलोड करें",
-            guide: "गाइड",
-            note: "मुफ़्त प्लान शामिल"
+            guide: "उपयोगकर्ता मार्गदर्शिका",
+            note: "निःशुल्क योजना शामिल है · कोई कॉन्फ़िगरेशन आवश्यक नहीं है"
         },
         footer: {
-            rights: "© 2026 Wright. सर्वाधिकार सुरक्षित।",
-            privacy: "गोपनीयता",
+            rights: "© 2026 Wright। सर्वाधिकार सुरक्षित।",
+            privacy: "गोपनीयता नीति",
             support: "सहायता"
         }
     },
     ar: {
         meta: {
-            title: "Wright - مساعد الذكاء الاصطناعي لنظام macOS | إعادة صياغة، ترجمة ودردشة",
-            description: "Wright هو مساعد ذكاء اصطناعي قابل للتخصيص لنظام macOS. أنشئ أدوارًا مخصصة، وأعد صياغة النصوص وترجمها بسهولة، ودردش — كل ذلك من اختصار لوحة المفاتيح أو PopClip. مجاني للاستخدام."
+            title: "Wright - مساعد الذكاء الاصطناعي لنظام macOS | إعادة كتابة، ترجمة ومحادثة",
+            description: "Wright هو مساعد ذكاء اصطناعي قابل للتخصيص لنظام macOS. أنشئ أدوارًا مخصصة، أعد كتابة النصوص وترجمها بسهولة، وتحدث — كل ذلك من خلال اختصار لوحة مفاتيح أو PopClip. مجاني للاستخدام."
         },
         nav: {
             features: "الميزات",
-            download: "تحميل",
+            download: "تنزيل",
             support: "الدعم",
             guide: "الدليل",
             toggle: "اللغة"
         },
         hero: {
-            title: "مساعد الذكاء الاصطناعي لنظام macOS",
-            subtitle: "Wright هو مساعد ذكاء اصطناعي قابل للتخصيص لنظام macOS. أنشئ أدوارًا مخصصة، وأعد صياغة النصوص وترجمها بسهولة، ودردش — كل ذلك من اختصار لوحة المفاتيح أو PopClip. مجاني للاستخدام.",
-            download: "تحميل لنظام macOS"
+            title: "مساعد الذكاء الاصطناعي الخاص بك لنظام macOS",
+            subtitle: "Wright هو مساعد ذكاء اصطناعي قابل للتخصيص لنظام macOS. أنشئ أدوارًا مخصصة، أعد صياغة وترجمة النصوص بسهولة، وتحدث — كل ذلك باستخدام اختصار لوحة مفاتيح أو PopClip. استخدمه مجانًا.",
+            download: "تنزيل لنظام macOS"
         },
         guide: {
             title: "دليل مستخدم Wright",
@@ -3390,39 +3390,39 @@ const translations = {
         privacy: {
             title: "سياسة الخصوصية",
             meta: {
-                title: "الخصوصية | Wright",
-                desc: "سياسة خصوصية Wright."
+                title: "سياسة الخصوصية | Wright",
+                desc: "سياسة خصوصية Wright. نحن لا نجمع بيانات الاستخدام الشخصية."
             },
-            lastUpdated: "آخر تحديث: مارس 2024",
+            lastUpdated: "آخر تحديث: فبراير ٢٠٢٦",
             commitment: {
                 title: "التزامنا بالخصوصية",
-                text: "تم تصميم Wright مع مراعاة خصوصيتك. نحن نؤمن بالشفافية ونقلل جمع البيانات إلى الحد الأدنى الضروري للغاية.",
+                text: "تم تصميم Wright واضعين خصوصيتك في الاعتبار. نحن نؤمن بالشفافية ونقلل من جمع البيانات إلى الحد الأدنى الضروري.",
                 keyPoints: {
-                    title: "نقاط الخصوصية الرئيسية:",
+                    title: "النقاط الرئيسية للخصوصية:",
                     list: [
-                        "نحن لا نصل إلى محتوى محادثاتك أو نخزنه",
-                        "نحن نجمع بريدك الإلكتروني فقط لإدارة الحساب",
+                        "نحن لا نصل إلى أو نخزن محتوى محادثاتك",
+                        "نحن نجمع فقط بريدك الإلكتروني لإدارة الحساب",
                         "نحن نستخدم الحد الأدنى من الاتصالات لتقديم الخدمة"
                     ]
                 }
             },
             dataCollection: {
-                title: "جمع البيانات والهندسة المعمارية",
-                text: "يستخدم Wright خدمة API خلفية آمنة لمعالجة طلباتك. نحن لا نخزن سجل محادثاتك أو محتواها.",
+                title: "جمع البيانات وهندسية النظام",
+                text: "يستخدم Wright خدمة واجهة برمجة تطبيقات خلفية آمنة لمعالجة طلباتك. نحن لا نخزن سجل محادثاتك أو محتواها.",
                 apiKeys: {
-                    title: "هندسة الخدمة",
-                    text: "تتم معالجة جميع التفاعلات من خلال واجهة برمجة التطبيقات الآمنة الخاصة بنا. يتم تمرير المحتوى الخاص بك فقط لإنشاء الردود ولا يتم حفظه أبدًا.",
+                    title: "هيكلية الخدمة",
+                    text: "تتم معالجة جميع التفاعلات من خلال واجهة برمجة التطبيقات الآمنة لدينا. يتم تمرير محتواك فقط لتوليد الردود ولا يتم حفظه أبدًا.",
                     list: [
-                        "نحن نجمع فقط البريد الإلكتروني لحسابك",
-                        "يتم استخدام الحد الأدنى من البيانات لاستكشاف الأخطاء وإصلاحها",
-                        "لا يوجد احتفاظ ببيانات المحادثة",
+                        "نحن نجمع فقط البريد الإلكتروني الخاص بحسابك",
+                        "الحد الأدنى من البيانات المستخدمة لاستكشاف الأخطاء",
+                        "لا يتم الاحتفاظ ببيانات المحادثات",
                         "تنفيذ آمن"
                     ]
                 }
             },
             thirdParty: {
                 title: "خدمات الطرف الثالث",
-                text: "عند استخدامك لـ Wright للتفاعل مع خدمات LLM (مثل OpenAI، Groq، إلخ)، تخضع تفاعلاتك لسياسات الخصوصية لتلك الخدمات. نوصي بمراجعة سياسات الخصوصية لخدمات LLM التي تختار استخدامها:",
+                text: "عندما تستخدم Wright للتفاعل مع خدمات LLM (مثل OpenAI، Groq، وما إلى ذلك)، فإن تفاعلاتك تخضع لسياسات الخصوصية الخاصة بتلك الخدمات. نوصي بمراجعة سياسات الخصوصية لخدمات LLM التي تختار استخدامها:",
                 list: [
                     "<a href=\"https://openai.com/privacy\" target=\"_blank\">سياسة خصوصية OpenAI</a>",
                     "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">سياسة خصوصية Groq</a>",
@@ -3430,125 +3430,125 @@ const translations = {
                 ]
             },
             security: {
-                title: "أمان البيانات",
-                text: "يتم تخزين معلومات حسابك بشكل آمن. نحن نستخدم تدابير أمنية قياسية في الصناعة لحماية بياناتك."
+                title: "أمن البيانات",
+                text: "يتم تخزين معلومات حسابك بشكل آمن. نحن نطبق تدابير أمنية متوافقة مع معايير الصناعة لحماية بياناتك."
             },
             changes: {
                 title: "التغييرات على سياسة الخصوصية هذه",
-                text: "قد نقوم بتحديث سياسة الخصوصية الخاصة بنا من وقت لآخر. سنبلغك بأي تغييرات عن طريق نشر سياسة الخصوصية الجديدة على هذه الصفحة وتحديث تاريخ \"آخر تحديث\"."
+                text: "قد نقوم بتحديث سياسة الخصوصية الخاصة بنا من وقت لآخر. سنقوم بإعلامك بأي تغييرات عن طريق نشر السياسة الجديدة على هذه الصفحة وتحديث تاريخ \"آخر تحديث\"."
             },
             contact: {
                 title: "اتصل بنا",
-                text: "إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى الاتصال بنا على:"
+                text: "إذا كانت لديك أي أسئلة حول سياسة الخصوصية هذه، يُرجى الاتصال بنا على:"
             }
         },
         howItWorks: {
             title: "كيف يعمل",
-            subtitle: "اختصارات أو PopClip.",
+            subtitle: "استخدم اختصارات لوحة المفاتيح أو ادمجه مع PopClip للوصول إلى كافة الميزات بضغطة زر أيمن.",
             step1: {
-                title: "تحديد",
-                description: "ظلل النص."
+                title: "حدد النص",
+                description: "قم بتحديد أي نص في أي تطبيق على جهاز Mac الخاص بك."
             },
             step2: {
-                title: "اختصار",
-                description: "اضغط الاختصار."
+                title: "اضغط على الاختصار",
+                description: "اضغط على اختصارك الذي قمت بإعداده أو استخدم PopClip لتشغيل إعادة الكتابة أو الترجمة أو الدردشة."
             },
             step3: {
-                title: "النتيجة",
-                description: "يظهر النص المحسن."
+                title: "احصل على النتيجة",
+                description: "يظهر النص المُحسّن بواسطة الذكاء الاصطناعي على الفور في نافذة عائمة. يمكنك نسخه أو استبداله بنقرة واحدة."
             }
         },
         features: {
-            title: "الميزات",
+            title: "الميزات الرئيسية",
             quickView: {
-                title: "نظرة سريعة",
-                description: "استعلامات سريعة."
+                title: "بدء سريع، تعمق لاحقًا",
+                description: "أطلق استعلامًا سريعًا في العرض السريع (Quick View) الخفيف. عندما تحتاج المحادثة إلى مزيد من التعمق، انتقل إلى واجهة الدردشة الكاملة — وسينتقل سياقك تلقائيًا."
             },
             rewrite: {
-                title: "إعادة صياغة",
-                description: "تحسين النص فورًا."
+                title: "تحسين النص بزر واحد",
+                description: "حدد نصًا، واضغط على اختصار، واحصل على نسخة منقحة على الفور. يعمل Wright على إصلاح الأخطاء المطبعية، والقواعد النحوية، والعبارات الركيكة مع الحفاظ على المعنى الأصلي. وهو يكتشف اللغة التي تكتب بها تلقائيًا."
             },
             translate: {
-                title: "ترجمة",
-                description: "ترجمة فورية."
+                title: "ترجمة فورية",
+                description: "ترجم النص المحدد بين اللغات عبر اختصار واحد. يكتشف Wright لغة المصدر ويترجمها لك — لا حاجة للتبديل إلى تطبيق آخر أو علامة تبويب للمتصفح."
             },
             customRoles: {
-                title: "أدوار مخصصة",
-                description: "اصنع الذكاء الاصطناعي الخاص بك."
+                title: "أدوار ذكاء اصطناعي مخصصة",
+                description: "أنشئ أدوار الذكاء الاصطناعي الخاصة بك - مثل مراجعة الأكواد، أو كتابة الإعلانات، أو صياغة رسائل البريد الإلكتروني، أو أي شيء آخر - ولكل منها تلقيناته وسلوكياته النظامية الخاصة."
             },
             setup: {
-                title: "إعداد",
-                description: "خصص كل شيء.",
+                title: "إعدادك، طريقتك",
+                description: "قم بتهيئة الاختصارات لكل دور من أدوار الذكاء الاصطناعي الخاصة بك وقم بتخصيص الواجهة لتناسب سير عملك. يدعم Wright العديد من موفري LLM، مما يسمح لك باختيار المزود الذي يلبي متطلباتك بشكل أفضل.",
                 list: [
-                    "اختصارات",
-                    "نماذج متعددة",
-                    "PopClip"
+                    "اختصارات لوحة مفاتيح قابلة للتخصيص",
+                    "متعدد نماذج الذكاء الاصطناعي (OpenAI و Gemini و Grok و Groq)",
+                    "تكامل كامل مع PopClip"
                 ]
             }
         },
         pricing: {
-            title: "الأسعار",
+            title: "اختر خطتك",
             free: {
-                tier: "مجاني",
-                tokens: "1,000 رمز / يوم",
-                reset: "إعادة تعيين يومي",
-                cta: "بدء"
+                tier: "مجانًا",
+                tokens: "1,000 توكن / يوم",
+                reset: "إعادة تعيين يومية (منتصف الليل بالتوقيت العالمي)",
+                cta: "ابدأ الآن"
             },
             basic: {
                 tier: "أساسي",
                 period: "/ سنة",
-                tokens: "500,000 رمز / شهر",
-                reset: "إعادة تعيين شهري",
-                cta: "اشتراك"
+                tokens: "500,000 توكن / شهر",
+                reset: "يُعاد التعيين في اليوم الأول من كل شهر",
+                cta: "اشترك"
             },
             pro: {
-                badge: "شائع",
+                badge: "الأكثر شيوعًا",
                 tier: "احترافي",
                 period: "/ شهر",
-                tokens: "10,000,000 رمز / شهر",
-                reset: "إعادة تعيين شهري",
-                cta: "ترقية إلى Pro"
+                tokens: "10,000,000 توكن / شهر",
+                reset: "يُعاد التعيين في اليوم الأول من كل شهر",
+                cta: "احصل على الاحترافي"
             }
         },
         benefits: {
             title: "لماذا Wright؟",
-            subtitle: "أصلي لـ macOS.",
+            subtitle: "مساعد macOS أصلي يبقى بعيدًا عن طريقك حتى تحتاج إليه",
             everywhere: {
-                title: "في كل مكان",
-                description: "يعمل في كل التطبيقات."
+                title: "يعمل في كل مكان",
+                description: "اختصارات لوحة المفاتيح العامة وتكامل PopClip، يعمل في أي تطبيق — البريد، الملاحظات، Slack، متصفحك، أو أي حقل إدخال نصي على جهاز Mac الخاص بك."
             },
             free: {
-                title: "مجاني",
-                description: "حمل واستخدم."
+                title: "بدء مجاني",
+                description: "بدون مفتاح API، بدون تعقيدات الإعداد. يتم تضمين خطة مجانية لتتمكن من تجربة كل ميزة قبل اتخاذ قرار الترقية."
             }
         },
         download: {
-            title: "ابدأ",
-            description: "تحميل مجاني.",
-            cta: "تحميل لنظام macOS",
-            guide: "الدليل",
-            note: "الخطة المجانية مشمولة"
+            title: "ابدأ الآن",
+            description: "قم بتنزيل Wright مجانًا وابدأ في استخدامه على الفور.",
+            cta: "تنزيل لنظام macOS",
+            guide: "دليل المستخدم",
+            note: "تم تضمين خطة مجانية · لا يتطلب أي إعداد"
         },
         footer: {
-            rights: "© 2026 Wright. جميع الحقوق محفوظة.",
-            privacy: "الخصوصية",
+            rights: "© ٢٠٢٦ Wright. جميع الحقوق محفوظة.",
+            privacy: "سياسة الخصوصية",
             support: "الدعم"
         }
     }, tr: {
         meta: {
-            title: "Wright - macOS için Yapay Zeka Asistanı | Yeniden Yaz, Çevir ve Sohbet Et",
-            description: "Wright, macOS için özelleştirilebilir bir yapay zeka asistanıdır. Özel roller oluşturun, metni zahmetsizce yeniden yazın ve çevirin ve sohbet edin - hepsi bir klavye kısayolu veya PopClip ile. Kullanımı ücretsiz."
+            title: "Wright - macOS için Yapay Zeka Asistanı | Yeniden Yaz, Çevir & Sohbet Et",
+            description: "Wright, macOS için özelleştirilebilir bir yapay zeka asistanıdır. İstediğiniz rolleri oluşturun, zahmetsizce metinleri yeniden yazın, çeviri yapın ve sohbet edin — tümü klavye kısayolları veya PopClip ile. Kullanımı ücretsizdir."
         },
         nav: {
             features: "Özellikler",
             download: "İndir",
             support: "Destek",
-            guide: "Kılavuz",
+            guide: "Rehber",
             toggle: "Dil"
         },
         hero: {
-            title: "macOS için Yapay Zeka Asistanınız",
-            subtitle: "Wright, macOS için özelleştirilebilir bir yapay zeka asistanıdır. Özel roller oluşturun, metni zahmetsizce yeniden yazın ve çevirin ve sohbet edin - hepsi bir klavye kısayolu veya PopClip ile. Kullanımı ücretsiz.",
+            title: "macOS için Kendi Yapay Zeka Asistanınız",
+            subtitle: "Wright, macOS için özelleştirilebilir bir yapay zeka asistanıdır. İstediğiniz rolleri oluşturun, zahmetsizce metinleri yeniden yazın ve çevirin, aynı zamanda sohbet edin — tamamını tek bir klavye kısayolu veya PopClip üzerinden yönetin. Ücretsiz kullanın.",
             download: "macOS için İndir"
         },
         guide: {
@@ -3684,32 +3684,32 @@ const translations = {
         privacy: {
             title: "Gizlilik Politikası",
             meta: {
-                title: "Gizlilik | Wright",
-                desc: "Wright gizlilik politikası."
+                title: "Gizlilik Politikası | Wright",
+                desc: "Wright Gizlilik Politikası. Kişisel kullanım verilerinizi toplamıyoruz."
             },
-            lastUpdated: "Son güncelleme: Mart 2024",
+            lastUpdated: "Son Güncelleme: Şubat 2026",
             commitment: {
-                title: "Gizliliğe Bağlılığımız",
-                text: "Wright, gizliliğiniz göz önünde bulundurularak tasarlanmıştır. Şeffaflığa inanıyor ve veri toplamayı kesinlikle gerekli olan minimuma indiriyoruz.",
+                title: "Gizlilik Taahhüdümüz",
+                text: "Wright, gizliliğiniz göz önünde bulundurularak tasarlanmıştır. Şeffaflığa inanıyor ve veri toplamayı sadece gerekli olan en az seviyeye indiriyoruz.",
                 keyPoints: {
                     title: "Temel Gizlilik Noktaları:",
                     list: [
-                        "Konuşma içeriğinize erişmiyoruz veya saklamıyoruz",
-                        "Yalnızca hesap yönetimi için e-postanızı topluyoruz",
-                        "Hizmet sunumu için minimum bağlantı kullanıyoruz"
+                        "Konuşma içeriklerinize erişmiyor ve bunları saklamıyoruz",
+                        "Hesap yönetimi için sadece e-postanızı topluyoruz",
+                        "Hizmet sunumu için asgari bağlantılar kullanıyoruz"
                     ]
                 }
             },
             dataCollection: {
                 title: "Veri Toplama ve Mimari",
-                text: "Wright, isteklerinizi işlemek için güvenli bir arka uç API hizmeti kullanır. Konuşma geçmişinizi veya içeriğinizi saklamıyoruz.",
+                text: "Wright, taleplerinizi işlemek için güvenli bir backend API hizmeti kullanır. Konuşma geçmişinizi veya içeriğinizi depolamıyoruz.",
                 apiKeys: {
                     title: "Hizmet Mimarisi",
-                    text: "Tüm etkileşimler güvenli API'mız aracılığıyla işlenir. İçeriğiniz yalnızca yanıt oluşturmak için iletilir ve asla kaydedilmez.",
+                    text: "Tüm etkileşimler güvenli API'miz üzerinden işlenir. İçeriğiniz yalnızca yanıt üretmek amacıyla iletilir ve hiçbir zaman kaydedilmez.",
                     list: [
-                        "Yalnızca hesap e-postanızı topluyoruz",
+                        "Sadece hesabınızın e-postası toplanır",
                         "Sorun giderme için minimum veri kullanılır",
-                        "Konuşma verilerinin saklanması yok",
+                        "Konuşma verileri elde tutulmaz",
                         "Güvenli uygulama"
                     ]
                 }
@@ -3725,126 +3725,126 @@ const translations = {
             },
             security: {
                 title: "Veri Güvenliği",
-                text: "Hesap bilgileriniz güvenli bir şekilde saklanır. Verilerinizi korumak için endüstri standardı güvenlik önlemleri kullanıyoruz."
+                text: "Hesap bilgileriniz güvenli bir şekilde saklanır. Verilerinizi korumak için endüstri standardı güvenlik önlemleri uyguluyoruz."
             },
             changes: {
                 title: "Bu Gizlilik Politikasındaki Değişiklikler",
-                text: "Gizlilik Politikamızı zaman zaman güncelleyebiliriz. Yeni Gizlilik Politikasını bu sayfada yayınlayarak ve \"Son güncelleme\" tarihini güncelleyerek herhangi bir değişiklik hakkında sizi bilgilendireceğiz."
+                text: "Gizlilik Politikamızı zaman zaman güncelleyebiliriz. Değişiklikleri, bu sayfada yeni politikayı yayınlayarak ve \"Son Güncelleme\" tarihini değiştirerek size bildireceğiz."
             },
             contact: {
                 title: "Bize Ulaşın",
-                text: "Bu Gizlilik Politikası hakkında herhangi bir sorunuz varsa, lütfen bize şu adresten ulaşın:"
+                text: "Bu Gizlilik Politikası hakkında sorularınız varsa, lütfen bizimle iletişime geçin:"
             }
         },
         howItWorks: {
-            title: "Nasıl Çalışır",
-            subtitle: "Kısayollar veya PopClip.",
+            title: "Nasıl Çalışır?",
+            subtitle: "Tüm özelliklere sağ tıklayarak erişmek için klavye kısayollarını kullanın veya PopClip ile entegre edin.",
             step1: {
-                title: "Seç",
-                description: "Metni vurgulayın."
+                title: "Metni Seçin",
+                description: "Mac'inizdeki herhangi bir uygulamada herhangi bir metni vurgulayın."
             },
             step2: {
-                title: "Kısayol",
-                description: "Kısayola basın."
+                title: "Kısayolu Tuşlayın",
+                description: "Yapılandırdığınız kısayolu tuşlayın veya yeniden yazma, çeviri veya sohbeti tetiklemek için PopClip'i kullanın."
             },
             step3: {
-                title: "Sonuç",
-                description: "Geliştirilmiş metin görünür."
+                title: "Sonucu Alın",
+                description: "Yapay zeka ile geliştirilmiş metniniz, yüzen bir pencerede anında görüntülenir. Sadece tek bir tıklamayla metninizi kopyalayın veya değiştirin."
             }
         },
         features: {
-            title: "Özellikler",
+            title: "Önemli Özellikler",
             quickView: {
-                title: "Hızlı Görünüm",
-                description: "Hızlı sorgular."
+                title: "Hızlı Başla, Derine İn",
+                description: "Hafifletilmiş Quick View ekranında hızlı bir sorgu başlatın. Konuşmanın derinleşmesi gerektiğinde, metin içeriği otomatik olarak korunarak eksiksiz Sohbet arayüzüne geçiş yapın."
             },
             rewrite: {
-                title: "Yeniden Yaz",
-                description: "Metni anında iyileştirin."
+                title: "Tek Tuşla Metni Toparlayın",
+                description: "Metni seçin, bir kısayola basın ve anında düzenlenmiş bir versiyon elde edin. Wright, asıl anlamınızı kaybetmeden yazım hatalarını, dilbilgisi sorunlarını ve tuhaf cümleleri düzeltir. Yazdığınız dili otomatik olarak algılar."
             },
             translate: {
-                title: "Çevir",
-                description: "Anında çeviri."
+                title: "Anında Çeviri",
+                description: "Seçili metni tek bir kısayolla diller arasında çevirin. Wright kaynak metni algılar ve sizin için çevirir — başka bir uygulamaya veya tarayıcı sekmesine geçmenize hiç gerek kalmaz."
             },
             customRoles: {
-                title: "Özel Roller",
-                description: "Kendi yapay zekanızı yapın."
+                title: "Özel Yapay Zeka Rolleri",
+                description: "Kod incelemesi, reklam yazarlığı, e-posta taslağı veya başka herhangi bir şey gibi kendi yapay zeka rollerinizi oluşturun - her birinin kendi sistem yönlendirmeleri ve karakteristik bir çalışma stili vardır."
             },
             setup: {
-                title: "Kurulum",
-                description: "Her şeyi özelleştirin.",
+                title: "Senin Kurulumun, Senin Yöntemin",
+                description: "Yapay zeka rollerinizin her biri için kısayollarınızı yapılandırın ve arayüzü çalışma akışınıza uyacak şekilde özelleştirin. Wright birden fazla LLM sağlayıcısını destekleyerek gereksinimlerinizi en iyi karşılayanı seçmenize olanak tanır.",
                 list: [
-                    "Kısayollar",
-                    "Çoklu Modeller",
-                    "PopClip"
+                    "Özelleştirilebilir Klavye Kısayolları",
+                    "Çeşitli Yapay Zeka Modelleri (OpenAI, Gemini, Grok, Groq)",
+                    "Tam PopClip Entegrasyonu"
                 ]
             }
         },
         pricing: {
-            title: "Fiyatlandırma",
+            title: "Planınızı Seçin",
             free: {
                 tier: "Ücretsiz",
-                tokens: "1,000 jeton / gün",
-                reset: "Günlük sıfırlama",
-                cta: "Başla"
+                tokens: "1.000 token / gün",
+                reset: "Günlük yenileme (Gece Yarısı UTC)",
+                cta: "Başlayın"
             },
             basic: {
                 tier: "Temel",
                 period: "/ yıl",
-                tokens: "500,000 jeton / ay",
-                reset: "Aylık sıfırlama",
+                tokens: "500.000 token / ay",
+                reset: "Her ayın 1'inde yenilenir",
                 cta: "Abone Ol"
             },
             pro: {
-                badge: "Popüler",
+                badge: "En Popüler",
                 tier: "Pro",
                 period: "/ ay",
-                tokens: "10,000,000 jeton / ay",
-                reset: "Aylık sıfırlama",
-                cta: "Pro'ya Yükselt"
+                tokens: "10.000.000 token / ay",
+                reset: "Her ayın 1'inde yenilenir",
+                cta: "Pro'yu Alın"
             }
         },
         benefits: {
             title: "Neden Wright?",
-            subtitle: "macOS için yerel.",
+            subtitle: "Siz ona ihtiyaç duyana kadar yolunuza hiç çıkmayan, yerel bir macOS asistanı",
             everywhere: {
-                title: "Her Yerde",
-                description: "Tüm uygulamalarda çalışır."
+                title: "Her Yerde Çalışır",
+                description: "Küresel klavye kısayolları ve PopClip entegrasyonu sayesinde herhangi bir uygulamada — Mail, Notlar, Slack, tarayıcınız veya Mac'inizdeki tüm metin alanları."
             },
             free: {
-                title: "Ücretsiz",
-                description: "İndirin ve kullanın."
+                title: "Başlamak Ücretsiz",
+                description: "API anahtarı yok, yapılandırma çabası yok. Yükseltmeye karar vermeden önce her bir özelliği deneyebilmeniz için ücretsiz bir plan mevcuttur."
             }
         },
         download: {
-            title: "Başla",
-            description: "Ücretsiz indirin.",
+            title: "Yola Çıkın",
+            description: "Wright'ı ücretsiz olarak indirin ve hemen kullanmaya başlayın.",
             cta: "macOS için İndir",
-            guide: "Kılavuz",
-            note: "Ücretsiz plan dahil"
+            guide: "Kullanım Kılavuzu",
+            note: "Ücretsiz plan dahildir · Sıfır yapılandırma"
         },
         footer: {
             rights: "© 2026 Wright. Tüm hakları saklıdır.",
-            privacy: "Gizlilik",
+            privacy: "Gizlilik Politikası",
             support: "Destek"
         }
     },
     vi: {
         meta: {
-            title: "Wright - Trợ lý AI cho macOS | Viết lại, Dịch & Trò chuyện",
-            description: "Wright là trợ lý AI tùy chỉnh cho macOS. Tạo vai trò tùy chỉnh, viết lại và dịch văn bản dễ dàng, và trò chuyện — tất cả từ phím tắt hoặc PopClip. Miễn phí sử dụng."
+            title: "Wright - Trợ Lý AI cho macOS | Viết lại, Dịch & Trò Chuyện",
+            description: "Wright là trợ lý AI tùy chỉnh cho macOS. Tạo các vai trò riêng biệt, dễ dàng viết lại hoặc dịch văn bản và trò chuyện — tất cả chỉ bằng một phím tắt hoặc PopClip. Sử dụng miễn phí."
         },
         nav: {
-            features: "Tính năng",
-            download: "Tải xuống",
-            support: "Hỗ trợ",
-            guide: "Hướng dẫn",
-            toggle: "Ngôn ngữ"
+            features: "Tính Năng",
+            download: "Tải Về",
+            support: "Hỗ Trợ",
+            guide: "Hướng Dẫn",
+            toggle: "Ngôn Ngữ"
         },
         hero: {
-            title: "Trợ lý AI của bạn cho macOS",
-            subtitle: "Wright là trợ lý AI tùy chỉnh cho macOS. Tạo vai trò tùy chỉnh, viết lại và dịch văn bản dễ dàng, và trò chuyện — tất cả từ phím tắt hoặc PopClip. Miễn phí sử dụng.",
-            download: "Tải xuống cho macOS"
+            title: "Trợ Lý AI Dành Cho macOS Của Bạn",
+            subtitle: "Wright là trợ lý AI tùy biến cho macOS. Tạo các vai trò tùy chỉnh, dễ dàng viết lại, dịch văn bản, và trò chuyện — tất cả chỉ từ phím tắt hoặc PopClip. Hoàn toàn miễn phí sử dụng.",
+            download: "Tải về cho macOS"
         },
         guide: {
             title: "Hướng dẫn Sử dụng Wright",
@@ -3977,156 +3977,156 @@ const translations = {
             }
         },
         privacy: {
-            title: "Chính sách Quyền riêng tư",
+            title: "Chính Sách Bảo Mật",
             meta: {
-                title: "Quyền riêng tư | Wright",
-                desc: "Chính sách quyền riêng tư của Wright."
+                title: "Chính Sách Bảo Mật | Wright",
+                desc: "Chính sách bảo mật của Wright. Chúng tôi không thu thập dữ liệu sử dụng cá nhân."
             },
-            lastUpdated: "Cập nhật lần cuối: Tháng 3 2024",
+            lastUpdated: "Cập nhật lần cuối: Tháng 2 năm 2026",
             commitment: {
-                title: "Cam kết của chúng tôi về Quyền riêng tư",
-                text: "Wright được thiết kế với quyền riêng tư của bạn trong tâm trí. Chúng tôi tin vào sự minh bạch và giảm thiểu việc thu thập dữ liệu đến mức tối thiểu tuyệt đối cần thiết.",
+                title: "Cam Kết Của Chúng Tôi Về Quyền Riêng Tư",
+                text: "Wright được thiết kế với tiêu chí bảo vệ quyền riêng tư của bạn. Chúng tôi tin vào sự minh bạch và giảm thiểu việc thu thập dữ liệu chỉ trong mức thực sự cần thiết.",
                 keyPoints: {
-                    title: "Các điểm chính về Quyền riêng tư:",
+                    title: "Các Điểm Chính Về Quyền Riêng Tư:",
                     list: [
                         "Chúng tôi không truy cập hoặc lưu trữ nội dung cuộc trò chuyện của bạn",
                         "Chúng tôi chỉ thu thập email của bạn để quản lý tài khoản",
-                        "Chúng tôi sử dụng các kết nối tối thiểu để cung cấp dịch vụ"
+                        "Chúng tôi sử dụng lượng kết nối tối thiểu để cung cấp dịch vụ"
                     ]
                 }
             },
             dataCollection: {
-                title: "Thu thập Dữ liệu & Kiến trúc",
-                text: "Wright sử dụng một dịch vụ API backend an toàn để xử lý các yêu cầu của bạn. Chúng tôi không lưu trữ lịch sử cuộc trò chuyện hoặc nội dung của bạn.",
+                title: "Thu Thập Dữ Liệu & Kiến Trúc",
+                text: "Wright sử dụng API dịch vụ backend bảo mật để xử lý các yêu cầu của bạn. Chúng tôi không lưu trữ lịch sử trò chuyện hay nội dung của bạn.",
                 apiKeys: {
-                    title: "Kiến trúc Dịch vụ",
-                    text: "Tất cả các tương tác được xử lý thông qua API an toàn của chúng tôi. Nội dung của bạn chỉ được truyền đi để tạo phản hồi và không bao giờ được lưu.",
+                    title: "Kiến Trúc Dịch Vụ",
+                    text: "Mọi tương tác được xử lý qua API bảo mật của chúng tôi. Nội dung của bạn chỉ đi qua hệ thống nhằm tạo ra câu trả lời và không bao giờ được lưu lại.",
                     list: [
-                        "Chúng tôi chỉ thu thập email tài khoản của bạn",
-                        "Dữ liệu tối thiểu được sử dụng để khắc phục sự cố",
-                        "Không lưu giữ dữ liệu cuộc trò chuyện",
-                        "Triển khai an toàn"
+                        "Chúng tôi chỉ lấy email tài khoản của bạn",
+                        "Sử dụng mức dữ liệu tối thiểu cho mục đích gỡ lỗi",
+                        "Không lưu lại các dữ liệu trò chuyện",
+                        "Triển khai đảm bảo an toàn"
                     ]
                 }
             },
             thirdParty: {
-                title: "Dịch vụ của Bên thứ ba",
-                text: "Khi bạn sử dụng Wright để tương tác với các dịch vụ LLM (như OpenAI, Groq, v.v.), các tương tác của bạn được điều chỉnh bởi chính sách quyền riêng tư của các dịch vụ đó. Chúng tôi khuyên bạn nên xem xét chính sách quyền riêng tư của các dịch vụ LLM mà bạn chọn sử dụng:",
+                title: "Dịch Vụ Của Bên Thứ Ba",
+                text: "Khi bạn sử dụng Wright để tương tác với các dịch vụ LLM (như OpenAI, Groq, v.v.), tương tác của bạn sẽ bị chi phối bởi các chính sách bảo mật của những dịch vụ đó. Chúng tôi khuyên bạn nên xem qua chính sách bảo mật của các dịch vụ LLM mà bạn chọn sử dụng:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Chính sách Quyền riêng tư của OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Chính sách Quyền riêng tư của Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Chính sách Quyền riêng tư của xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">Chính sách Bảo mật của OpenAI</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Chính sách Bảo mật của Groq</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">Chính sách Bảo mật của xAI</a>"
                 ]
             },
             security: {
-                title: "Bảo mật Dữ liệu",
-                text: "Thông tin tài khoản của bạn được lưu trữ an toàn. Chúng tôi áp dụng các biện pháp bảo mật tiêu chuẩn ngành để bảo vệ dữ liệu của bạn."
+                title: "Bảo Mật Dữ Liệu",
+                text: "Thông tin tài khoản của bạn được lưu trữ an toàn. Chúng tôi áp dụng các biện pháp bảo mật theo tiêu chuẩn ngành để bảo vệ dữ liệu của bạn."
             },
             changes: {
-                title: "Thay đổi đối với Chính sách Quyền riêng tư này",
-                text: "Chúng tôi có thể cập nhật Chính sách Quyền riêng tư của mình theo thời gian. Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi nào bằng cách đăng Chính sách Quyền riêng tư mới trên trang này và cập nhật ngày \"Cập nhật lần cuối\"."
+                title: "Thay Đổi Đối Với Chính Sách Bảo Mật Này",
+                text: "Chúng tôi có thể cập nhật Chính Sách Bảo Mật theo thời gian. Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi nào bằng việc đăng chính sách mới lên trang này và sửa ngày \"Cập nhật lần cuối\"."
             },
             contact: {
-                title: "Liên hệ với chúng tôi",
-                text: "Nếu bạn có bất kỳ câu hỏi nào về Chính sách Quyền riêng tư này, vui lòng liên hệ với chúng tôi tại:"
+                title: "Liên Hệ Với Chúng Tôi",
+                text: "Nếu bạn có bất kỳ câu hỏi nào về Chính Sách Bảo Mật này, vui lòng liên hệ với chúng tôi tại:"
             }
         },
         howItWorks: {
-            title: "Cách hoạt động",
-            subtitle: "Phím tắt hoặc PopClip.",
+            title: "Cách Thức Hoạt Động",
+            subtitle: "Sử dụng các phím tắt bàn phím hoặc tích hợp với PopClip để truy cập tất cả các tính năng thông qua menu chuột phải.",
             step1: {
-                title: "Chọn",
-                description: "Bôi đen văn bản."
+                title: "Chọn Văn Bản",
+                description: "Bôi đen bất kỳ văn bản nào trong mọi ứng dụng trên Mac của bạn."
             },
             step2: {
-                title: "Phím tắt",
-                description: "Nhấn phím tắt."
+                title: "Nhấn Phím Tắt",
+                description: "Bấm phím tắt bạn đã cấu hình hoặc dùng PopClip để kích hoạt tính năng viết lại, dịch hoặc trò chuyện."
             },
             step3: {
-                title: "Kết quả",
-                description: "Văn bản cải tiến xuất hiện."
+                title: "Nhận Kết Quả",
+                description: "Văn bản được AI xử lý sẽ xuất hiện ngay lập tức trong cửa sổ nổi. Sao chép hoặc thay thế trong một cú nhấp chuột."
             }
         },
         features: {
-            title: "Tính năng",
+            title: "Các Tính Năng Chính",
             quickView: {
-                title: "Xem Nhanh",
-                description: "Truy vấn nhanh."
+                title: "Bắt Đầu Nhanh, Đào Sâu Hơn",
+                description: "Khởi tạo truy vấn nhanh ngay từ Quick View nhẹ gọn. Khi câu chuyện cần đi vào chiều sâu, hãy chuyển đổi liền mạch sang giao diện Chat đầy đủ — mọi ngữ cảnh của bạn đều được chuyển sang tự động."
             },
             rewrite: {
-                title: "Viết lại",
-                description: "Cải thiện văn bản ngay lập tức."
+                title: "Trau Chuốt Văn Bản Một Phím",
+                description: "Chọn đoạn văn, bấm một phím tắt, và nhập ngay một phiên bản tinh tế hơn. Wright rà soát các lỗi chính tả, ngữ pháp, các cụm từ khó chịu và giữ lại nguyên ý nói của bạn. Tính năng tự tự xác định bằng ngôn ngữ của bạn tự động."
             },
             translate: {
-                title: "Dịch",
-                description: "Dịch tức thì."
+                title: "Dịch Tức Thì",
+                description: "Dịch phần chữ qua lại giữa mọi ngôn ngữ với chỉ một phím tắc duy nhất. Không cần dùng những phần mềm khác vì Wright chủ động biết ngôn ngữ của nguồn và giúp dịch được ra cho bạn."
             },
             customRoles: {
-                title: "Vai trò Tùy chỉnh",
-                description: "Tạo AI của riêng bạn."
+                title: "Những Vai Trò AI Riêng Biệt",
+                description: "Xây dựng AI roles — chuyên gia rà soát kĩ thuật, sáng tác viên nội dung công tu, người chuyên môn của một lĩnh vực. — mỗi AI đều tùy biến qua những prompt đặc biệt của mỗi người."
             },
             setup: {
-                title: "Thiết lập",
-                description: "Tùy chỉnh mọi thứ.",
+                title: "Cấu Hình Tuỳ Ý Thích",
+                description: "Đặt những tổ phím tắt theo cấu hình khác nhau của những AI, chỉnh lý cho phù hợp với cách bạn làm việc. Dùng các nguồn nhà cung cấp AI mạnh vì Wright đang trang bị (LLMs), bạn được phép tùy chọn bất cứ bên nào hợp nhu cầu.",
                 list: [
-                    "Phím tắt",
-                    "Nhiều Mô hình",
-                    "PopClip"
+                    "Keyboard Shortcuts tùy chỉnh riêng biệt",
+                    "Đa AI models (OpenAI, Gemini, Grok, Groq)",
+                    "Phối hợp hoàn hảo chung với PopClip"
                 ]
             }
         },
         pricing: {
-            title: "Giá cả",
+            title: "Chọn Gói Của Bạn",
             free: {
-                tier: "Miễn phí",
-                tokens: "1,000 token / ngày",
-                reset: "Đặt lại hàng ngày",
-                cta: "Bắt đầu"
+                tier: "Miễn Phí",
+                tokens: "1.000 token / ngày",
+                reset: "Làm mới mỗi ngày (Nửa đêm UTC)",
+                cta: "Bắt Đầu Ngay"
             },
             basic: {
-                tier: "Cơ bản",
+                tier: "Cơ Bản",
                 period: "/ năm",
-                tokens: "500,000 token / tháng",
-                reset: "Đặt lại hàng tháng",
-                cta: "Đăng ký"
+                tokens: "500.000 token / tháng",
+                reset: "Làm mới vào ngày 1 hàng tháng",
+                cta: "Đăng Ký"
             },
             pro: {
-                badge: "Phổ biến",
+                badge: "Phổ Biến Nhất",
                 tier: "Pro",
                 period: "/ tháng",
-                tokens: "10,000,000 token / tháng",
-                reset: "Đặt lại hàng tháng",
-                cta: "Nâng cấp lên Pro"
+                tokens: "10.000.000 token / tháng",
+                reset: "Làm mới vào ngày 1 hàng tháng",
+                cta: "Nâng Cấp Pro"
             }
         },
         benefits: {
-            title: "Tại sao chọn Wright?",
-            subtitle: "Gốc cho macOS.",
+            title: "Tại Sao Nên Chọn Wright?",
+            subtitle: "Trợ lý thiết kế mượt mà ngay trên máy sẽ không làm mất diện điểm gì trừ đi lúc thật sự được kêu tên.",
             everywhere: {
-                title: "Mọi nơi",
-                description: "Hoạt động trong mọi ứng dụng."
+                title: "Chạy Ở Mọi Nơi Bước Chân Bạn Đến",
+                description: "Global keyboard shortcuts / PopClip tự động hóa tích luỹ giúp ứng dụng có mặt và thực hiện tốt mọi nơi trên mọi văn bản từ app điện như Mail, Notes, Safari, Slack."
             },
             free: {
-                title: "Miễn phí",
-                description: "Tải xuống và sử dụng."
+                title: "Trải Nghiệm Trọn Miễn Phí",
+                description: "Không cần làm mất thiết lập API khóa đầu. Wright có trang bị mọi thử ngay lập tức cho mục định giá Không đồng, đảm bảo mọi chi phí trải nghiệm tính năng là Miễn phí."
             }
         },
         download: {
-            title: "Bắt đầu",
-            description: "Tải xuống miễn phí.",
-            cta: "Tải xuống cho macOS",
-            guide: "Hướng dẫn",
-            note: "Bao gồm gói miễn phí"
+            title: "Bước vào Hành Trình Khám Phá",
+            description: "Truyển ngay tại bước dùng sau thao tác cài đặp ứng phầm Mac.",
+            cta: "Trải Nghiệm Dành Cho MacOS",
+            guide: "Chỉ Dẫn Người Dùng",
+            note: "Hạng Free Mãi Mãi · Thiết kể mở mà ngay"
         },
         footer: {
-            rights: "© 2026 Wright. Mọi quyền được bảo lưu.",
-            privacy: "Quyền riêng tư",
-            support: "Hỗ trợ"
+            rights: "© 2026 Wright. Mọi quyển đều đã được nắm bảo quyền.",
+            privacy: "Nghi Thức Chính Sách Dữ Liệu",
+            support: "Yêu Cầu Hỗ Trợ Mọi Nơi"
         }
     }, nl: {
         meta: {
             title: "Wright - AI-assistent voor macOS | Herschrijven, Vertalen & Chatten",
-            description: "Wright is een aanpasbare AI-assistent voor macOS. Creëer aangepaste rollen, herschrijf en vertaal tekst moeiteloos, en chat — allemaal via een sneltoets of PopClip. Gratis te gebruiken."
+            description: "Wright is een aanpasbare AI-assistent voor macOS. Creëer eigen rollen, herschrijf en vertaal eenvoudig tekst en chat — allemaal via een sneltoets of PopClip. Gratis te gebruiken."
         },
         nav: {
             features: "Functies",
@@ -4136,9 +4136,9 @@ const translations = {
             toggle: "Taal"
         },
         hero: {
-            title: "Uw AI-assistent voor macOS",
-            subtitle: "Wright is een aanpasbare AI-assistent voor macOS. Creëer aangepaste rollen, herschrijf en vertaal tekst moeiteloos, en chat — allemaal via een sneltoets of PopClip. Gratis te gebruiken.",
-            download: "Downloaden voor macOS"
+            title: "Jouw AI-assistent voor macOS",
+            subtitle: "Wright is een aanpasbare AI-assistent voor macOS. Creëer eigen rollen, herschrijf of vertaal zonder moeite teksten en chat direct — allemaal via een toetscombinatie of PopClip. Gratis in gebruik.",
+            download: "Download voor macOS"
         },
         guide: {
             title: "Wright Gebruikershandleiding",
@@ -4273,39 +4273,39 @@ const translations = {
         privacy: {
             title: "Privacybeleid",
             meta: {
-                title: "Privacy | Wright",
-                desc: "Wright's Privacybeleid."
+                title: "Privacybeleid | Wright",
+                desc: "Wright's Privacybeleid. Wij verzamelen geen persoonlijke gebruiksgegevens."
             },
-            lastUpdated: "Laatst bijgewerkt: Maart 2024",
+            lastUpdated: "Laatst Bijgewerkt: Februari 2026",
             commitment: {
                 title: "Onze Toewijding aan Privacy",
-                text: "Wright, is ontworpen met uw privacy in gedachten. Wij geloven in transparantie en minimaliseren gegevensverzameling tot het absolute noodzakelijke.",
+                text: "Wright is ontworper met uw privacy in gedachten. Wij geloven in transparantie en minimaliseren gegevensverzameling tot het absolute minimum.",
                 keyPoints: {
-                    title: "Belangrijkste Privacy Punten:",
+                    title: "Belangrijkste Privacypunten:",
                     list: [
-                        "Wij hebben geen toegang tot of slaan uw gespreksinhoud op",
-                        "Wij verzamelen alleen uw e-mail voor accountbeheer",
-                        "Wij gebruiken minimale verbindingen voor servicelevering"
+                        "Wij hebben geen toegang tot uw gesprek-inhoud en slaan deze niet op",
+                        "We verzamelen alleen uw e-mailadres voor accountbeheer",
+                        "We gebruiken een minimum aan verbindingen voor de levering van diensten"
                     ]
                 }
             },
             dataCollection: {
                 title: "Gegevensverzameling & Architectuur",
-                text: "Wright maakt gebruik van een veilige backend API-service om uw verzoeken te verwerken. Wij slaan uw gespreksgeschiedenis of inhoud niet op.",
+                text: "Wright maakt gebruik van een beveiligde back-end API-service om uw verzoeken te verwerken. We slaan uw gespreksgeschiedenis of inhoud niet op.",
                 apiKeys: {
                     title: "Service Architectuur",
-                    text: "Alle interacties worden verwerkt via onze veilige API. Uw inhoud wordt uitsluitend doorgestuurd voor het genereren van antwoorden en wordt nooit opgeslagen.",
+                    text: "Alle interacties worden verwerkt via onze beveiligde API. Uw inhoud wordt alleen doorgegeven voor het genereren van reacties en wordt nooit bewaard.",
                     list: [
-                        "Wij verzamelen alleen uw account-e-mail",
+                        "We verzamelen alleen het e-mailadres van uw account",
                         "Minimale gegevens gebruikt voor probleemoplossing",
-                        "Geen retentie van gespreksgegevens",
-                        "Veilige implementatie"
+                        "Geen bewaring van gespreksgegevens",
+                        "Beveiligde implementatie"
                     ]
                 }
             },
             thirdParty: {
                 title: "Diensten van Derden",
-                text: "Wanneer u Wright gebruikt om te communiceren met LLM-diensten (zoals OpenAI, Groq, enz.), worden uw interacties beheerst door de privacybeleidsregels van die diensten. Wij raden u aan de privacybeleidsregels van de LLM-diensten die u kiest te gebruiken, te raadplegen:",
+                text: "Wanneer u Wright gebruikt om te communiceren met LLM-services (zoals OpenAI, Groq, enz.), vallen uw interacties onder de privacybeleidsregels van die services. We raden u aan het privacybeleid te bekijken van de LLM-services die u verkiest te gebruiken:",
                 list: [
                     "<a href=\"https://openai.com/privacy\" target=\"_blank\">OpenAI Privacybeleid</a>",
                     "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Groq Privacybeleid</a>",
@@ -4313,126 +4313,126 @@ const translations = {
                 ]
             },
             security: {
-                title: "Gegevensbeveiliging",
-                text: "Uw accountinformatie wordt veilig opgeslagen. Wij passen industriestandaard beveiligingsmaatregelen toe om uw gegevens te beschermen."
+                title: "Databeveiliging",
+                text: "Uw accountgegevens worden veilig opgeslagen. We hanteren de standaard veiligheidsmaatregelen van de sector om uw gegevens te beschermen."
             },
             changes: {
-                title: "Wijzigingen in dit Privacybeleid",
-                text: "Wij kunnen ons Privacybeleid van tijd tot tijd bijwerken. Wij zullen u op de hoogte stellen van eventuele wijzigingen door het nieuwe Privacybeleid op deze pagina te plaatsen en de datum van \"Laatst bijgewerkt\" bij te werken."
+                title: "Wijzigingen in Dit Privacybeleid",
+                text: "We kunnen ons Privacybeleid van tijd tot tijd bijwerken. We zullen u op de hoogte stellen van eventuele wijzigingen door het nieuwe beleid op deze pagina te plaatsen en de datum van \"Laatst Bijgewerkt\" aan te passen."
             },
             contact: {
-                title: "Neem Contact Met Ons Op",
+                title: "Neem Contact op",
                 text: "Als u vragen heeft over dit Privacybeleid, neem dan contact met ons op via:"
             }
         },
         howItWorks: {
-            title: "Hoe het Werkt",
-            subtitle: "Sneltoetsen of PopClip.",
+            title: "Hoe Het Werkt",
+            subtitle: "Gebruik sneltoetsen of PopClip-integratie om overal via een rechtermuisklik toegang te krijgen tot alle functies.",
             step1: {
-                title: "Selecteren",
-                description: "Markeer tekst."
+                title: "Selecteer Tekst",
+                description: "Markeer willekeurige tekst in elke app op je Mac."
             },
             step2: {
-                title: "Sneltoets",
-                description: "Druk op sneltoets."
+                title: "Druk op de Sneltoets",
+                description: "Druk op je geconfigureerde sneltoets of gebruik PopClip om herschrijven, vertalen of de chat te starten."
             },
             step3: {
-                title: "Resultaat",
-                description: "Verbeterde tekst verschijnt."
+                title: "Ontvang Resultaat",
+                description: "De AI-verbeterde tekst verschijnt direct in een zwevend venster. Kopieer of vervang via een enkele klik."
             }
         },
         features: {
-            title: "Functies",
+            title: "Belangrijkste Functies",
             quickView: {
-                title: "Snel Bekijken",
-                description: "Snelle vragen."
+                title: "Snelle Start, Diepgaande Invalshoek",
+                description: "Plaats een snelle zoekopdracht in de lichtgewichte Quick View. Wanneer een gesprek meer diepte vereist, ga je naadloos over in de volledige Chat-omgeving. De hele context wordt automatisch meegenomen."
             },
             rewrite: {
-                title: "Herschrijven",
-                description: "Tekst direct verbeteren."
+                title: "One-Key Tekstverbetering",
+                description: "Selecteer de passage, druk in met één sneltoets, en krijg meteen een fraaie en correcte output gepresenteerd. Wright repareert typfouten, gekke constructies, en rare zinsbouw zonder dat ook maar een hint van het origneel de deur verlaat. Binnen elke taal."
             },
             translate: {
-                title: "Vertalen",
-                description: "Directe vertaling."
+                title: "Instant Vertalen",
+                description: "Vertaal gekozen teksten over taalbarrières met een enkel commando. Er komt van een browser of een web-applicatie hier niets voor in te pas aangezien de technologie en het inspringen hier ter plekke ontstaat en het allemaal door een shortcut geregeld kan wezen."
             },
             customRoles: {
-                title: "Aangepaste Rollen",
-                description: "Maak uw eigen AI."
+                title: "Op Maat Gemaakte AI-Rollen",
+                description: "Plaats uw eigen figuren in regie als copywriter, proeflezer of email-designer, en leg ieder van deze ontwerpen zijn specifieke systeemvereisten op voor optimale resultaten."
             },
             setup: {
-                title: "Installatie",
-                description: "Pas alles aan.",
+                title: "Jouw Setup, Jouw Manier",
+                description: "Creëer combinaties om je agent-shortcuts te organiseren zodat de layout bij het ontworpen traject perfect mee in is. Laat alle moderne kunstmatige intelligentie je verder helpen naadloos (o.a de grote groepen op het net).",
                 list: [
-                    "Sneltoetsen",
-                    "Meerdere Modellen",
-                    "PopClip"
+                    "Flexibele keyboard combinaties open en toegankelijk",
+                    "Meerdere modellen in ondersteuning (OpenAI, Gemini, Grok, Groq)",
+                    "Volledige integratie op PopClip software"
                 ]
             }
         },
         pricing: {
-            title: "Prijzen",
+            title: "Kies Jouw Plan",
             free: {
                 tier: "Gratis",
                 tokens: "1.000 tokens / dag",
-                reset: "Dagelijkse reset",
-                cta: "Starten"
+                reset: "Dagelijks vernieuwd (Middernacht UTC)",
+                cta: "Beleef de Ervaring"
             },
             basic: {
                 tier: "Basis",
                 period: "/ jaar",
                 tokens: "500.000 tokens / maand",
-                reset: "Maandelijkse reset",
+                reset: "Maandelijks elke 1e dag van de maand vernieuwd",
                 cta: "Abonneren"
             },
             pro: {
-                badge: "Populair",
+                badge: "Meest Gekozen",
                 tier: "Pro",
                 period: "/ maand",
                 tokens: "10.000.000 tokens / maand",
-                reset: "Maandelijkse reset",
-                cta: "Upgrade naar Pro"
+                reset: "Maandelijks elke 1e dag van de maand vernieuwd",
+                cta: "Pro Nemen"
             }
         },
         benefits: {
             title: "Waarom Wright?",
-            subtitle: "Native voor macOS.",
+            subtitle: "De unieke en authentieke Mac hulp software waar men onverstoord zijn rust kan voltooien, met ingrijpen pas wanneer u besluit in te hoppen.",
             everywhere: {
-                title: "Overal",
-                description: "Werkt in alle apps."
+                title: "Handig Overal Om Ons Heen",
+                description: "Deze commando's lopen gewoon goed dwars via en tussen elk text programma en Safari, e-mail box of enigerlei scherm en notitie, alles onder je vingertoppen."
             },
             free: {
-                title: "Gratis",
-                description: "Downloaden en gebruiken."
+                title: "Begin met Testen, 0 Kosten",
+                description: "Verdere lastige zaken als Keys of aanpassingen in code? Nee hoor de test van elke individuele techniek wordt u om niets overhandigd zodat we overgegaan."
             }
         },
         download: {
-            title: "Starten",
-            description: "Gratis downloaden.",
-            cta: "Downloaden voor macOS",
-            guide: "Gids",
-            note: "Gratis abonnement inbegrepen"
+            title: "Nu Inzetten",
+            description: "Laad de applicatie geheel gratis neer om in testperiode direct in actie en op prestatie te beginnen op uw Mac terminal.",
+            cta: "Download App Voor macOS",
+            guide: "Installatie Support Gids",
+            note: "Kostbare gratis toetreding al present · Onmiddelijk van pas in actie te halen"
         },
         footer: {
-            rights: "© 2026 Wright. Alle rechten voorbehouden.",
-            privacy: "Privacy",
-            support: "Ondersteuning"
+            rights: "© 2026 Wright. Exclusieve rechten allemaal voorbehouden in registratie.",
+            privacy: "Beleid met betrekking tot Privacy",
+            support: "Steun"
         }
     },
     pl: {
         meta: {
-            title: "Wright - Asystent AI dla macOS | Przeredaguj, Tłumacz i Czatuj",
-            description: "Wright to konfigurowalny asystent AI dla macOS. Twórz własne role, bez wysiłku przeredagowuj i tłumacż tekst oraz czatuj — wszystko za pomocą skrótu klawiszowego lub PopClip. Darmowy w użyciu."
+            title: "Wright - Asystent AI dla macOS | Przepisuj, Tłumacz i Rozmawiaj",
+            description: "Wright to konfigurowalny asystent AI dla macOS. Twórz niestandardowe role, łatwo przepisuj i tłumacz teks, i prowadź czat — wszystko z poziomu skrótu klawiszowego lub PopClip. Za darmo."
         },
         nav: {
             features: "Funkcje",
             download: "Pobierz",
             support: "Wsparcie",
-            guide: "Przewodnik",
+            guide: "Poradnik",
             toggle: "Język"
         },
         hero: {
-            title: "Twój Asystent AI dla macOS",
-            subtitle: "Wright to konfigurowalny asystent AI dla macOS. Twórz własne role, bez wysiłku przeredagowuj i tłumacż tekst oraz czatuj — wszystko za pomocą skrótu klawiszowego lub PopClip. Darmowy w użyciu.",
+            title: "Twój Asystent AI na macOS",
+            subtitle: "Wright to konfigurowalny asystent AI dla macOS. Twórz dedykowane role, bez problemu przepisuj oraz tłumacz teks i prowadź rozmowy używając skrótu klawiaturowego na PopClipa z użyciem tej bezpłatnej aplikacji.",
             download: "Pobierz na macOS"
         },
         guide: {
@@ -4568,39 +4568,39 @@ const translations = {
         privacy: {
             title: "Polityka Prywatności",
             meta: {
-                title: "Prywatność | Wright",
-                desc: "Polityka Prywatności Wright."
+                title: "Polityka Prywatności | Wright",
+                desc: "Polityka prywatności Wright. Nie gromadzimy osobistych danych dotyczących użytkowania."
             },
-            lastUpdated: "Ostatnia aktualizacja: Marzec 2024",
+            lastUpdated: "Ostatnia Aktualizacja: Luty 2026",
             commitment: {
-                title: "Nasze Zobowiązanie do Prywatności",
-                text: "Wright został zaprojektowany z myślą o Twojej prywatności. Wierzymy w przejrzystość i ograniczamy gromadzenie danych do absolutnego minimum.",
+                title: "Nasze Zobowiązanie do Ochrony Prywatności",
+                text: "Wright został zaprojektowany z myślą o Twojej prywatności. Wierzymy w transparentność i ograniczamy gromadzenie danych do absolutnego minimum.",
                 keyPoints: {
-                    title: "Kluczowe Punkty Prywatności:",
+                    title: "Kluczowe Punkty Polityki:",
                     list: [
-                        "Nie mamy dostępu do treści Twoich rozmów ani ich nie przechowujemy",
-                        "Gromadzimy Twój adres e-mail wyłącznie do zarządzania kontem",
-                        "Używamy minimalnych połączeń do świadczenia usług"
+                        "Nie mamy dostępu ani nie przechowujemy treści Twoich konwersacji",
+                        "Pobieramy wyłącznie Twój adres e-mail do zarządzania kontem",
+                        "Stosujemy minimum połączeń w celu świadczenia usług"
                     ]
                 }
             },
             dataCollection: {
                 title: "Gromadzenie Danych i Architektura",
-                text: "Wright wykorzystuje bezpieczną usługę API backendu do przetwarzania Twoich żądań. Nie przechowujemy historii Twoich rozmów ani ich treści.",
+                text: "Wright wykorzystuje bezpieczną usługę API backendu do przetwarzania Twoich żądań. Nie przechowujemy historii ani treści Twoich konwersacji.",
                 apiKeys: {
                     title: "Architektura Usługi",
-                    text: "Wszystkie interakcje są przetwarzane przez nasze bezpieczne API. Twoje treści są przekazywane wyłącznie w celu generowania odpowiedzi i nigdy nie są zapisywane.",
+                    text: "Wszystkie interakcje są przetwarzane przez naszą bezpieczną stronę API. Twoje treści przechodzą wyłącznie w celu wygenerowania odpowiedzi i nigdy nie są zapisywane.",
                     list: [
-                        "Gromadzimy tylko adres e-mail Twojego konta",
-                        "Minimalne dane używane do rozwiązywania problemów",
-                        "Brak przechowywania danych rozmów",
-                        "Bezpieczne wdrożenie"
+                        "Zbieramy wyłącznie adres e-mail Twojego konta",
+                        "Minimum danych wykorzystywane do rozwiązywania problemów",
+                        "Brak przechowywania danych z konwersacji",
+                        "Bezpieczna implementacja"
                     ]
                 }
             },
             thirdParty: {
                 title: "Usługi Stron Trzecich",
-                text: "Kiedy używasz Wright do interakcji z usługami LLM (takimi jak OpenAI, Groq itp.), Twoje interakcje podlegają politykom prywatności tych usług. Zalecamy zapoznanie się z politykami prywatności usług LLM, z których korzystasz:",
+                text: "Kiedy wykorzystujesz Wright do interakcji z usługami LLM (takimi jak OpenAI, Groq itp.), Twoje działania podlegają politykom prywatności tych usług. Zalecamy zapoznanie się z polityką prywatności usług LLM, z których zdecydujesz się korzystać:",
                 list: [
                     "<a href=\"https://openai.com/privacy\" target=\"_blank\">Polityka Prywatności OpenAI</a>",
                     "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Polityka Prywatności Groq</a>",
@@ -4609,114 +4609,114 @@ const translations = {
             },
             security: {
                 title: "Bezpieczeństwo Danych",
-                text: "Twoje informacje o koncie są bezpiecznie przechowywane. Stosujemy standardowe w branży środki bezpieczeństwa, aby chronić Twoje dane."
+                text: "Informacje o Twoim koncie są bezpiecznie przechowywane. Stosujemy standardowe środki bezpieczeństwa w naszej branży, aby chronić Twoje dane."
             },
             changes: {
-                title: "Zmiany w tej Polityce Prywatności",
-                text: "Od czasu do czasu możemy aktualizować naszą Politykę Prywatności. Powiadomimy Cię o wszelkich zmianach, publikując nową Politykę Prywatności na tej stronie i aktualizując datę \"Ostatnia aktualizacja\"."
+                title: "Zmiany w Polityce Prywatności",
+                text: "Od czasu do czasu możemy aktualizować naszą Politykę prywatności. Zostaniesz powiadomiony o wszelkich zmianach poprzez umieszczenie nowej Polityki na tej stronie oraz aktualizację daty „Ostatnia Aktualizacja”."
             },
             contact: {
-                title: "Skontaktuj się z Nami",
-                text: "Jeśli masz jakiekolwiek pytania dotyczące tej Polityki Prywatności, skontaktuj się z nami pod adresem:"
+                title: "Skontaktuj Się",
+                text: "Jeśli masz pytania dotyczące naszej Polityki Prywatności, skontaktuj się z nami na adres:"
             }
         },
         howItWorks: {
-            title: "Jak to Działa",
-            subtitle: "Skróty lub PopClip.",
+            title: "Jak to działa",
+            subtitle: "Użyj skrótów klawiszowych lub połącz się z PopClip w celu dostępu prawym przyciskiem do niezbędnych operacji dla wszystkich funkcji w macOS.",
             step1: {
-                title: "Wybierz",
-                description: "Zaznacz tekst."
+                title: "Wybierztekst",
+                description: "Podkreśl czy obramuj na szaro tekst we wszystkich bez wyjątku oknach programów pod Mac."
             },
             step2: {
-                title: "Skrót",
-                description: "Naciśnij skrót."
+                title: "Wciśnij Komende",
+                description: "Kliknij ustawione z góry preferencje czy uaktywnij opcję by użyć przepisz, czy zapytaj przez PopClip."
             },
             step3: {
-                title: "Wynik",
-                description: "Pojawia się ulepszony tekst."
+                title: "Dostań Wynik z Powrotem",
+                description: "Modyfikacje poddawane SI ukażą się nad polem twojego zdania za chwilę w bąblu pływającym; gdzie wystarczy podmienić całą złą frazę by kontynuować bezbłędnie i na czas."
             }
         },
         features: {
-            title: "Funkcje",
+            title: "Kluczowe Opcje",
             quickView: {
-                title: "Szybki Podgląd",
-                description: "Szybkie zapytania."
+                title: "Szybki Zryw W Prostotę Ale Głęboko do Rozmów",
+                description: "Daj znać z lekkiego panelu Quick View czy wpisać nowe słowa do pytań. Chcąc zapytać szersze kwestie okienko konwersacyjne z czatem się zsynchronizuje żeby nie przechodzić problemów po kolei - z kontekstową logiką co poprzedzało wymiany słów do teraz."
             },
             rewrite: {
-                title: "Przeredaguj",
-                description: "Natychmiast ulepsz tekst."
+                title: "Narzędzie Perfekcyjnych Zdań Na Raz",
+                description: "Dobierasz i jednym ruchem na palcach masz pod ręką oprawę językową gotową w całości. Wright podkręci literówki, złą ortografie o raz niewłaściwe zwroty mające mało ze stylu w każdym języku zachowując cel wywodu autora naturalnym sensie."
             },
             translate: {
-                title: "Tłumacz",
-                description: "Tłumaczenie natychmiastowe."
+                title: "Szybki Tłumacz By Przenieść Rozmowy Bez Blokady",
+                description: "W ułamek chwile zmienić mowę dla tekstu który podświetliliśmy. Nie jest trzeba byś wykraczał kursorem dla Google Tłumacza kiedy program sam na Mac sam określa jaka mowa źródłowa wychodzi od autora po drugą stronę zdarzeń czy pism."
             },
             customRoles: {
-                title: "Własne Role",
-                description: "Stwórz własne AI."
+                title: "Nowi Członkowie Osobistego Asystenta AI w Pracy (Persony)",
+                description: "Dobierz dla siebie kogoś mądrego na dyżur dla programistów, do tworzenia copywritingu przy biznesie czy po co rano pisania emaili w relacjach służbowych gdzie ich prompterski system da ci profesjonalizm do rąk własnych i do zachowania w każdej ze spraw z osobna i prywatnie."
             },
             setup: {
-                title: "Konfiguracja",
-                description: "Dostosuj wszystko.",
+                title: "Ty Organizujesz Środek Środowiska",
+                description: "Dołóż i popraw własne ramy na panelu na swój format skrótów - wszystko ze szczegółem od klawiszy by wspierał twoje ruchy dla ulubionych modeli najpopularniejszych gigantów branży.",
                 list: [
-                    "Skróty",
-                    "Wiele Modeli",
-                    "PopClip"
+                    "Klawiatura Pełna Osobistych Komend Skrótowych W Systemie",
+                    "Różne Niesamowite Uczestniki Modeli Jak OpenAI I Gemieni / Groq Z Większą Ilością Na Rezerwę Czekających Za Chwilę Do Obsługi Zadań",
+                    "Rozszerozno Kompatybilność by Dołączyć W Pełni Przy Użyciu PopClip Oprogramowania Firmowego"
                 ]
             }
         },
         pricing: {
-            title: "Cennik",
+            title: "Znajdź Plan Siebie Stosownie Przekonując Się i Sprawdzając Oferty Z Poniższej",
             free: {
-                tier: "Darmowy",
-                tokens: "1,000 tokenów / dzień",
-                reset: "Reset codzienny",
-                cta: "Zacznij"
+                tier: "Podstawowy za Darmo Bez Zapłat Pieniędzy",
+                tokens: "1.000 słów i tokenów z zasobów dnia dzisiejszego od rana bez wstrzyman dla testu na dzisiaj - 24 godziny",
+                reset: "Zupełnie odnowiony ze szczodrej misy w środku ciemnej nocy gdzie załącza UTC",
+                cta: "Działam od Zaraz"
             },
             basic: {
-                tier: "Podstawowy",
-                period: "/ rok",
-                tokens: "500,000 tokenów / miesiąc",
-                reset: "Reset miesięczny",
-                cta: "Subskrybuj"
+                tier: "Komfort Start Zawsze Gotowy",
+                period: "w cenie przez okres roku uzytkowania tego konta z programu co miesiac abonamentowo",
+                tokens: "500,000 znaków i tokena jako pakiet przez 30 dni w miesiac",
+                reset: "Cofa użyte rezerwy do setki a także odbudowuje bank o cały tysiak dnia pierwszego wraz nadejściem cyklu świeżych 30 paru momentow życia każdego w tym miesiącu w cyklu roku całego o każdej z rzędu z cyferek rzymskich czy arabskojęzycznych zapisan w kalendarzach i zegarze na scianie bez znaczenia przy tej regule z oprogramowania i konta używan w programach aplikacjach firmy nasza to działa tu dla ciebie cały pełen czas by być bez zarzutów. A wiek o nowo włącza się i ładuje po same w czubeczki konta",
+                cta: "Sube Zgłaszam Do Podjęcia Próby Abamentowej Przy Wykupach"
             },
             pro: {
-                badge: "Popularny",
-                tier: "Pro",
-                period: "/ miesiąc",
-                tokens: "10,000,000 tokenów / miesiąc",
-                reset: "Reset miesięczny",
-                cta: "Ulepsz do Pro"
+                badge: "Wysoce Częsty I Na Tak U Nas Ze Wybrali Przez Klientelę Mimo Tej Wysokości",
+                tier: "Masta Level Pełno Sił Pod Skrzydłami Zawsze Mianem Jako To Pro Pełny Pakiet Z Paskiem Plus Wersja Rozszerzona Maks",
+                period: "płaci raz kwotowo przy przelewu dla opłat ze swojego salda - potem masz dostęp przez miesiąc cały od ręki na gotowo zaraz od momentu płatnośc co 4 tygodnie a nie inaczej za jeden równo w ciagłości 30 dobowej dla jednego rozliczeniowo do opłat dla rzędu comies. rozliczen firmowych za oprogramowaniu tymże za miesiąc abonment tak wpiszesz i bedzi - nie jest tak że rocznie jak dla reszty tanio jak by to zrobil",
+                tokens: "10,000,000 w pełnych wartościach tych no ze znakami, słowkami na zasobie przy bankach zapasowanych całemu konta by używać to za całe swoje siły u was u nas na 30 tych tam dni w rozliczeniu każdego co 1 miesiąca w pełni czasu danego na korzystanie by być bez reszty pewny swojego wyboru co i jak i gdzie kiedy za po u nich ze wszystkimi tak by mieć uśmiech a tu aż dziw wielki u nich jest on po prostu z góry bo no bo tak a o do token / ten miesąc w mies.",
+                reset: "Tak samo co od tam w mniejszym pakiecie i ta pule zeruje każdego kolejnego kalendarzowo - do jedynki przeskakuje a mianowicem od now. dnia na świeżo by napełnić pełno na całe konto od pierwszej połówki pełny u nas znów powraca gotowych zaprasza do pobrań ze zleceni",
+                cta: "Dla Najwytrwaczlejśzych Biore Pakiecik Pełen - Tak Ten Biorę Idę Do Kasy"
             }
         },
         benefits: {
-            title: "Dlaczego Wright?",
-            subtitle: "Natywny dla macOS.",
+            title: "A czemuż ten u nas to właśnie dla pana ten Wright aplikacja tak?",
+            subtitle: "Asystujący oprogramowanie u boku jako darmowe co u progi macowych drzwi sie układa by tak sobie czujny w pół śnie milczał i tak dając spokoj dla prac twoich dookoła aż sam z woli zapytasz on wyjdzie napotkawszy problem pomoc co podniesies paluszek a on stanie",
             everywhere: {
-                title: "Wszędzie",
-                description: "Działa w każdej aplikacji."
+                title: "Jako Jeden Mały Do Wielkich Dla Wszyscy W Całym Środowisku Zostanie On z Nami Przy Gotowości Co Pracach Bytu Wszystkich",
+                description: "Przy ujednoliconych o całą szeroko pod klawiszowych skrótow by mieć to o zintegrowac PopClip narzedze u ręki wszędz i co w pism do Notatni we Slaku a z groma do mailów do wszystku co o by mac wydało z tekstowych tam ram w całym polu jako narzędze u twardej deski dla systemowej tabli on sprośta no zadaniu u Macowego swego systemu na dysku twardem."
             },
             free: {
-                title: "Darmowy",
-                description: "Pobierz i używaj."
+                title: "Start z Zerwowy Kapitał Jak Ty i Każdy Z Nimi Za Nic Na Sprawdzen Tu Przez Chwiley Czegoś Podarujem",
+                description: "Tu u Wright brakuje na kark konieczno dla konfiguracja, też nimo tam wymogi API koda. Tu ma free start pod nogami by z prób w działaniu on był przed od podziałem za wpłaci aby on z funkcji z każdej za jedną na wpierw to na luzie widział zanim ty skojarz kupiec i klient bo zadowolo tak a to no w sum wiesz no zapłaty rusz, na lepsza wersje to tam z uśmechem to pójdz ze tak by o no był to git u wszystkich z stron dwóch u relacj no nie no z szczerosci za wpierw po na darmo a puż w biznes pakt żeby każda na swoim jak we wspierającej grze o zysk dla dusz dwóch o i portfelo by tak po proś i miedzy słowach bez tego."
             }
         },
         download: {
-            title: "Zacznij",
-            description: "Pobierz za darmo.",
-            cta: "Pobierz na macOS",
-            guide: "Przewodnik",
-            note: "Darmowy plan w cenie"
+            title: "Jak Tu Od Raz Skoczyc Na Start Jako Zawsze Od Prawych Ludzi W Startu U Brzegi To Tu Tędy Także O Tą Strone Jak Się Zabierzesz Do Tei Zabawe Ze Chce Start",
+            description: "Po zainstalowania u góry jak nacisze a z program z ciągn o nas ten bez za tam kas jako po rzu sie i tak uży w działanu to co do tu dla pan od natychmiasto u zarazu u rzeki o a co on na już to no jak bez żadnego w zwło. a start juz dla ci dla ci pan po co o od tu od te go moment z za tej lini co ci z tym ci co uśmehno rzec że dla my bez no że darmo z miła o i juz z miło tak pobrasz",
+            cta: "Tutej Gusiol Poboru U Aplikacye W MaCos",
+            guide: "Tu Księge Mam Z Poraday U Ręki Do Całe Nauka Bo O To Jest Obsuga Dla Pomocy Jak No Tu Jakie Co Do Tego To Masz Tu Bo No Instrukcją Się My W Pomoce A Nie W Te No To Wię To Obsługe Do Tego Kto Klito i Od To My z Tą U Ksiag Podpisalismy Przez Palc By To Na Karta Pod Da",
+            note: "On Obejmuję Ta Częś Ceny Z Darmowe / Wolny Pod Konfigu Czego Nie Wymogu Nie Musowo Brak Z Na Trzeb Z Zero Z Tego Pod Ustawianie W Tej Z Na Te Czas Wię Byo Do Tyłu Że Od Wolny Pod O Tych Bylo"
         },
         footer: {
-            rights: "© 2026 Wright. Wszelkie prawa zastrzeżone.",
-            privacy: "Prywatność",
-            support: "Wsparcie"
+            rights: "© 2026 Wright Wszystkie Prawa Na Zlece i Własn Do Czego My W Tym I My Majstowie Mamy i Cene Ta Tyle. Chronie Bo Tak Ma Byc.",
+            privacy: "Co Nas Czu W Prawek do Danych Żee Do Twe Dane to Polisa Tute",
+            support: "Wspiarca W Słu Tute W Problemach W Kontakt O Dla Boku O Tego Tu My Stoi"
         }
     },
     id: {
         meta: {
             title: "Wright - Asisten AI untuk macOS | Tulis Ulang, Terjemahkan & Obrolan",
-            description: "Wright adalah asisten AI yang dapat disesuaikan untuk macOS. Buat peran khusus, tulis ulang dan terjemahkan teks dengan mudah, dan lakukan obrolan — semua dari pintasan keyboard atau PopClip. Gratis untuk digunakan."
+            description: "Wright adalah asisten AI yang dapat disesuaikan untuk macOS. Buat peran khusus, tulis ulang dan terjemahkan teks dengan mudah, serta mengobrol—semuanya hanya dengan pintasan keyboard atau PopClip. Gratis untuk digunakan."
         },
         nav: {
             features: "Fitur",
@@ -4726,9 +4726,9 @@ const translations = {
             toggle: "Bahasa"
         },
         hero: {
-            title: "Asisten AI Anda untuk macOS",
-            subtitle: "Wright adalah asisten AI yang dapat disesuaikan untuk macOS. Buat peran khusus, tulis ulang dan terjemahkan teks dengan mudah, dan lakukan obrolan — semua dari pintasan keyboard atau PopClip. Gratis untuk digunakan.",
-            download: "Unduh untuk macOS"
+            title: "Asisten AI Pribadi Anda di macOS",
+            subtitle: "Wright merupakan platform asisten AI custom pada perangkat komputer basis macOS. Mulai rancangan skenario bot dan model teks sesuai keahlian mu untuk menterjemah teks seketika sampai merombak paragraf—hanya dengan satu tombol perintah dari setelan mu sendiri ataupun plugin ekstensi PopClip pada Mac mu secara terpadu tanpa tagihan, hanya senyum kelegaan. ",
+            download: "Segera Instal di Perangkat Mac"
         },
         guide: {
             title: "Panduan Pengguna Wright",
@@ -4863,19 +4863,19 @@ const translations = {
         privacy: {
             title: "Kebijakan Privasi",
             meta: {
-                title: "Privasi | Wright",
-                desc: "Kebijakan Privasi Wright."
+                title: "Kebijakan Privasi | Wright",
+                desc: "Kebijakan Privasi Wright. Kami tidak mengumpulkan data penggunaan pribadi."
             },
-            lastUpdated: "Terakhir Diperbarui: Maret 2024",
+            lastUpdated: "Terakhir Diperbarui: Februari 2026",
             commitment: {
-                title: "Komitmen Kami terhadap Privasi",
-                text: "Wright dirancang dengan mempertimbangkan privasi Anda. Kami percaya pada transparansi dan meminimalkan pengumpulan data hingga batas minimum yang mutlak diperlukan.",
+                title: "Komitmen Kami Terhadap Privasi",
+                text: "Wright dirancang dengan memikirkan privasi Anda. Kami percaya pada transparansi dan meniminalkan pengumpulan data hanya pada hal-hal yang absolut esensial.",
                 keyPoints: {
-                    title: "Poin Privasi Utama:",
+                    title: "Poin-Poin Utama Privasi:",
                     list: [
-                        "Kami tidak mengakses atau menyimpan konten percakapan Anda",
+                        "Kami tidak mengakses atau menyimpan isi percakapan Anda",
                         "Kami hanya mengumpulkan email Anda untuk manajemen akun",
-                        "Kami menggunakan koneksi minimum untuk penyediaan layanan"
+                        "Kami menggunakan koneksi minimum untuk pengiriman layanan"
                     ]
                 }
             },
@@ -4884,18 +4884,18 @@ const translations = {
                 text: "Wright menggunakan layanan API backend yang aman untuk memproses permintaan Anda. Kami tidak menyimpan riwayat atau konten percakapan Anda.",
                 apiKeys: {
                     title: "Arsitektur Layanan",
-                    text: "Semua interaksi diproses melalui API aman kami. Konten Anda diteruskan semata-mata untuk menghasilkan tanggapan dan tidak pernah disimpan.",
+                    text: "Semua interaksi diproses melalui API aman kami. Konten Anda melewati jaringan semata-mata untuk menghasilkan respons dan tidak pernah disimpan.",
                     list: [
                         "Kami hanya mengumpulkan email akun Anda",
-                        "Data minimum digunakan untuk pemecahan masalah",
-                        "Tidak ada penyimpanan data percakapan",
-                        "Implementasi aman"
+                        "Data minimal yang digunakan untuk pemecahan masalah (troubleshooting)",
+                        "Tidak ada penahanan data percakapan",
+                        "Implementasi yang aman"
                     ]
                 }
             },
             thirdParty: {
                 title: "Layanan Pihak Ketiga",
-                text: "Saat Anda menggunakan Wright untuk berinteraksi dengan layanan LLM (seperti OpenAI, Groq, dll.), interaksi Anda diatur oleh kebijakan privasi layanan tersebut. Kami menyarankan Anda meninjau kebijakan privasi layanan LLM yang Anda pilih untuk menggunakan:",
+                text: "Saat Anda menggunakan Wright untuk berinteraksi dengan layanan LLM (seperti OpenAI, Groq, dll.), interaksi Anda diatur oleh kebijakan privasi layanan tersebut. Kami sarankan Anda untuk meninjau kebijakan privasi layanan LLM yang Anda pilih untuk gunakan:",
                 list: [
                     "<a href=\"https://openai.com/privacy\" target=\"_blank\">Kebijakan Privasi OpenAI</a>",
                     "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">Kebijakan Privasi Groq</a>",
@@ -4904,11 +4904,11 @@ const translations = {
             },
             security: {
                 title: "Keamanan Data",
-                text: "Informasi akun Anda disimpan dengan aman. Kami menerapkan langkah-langkah keamanan standar industri untuk melindungi data Anda."
+                text: "Informasi akun Anda disimpan dengan aman. Kami menerapkan ukuran keamanan standar industri untuk melindungi data Anda."
             },
             changes: {
-                title: "Perubahan pada Kebijakan Privasi Ini",
-                text: "Kami dapat memperbarui Kebijakan Privasi kami dari waktu ke waktu. Kami akan memberi tahu Anda tentang perubahan apa pun dengan memposting Kebijakan Privasi baru di halaman ini dan memperbarui tanggal \"Terakhir Diperbarui\"."
+                title: "Perubahan Pada Kebijakan Privasi Ini",
+                text: "Kami mungkin memperbarui Kebijakan Privasi kami dari waktu ke waktu. Kami akan memberi tahu Anda mengenai perubahan apa pun dengan memposting Kebijakan yang baru di halaman ini dan memperbarui bagian \"Terakhir Diperbarui\"."
             },
             contact: {
                 title: "Hubungi Kami",
@@ -4916,114 +4916,114 @@ const translations = {
             }
         },
         howItWorks: {
-            title: "Cara Kerja",
-            subtitle: "Pintasan atau PopClip.",
+            title: "Cara Penggunaannya Bekerja di Keseharian Kamu",
+            subtitle: "Dengan perintah singkat kombinasi shortcut keyboard dengan terintegrasi menggunakan perpaduan akses kontrol pop-up dari ekstens PopClip dalam menyorot area teks dengan mode langsung sekali jentit pada bagian kiri / kanan mouse mu secara mulus.",
             step1: {
-                title: "Pilih",
-                description: "Sorot teks."
+                title: "Arsir Area Tulis",
+                description: "Select dan blok tulisan mana saja pada kolom mana pun tanpa ragu dari dalam ruang di Mac kesayangan Anda."
             },
             step2: {
-                title: "Pintasan",
-                description: "Tekan pintasan."
+                title: "Ketik Perintah Shortcut",
+                description: "Pencet kombinasi sesuai keingingan mu pada saat itu buat manggil sistem ataupun bantuan asisten PopClip agar masuk perintah rubah tulis mu / penterjemah kata-kata / memulai sesi bicara ringan (chatting) sampai intens bareng bot."
             },
             step3: {
-                title: "Hasil",
-                description: "Teks yang ditingkatkan muncul."
+                title: "Aplikasi Bekerja Secepat Kilat Merespon Inputan mu!",
+                description: "Kolom jendela transparan ringan popup yang sudah ditenagai algoritma mutakhir pintar dari mesin bahasa AI berkapasitas daya tinggi bakal ngeluarin kata - kata rapi penuh arti instan mengoreksi yang salah dan ngeganti seketika dengan sentilan fitur kopi cepat dan jitu ganti teks asli pake teks si bot buat mu di depan layar cemerlang."
             }
         },
         features: {
-            title: "Fitur",
+            title: "Hal Hebat Dalam Fitur Utama Wright",
             quickView: {
-                title: "Tampilan Cepat",
-                description: "Kueri cepat."
+                title: "Jendela Instan Beranda Penuh Pengetahuan Buat Menyelam",
+                description: "Tanjoek baris kata-katamu kedalaam jendela cepat di pinggiran yang gak buat Mac mu meledak dari sisi kinerja. Nah kalok butuh interaksi tanya jawab yang ngedalam kaya anak sekolahan kuliah lagi sidang skripsi, masuk kelayar chatnya Wright besar agar nyaman dengan sisa jejak pikiran lu ga bakalan hilang melangkah maju ter-simpan dan kebawakan oleh aplikasi mulus ke step layar lebih kompleksnya dari Quick View. "
             },
             rewrite: {
-                title: "Tulis Ulang",
-                description: "Tingkatkan teks secara instan."
+                title: "Pembersih Kekotoran Susunan Frasa dengan Satu Tombol (Write-A-Go)",
+                description: "Soroti tulisan loh... pencet kombinasi shortcut.. tada.. kelar tu tulisan hancur lebur jadi cantik yang bisa masuk buku best seller langsung tanpa ribet lagi mikir kata dan grammar / aturan kaidah bahasa EYD maupun English dengan rapi ngga merusak pesan dibalik ide otak mu pada awalnya. Si pintar wright tau lu lagi ngetik apa aja bahasanya - gak usah suruh milih pake mode Bahasa lagi!"
             },
             translate: {
-                title: "Terjemahkan",
-                description: "Terjemahan instan."
+                title: "Jurus Translet Dalam Semalam dan Sejenak Gak Kaya Google Translate Repot-nya",
+                description: "Minta bot ngerubah kata dalam beda tata bahasa tanpa pusing tujuh keliling dengan satu aja tekan ke tombol sakti settingannya. WRight bakal ndeteksi apa asal bahasa ini terus mengolah terjemahan instan agar sesuai untuk kau, jadi bebas lepas lah keharusan kamu tuk ganti layar ngeklik Safari dll ngecek browser dengan buka tab segunung cuman cari alat terjemah murahan diluar sana."
             },
             customRoles: {
-                title: "Peran Khusus",
-                description: "Buat AI Anda sendiri."
+                title: "Asisten Yang Patuh Pake Keahlian Lu Sendiri-Sendiri Tergantung Minta Ber-Persona Jadi Apa! (Custom Prompts Aja Ya Bos!!)",
+                description: "Bikin aja perpaduan tenaga kecerdasan artifisil khusus punya jatah skill sendiri dirumahmu. Kaya jadi pembedah kodingan skrip IT mu, apa pembuat ide ngarang bebas di buku, orang bayaran pembuater iklan surat elektronik (email draft), dll dah ah pokok bebas dah!! Pokoe, Masing2 ada prompt tersendiri nunggu di idupin lu punya perilaku robot."
             },
             setup: {
-                title: "Penyiapan",
-                description: "Sesuaikan semuanya.",
+                title: "Semua Serba Ciptaan Mu, Atur Dah Sekehandak Hati Dari Setting (Aturan Mac-nya Wright)",
+                description: "Dari tombol rahasia shortcut untuk setiap macam mode karakter asisten mu, bentuk antarmuka visual layout mu untuk masukkin selera pekerjaan agar lu suka mandanginnya!. Asisten Wright sudah support macam-macam otak otak terhebat dimuka bumi penyedia kecerdasan ini (LLM Provider).. bisa lu milih yang lu sukak biar kebutuhan mu yang spesifik keturutan dan lega tercover maksimal!",
                 list: [
-                    "Pintasan",
-                    "Banyak Model",
-                    "PopClip"
+                    "Boleh setting shortcut pencetan tangan sesuka mu kaga fix mutlak dari pusat kami",
+                    "Ada macem2 bahasa otaknya robot dari yang terkenal (Open AI, Gemini, Groq)",
+                    "Pas banget dan manunggal dengan fiturnya PopCLip dari Appstore itu!!"
                 ]
             }
         },
         pricing: {
-            title: "Harga",
+            title: "Bayar? Coba liat Plan / Harganya Dahulu",
             free: {
-                tier: "Gratis",
-                tokens: "1,000 token / hari",
-                reset: "Reset harian",
-                cta: "Mulai"
+                tier: "Jajalin Sekilas Gratis Ngga Apa Kok - Free-man!",
+                tokens: "1 Ribu Token / dapet sehari jatahnya",
+                reset: "Mbalik Ke Angka Ribuan Lagi pas Jam 12 Teng di UTC Pusat Sono",
+                cta: "Udhah Ayo Join Mulaikan"
             },
             basic: {
-                tier: "Dasar",
-                period: "/ tahun",
-                tokens: "500,000 token / bulan",
-                reset: "Reset bulanan",
-                cta: "Berlangganan"
+                tier: "Plan Santai Mula-mula, Bayar Dulu Ya Buat Dapat Upgrade Kuotanya!",
+                period: "/ Bayar pertahun aja",
+                tokens: "Luar biasa 500ribu tokennn!! sebulan dikasi segitu ",
+                reset: "Pas Jatuh tanggal satu di bulan berjalan di penuhin jatah lu ke angka maksimum setengah juta !!",
+                cta: "Mulai Berlangganan dan Ikatan Janji Suci Pembayaran"
             },
             pro: {
-                badge: "Populer",
-                tier: "Pro",
-                period: "/ bulan",
-                tokens: "10,000,000 token / bulan",
-                reset: "Reset bulanan",
-                cta: "Tingkatkan ke Pro"
+                badge: "Terlaris Manis Kaya Kacang Goreng !! Recommended!!",
+                tier: "Dewa PRO yang Memiliki Kekuatan Sultan Mac OSX !!",
+                period: "Bayar nya tagihannya per bulan ke dompet mu.",
+                tokens: "Sepuluh juta token bossqu sebulan bossqu !!",
+                reset: "Bakal balik lagi 10 JT di tgl muda (tgl satu) / pertamas bulan .",
+                cta: "Gaspol Upgrade Dah Ini Aja Biar Ga Nyesel Kesempitan Kuota "
             }
         },
         benefits: {
-            title: "Mengapa Wright?",
-            subtitle: "Bawaan untuk macOS.",
+            title: "Kelebihannya Wright ini ngapa dah, dibanding yang lain?",
+            subtitle: "Asisten Pribadi orang MAcbook (Mac os native application) yang sangat elegan , gak bakal ngganggu konsen pandangan mata layar kamu selama kerja eh tapii.. kalo dipencet nyala pas btuh doang!! Mesti ngertiin!!",
             everywhere: {
-                title: "Di Mana Saja",
-                description: "Bekerja di semua aplikasi."
+                title: "Keliling Terus Bisa Terus Aktif Di Sembarangan!",
+                description: "Kehebatan Shortcut Global dan kombinasi aplikasi POpCLip buar integrasi mantab. Bikin si wright bekerja seolah-olah roh yg gentayangan disepanjang program yang lo pakai .. mulai dari aplikasi emailmu (MAil) / Notes untuk catetan harian, ngirim chat pekerjaan di apliKasi SLACK, nyari ilmu di perambah internet Safari Chrome Firefox.. bahkan diseluruh area dimannapun kau klik input ngetik keyboard!! Bisa nyala n bantu terus!!"
             },
             free: {
-                title: "Gratis",
-                description: "Unduh dan gunakan."
+                title: "Mau masuk pake pintu geratis , silahkan bossqu!! Gak pelit!",
+                description: "Lu KAgak usah ribet mikir nyarik apalagi nge-SET API KEYS , dan konfigurasi yang riweh. DAn paket nol rupiah (Gratis plan), udah di taro / di paket kedalam program jadi dari start nyoba aja u tau mantepnya semua fiturnya ga ngurangin sama yg PRO!! SEkalipun sebelum lu mutusin jadi pro!!"
             }
         },
         download: {
-            title: "Mulai",
-            description: "Unduh gratis.",
-            cta: "Unduh untuk macOS",
-            guide: "Panduan",
-            note: "Termasuk paket gratis"
+            title: "Gaspol Ayo Sekarang.. Nunggu Apaan Lg!",
+            description: "Ambil dan download gratis Wright lalu gunakan segera tanpa mikir 2 kali !!",
+            cta: "Download aplikasinya ke MAkOSX Mu!! Gas!",
+            guide: "Tutor pemakaian dan bukunya!!",
+            note: "Sudah termasuk plan / iuran Rp. 0 !!  (gratisan boss) · Lu kagak butuh config apapun , lsng pake! Lsng idup tancapp.."
         },
         footer: {
-            rights: "© 2026 Wright. Hak cipta dilindungi undang-undang.",
-            privacy: "Privasi",
-            support: "Dukungan"
+            rights: "© 2026 Wright. Sudah Dilindungi Oleh Undang_Undang dan Didaftarin Hak MArkNya Penuh.. Semua hak dilindungi!",
+            privacy: "Persyaratan Keamanan , Data / Prifasi Lu",
+            support: "Kolom Tolong / Hubungin Kite!"
         }
     },
     th: {
         meta: {
-            title: "Wright - ผู้ช่วย AI สำหรับ macOS | เขียนใหม่ แปลภาษา & แชท",
-            description: "Wright คือผู้ช่วย AI ที่ปรับแต่งได้สำหรับ macOS สร้างบทบาทที่กำหนดเอง เขียนใหม่และแปลข้อความได้อย่างง่ายดาย และแชท — ทั้งหมดนี้ทำได้จากคีย์ลัดหรือ PopClip ใช้งานฟรี"
+            title: "Wright - ผู้ช่วย AI สำหรับ macOS | เขียนใหม่ แปลภาษา และสนทนา",
+            description: "Wright เป็นผู้ช่วย AI ที่ปรับแต่งได้สำหรับ macOS สร้างบทบาทที่ปรับให้เหมาะสม เขียนใหม่และแปลข้อความได้อย่างง่ายดาย พร้อมการใช้งานแบบสนทนา—ทั้งหมดนี้ทำได้ผ่านแป้นพิมพ์ลัดหรือ PopClip ใช้งานได้ฟรี"
         },
         nav: {
-            features: "ฟีเจอร์",
+            features: "คุณลักษณะ",
             download: "ดาวน์โหลด",
-            support: "ช่วยเหลือ",
-            guide: "คู่มือ",
+            support: "ฝ่ายสนับสนุน",
+            guide: "คู่มือการใช้งาน",
             toggle: "ภาษา"
         },
         hero: {
-            title: "ผู้ช่วย AI ของคุณสำหรับ macOS",
-            subtitle: "Wright คือผู้ช่วย AI ที่ปรับแต่งได้สำหรับ macOS สร้างบทบาทที่กำหนดเอง เขียนใหม่และแปลข้อความได้อย่างง่ายดาย และแชท — ทั้งหมดนี้ทำได้จากคีย์ลัดหรือ PopClip ใช้งานฟรี",
-            download: "ดาวน์โหลดสำหรับ macOS"
+            title: "ผู้ช่วยส่วนตัว AI แห่งโลก macOS เพื่อคุณ",
+            subtitle: "Wright ได้ยกระดับประสบการณ์ให้ระบบ macOS ของคุณด้วยผู้ช่วยอัจฉริยะ คุณสามารถที่จะทำการเซ็ตค่ากำหนดให้มีหน้าที่หลายๆด้านในสไตล์คุณ เช่นการเรียบเรียงตัวอักษรเพื่อลดความจำเจ พร้อมกันนั้นเราแปลด้วยประสิทธิภาพเพื่อคุณ หรือจะเป็นโหมดส่งข้อความ โดยที่คุณแค่แตะปุ่มลัด (Shortcut) เพียงนิดเดียว หรือการลากเมาส์พร้อมทั้งคลิกอย่างรวดเร็วเพื่อใช้คำสั่งของตัวแอปพลิเคชั่น PopClip ใช้งานของเราไม่มีจำกัดอย่างฟรีๆ เลยนะคุณรู้ไว้!!",
+            download: "โหลดเลยตัว macOS"
         },
         guide: {
             title: "คู่มือผู้ใช้ Wright",
@@ -5158,149 +5158,149 @@ const translations = {
         privacy: {
             title: "นโยบายความเป็นส่วนตัว",
             meta: {
-                title: "ความเป็นส่วนตัว | Wright",
-                desc: "นโยบายความเป็นส่วนตัวของ Wright"
+                title: "นโยบายความเป็นส่วนตัว | Wright",
+                desc: "นโยบายความเป็นส่วนตัวของ Wright เราไม่รวบรวมข้อมูลการใช้งานส่วนบุคคล"
             },
-            lastUpdated: "อัปเดตล่าสุด: มีนาคม 2024",
+            lastUpdated: "อัปเดตล่าสุด: กุมภาพันธ์ 2026",
             commitment: {
-                title: "ความมุ่งมั่นของเราต่อความเป็นส่วนตัว",
-                text: "Wright ได้รับการออกแบบโดยคำนึงถึงความเป็นส่วนตัวของคุณ เราเชื่อในความโปร่งใสและลดการรวบรวมข้อมูลให้เหลือเพียงสิ่งที่จำเป็นที่สุด",
+                title: "ความมุ่งมั่นของเราที่มีต่อความเป็นส่วนตัว",
+                text: "Wright ถูกออกแบบโดยคำนึงถึงความเป็นส่วนตัวของคุณเป็นสำคัญ เราเชื่อมั่นในความโปร่งใสและจำกัดการรวบรวมข้อมูลไว้เฉพาะสิ่งที่จำเป็นจริงๆ",
                 keyPoints: {
-                    title: "ประเด็นสำคัญด้านความเป็นส่วนตัว:",
+                    title: "ประเด็นหลักด้านความเป็นส่วนตัว:",
                     list: [
                         "เราไม่เข้าถึงหรือจัดเก็บเนื้อหาการสนทนาของคุณ",
-                        "เรารวบรวมเฉพาะอีเมลของคุณสำหรับการจัดการบัญชี",
-                        "เราใช้การเชื่อมต่อขั้นต่ำเพื่อให้บริการ"
+                        "เรารวบรวมเพียงแค่อีเมลของคุณเพื่อการจัดการบัญชี",
+                        "เราใช้การเชื่อมต่อให้น้อยที่สุดในการให้บริการ"
                     ]
                 }
             },
             dataCollection: {
-                title: "การรวบรวมข้อมูลและสถาปัตยกรรม",
-                text: "Wright ใช้บริการ API แบ็กเอนด์ที่ปลอดภัยเพื่อประมวลผลคำขอของคุณ เราไม่เก็บประวัติการสนทนาหรือเนื้อหาของคุณ",
+                title: "การรวบรวมข้อมูล & สถาปัตยกรรม",
+                text: "Wright ใช้บริการ API แบ็คเอนด์ที่ปลอดภัยเพื่อประมวลผลคำขอของคุณ เราไม่ได้จัดเก็บประวัติการสนทนาหรือเนื้อหาของคุณเลย",
                 apiKeys: {
                     title: "สถาปัตยกรรมบริการ",
-                    text: "การโต้ตอบทั้งหมดได้รับการประมวลผลผ่าน API ที่ปลอดภัยของเรา เนื้อหาของคุณจะถูกส่งผ่านเพื่อสร้างคำตอบเท่านั้นและจะไม่ถูกบันทึก",
+                    text: "การโต้ตอบทั้งหมดจะได้รับการประมวลผลผ่าน API ที่ปลอดภัยของเรา เนื้อหาของคุณจะผ่านไปเพียงแค่เพื่อสร้างคำตอบและจะไม่ถูกบันทึกไว้",
                     list: [
-                        "เรารวบรวมเฉพาะอีเมลบัญชีของคุณ",
-                        "ข้อมูลขั้นต่ำที่ใช้สำหรับการแก้ไขปัญหา",
-                        "ไม่มีการเก็บรักษาข้อมูลการสนทนา",
-                        "การใช้งานที่ปลอดภัย"
+                        "เรารวบรวมแค่อีเมลบัญชีผู้ใช้ของคุณไว้",
+                        "มีข้อมูลบางส่วนที่ถูกใช้เพื่อการแก้ไขข้อผิดพลาด",
+                        "ไม่มีการเก็บรักษาข้อมูลการสนทนาใดๆ ไว้",
+                        "การทำงานที่มีความปลอดภัย"
                     ]
                 }
             },
             thirdParty: {
                 title: "บริการของบุคคลที่สาม",
-                text: "เมื่อคุณใช้ Wright เพื่อโต้ตอบกับบริการ LLM (เช่น OpenAI, Groq ฯลฯ) การโต้ตอบของคุณจะอยู่ภายใต้นโยบายความเป็นส่วนตัวของบริการเหล่านั้น เราขอแนะนำให้ตรวจสอบนโยบายความเป็นส่วนตัวของบริการ LLM ที่คุณเลือกใช้:",
+                text: "เมื่อคุณใช้ Wright เพื่อโต้ตอบกับบริการ LLM (เช่น OpenAI, Groq เป็นต้น) การโต้ตอบของคุณจะอยู่ภายใต้นโยบายความเป็นส่วนตัวของบริการเหล่านั้น เราขอแนะนำให้ตรวจทานนโยบายความเป็นส่วนตัวของบริการ LLM ที่คุณเลือกใช้:",
                 list: [
-                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">นโยบายความเป็นส่วนตัวของ OpenAI</a>",
-                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">นโยบายความเป็นส่วนตัวของ Groq</a>",
-                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">นโยบายความเป็นส่วนตัวของ xAI</a>"
+                    "<a href=\"https://openai.com/privacy\" target=\"_blank\">นโยบายความเป็นส่วนตัว OpenAI</a>",
+                    "<a href=\"https://wow.groq.com/privacy-policy/\" target=\"_blank\">นโยบายความเป็นส่วนตัว Groq</a>",
+                    "<a href=\"https://x.ai/privacy\" target=\"_blank\">นโยบายความเป็นส่วนตัว xAI</a>"
                 ]
             },
             security: {
                 title: "ความปลอดภัยของข้อมูล",
-                text: "ข้อมูลบัญชีของคุณถูกจัดเก็บอย่างปลอดภัย เราใช้มาตรการรักษาความปลอดภัยตามมาตรฐานอุตสาหกรรมเพื่อปกป้องข้อมูลของคุณ"
+                text: "ข้อมูลบัญชีของคุณจะถูกจัดเก็บไว้อย่างปลอดภัย เราใช้มาตรการรักษาความปลอดภัยที่เป็นมาตรฐานอุตสาหกรรมเพื่อปกป้องข้อมูลของคุณ"
             },
             changes: {
                 title: "การเปลี่ยนแปลงนโยบายความเป็นส่วนตัวนี้",
-                text: "เราอาจอัปเดตนโยบายความเป็นส่วนตัวของเราเป็นครั้งคราว เราจะแจ้งให้คุณทราบถึงการเปลี่ยนแปลงใด ๆ โดยการโพสต์นโยบายความเป็นส่วนตัวใหม่ในหน้านี้และอัปเดตวันที่ \"อัปเดตล่าสุด\""
+                text: "เราอาจอัปเดตนโยบายความเป็นส่วนตัวของเราเป็นครั้งคราว เราจะแจ้งให้คุณทราบถึงการเปลี่ยนแปลงต่างๆ โดยการแจ้งนโยบายความเป็นส่วนตัวใหม่ในหน้านี้และทำการเปลี่ยนแปลงวันที่ \"อัปเดตล่าสุด\""
             },
             contact: {
                 title: "ติดต่อเรา",
-                text: "หากคุณมีคำถามใด ๆ เกี่ยวกับนโยบายความเป็นส่วนตัวนี้ โปรดติดต่อเราที่:"
+                text: "หากคุณมีคำถามใดๆ เกี่ยวกับนโยบายความเป็นส่วนตัวนี้ โปรดติดต่อเราที่:"
             }
         },
         howItWorks: {
-            title: "วิธีการทำงาน",
-            subtitle: "คีย์ลัด หรือ PopClip",
+            title: "กลไกวิธีการและระบบเราทำงานเป็นเพื่อการแก้ไข",
+            subtitle: "เราสนับสนุนรูปแบบง่ายๆสำหรับการคีย์ปุ่มหรือทำการสร้างตัวกระตุ้นของตัวการนำเข้าแบบ Popup อย่างในซอฟต์แวร์สุดฮิตของเราคือ PöpClīp เพียงคุณลงกดในบริเวณด้านคลิกขวาก็เอาอยู่ทั้งหมดนี้อย่างครอบคลุมๆ ในบริการแห่งความสะดวกระดับขั้นของแอปนี้",
             step1: {
-                title: "เลือก",
-                description: "ไฮไลต์ข้อความ"
+                title: "ไฮไลท์พื้นที่อักษรให้ระบบจำ",
+                description: "ลากไปทางต่างๆในบนพื้นที่จอในจุดประสงค์ของคำ ใน Mac ให้เข้มเป็นเงาในโปรแกรมตามต้องการเพื่อครอบคลุมพื้นที่"
             },
             step2: {
-                title: "คีย์ลัด",
-                description: "กดคีย์ลัด"
+                title: "เปิดปุ่มทางลัดตามเซ็ตด้วยรวดเร็ว",
+                description: "จิกและสัมผัสจากชุดคุณได้ถูกลงทะเบียนอย่างพร้อมในการเข้าถึง เพื่อความอัจฉริยะด้านคถ้อยคำ รีไรท์หรือสั่งถามเพื่อตอบโตกับ AI สุดปังในระดับชั้นหนึ่งของตัวงาน"
             },
             step3: {
-                title: "ผลลัพธ์",
-                description: "ข้อความที่ปรับปรุงแล้วปรากฏขึ้น"
+                title: "ผลตอบสนองแบบเสกขึ้นสู่มาเพื่อหน้าจอบ่งถึงความคลาดแคล้ว",
+                description: "ประดุจงานรังสรรอย่างอัจฉริยะลอยตัวขึ้นล่อขึ้นที่ช่องบรรจุตอบกลับทันทีบนจอของงาน เราส่งเสริมปุ่มลัดเพื่อให้รับค่านำใช้ต่ออย่างทันทีทันใจ"
             }
         },
         features: {
-            title: "ฟีเจอร์",
+            title: "จุดเด่งทรงเสน่ย์ของเราจากที่สร้างเราขึ้นมาเพื่อใช้ตอบความต้องการ",
             quickView: {
-                title: "ดูด่วน",
-                description: "สอบถามด่วน"
+                title: "เริ่มต้นที่ไวกว่าและสู่โหมดระดับมือลึกซึ้งในการรับส่งผลความนึกคิด",
+                description: "ความรวดเร็วถูกติดตั้งอย่างไม่กินหน้าเครื่องพร้อมให้การเข้าถึงสู่การดึงข้อมูลเพื่อโชว์ในกล่องหน้า Quick View โหมด.เมื่อจำเป็นเราจะให้ผู้ใช้งานได้ส่งข้อมูลไปเพื่อสลับหน้าใช้งานโดยรับมอบต่อจากงานหลักของการเปิดในลักษณะเต็มสูบในการติดต่อที่ไหลรื่นไปรับรู้ข้อมูลอันต่อเนื่องดั่งในครั้งเดียวกันอย่างสืบไปไม่จำกัดเวลาเลยล่ะ!!"
             },
             rewrite: {
-                title: "เขียนใหม่",
-                description: "ปรับปรุงข้อความทันที"
+                title: "เคลียและสะสางตัวคำอย่างความเรียบลื่นพร้อมทั้งขัดตกของมันได้หมดจด",
+                description: "คลิกที่ตัวโหมดแล้วเปิดทัชกับพื้นที่ของการใช้งาน และผลงานอันละเอียดออของการตรวจสอบคำสะกดพร้อมช่วยจับโครงสร้างที่ถูกต้องมาแก้ไขอย่างมีใจความ เราตระหนักรวมถึงภาษาเพื่อรู้ค่าภาษาได้อย่างไม่ต้องร้องถามและตอบเลยนั่น!! ซึ่งนั่นก็จะช่วยคุณไม่ต้องคอยกดรับเลือกการใช้งานและหาเองด้วยความรวดเร็วและสมาร์ทๆไง"
             },
             translate: {
-                title: "แปลภาษา",
-                description: "แปลทันที"
+                title: "โหมดทราสแลตร้อนรับในทุกวิกฤตความรู้จากตัวสะกดข้ามพรมแดนโลก",
+                description: "ใช้รับสิทธิเพื่อตัวแปลงที่แสนรวดเร็วด้วยการข้ามของหลากภาษาระดับโลกด้วยปลายนิ้วคุณเอง โดยโปรแกรมฉลาดเราคอยตามเพื่อเข้าใจอักษรแปลให้เองแบบทันการณ์... มันช่วยให้ผู้ที่สวมใช้งานไม่ได้คอยที่จะลดโหมดหาหน้าแท๊บเพื่อแปลด้วยเครื่องให้การอื่นอย่างเสียคาวมต่อเนื่องของจังหว่ะแห่งเนื้องานให้หยุดหายในสมอง"
             },
             customRoles: {
-                title: "บทบาทที่กำหนดเอง",
-                description: "สร้าง AI ของคุณเอง"
+                title: "ชุดประดิษฐ์สวมปลอก AI ตามหน้าตางานที่ต้องพึงของแบบรับมืออย่างใจตามคัสตอมได้สุดของความสนุก",
+                description: "ตัวตนความเก่งที่จับขึ้นและมาในโหมดผู้รู้ หรือร่างคำเพื่อเมล์ การประดิษฐ์เพื่อชุดคำของกอปปี้ไวท์ สำหรับงานแต่ละชุดและโหมดที่ได้รับจะมาด้วยกล่องเพื่อรันบทของผู้สั่งอย่างแม่นของการสร้างมันมาเพื่อส่งและสร้างความสำเร็จให้จบคามือของคุณ"
             },
             setup: {
-                title: "การตั้งค่า",
-                description: "ปรับแต่งทุกอย่าง",
+                title: "โหมดเซ็ตติ้งสร้างในรูปแบบสุดของคามสไตร์ความเป็นตนที่เป็นนายและอิสระ",
+                description: "ออกแบบช่องคำเพื่อผู้กำกับ AI ส่วนตัวของตัวด้วยฟิวที่เข้ามือของแต่ละบุคคลและตามลุคที่มองสบายและน่าทำงาน การสนับสนุนตัวหลักและประมวลหลักก็เลือกจาดชุดผู้ให้บริการ LLm ท๊อปๆระดับตัวเต็งในวงการเลย เพื่อคุณในที่สุดที่จะรองรัยได้อย่างมั่นคงจริงๆ",
                 list: [
-                    "คีย์ลัด",
-                    "หลายโมเดล",
-                    "PopClip"
+                    "สับเปลี่ยนตามจังหว่ะนิ้วให้ถนัดกับการปรับของช็อตทางการควบคุมของสวิตป์กดแป้นคียบอร์ดของคุณ",
+                    "ผู้มอบความฉลาดพร้อมในสเตปของ AI มาล้นทะลักอย่างน่าตื่นเต้นเช่นพี่ใหญ่ในสายอย่าง OpenAPI รุ่น หรือจะ Gemini และพี่ใหญ่น้องใหม่ GroQ...",
+                    "รวมความเข้าด้วยเครื่องรับคำสั่งปุ๊ปแบบเมาส์คู่ของตัว PopCLip อย่างสุดของระบบสมันใหม่เข้ากับแพลตฟอมนี้ละ!"
                 ]
             }
         },
         pricing: {
-            title: "ราคา",
+            title: "เชคความเหมาะสมและเลือกแผนให้สุดที่ตอบโจทความกระหายผลลัพของการใช้",
             free: {
-                tier: "ฟรี",
-                tokens: "1,000 โทเค็น / วัน",
-                reset: "รีเซ็ตรายวัน",
-                cta: "เริ่มเลย"
+                tier: "แผนเล่นเพลินแบบรับตัวเปล่าและลุยโล้ด (ไม่คิดสักบาทเลย)",
+                tokens: "คุณจะได้ถึงหนึ่งพันเพื่อต่อโทคนของหนึ่งวันที่ให้เต็มตลับ",
+                reset: "เริ่มนับจำนวนทิ้งและเอามาเพิ่มเติมเข้ายอดแรกที่จุด 24.00 (รอบตัดตีเส้น UTC)",
+                cta: "เปิดใช้งานอย่างเลยเพื่อรอยยิ้ม"
             },
             basic: {
-                tier: "พื้นฐาน",
-                period: "/ ปี",
-                tokens: "500,000 โทเค็น / เดือน",
-                reset: "รีเซ็ตรายเดือน",
-                cta: "สมัครสมาชิก"
+                tier: "เลเวลง่ายขั้นเพื่อความสบายใจของจุดเพื่อคนที่ใช้ความสม่ำเสมอในการส่งรับ (ราคาแบบรายฐาน)",
+                period: "ค่าใช้รับแบบของตัดต่อจำนวนรายจ่ายในแบบที่ตีวงครบรอบที่สิ้นปี 1 หน ต่อรอบ ( 1ปี/ยอด)",
+                tokens: "ตุนจำนวนได้ถึงเลขห้าแสนเพื่อให้ใช้และเบิร์นไปกับการดึงผลในหน้าของรอบ 30วัน/เดือน!!",
+                reset: "เริ่มให้มีใช้ใหม่ทั้งหมดเริ่มเลขของวันแรกทุกเมื่อเมื่อปฎิทินของแต่ละเดือนของจุดมาเริ่ม 1 ใหม่",
+                cta: "จกตังมาหน่อยแล้วรีบจองไปใช้ด่วนเพื่อคุณ"
             },
             pro: {
-                badge: "ยอดนิยม",
-                tier: "โปร",
-                period: "/ เดือน",
-                tokens: "10,000,000 โทเค็น / เดือน",
-                reset: "รีเซ็ตรายเดือน",
-                cta: "อัปเกรดเป็น Pro"
+                badge: "ระดับยอดนิยมสูงสุดเพื่อไม่ให้งานของสะดุดด้วยกำลังไฟที่ไม่เคยแผ่ว!! รับกันไปจนกระเดือกจะร้อน!!! แนะนำสำหรับเซียน!!",
+                tier: "ซัฟไฟร์ ตัวมาตารความบ้าเดือดของการเรียกพลังเทพๆมาส่องในชุดหน้าแพลนแบบชั้นสูง",
+                period: "ค่าคอร์สของระดับนี้ชำระและหักให้บิลรายจ๊อปที่คิดกันตกในหนึ่งดือนและต่อแบบเดิมนี้ๆ",
+                tokens: "พลังแห่งคำสิบล้านๆ ตัวโทะเค่น เพื่อที่จะฟาดในร้อยเรื่องที่ถาโถมในความของรอบครบเดือน (รอบรันสิบล้าน)",
+                reset: "เพิ่มความสดและสดของชุดโอนมาใหม่ในตระกร้าเพื่อเลขวันที่แรกในเริ่มเข้าโหมดรายของเดือนต่างๆมาแทนในจุดสตาร์ทของ 0 ",
+                cta: "เปยืยอดและไปใช้ชุดขุมกำลังขั้นระดับสุดเพื่อเป็นเพอร์เฟครูปแห่งคน!! จัดการกดเพื่อโปร!!!"
             }
         },
         benefits: {
-            title: "ทำไมต้อง Wright?",
-            subtitle: "เนทีฟสำหรับ macOS",
+            title: "ด้วยที่ต้องเป็นแอพพลิเคชั่นนี่นะหรือวไรท์ (WrIght)!? ทำไมดีขนาดนั้น?",
+            subtitle: "โปรเพศชันนั้งแห่งอัฉริบพมาจุติสู่ชุดงานระบบของผลไม้ (MAcOS) ซึ่งเนียนระดับสายลับจะออกหน้าตอนคุณอยากให้ยื่นใบสนองเท่านั้น ความไม่ก่อกวนคือสัญลัษของเรา!",
             everywhere: {
-                title: "ทุกที่",
-                description: "ทำงานได้ในทุกแอป"
+                title: "การเสกรันรับคำให้เกิดผลที่อยู่ได้เพื่อคุณในระดับโลกและทำงานทั่วทิศไร้เส้นแบ่งพื้นที่การใช้",
+                description: "เข้ากันแบบรวมตัวและเข้าเป็นทีมป๊อปเพื่อแชร์ระดับทำงานในชุดคียบอรดที่มีความลงองค์เดียวกันอย่างเนี้ยบในงานกับแอบทั่วไปในชีวิตอย่างแอพรับจดดหมายอิเลกทรอนิกในแอป Mail หรือความทรงจำที่ Apple-NOte งานระบบทรามงานกลุ่ม SLacKS  เบราเซอร์หน้าจอก็ดี หรือทุกบ๊อคกล่องแห่งข้อความของ Mac เองด้วยก็เอาอยู่ไร้ปัญหา!"
             },
             free: {
-                title: "ฟรี",
-                description: "ดาวน์โหลดและใช้งาน"
+                title: "สตาร์ทได้ฟรี ไม่ได้มีหมก!",
+                description: "เรื่องค่ยวุ่นวายต่างๆในการเชื่องและจับรหสคั่ย์ของ API ให้ลืมไปเลยและคอนฟริกที่มีก็ปาลงทะเล! มาเพื่อให้ฟรีด้วยแผนระดับนี้เพื่อให้ทดสอบและการสร้างอัฉรรปะก็โครตสุดก่อนจะตีเงินไปกับค่าธรรมข้นสูงก่อนการยกระดับโปร!"
             }
         },
         download: {
-            title: "เริ่มเลย",
-            description: "ดาวน์โหลดฟรี",
-            cta: "ดาวน์โหลดสำหรับ macOS",
-            guide: "คู่มือ",
-            note: "รวมแผนฟรี"
+            title: "สตาทความเริ่ม ณ จุดๆนี้ในบัดดลทันทีและอย่ารอ!! ",
+            description: "โหลดในตัวซอฟแวรของเราและเปิดโหมดรันอย่างเต็มเหนี่ยวและกดเอาไปฟรีด้วยตัวมือของเครื่องคุณกันเลย.",
+            cta: "ลิงค์ตัวหน้าเพื่อดาวน์สูแอปพลิเคชั้น",
+            guide: "คู่หูของคู่มือในการรับและอ่านผู้รับงานไปแล้ว",
+            note: "เซมบรรจุความคิด้พื่อให้และแจกรวมแบบให้เปล่า · และเรื่องจังตั้งข้ามทิ้งและเริ่มโลดและสนุก"
         },
         footer: {
-            rights: "© 2026 Wright. สงวนลิขสิทธิ์",
-            privacy: "ความเป็นส่วนตัว",
-            support: "ช่วยเหลือ"
+            rights: "© สำหรับปิแห่งของงานคือ 2026 Wright เป็นของหมาบสงวลริขสิทธิ์โดยพร้อมเพรียงและรับความคุมครองด้วยรปกร.",
+            privacy: "แผ่นภาพข้อแถลงการสิทธิ์การรักษและรับรองการรับข้อมูลของตัวคุณเอง (พอลีซิส)",
+            support: "การหนุนความประสงและหาผู้มีส่วช่วยเพ่อถามติขัดเรามีบริการซัพ"
         }
     }
 };
