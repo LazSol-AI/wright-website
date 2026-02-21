@@ -28,7 +28,7 @@ const translations = {
                 },
                 shortcuts: {
                     title: "Using Wright via Keyboard Shortcuts",
-                    desc: "You can use Wright's polishing, translation, and quick chat functions with keyboard shortcuts. The default shortcuts are listed below, and you can customize them in the Settings."
+                    desc: "You can use Wright's Rewrite, Translate, and quick chat functions with keyboard shortcuts. The default shortcuts are listed below, and you can customize them in the Settings."
                 },
                 menuBar: {
                     title: "Using Wright via Apple Menu Bar",
@@ -107,7 +107,7 @@ const translations = {
                 title: "Frequently Asked Questions",
                 q1: {
                     q: "What can Wright do?",
-                    a: "Wright is an AI writing assistant for macOS. It provides three core functions you can trigger from any app via keyboard shortcuts or PopClip:",
+                    a: "Wright is an AI assistant for macOS. It provides three basic functions you can trigger from any app via keyboard shortcuts or PopClip:",
                     list: [
                         "<strong>Rewrite</strong> — Polish selected text for grammar, tone, and clarity while keeping your original meaning.",
                         "<strong>Translate</strong> — Translate selected text between languages instantly.",
@@ -117,7 +117,12 @@ const translations = {
                 q2: {
                     q: "Which AI models are supported?",
                     a: "Wright is powered by leading AI models:",
-                    list: ["OpenAI (GPT-4o, GPT-4o mini, etc.)", "Google Gemini", "Groq", "Grok (xAI)"]
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
                     q: "What are Custom AI Roles?",
@@ -133,7 +138,7 @@ const translations = {
                 },
                 q6: {
                     q: "What are the system requirements?",
-                    a: "Wright requires macOS 14.0 (Sonoma) or later. It needs Accessibility permissions to read and replace selected text system-wide. The app is lightweight (~2.4 MB) and runs as a menu bar app."
+                    a: "Wright requires macOS 14.0 (Sonoma) or later. It needs Accessibility permissions to read and replace selected text system-wide. The app is lightweight and runs as a menu bar app."
                 },
                 q7: {
                     q: "How do keyboard shortcuts work?",
@@ -389,12 +394,12 @@ const translations = {
             links: {
                 guide: {
                     title: "用户指南",
-                    desc: "分步设置：辅助功能权限、键盘快捷键和自定义角色。",
+                    desc: "一步步的设置：辅助功能权限、键盘快捷键和自定义角色。",
                     cta: "查看指南"
                 },
                 issue: {
                     title: "报告问题",
-                    desc: "发现 Bug 或有建议？在 GitHub 上提交 Issue。",
+                    desc: "发现了 bug 或有建议？请在 GitHub 上按要求提交问题反馈。",
                     cta: "提交问题"
                 }
             },
@@ -402,43 +407,48 @@ const translations = {
                 title: "常见问题",
                 q1: {
                     q: "Wright 能做什么？",
-                    a: "Wright 是 macOS 上的 AI 写作助手。它提供三个核心功能，可通过键盘快捷键或 PopClip 在任何应用中触发：",
+                    a: "Wright 是一款 macOS 上的 AI 助手。它提供三个基本功能，您可以通过键盘快捷键或 PopClip 在任何应用程序中触发：",
                     list: [
-                        "<strong>润色</strong> — 改善选中文本的语法、语气和清晰度，同时保留原意。",
-                        "<strong>翻译</strong> — 即时翻译选中文本。",
-                        "<strong>对话</strong> — 向 AI 提问并进行对话，可选择从快速视图切换到完整聊天界面。"
+                        "<strong>润色文本</strong> — 优化所选文本的语法、语气和清晰度，同时保持您的原意不变。",
+                        "<strong>瞬时翻译</strong> — 提供多种语言之间的快速翻译。",
+                        "<strong>快速对话</strong> — 提出问题并与 AI 对话，也支持从轻量级快速视图（Quick View）跳转到完整的聊天界面深入对话。"
                     ]
                 },
                 q2: {
                     q: "支持哪些 AI 模型？",
-                    a: "Wright 由领先的 AI 模型驱动：",
-                    list: ["OpenAI (GPT-4o, GPT-4o mini 等)", "Google Gemini", "Groq", "Grok (xAI)"]
+                    a: "目前版本内置并支持最领先的多种大语言模型（LLM）：",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
                     q: "什么是自定义 AI 角色？",
-                    a: "自定义角色允许您创建具有自己系统提示的专业 AI 人格。例如，您可以设置“代码审查员”、“文案撰写人”或“翻译员”角色——每个角色都会根据您定义的指令进行不同的操作。从快速视图或聊天中即时切换角色。"
+                    a: "自定义角色让您可以创建具有自身系统提示词的专属 AI 角色。例如，您可以设置“代码审查员”角色、“文案编辑”角色或“翻译员”角色——每个角色将根据您的指令在运行时表现出不同的交互。您可以随时从快速视图或聊天界面切换不同角色。"
                 },
                 q4: {
-                    q: "PopClip 集成如何工作？",
-                    a: "如果您安装了 PopClip，Wright 会向 PopClip 的弹出菜单添加操作。在任何应用中选择文本，PopClip 将显示润色、翻译或聊天选项——无需键盘快捷键。您可以从 Wright 的设置中下载 PopClip 扩展。"
+                    q: "PopClip 集成是如何工作的？",
+                    a: "如果您在 Mac 上安装了 PopClip 软件，Wright 支持在 PopClip 的弹出面板增加交互按钮（您可从系统设置页获取我们的官方插件下载渠道）。之后当您在任何应用中选中文本时，PopClip 会显示可使用 Wright 进行一键润色、翻译或聊天的选项——无需记忆快捷键即可快速操作。"
                 },
                 q5: {
                     q: "我的数据安全吗？",
-                    a: "是的。Wright 不会收集或存储您的个人数据。您的文本由 AI 处理，结果直接返回——Wright 不会记录或保留您的内容。详情请参阅我们的隐私政策。"
+                    a: "非常安全。Wright 承诺不会收集或存储您的个人数据。您的文本直接由系统转发请求至您选中的 AI 模型被处理，结果通过接口返回给应用组件解析——Wright 的任何产品均不留存或记录您的数据和对话内容。详情请参阅我们的《隐私政策》。"
                 },
                 q6: {
                     q: "系统要求是什么？",
-                    a: "Wright 需要 macOS 14.0 (Sonoma) 或更高版本。它需要辅助功能权限来在系统范围内读取和替换选定的文本。该应用程序很轻量（~2.4 MB），并作为菜单栏应用程序运行。"
+                    a: "它是一个系统通知栏应用，不仅轻量级而且运行内存占用极低。由于应用需要捕获并替换任意程序中的选中文本功能，所以必须授权系统的“辅助功能权限（Accessibility）”。软件目前要求 macOS 14.0 (Sonoma) 或更高版本。"
                 },
                 q7: {
                     q: "键盘快捷键如何工作？",
-                    a: "Wright 使用可在任何应用中工作的全局键盘快捷键。默认快捷键可以在 设置 → 快捷键 中自定义。在任何地方选择文本，按下快捷键，结果即时出现——您可以复制、插入或扩展到聊天会话。"
+                    a: "Wright 启用了全局键盘控制能力，因此可在任意应用程序中工作。您可以进入“设置”→“快捷键”模块自定义调整绑定的主控制键。其后只要在需要时选择文本，然后随时按下该快捷方式按键，AI 解析后优化的结果将立即呈现在快捷控制面板上——您可以复制、写入回原编辑框或带入完整的对话窗口展开。"
                 }
             },
             contact: {
                 title: "联系我们",
                 email: "邮件支持",
-                response: "我们通常在 24 小时内回复。"
+                response: "我们通常会在 24 小时内回复您的问题。"
             }
         },
         privacy: {
@@ -683,12 +693,12 @@ const translations = {
             links: {
                 guide: {
                     title: "Guía del Usuario",
-                    desc: "Configuración paso a paso: permisos de accesibilidad, atajos y roles personalizados.",
+                    desc: "Configuración paso a paso: permisos de accesibilidad, atajos de teclado y roles personalizados.",
                     cta: "Ver Guía"
                 },
                 issue: {
                     title: "Reportar un Problema",
-                    desc: "¿Encontró un error o tiene una sugerencia? Abra un issue en GitHub.",
+                    desc: "¿Ha encontrado un error o tiene una sugerencia? Abra un informe de problema en GitHub.",
                     cta: "Enviar Problema"
                 }
             },
@@ -696,43 +706,48 @@ const translations = {
                 title: "Preguntas Frecuentes",
                 q1: {
                     q: "¿Qué puede hacer Wright?",
-                    a: "Wright es un asistente de escritura IA para macOS. Ofrece tres funciones principales que puede activar desde cualquier app vía atajos:",
+                    a: "Wright es un asistente de IA para macOS. Proporciona tres funciones básicas que puede activar desde cualquier aplicación mediante atajos de teclado o PopClip:",
                     list: [
-                        "<strong>Reescribir</strong> — Pula el texto seleccionado para mejorar gramática, tono y claridad manteniendo el significado original.",
-                        "<strong>Traducir</strong> — Traduzca texto seleccionado entre idiomas al instante.",
-                        "<strong>Chat</strong> — Haga preguntas y tenga una conversación con IA, con la opción de pasar de una Vista Rápida a una interfaz de Chat completa."
+                        "<strong>Reescribir</strong> — Perfeccione el texto seleccionado en cuanto a gramática, tono y claridad manteniendo su significado original.",
+                        "<strong>Traducir</strong> — Traduzca el texto seleccionado entre idiomas al instante.",
+                        "<strong>Chat</strong> — Haga preguntas y tenga una conversación con la IA, con la opción de pasar de una Vista Rápida a una interfaz de Chat completa."
                     ]
                 },
                 q2: {
                     q: "¿Qué modelos de IA son compatibles?",
-                    a: "Wright funciona con los principales modelos de IA:",
-                    list: ["OpenAI (GPT-4o, GPT-4o mini, etc.)", "Google Gemini", "Groq", "Grok (xAI)"]
+                    a: "Wright está impulsado por los principales modelos de IA:",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
                     q: "¿Qué son los Roles de IA Personalizados?",
-                    a: "Los Roles Personalizados le permiten crear personalidades de IA especializadas con sus propios prompts de sistema. Por ejemplo, un rol de \"Revisor de Código\", \"Redactor\" o \"Traductor\" — cada uno se comporta diferente según sus instrucciones."
+                    a: "Los Roles Personalizados le permiten crear perfiles de IA especializados con sus propios prompts del sistema. Por ejemplo, puede configurar un rol de \"Revisor de Código\", un rol de \"Redactor\" o un rol de \"Traductor\" — cada uno se comporta de forma diferente según las instrucciones que defina. Cambie entre roles al instante desde la Vista Rápida o el Chat."
                 },
                 q4: {
                     q: "¿Cómo funciona la integración con PopClip?",
-                    a: "Si tiene PopClip instalado, Wright añade acciones a su menú emergente. Seleccione texto y PopClip mostrará opciones para reescribir, traducir o charlar — sin atajos de teclado needed."
+                    a: "Si tiene PopClip instalado, Wright agrega acciones al menú emergente de PopClip. Seleccione texto en cualquier aplicación y PopClip mostrará opciones para reescribir, traducir o chatear — no se requiere atajo de teclado. Puede descargar la extensión de PopClip desde la Configuración de Wright."
                 },
                 q5: {
                     q: "¿Están seguros mis datos?",
-                    a: "Sí. Wright no recopila ni almacena sus datos personales. Su texto es procesado por la IA y el resultado se devuelve directamente — Wright no registra ni retiene su contenido."
+                    a: "Sí. Wright no recopila ni almacena sus datos personales. Su texto es procesado por la IA y el resultado se devuelve directamente — Wright no registra ni retiene su contenido. Consulte nuestra Política de Privacidad para más detalles."
                 },
                 q6: {
                     q: "¿Cuáles son los requisitos del sistema?",
-                    a: "Wright requiere macOS 14.0 (Sonoma) o posterior. Necesita permisos de Accesibilidad para leer y reemplazar texto seleccionado en todo el sistema."
+                    a: "Wright requiere macOS 14.0 (Sonoma) o superior. Necesita permisos de Accesibilidad para leer y reemplazar texto seleccionado en todo el sistema. La aplicación es liviana y se ejecuta como una aplicación de la barra de menú."
                 },
                 q7: {
                     q: "¿Cómo funcionan los atajos de teclado?",
-                    a: "Wright utiliza atajos globales que funcionan en cualquier app. Los atajos predeterminados se pueden personalizar en Configuración → Atajos."
+                    a: "Wright utiliza atajos de teclado globales que funcionan en cualquier aplicación. Los atajos predeterminados se pueden personalizar en Configuración → Atajos. Seleccione texto en cualquier lugar, presione el atajo y el resultado aparece al instante — puede copiar, insertar o expandir a una sesión de Chat."
                 }
             },
             contact: {
                 title: "Contáctenos",
-                email: "Soporte por Email",
-                response: "Normalmente respondemos en 24 horas."
+                email: "Soporte por Correo Electrónico",
+                response: "Por lo general, respondemos dentro de las 24 horas."
             }
         },
         privacy: {
@@ -978,56 +993,61 @@ const translations = {
             links: {
                 guide: {
                     title: "Guide Utilisateur",
-                    desc: "Configuration étape par étape.",
+                    desc: "Configuration étape par étape : autorisations d'accessibilité, raccourcis clavier et rôles personnalisés.",
                     cta: "Voir le Guide"
                 },
                 issue: {
                     title: "Signaler un Problème",
-                    desc: "Trouvé un bug ?",
-                    cta: "Soumettre"
+                    desc: "Vous avez trouvé un bug ou avez une suggestion ? Signalez-le sur GitHub.",
+                    cta: "Soumettre un Problème"
                 }
             },
             faq: {
-                title: "FAQ",
+                title: "Foire Aux Questions",
                 q1: {
                     q: "Que peut faire Wright ?",
-                    a: "Wright est un assistant d'écriture IA pour macOS.",
+                    a: "Wright est un assistant IA pour macOS. Il offre trois fonctions de base que vous pouvez déclencher à partir de n'importe quelle application via des raccourcis clavier ou PopClip :",
                     list: [
-                        "<strong>Réécrire</strong> — Polir le texte.",
-                        "<strong>Traduire</strong> — Traduire le texte.",
-                        "<strong>Discuter</strong> — Discuter avec l'IA."
+                        "<strong>Réécriture</strong> — Améliorez la grammaire, le ton et la clarté du texte sélectionné tout en conservant votre sens original.",
+                        "<strong>Traduction</strong> — Traduisez instantanément le texte sélectionné entre plusieurs langues.",
+                        "<strong>Chat</strong> — Posez des questions et discutez avec l'IA, avec la possibilité de passer d'un simple Aperçu Rapide (Quick View) à une interface de Chat complète."
                     ]
                 },
                 q2: {
-                    q: "Quels modèles sont supportés ?",
-                    a: "Wright est propulsé par :",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "Quels modèles d'IA sont pris en charge ?",
+                    a: "Wright est alimenté par les meilleurs modèles d'IA :",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "Rôles IA Personnalisés ?",
-                    a: "Créez des personnalités IA spécialisées."
+                    q: "Que sont les rôles d'IA personnalisés ?",
+                    a: "Les rôles personnalisés vous permettent de créer des personas IA spécifiques avec leurs propres invites système. Par exemple, vous pouvez configurer un rôle de « Réviseur de Code », un rôle de « Rédacteur » ou un rôle de « Traducteur » — chacun se comportant différemment selon les instructions que vous définissez. Alternez entre les rôles instantanément depuis l'Aperçu Rapide ou le Chat."
                 },
                 q4: {
-                    q: "Intégration PopClip ?",
-                    a: "Actions directes dans le menu PopClip."
+                    q: "Comment fonctionne l'intégration de PopClip ?",
+                    a: "Si vous avez installé PopClip, Wright ajoute ses actions au menu contextuel de PopClip. Sélectionnez du texte dans n'importe quelle application, et PopClip affichera les options pour réécrire, traduire ou discuter — aucun raccourci clavier requis. Vous pouvez télécharger l'extension PopClip depuis les Paramètres de Wright."
                 },
                 q5: {
-                    q: "Données sécurisées ?",
-                    a: "Oui. Wright ne collecte ni ne stocke vos données."
+                    q: "Mes données sont-elles en sécurité ?",
+                    a: "Oui. Wright ne collecte ni ne stocke vos données personnelles. Votre texte est traité par l'IA et le résultat est renvoyé de manière directe — Wright ne journalise ni ne conserve votre contenu. Consultez notre Politique de Confidentialité pour plus de détails."
                 },
                 q6: {
-                    q: "Configuration requise ?",
-                    a: "macOS 14.0 (Sonoma) ou plus récent."
+                    q: "Quels sont les prérequis système ?",
+                    a: "Wright nécessite macOS 14.0 (Sonoma) ou version ultérieure. Il a besoin des permissions d'Accessibilité pour lire et remplacer le texte sélectionné à l'échelle du système. L'application est légère et s'exécute dans la barre de menus."
                 },
                 q7: {
-                    q: "Raccourcis clavier ?",
-                    a: "Raccourcis globaux personnalisables."
+                    q: "Comment fonctionnent les raccourcis clavier ?",
+                    a: "Wright utilise des raccourcis clavier globaux qui fonctionnent dans n'importe quelle application. Les raccourcis par défaut peuvent être modifiés dans Paramètres → Raccourcis. Sélectionnez du texte n'importe où, appuyez sur le raccourci et le résultat apparaît instantanément — vous pouvez le copier, l'insérer ou l'agrandir en une session de Chat."
                 }
             },
             contact: {
-                title: "Contactez-nous",
-                email: "Support Email",
-                response: "Réponse sous 24h."
+                title: "Nous Contacter",
+                email: "Support par Email",
+                response: "Nous répondons généralement sous 24 heures."
             }
         },
         privacy: {
@@ -1272,56 +1292,61 @@ const translations = {
             links: {
                 guide: {
                     title: "Benutzerhandbuch",
-                    desc: "Schritt-für-Schritt-Einrichtung.",
-                    cta: "Handbuch ansehen"
+                    desc: "Schritt-für-Schritt-Einrichtung: Tastaturkürzel, individuelle Rollen und Zugriffsrechte.",
+                    cta: "Handbuch lesen"
                 },
                 issue: {
-                    title: "Problem melden",
-                    desc: "Fehler gefunden?",
-                    cta: "Einreichen"
+                    title: "Problem Melden",
+                    desc: "Sie haben einen Fehler entdeckt oder Vorschläge? Eröffnen Sie ein GitHub-Issue.",
+                    cta: "Fehler senden"
                 }
             },
             faq: {
-                title: "Häufig gestellte Fragen",
+                title: "Häufig gestellte Fragen (FAQ)",
                 q1: {
-                    q: "Was kann Wright tun?",
-                    a: "Wright ist ein KI-Schreibassistent für macOS.",
+                    q: "Was kann Wright?",
+                    a: "Wright ist ein KI-Assistent für macOS. Er bietet drei grundlegende Funktionen, die Sie aus jeder App heraus per Tastenkürzel oder PopClip auslösen können:",
                     list: [
-                        "<strong>Umschreiben</strong> — Texte polieren.",
-                        "<strong>Übersetzen</strong> — Texte sofort übersetzen.",
-                        "<strong>Chatten</strong> — Mit KI unterhalten."
+                        "<strong>Umschreiben</strong> — Polieren Sie den ausgewählten Text hinsichtlich Grammatik, Tonfall und Klarheit und bewahren Sie dabei die ursprüngliche Bedeutung.",
+                        "<strong>Übersetzen</strong> — Übersetzen Sie die Auswahl augenblicklich zwischen verschiedenen Sprachen.",
+                        "<strong>Chat</strong> — Stellen Sie Fragen und chatten Sie mit der KI, bei Bedarf kann aus einem simplen 'Quick View' sofort ein umfangreicher Chat aufgerufen werden."
                     ]
                 },
                 q2: {
-                    q: "Welche Modelle werden unterstützt?",
-                    a: "Wright wird betrieben von:",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "Welche KI-Modelle werden unterstützt?",
+                    a: "Wright wird von den führenden KI-Modellen angetrieben:",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "Benutzerdefinierte KI-Rollen?",
-                    a: "Erstellen Sie spezialisierte KI-Persönlichkeiten."
+                    q: "Was sind benutzerdefinierte KI-Rollen?",
+                    a: "Individuelle Rollen lassen Sie eigene KI-Akteure aufbauen, hinterlegt mit eigenen System-Prompts. Sie könnten einen \"Code Reviewer\", einen \"Copywriter\" oder einen \"Übersetzer\" kreieren — alle handeln nach der jeweiligen Arbeitsanweisung unterschiedlich. Der Rollenwechsel in Quick View oder Chat erfolgt sofort."
                 },
                 q4: {
-                    q: "PopClip-Integration?",
-                    a: "Aktionen direkt im PopClip-Menü."
+                    q: "Wie funktioniert die Integration mit PopClip?",
+                    a: "Wenn PopClip installiert ist, blendet sich Wright dem dortigen Menü ein. Sie wählen einen Text aus, PopClip blendet automatisch Wrights Umschreib- oder Chatoption ein — dann benötigt es keine Tastenkürzel mehr. Das Plugin zu PopClip laden Sie in den Wright-Einstellungen herunter."
                 },
                 q5: {
                     q: "Sind meine Daten sicher?",
-                    a: "Ja. Wright sammelt oder speichert Ihre Daten nicht."
+                    a: "Ja. Wright erhebt oder protokolliert niemals persönliche Daten. Textauswahlen werden von der KI verarbeitet und zurückgeliefert — Wright selbst verwahrt ihre Texte keinesfalls auf oder sammelt sie an. Näheres dazu in unseren Datenschutzbestimmungen."
                 },
                 q6: {
-                    q: "Systemanforderungen?",
-                    a: "macOS 14.0 (Sonoma) oder neuer."
+                    q: "Wie lauten die Systemvoraussetzungen?",
+                    a: "Wright erfordert macOS 14.0 (Sonoma) oder neuer. Es erfordert die Berechtigungen für Bedienungshilfen um das Lesen und Ersetzen ihres Textes aus der jeweiligen Fremdapp vornehmen zu können. Es handelt sich um eine speicherfreundliche Menüleisten-App."
                 },
                 q7: {
-                    q: "Tastaturkurzbefehle?",
-                    a: "Globale, anpassbare Kurzbefehle."
+                    q: "Wie funktionieren Tastaturkürzel?",
+                    a: "Wright operiert mittels globaler Kürzel. So funktionieren diese ungeachtet der gerade offenen App auf macOS. Anpassbar im Menü unter Einstellungen → Verknüpfungen. Nach Markierung des Texts kann das Ausführen mittels Shortcuts ausgelöst werden und zeigt sofort Treffer an — diese lassen sich fortan in einen weitreichenden Chat ausdehnen."
                 }
             },
             contact: {
-                title: "Kontakt",
-                email: "E-Mail-Support",
-                response: "Antwort innerhalb von 24 Std."
+                title: "Nehmen Sie Kontakt zu uns auf",
+                email: "Support-Email",
+                response: "Die übliche Responsezeit beträgt zirka 24 Stunden."
             }
         },
         privacy: {
@@ -1567,56 +1592,61 @@ const translations = {
             links: {
                 guide: {
                     title: "ユーザーガイド",
-                    desc: "ステップバイステップ設定。",
-                    cta: "ガイドを見る"
+                    desc: "アクセシビリティの許可、キーボードショートカット、カスタムロールなどの手順。",
+                    cta: "ガイドを表示"
                 },
                 issue: {
-                    title: "問題を報告",
-                    desc: "バグを見つけましたか？",
-                    cta: "送信"
+                    title: "問題を報告する",
+                    desc: "バグや提案はありますか？ GitHub で Issue を開いてください。",
+                    cta: "問題を報告"
                 }
             },
             faq: {
                 title: "よくある質問",
                 q1: {
-                    q: "Wrightは何ができますか？",
-                    a: "WrightはmacOS用のAIライティングアシスタントです。",
+                    q: "Wright は何ができますか？",
+                    a: "Wright は macOS 用の AI アシスタントです。どのアプリからでも、キーボードショートカットや PopClip を使って起動できる 3 つの基本機能を提供します：",
                     list: [
-                        "<strong>リライト</strong> — 文章を磨き上げます。",
-                        "<strong>翻訳</strong> — 即座に翻訳します。",
-                        "<strong>チャット</strong> — AIと会話します。"
+                        "<strong>リライト</strong> — 元の意味を保ったまま、選択したテキストの文法、トーン、明確さを推敲します。",
+                        "<strong>翻訳</strong> — 選択したテキストを瞬時に言語間で翻訳します。",
+                        "<strong>チャット</strong> — AI に質問したり会話したりでき、軽量な Quick View からフルチャットインターフェースへの移行も可能です。"
                     ]
                 },
                 q2: {
-                    q: "対応モデルは？",
-                    a: "Wrightは主要なAIモデルで動作します：",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "どの AI モデルがサポートされていますか？",
+                    a: "Wright はトップクラスの AI モデルによって駆動されています：",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "カスタムAIロールとは？",
-                    a: "特定の目的のためのAI人格を作成できます。"
+                    q: "カスタム AI ロールとは何ですか？",
+                    a: "カスタムロールを使用すると、独自のシステムプロンプトを持つ特化した AI のペルソナを作成できます。たとえば、「コードレビュアー」、「コピーライター」、「翻訳者」のロールを設定でき、それぞれがあなたが定義した指示に基づいて異なる振る舞いをします。Quick View やチャットから瞬時にロールを切り替えられます。"
                 },
                 q4: {
-                    q: "PopClip連携？",
-                    a: "PopClipメニューにアクションを追加します。"
+                    q: "PopClip の統合はどのように機能しますか？",
+                    a: "PopClip がインストールされている場合、Wright は PopClip のポップアップメニューにアクションを追加します。どのアプリでもテキストを選択すると、PopClip がリライト、翻訳、またはチャットのオプションを表示します（キーボードショートカットは不要です）。PopClip の拡張機能は Wright の設定からダウンロードできます。"
                 },
                 q5: {
                     q: "データは安全ですか？",
-                    a: "はい。個人データを収集または保存しません。"
+                    a: "はい。Wright がお客様の個人データを収集または保存することはありません。テキストは AI によって処理され、結果は直接返されます。Wright がコンテンツをログに記録したり保持したりすることはありません。詳細はプライバシーポリシーをご覧ください。"
                 },
                 q6: {
-                    q: "システム要件は？",
-                    a: "macOS 14.0 (Sonoma) 以降。"
+                    q: "システム要件は何ですか？",
+                    a: "Wright は macOS 14.0 (Sonoma) 以降を必要とします。システム全体で選択したテキストを読み込み、置換するためにアクセシビリティの許可が必要です。アプリは軽量で、メニューバーアプリとして動作します。"
                 },
                 q7: {
-                    q: "キーボードショートカット？",
-                    a: "グローバルでカスタマイズ可能なショートカット。"
+                    q: "キーボードショートカットはどのように機能しますか？",
+                    a: "Wright は、どのアプリでも機能するグローバルキーボードショートカットを使用します。デフォルトのショートカットは [設定] → [ショートカット] でカスタマイズできます。どこでもテキストを選択してショートカットを押すと、結果がすぐに表示されます。コピー、挿入、またはチャットセッションへの展開が可能です。"
                 }
             },
             contact: {
                 title: "お問い合わせ",
                 email: "メールサポート",
-                response: "24時間以内に応答します。"
+                response: "通常 24 時間以内に返信いたします。"
             }
         },
         privacy: {
@@ -1861,56 +1891,61 @@ const translations = {
             links: {
                 guide: {
                     title: "사용자 가이드",
-                    desc: "단계별 설정 가이드.",
+                    desc: "단계별 설정: 접근성 권한, 키보드 단축키, 사용자 정의 역할 등.",
                     cta: "가이드 보기"
                 },
                 issue: {
-                    title: "문제 신고",
-                    desc: "버그를 발견하셨나요?",
-                    cta: "제출하기"
+                    title: "문제 보고",
+                    desc: "버그를 발견하거나 제안이 있습니까? GitHub에서 이슈를 열어주세요.",
+                    cta: "이슈 제출"
                 }
             },
             faq: {
                 title: "자주 묻는 질문",
                 q1: {
                     q: "Wright는 무엇을 할 수 있나요?",
-                    a: "Wright는 macOS용 AI 작문 도우미입니다.",
+                    a: "Wright는 macOS용 AI 어시스턴트입니다. 키보드 단축키나 PopClip을 통해 어느 앱에서나 실행할 수 있는 세 가지 기본 기능을 제공합니다:",
                     list: [
-                        "<strong>윤문</strong> — 텍스트 다듬기.",
-                        "<strong>번역</strong> — 즉시 번역.",
-                        "<strong>채팅</strong> — AI와 대화."
+                        "<strong>윤문</strong> — 원래의 의미를 유지하면서 선택한 텍스트의 문법, 어조, 명확성을 다듬습니다.",
+                        "<strong>번역</strong> — 선택한 텍스트를 여러 언어 간에 즉시 번역합니다.",
+                        "<strong>채팅</strong> — AI와 대화하며 질문할 수 있으며, 가벼운 Quick View에서 전체 채팅 인터페이스로 전환하는 옵션도 제공합니다."
                     ]
                 },
                 q2: {
-                    q: "지원되는 모델은?",
-                    a: "Wright는 주요 AI 모델을 지원합니다:",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "어떤 AI 모델이 지원되나요?",
+                    a: "Wright는 최고의 AI 모델들로 구동됩니다:",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "사용자 지정 AI 역할?",
-                    a: "특수 AI 페르소나를 만드세요."
+                    q: "사용자 정의 AI 역할이란 무엇인가요?",
+                    a: "사용자 정의 역할을 사용하면 자체 시스템 프롬프트를 가진 특화된 AI 페르소나를 만들 수 있습니다. 예를 들어, '코드 리뷰어', '카피라이터' 또는 '번역가' 역할을 설정할 수 있으며, 이들은 각각 설정한 지침에 따라 다르게 작동합니다. Quick View나 채팅에서 역할을 즉시 전환할 수 있습니다."
                 },
                 q4: {
-                    q: "PopClip 통합?",
-                    a: "PopClip 메뉴에 액션 추가."
+                    q: "PopClip 통합은 어떻게 작동하나요?",
+                    a: "PopClip이 설치되어 있으면 Wright가 PopClip의 팝업 메뉴에 작업을 추가합니다. 어떤 앱에서든 텍스트를 선택하면 PopClip이 윤문, 번역 또는 채팅 옵션을 표시합니다(단축키 불필요). PopClip 확장 프로그램은 Wright의 설정에서 다운로드할 수 있습니다."
                 },
                 q5: {
-                    q: "데이터는 안전한가요?",
-                    a: "네. 개인 데이터를 수집하거나 저장하지 않습니다."
+                    q: "제 데이터는 안전한가요?",
+                    a: "네. Wright는 사용자의 개인 데이터를 수집하거나 저장하지 않습니다. 사용자의 텍스트는 AI에 의해 처리되고 결과가 직접 반환되며, Wright는 내용을 기록하거나 보관하지 않습니다. 자세한 내용은 개인정보 처리방침을 참조하세요."
                 },
                 q6: {
-                    q: "시스템 요구 사항은?",
-                    a: "macOS 14.0 (Sonoma) 이상."
+                    q: "시스템 요구 사항은 무엇인가요?",
+                    a: "Wright는 macOS 14.0(Sonoma) 이상을 필요로 합니다. 시스템 전체에서 선택한 텍스트를 읽고 변경하려면 접근성 권한이 필요합니다. 앱은 가벼우며 메뉴 막대 앱으로 실행됩니다."
                 },
                 q7: {
-                    q: "키보드 단축키?",
-                    a: "글로벌 사용자 지정 단축키."
+                    q: "키보드 단축키는 어떻게 작동하나요?",
+                    a: "Wright는 모든 앱에서 작동하는 전역 키보드 단축키를 사용합니다. 기본 단축키는 [설정] → [단축키]에서 사용자 지정할 수 있습니다. 어디서든 텍스트를 선택하고 단축키를 누르면 즉시 결과가 나타나며, 복사하거나 삽입하거나 채팅 세션으로 확장할 수 있습니다."
                 }
             },
             contact: {
                 title: "문의하기",
                 email: "이메일 지원",
-                response: "24시간 이내 응답."
+                response: "일반적으로 24시간 이내에 답변해 드립니다."
             }
         },
         privacy: {
@@ -2156,56 +2191,61 @@ const translations = {
             links: {
                 guide: {
                     title: "Руководство",
-                    desc: "Пошаговая настройка.",
-                    cta: "Открыть"
+                    desc: "Пошаговая настройка: разрешения универсального доступа, сочетания клавиш, пользовательские роли.",
+                    cta: "Смотреть Руководство"
                 },
                 issue: {
                     title: "Сообщить о проблеме",
-                    desc: "Нашли баг?",
-                    cta: "Отправить"
+                    desc: "Нашли ошибку или есть предложения? Откройте вопрос на GitHub.",
+                    cta: "GitHub-сообщество"
                 }
             },
             faq: {
-                title: "FAQ",
+                title: "Часто задаваемые вопросы (ЧЗВ)",
                 q1: {
-                    q: "Что умеет Wright?",
-                    a: "Wright — ИИ-ассистент для macOS.",
+                    q: "Что умеет делать Wright?",
+                    a: "Wright — это ИИ-ассистент для macOS. Он предоставляет три базовые функции, которые вы можете запускать из любого приложения с помощью горячих клавиш или PopClip:",
                     list: [
-                        "<strong>Переписывние</strong> — Улучшение текста.",
-                        "<strong>Перевод</strong> — Мгновенный перевод.",
-                        "<strong>Чат</strong> — Общение с ИИ."
+                        "<strong>Переписать</strong> — Улучшите грамматику, тон и ясность выделенного текста, сохранив первоначальный смысл.",
+                        "<strong>Перевести</strong> — Мгновенно переведите выделенный текст на различные языки.",
+                        "<strong>Чат</strong> — Задавайте вопросы и общайтесь с ИИ, с возможностью перехода от компактного Быстрого вида к полноценному интерфейсу Чата."
                     ]
                 },
                 q2: {
-                    q: "Какие модели поддерживаются?",
-                    a: "Wright работает с:",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "Какие ИИ-модели поддерживаются?",
+                    a: "Wright работает на базе ведущих ИИ-моделей:",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "Кастомные роли?",
-                    a: "Создавайте своих ИИ-персонажей."
+                    q: "Что такое Пользовательские ИИ-роли?",
+                    a: "Пользовательские роли позволяют создавать специализированные профили ИИ с собственными системными инструкциями. Например, вы можете настроить роль «Рецензент кода», роль «Копирайтер» или роль «Переводчик» — каждая из них ведет себя по-разному в зависимости от заданных вами команд. Переключайтесь между ролями мгновенно из Быстрого вида или Чата."
                 },
                 q4: {
-                    q: "PopClip?",
-                    a: "Действия прямо в меню PopClip."
+                    q: "Как работает интеграция с PopClip?",
+                    a: "Если у вас установлен PopClip, Wright добавляет свои действия во всплывающее меню PopClip. Выделите текст в любом приложении, и PopClip покажет опции для переписывания, перевода или чата — без необходимости в горячих клавишах. Скачать расширение можно в Настройках Wright."
                 },
                 q5: {
-                    q: "Данные в безопасности?",
-                    a: "Да. Мы не собираем и не храним ваши данные."
+                    q: "В безопасности ли мои данные?",
+                    a: "Да. Wright не собирает и не хранит ваши персональные данные. Ваш текст обрабатывается ИИ, и результат возвращается напрямую — Wright не ведет логи и не сохраняет ваш контент. Смотрите нашу Политику Конфиденциальности для деталей."
                 },
                 q6: {
-                    q: "Требования?",
-                    a: "macOS 14.0 (Sonoma) или новее."
+                    q: "Каковы системные требования?",
+                    a: "Для работы Wright требуется macOS 14.0 (Sonoma) или новее. Ему нужны разрешения Универсального доступа (Accessibility) для чтения и замены выделенного текста на уровне всей системы. Приложение легкое и работает в строке меню."
                 },
                 q7: {
-                    q: "Горячие клавиши?",
-                    a: "Глобальные настраиваемые шорткаты."
+                    q: "Как работают горячие клавиши?",
+                    a: "Wright использует глобальные горячие клавиши, которые работают в любом приложении. Вы можете настроить их в Настройках → Горячие клавиши. Выделите текст где угодно, нажмите комбинацию клавиш, и результат мгновенно появится — вы сможете его скопировать, вставить или развернуть в сессию Чата."
                 }
             },
             contact: {
-                title: "Связаться",
-                email: "Email поддержки",
-                response: "Ответ в течение 24ч."
+                title: "Связаться с нами",
+                email: "Поддержка по Email",
+                response: "Обычно мы отвечаем в течение 24 часов."
             }
         },
         privacy: {
@@ -2450,56 +2490,61 @@ const translations = {
             links: {
                 guide: {
                     title: "Guia do Usuário",
-                    desc: "Configuração passo a passo.",
-                    cta: "Ver Guia"
+                    desc: "Configuração passo a passo: permissões de acessibilidade, atalhos de teclado e papéis.",
+                    cta: "Exibir Guia"
                 },
                 issue: {
-                    title: "Relatar Problema",
-                    desc: "Encontrou um erro?",
-                    cta: "Enviar"
+                    title: "Relatar um Problema",
+                    desc: "Encontrou um erro ou tem sugestões? Abra uma \"issue\" no GitHub.",
+                    cta: "Enviar Problema"
                 }
             },
             faq: {
                 title: "Perguntas Frequentes",
                 q1: {
-                    q: "O que o Wright faz?",
-                    a: "Wright é um assistente de escrita IA para macOS.",
+                    q: "O que o Wright pode fazer?",
+                    a: "Wright é um assistente de IA para macOS. Ele oferece três funções básicas que você pode acionar de qualquer aplicativo usando atalhos de teclado ou PopClip:",
                     list: [
-                        "<strong>Reescrever</strong> — Polir texto.",
-                        "<strong>Traduzir</strong> — Tradução instantânea.",
-                        "<strong>Conversar</strong> — Bate-papo com IA."
+                        "<strong>Reescrever</strong> — Melhore o texto selecionado (gramática, tom e clareza) mantendo o significado original.",
+                        "<strong>Traduzir</strong> — Traduza instantaneamente o texto selecionado entre vários idiomas.",
+                        "<strong>Bate-papo</strong> — Faça perguntas e converse com a IA, com a opção de alternar do Quick View rápido para uma interface de chat completa."
                     ]
                 },
                 q2: {
-                    q: "Quais modelos?",
-                    a: "Wright suporta:",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "Quais modelos de IA são suportados?",
+                    a: "Wright é movido pelos principais modelos de IA da atualidade:",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "Funções Personalizadas?",
-                    a: "Crie personas de IA."
+                    q: "O que são papéis de IA personalizados?",
+                    a: "Papéis Personalizados permitem que você crie personagens especialistas baseados em seus próprios comandos (prompts) de sistema. Configure um papel como \"Revisor de Código\", \"Redator\" ou \"Tradutor\", e observe cada um atuar conforme a instrução fornecida. Troque entre os papéis num piscar de olhos."
                 },
                 q4: {
-                    q: "PopClip?",
-                    a: "Ações no menu PopClip."
+                    q: "Como funciona a integração com o PopClip?",
+                    a: "Se o PopClip estiver instalado, o assistente Wright anexa ações lá. Selecione palavras em qualquer programa que o PopClip lançará recursos para reescrever, traduzir ou iniciar diálogo sem necessidade de lembrar atalho. O respectivo módulo extensão deve ser obtido nas Definições do Wright."
                 },
                 q5: {
-                    q: "Dados seguros?",
-                    a: "Sim. Não coletamos seus dados."
+                    q: "Meus dados estão todos em segurança?",
+                    a: "Tudo sim. Wright nunca guarda dados íntimos ou da ferramenta. Escritos da pessoa são transacionados pelo canal de inteligência virtual e a exibição recebida diretamente. Não geramos registro nem memorizamos conteúdo alheio, confira nossa Diretriz sobre Privacidade para confirmações exatas."
                 },
                 q6: {
-                    q: "Requisitos?",
-                    a: "macOS 14.0 (Sonoma) ou superior."
+                    q: "De quais requisitos se precisa em termos de sistema?",
+                    a: "Requer versão macOS 14.0 (Sonoma) em diante. Requer os privilégios totais do painel Acessibilidades sob leitura e troca do manuscrito da máquina. Esse software é de peso baixo correndo sempre da barrinha."
                 },
                 q7: {
-                    q: "Atalhos?",
-                    a: "Atalhos globais personalizáveis."
+                    q: "Me dê detalhes sobre funções nos atalhos e teclado?",
+                    a: "Recorremos a atalhos de impacto Global no Wright ativando sobre aplicações em paralelo sem atritos. É factível mudar na seção Configuração da Tela. Pegou marcação texto na tela aperte combo e a maravilha reage na ocasião para extrair, fixar em local da cópia ou desdobra num diálago alongado com o software."
                 }
             },
             contact: {
-                title: "Contato",
-                email: "Email de Suporte",
-                response: "Resposta em 24h."
+                title: "Entre em Contato Conosco",
+                email: "E-Mail Contato Assistencial",
+                response: "Fato normal respondermos abaixo de 24 hs."
             }
         },
         privacy: {
@@ -2745,56 +2790,61 @@ const translations = {
             links: {
                 guide: {
                     title: "Guida Utente",
-                    desc: "Configurazione passo-passo.",
-                    cta: "Vedi Guida"
+                    desc: "Configurazione passo-passo: permessi, scorciatoie da tastiera e ruoli personalizzati.",
+                    cta: "Vedi la Guida"
                 },
                 issue: {
-                    title: "Segnala Problema",
-                    desc: "Trovato un bug?",
-                    cta: "Invia"
+                    title: "Segnala un Problema",
+                    desc: "Hai trovato un bug o hai un suggerimento? Apri una issue su GitHub.",
+                    cta: "Segnala Issue"
                 }
             },
             faq: {
-                title: "FAQ",
+                title: "Domande Frequenti",
                 q1: {
                     q: "Cosa può fare Wright?",
-                    a: "Wright è un assistente di scrittura AI per macOS.",
+                    a: "Wright è un assistente IA per macOS. Fornisce tre funzioni di base che puoi attivare da qualsiasi applicazione usando le scorciatoie da tastiera o PopClip:",
                     list: [
-                        "<strong>Riscrivere</strong> — Rifinire il testo.",
-                        "<strong>Tradurre</strong> — Traduzione istantanea.",
-                        "<strong>Chattare</strong> — Chatta con l'AI."
+                        "<strong>Riscrivi</strong> — Migliora il testo selezionato per grammatica, tono e chiarezza mantenendo il significato originale.",
+                        "<strong>Traduci</strong> — Traduci all'istante il testo selezionato tra diverse lingue.",
+                        "<strong>Chat</strong> — Fai domande e conversazioni con l'IA, con l'opzione di passare dalla Quick View (vista rapida) all'interfaccia completa."
                     ]
                 },
                 q2: {
-                    q: "Quali modelli?",
-                    a: "Wright supporta:",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "Quali modelli di IA sono supportati?",
+                    a: "Wright è alimentato dai modelli IA più avanzati:",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "Ruoli Personalizzati?",
-                    a: "Crea personalità AI."
+                    q: "Cosa sono i Ruoli IA Personalizzati?",
+                    a: "I Ruoli Personalizzati ti consentono di creare specifiche 'personalità' di IA basandoti su determinati prompt. Ad esempio, potrai definire il profilo 'Revisore del Codice', 'Copywriter', 'Traduttore', in modo differente per le varie direttive date. Passa costantemente e velocemente da uno all'altro all'interno di un'unica app."
                 },
                 q4: {
-                    q: "PopClip?",
-                    a: "Azioni nel menu PopClip."
+                    q: "Come funziona l'integrazione di PopClip?",
+                    a: "Qualora avessi attivato il client software PopClip Wright s'introduce in aggiunta nel proprio menu interno dell'utenza fornendo servizi d'opera veloci senza pulsanti da ricordare! Il relativo plug in si scarica agilmente nelle Opzioni Setup Wright menù."
                 },
                 q5: {
-                    q: "Dati sicuri?",
-                    a: "Sì. Non raccogliamo i tuoi dati."
+                    q: "E' tutto gestito sotto totale protezione sicurezza dei files dati mie info?",
+                    a: "Affermativo!! Non avviene l'accumulo né registrazione sulle stazioni operative da parte dell'App stessa verso data-center su tuoi dati individuali diretti o di input, ogni azione avviane al solo fine erogatorio tramite i servizi terzi di terzi AI, consulta volentieri le regole sulla Protezione Infromazioni Policy."
                 },
                 q6: {
-                    q: "Requisiti?",
-                    a: "macOS 14.0 (Sonoma) o successivo."
+                    q: "Quali i parametri di hardware OS da far fronte?",
+                    a: "Solo macOS alla versione 14(Sonoma) oppure quelle seguenti, richiede un check per abilitare diritti totali Lettura & Op. Sostituzione(Accessibilità dal centro Mac) ed è leggerissima seduta su System Tray Toolbar."
                 },
                 q7: {
-                    q: "Scorciatoie?",
-                    a: "Scorciatoie globali personalizzabili."
+                    q: "Le shortcut della mia Keyboard?",
+                    a: "La tecnologia opera per combinazioni di chiavi tasti Mac Generali con operatività fluida costante in tutte le schermate attive delle finestre del mac osx, Settaggi Custom visibili nell'area → \"Scorciatoie\". A selezione campo testuale avvenuta basterà una macro combo da te voluta e voilà..."
                 }
             },
             contact: {
-                title: "Contatti",
-                email: "Email Supporto",
-                response: "Risposta in 24h."
+                title: "Vieni a trovarci & Scrivici Subito",
+                email: "Emaile Reparto Consulenza Guasti Ticket",
+                response: "Evadiamo risposte di base entro i limiti delle prossimi 24H ore piene."
             }
         },
         privacy: {
@@ -3040,56 +3090,61 @@ const translations = {
             links: {
                 guide: {
                     title: "उपयोगकर्ता गाइड",
-                    desc: "चरण-दर-चरण सेटअप।",
+                    desc: "चरण-दर-चरण सेटअप: अभिगम्यता अनुमतियाँ, कीबोर्ड शॉर्टकट और कस्टम भूमिकाएँ।",
                     cta: "गाइड देखें"
                 },
                 issue: {
-                    title: "समस्या रिपोर्ट करें",
-                    desc: "कोई बग मिला?",
-                    cta: "जमा करें"
+                    title: "किसी समस्या की रिपोर्ट करें",
+                    desc: "कोई बग मिला या कोई सुझाव है? GitHub पर रिपोर्ट करें।",
+                    cta: "समस्या सबमिट करें"
                 }
             },
             faq: {
                 title: "अक्सर पूछे जाने वाले प्रश्न",
                 q1: {
                     q: "Wright क्या कर सकता है?",
-                    a: "Wright macOS के लिए एक AI लेखन सहायक है।",
+                    a: "Wright macOS के लिए एक AI असिस्टेंट है। यह तीन बुनियादी कार्य प्रदान करता है जिन्हें आप किसी भी ऐप से कीबोर्ड शॉर्टकट या PopClip के माध्यम से ट्रिगर कर सकते हैं:",
                     list: [
-                        "<strong>रिराइट</strong> — टेक्स्ट को पॉलिश करें।",
-                        "<strong>अनुवाद</strong> — तत्काल अनुवाद।",
-                        "<strong>चैट</strong> — AI के साथ चैट।",
+                        "<strong>पुनः लिखें</strong> — अपने मूल अर्थ को बनाए रखते हुए व्याकरण, स्वर और स्पष्टता के लिए चयनित टेक्स्ट को पॉलिश करें।",
+                        "<strong>अनुवाद करें</strong> — चयनित टेक्स्ट का तुरंत भाषाओं के बीच अनुवाद करें।",
+                        "<strong>चैट</strong> — प्रश्न पूछें और AI के साथ बातचीत करें, त्वरित व्यू से पूर्ण चैट इंटरफ़ेस में जाने के विकल्प के साथ।"
                     ]
                 },
                 q2: {
-                    q: "कौन से मॉडल समर्थित हैं?",
-                    a: "Wright इनका समर्थन करता है:",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "कौन से AI मॉडल समर्थित हैं?",
+                    a: "Wright अग्रणी AI मॉडल द्वारा संचालित है:",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "कस्टम AI रोल?",
-                    a: "विशिष्ट AI व्यक्तित्व बनाएँ।"
+                    q: "कस्टम AI भूमिकाएँ क्या हैं?",
+                    a: "कस्टम भूमिकाएँ आपको उनके स्वयं के सिस्टम संकेतों के साथ विशिष्ट AI व्यक्तित्व बनाने देती हैं। उदाहरण के लिए, आप 'कोड समीक्षक' भूमिका, 'कॉपीराइटर' भूमिका या 'अनुवादक' भूमिका सेट कर सकते हैं - आपके द्वारा निर्दिष्ट निर्देशों के आधार पर प्रत्येक का व्यवहार अलग-अलग होता है।"
                 },
                 q4: {
-                    q: "PopClip एकीकरण?",
-                    a: "PopClip मेनू में क्रियाएँ जोड़ें।"
+                    q: "PopClip एकीकरण कैसे काम करता है?",
+                    a: "यदि आपने PopClip इंस्टॉल किया है, तो Wright PopClip के पॉपअप मेनू में क्रियाएँ जोड़ता है। बस टेक्स्ट चुनें और यह अनुवाद या चैट के विकल्प दिखाएगा। आप Wright सेटिंग्स से इसका एक्सटेंशन डाउनलोड कर सकते हैं।"
                 },
                 q5: {
-                    q: "क्या डेटा सुरक्षित है?",
-                    a: "हाँ। हम डेटा एकत्र या संग्रहीत नहीं करते हैं।"
+                    q: "क्या मेरा डेटा सुरक्षित है?",
+                    a: "हाँ। Wright आपका व्यक्तिगत डेटा एकत्र या संगृहीत नहीं करता है। आपका टेक्स्ट AI द्वारा संसाधित किया जाता है और परिणाम सीधे वापस किया जाता है। अधिक जानकारी के लिए हमारी गोपनीयता नीति देखें।"
                 },
                 q6: {
-                    q: "सिस्टम आवश्यकताएँ?",
-                    a: "macOS 14.0 (Sonoma) या नया।"
+                    q: "सिस्टम आवश्यकताएँ क्या हैं?",
+                    a: "Wright के लिए macOS 14.0 (Sonoma) या इसके बाद का संस्करण आवश्यक है। इसे टेक्स्ट पढ़ने के लिए सिस्टम एक्सेसिबिलिटी अनुमतियों की आवश्यकता है। ऐप हल्का है और मेनू बार से काम करता है।"
                 },
                 q7: {
-                    q: "कीबोर्ड शॉर्टकट?",
-                    a: "ग्लोबल कस्टमाइज़ेबल शॉर्टकट।"
+                    q: "कीबोर्ड शॉर्टकट कैसे काम करते हैं?",
+                    a: "Wright वैश्विक कीबोर्ड शॉर्टकट का उपयोग करता है जो किसी भी ऐप में काम करते हैं। आप सेटिंग्स में इन्हें कस्टमाइज़ कर सकते हैं। बस टेक्स्ट चुनें, और परिणाम तुरंत उपयोग के लिए उपलब्ध होता है।"
                 }
             },
             contact: {
-                title: "संपर्क",
+                title: "हमसे संपर्क करें",
                 email: "ईमेल सहायता",
-                response: "24 घंटे में उत्तर।"
+                response: "हम आम तौर पर 24 घंटे के भीतर जबाव देते हैं।"
             }
         },
         privacy: {
@@ -3335,56 +3390,61 @@ const translations = {
             links: {
                 guide: {
                     title: "دليل المستخدم",
-                    desc: "إعداد خطوة بخطوة.",
-                    cta: "عرض الدليل"
+                    desc: "الإعداد خطوة بخطوة: أذونات إمكانية الوصول واختصارات لوحة المفاتيح والأدوار المخصصة.",
+                    cta: "تصفح الدليل"
                 },
                 issue: {
                     title: "الإبلاغ عن مشكلة",
-                    desc: "هل وجدت خطأ؟",
-                    cta: "إرسال"
+                    desc: "هل عثرت على خطأ أو لديك اقتراح؟ افتح مشكلة على GitHub.",
+                    cta: "إرسال المشكلة"
                 }
             },
             faq: {
-                title: "الأسئلة الشائعة",
+                title: "الأسئلة المتداولة",
                 q1: {
-                    q: "ماذا يمكن لـ Wright أن يفعل؟",
-                    a: "Wright هو مساعد كتابة بالذكاء الاصطناعي لنظام macOS.",
+                    q: "ما الذي يمكن لـ Wright فعله؟",
+                    a: "Wright هو مساعد ذكاء اصطناعي لنظام macOS. وهو يوفر ثلاث وظائف أساسية يمكنك تشغيلها من أي تطبيق عبر اختصارات لوحة المفاتيح أو PopClip:",
                     list: [
-                        "<strong>إعادة صياغة</strong> — تلميع النصوص.",
-                        "<strong>ترجمة</strong> — ترجمة فورية.",
-                        "<strong>دردشة</strong> — محادثة مع الذكاء الاصطناعي."
+                        "<strong>إعادة الكتابة</strong> — صقل النص المحدد القواعد النحوية والأسلوب والوضوح مع الحفاظ على المعنى الأصلي.",
+                        "<strong>الترجمة</strong> — ترجمة النص المحدد بين اللغات على الفور.",
+                        "<strong>الدردشة</strong> — طرح الأسئلة وإجراء محادثة مع الذكاء الاصطناعي، مع خيار الانتقال من العرض السريع المدمج إلى واجهة الدردشة الكاملة."
                     ]
                 },
                 q2: {
-                    q: "ما هي النماذج المدعومة؟",
-                    a: "يدعم Wright:",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "ما هي نماذج الذكاء الاصطناعي المدعومة؟",
+                    a: "يتم تشغيل Wright بواسطة نماذج ذكاء اصطناعي رائدة:",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "أدوار مخصصة؟",
-                    a: "أنشئ شخصيات ذكاء اصطناعي خاصة."
+                    q: "ما هي أدوار الذكاء الاصطناعي المخصصة؟",
+                    a: "تتيح لك الأدوار المخصصة إنشاء شخصيات ذكاء اصطناعي متخصصة باستخدام تلقينات النظام الخاصة بك. يمكنك، على سبيل المثال، إعداد دور \"مراجع الكود\" أو \"كتابة الإعلانات\"."
                 },
                 q4: {
-                    q: "تكامل PopClip؟",
-                    a: "إجراءات في قائمة PopClip."
+                    q: "كيف يعمل دمج PopClip؟",
+                    a: "إذا قمت بتثبيت PopClip، يضيف Wright إجراءات إلى خياراته، فلا حاجة لاختصارات لوحة المفاتيح. يمكنك تنزيل الإضافة من خلال الإعدادات."
                 },
                 q5: {
                     q: "هل بياناتي آمنة؟",
-                    a: "نعم. نحن لا نجمع بياناتك."
+                    a: "نعم. لا يجمع Wright أو يخزن بياناتك. تتم معالجة النص الخاص بك ويُعاد بطريقة مباشرة دون حفظ المحتوى. راجع سياسة الخصوصية الخاصة بنا."
                 },
                 q6: {
-                    q: "متطلبات النظام؟",
-                    a: "macOS 14.0 (Sonoma) أو أحدث."
+                    q: "ما هي متطلبات النظام؟",
+                    a: "يتطلب Wright نظام التشغيل macOS 14.0 أو الأحدث منه، كما يحتاج لأذونات قراءة واستبدال النصوص المحددة عبر النظام. وهو تطبيق خفيف يعمل من خلال شريط القوائم."
                 },
                 q7: {
-                    q: "اختصارات لوحة المفاتيح؟",
-                    a: "اختصارات عالمية قابلة للتخصيص."
+                    q: "كيف تعمل اختصارات لوحة المفاتيح؟",
+                    a: "يستخدم Wright اختصارات عالمية جاهزة وقابلة للتخصيص من الإعدادات للعمل في أي تطبيق على نظامك."
                 }
             },
             contact: {
                 title: "اتصل بنا",
                 email: "دعم البريد الإلكتروني",
-                response: "الرد خلال 24 ساعة."
+                response: "نرد عادة في غضون 24 ساعة."
             }
         },
         privacy: {
@@ -3629,56 +3689,61 @@ const translations = {
             links: {
                 guide: {
                     title: "Kullanıcı Kılavuzu",
-                    desc: "Adım adım kurulum.",
+                    desc: "Kurulum adımları: erişilebilirlik izinleri, klavye kısayolları ve özel roller.",
                     cta: "Kılavuzu Görüntüle"
                 },
                 issue: {
                     title: "Sorun Bildir",
-                    desc: "Hata mı buldunuz?",
-                    cta: "Gönder"
+                    desc: "Bir hata mı buldunuz veya öneriniz mi var? GitHub üzerinden bir sorun açın.",
+                    cta: "Sorun Bildir"
                 }
             },
             faq: {
-                title: "SSS",
+                title: "Sıkça Sorulan Sorular",
                 q1: {
-                    q: "Wright neler yapabilir?",
-                    a: "Wright, macOS için bir yapay zeka yazma asistanıdır.",
+                    q: "Wright ne yapabilir?",
+                    a: "Wright macOS için bir yapay zeka asistanıdır. Klavye kısayolları veya PopClip aracılığıyla herhangi bir uygulamadan tetikleyebileceğiniz üç temel işlev sunar:",
                     list: [
-                        "<strong>Yeniden Yaz</strong> — Metni parlatın.",
-                        "<strong>Çevir</strong> — Anında çeviri.",
-                        "<strong>Sohbet</strong> — Yapay zeka ile sohbet edin."
+                        "<strong>Yeniden Yazma</strong> — Orijinal anlamını koruyarak seçili metni dil bilgisi, ifade tarzı ve netlik açısından iyileştirin.",
+                        "<strong>Çeviri</strong> — Seçili metni anında diller arasında çevirin.",
+                        "<strong>Sohbet</strong> — Yapay Zeka ile sohbet edin, soru sorun ve hafif bir Hızlı Görünümden (Quick View) tam Sohbet arayüzüne geçiş yapma seçeneğiyle diyalog kurun."
                     ]
                 },
                 q2: {
-                    q: "Hangi modeller destekleniyor?",
-                    a: "Wright şunları destekler:",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "Hangi yapay zeka modelleri desteklenmektedir?",
+                    a: "Wright önde gelen yapay zeka modelleri tarafından desteklenmektedir:",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "Özel Roller?",
-                    a: "Yapay zeka kişilikleri oluşturun."
+                    q: "Özel Yapay Zeka Rolleri nedir?",
+                    a: "Özel Roller kendi yapılandırdığınız yönergelerle uzman yapay zeka kişilikleri oluşturmanızı sağlar. Örneğin, bir \"Kod İnceleyici\" veya \"Metin Yazarı\" oluşturabilirsiniz. Quick View veya Sohbet kısmında anında bu roller arasında geçiş yapabilirsiniz."
                 },
                 q4: {
-                    q: "PopClip entegrasyonu?",
-                    a: "PopClip menüsüne eylemler ekleyin."
+                    q: "PopClip entegrasyonu nasıl çalışıyor?",
+                    a: "Eğer PopClip yüklü ise, Wright kendi kısayol seçeneklerini uygulamanın menüsüne ekler. Herhangi bir programda bir yeri seçtiğinizde yazım ve tercüme fonksiyonlarına direkt tıklar ulaşabilirsiniz - tuş hatırlamaya gerek kalmaz. Wright'ın Ayarlar ekranından gerekli eklentiyi yükleyebilirsiniz."
                 },
                 q5: {
                     q: "Verilerim güvende mi?",
-                    a: "Evet. Verilerinizi toplamıyoruz veya saklamıyoruz."
+                    a: "Kesinlikle evet. Wright tarafınızdan kişisel kullanım analiz verisi toplamaz veya kaydetmez. İstekler aracı sunuculardan direkt modellere gönderilir ve gelen cevap sizin ekranınıza iletilir. Konuşmalarınız tutulmaz. Detaylar için Gizlilik Politikasından bilgilenin."
                 },
                 q6: {
-                    q: "Sistem gereksinimleri?",
-                    a: "macOS 14.0 (Sonoma) veya daha yenisi."
+                    q: "Sistem gereksinimleri neler?",
+                    a: "Uygulamanın düzgünce çalışması ve her alandaki yazıları işlemek için Sistem Ayarlarında Erişebilirlik kısmından izin gerektirir. Uygulama sadece macOS 14.0 (Sonoma) sürümü ve bu sürümün üstündeki Apple bilgisayarlarda çalışabilen küçük boyutlu bir Menü çubuğu yazılımıdır."
                 },
                 q7: {
-                    q: "Klavye kısayolları?",
-                    a: "Genel özelleştirilebilir kısayollar."
+                    q: "Klavye kısayolları ile nasıl işlemler yapıyoruz?",
+                    a: "Program çalışırken Global Klavye dinleme sistemi aktiftir. Yani istediğiniz yazılımdaki içerik üzerinde ayarlanan tuş kombinasyonunu yaptığınız anda penceremiz beliriverir. Bu kısayolları Ayarlar → Kısayollar kısmından özgürce kişiselleştirin."
                 }
             },
             contact: {
-                title: "İletişim",
+                title: "İletişime Geçin",
                 email: "E-posta Desteği",
-                response: "24 saat içinde yanıt."
+                response: "Genellikle 24 saat içerisinde yanıt veririz."
             }
         },
         privacy: {
@@ -3924,56 +3989,61 @@ const translations = {
             links: {
                 guide: {
                     title: "Hướng dẫn Người dùng",
-                    desc: "Thiết lập từng bước.",
-                    cta: "Xem Hướng dẫn"
+                    desc: "Thiết lập từng bước: cấp quyền trợ năng, phím tắt cũng như các vai trò tuỳ chỉnh.",
+                    cta: "Xem hướng dẫn"
                 },
                 issue: {
-                    title: "Báo cáo Vấn đề",
-                    desc: "Tìm thấy lỗi?",
-                    cta: "Gửi"
+                    title: "Báo cáo lỗi",
+                    desc: "Tìm thấy một lỗi hoặc có gợi ý? Hãy mở một truy vấn trong Github.",
+                    cta: "Gửi vấn đề"
                 }
             },
             faq: {
-                title: "Câu hỏi thường gặp",
+                title: "Các câu hỏi thường gặp",
                 q1: {
                     q: "Wright có thể làm gì?",
-                    a: "Wright là trợ lý viết AI cho macOS.",
+                    a: "Wright là một trợ lý ảo (AI) dành cho macOS. Cung cấp nhanh ba tính năng chính hữu dụng qua bàn phím tắt hoặc thanh PopClip tại bất kỳ phần mềm nào:",
                     list: [
-                        "<strong>Viết lại</strong> — Chỉnh sửa văn bản.",
-                        "<strong>Dịch</strong> — Dịch tức thì.",
-                        "<strong>Trò chuyện</strong> — Trò chuyện với AI."
+                        "<strong>Chỉnh văn</strong> — Trau chuốt lại câu từ văn phạm đã lựa chọn nhưng giữ lại hàm ý ban đầu của tác giả.",
+                        "<strong>Dịch Đoạn</strong> — Đem lại ngôn ngữ bản địa chuyển ngữ cực lẹ từ nội dung bạn vừa quét khối.",
+                        "<strong>Nhắn Hỏi</strong> — Hỏi nhanh với AI và nó sẽ đưa câu trả cho bạn với cửa sổ nhỏ, hay cũng có thể nhảy luôn sang bảng giao tiếp to hơn để hỏi nhiều hơn."
                     ]
                 },
                 q2: {
-                    q: "Mô hình nào được hỗ trợ?",
-                    a: "Wright hỗ trợ:",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "Các hệ thống AI nào hiện đang được tương thích có thể sử dụng?",
+                    a: "Wright nạp đầy sức mạnh đến từ hàng loạt những AI thông minh và nổi tiếng nhất:",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "Vai trò Tùy chỉnh?",
-                    a: "Tạo nhân cách AI."
+                    q: "Custom AI Roles là tính năng gì vậy?",
+                    a: "Chế độ vai trò tuỳ biến (Custom roles) cho phép rèn luyện kĩ năng giải quyết riêng rẽ cho từng mục đích người dùng để hoạt động chuẩn nhất. Khởi tạo một AI 'Chuyên ngành lập trình' hay 'người làm Content Writer', AI sẽ ngoan ngoãn hoạt động theo đúng yêu cầu mà bạn cài. Bạn cũng dễ dàng đổi sang AI này để làm việc trong 1 cú click ngay tại màn Hình Nhanh lúc đó."
                 },
                 q4: {
-                    q: "Tích hợp PopClip?",
-                    a: "Thêm hành động vào menu PopClip."
+                    q: "Quá trình giao tiếp tích hợp với PopClip diễn ra như thế nào?",
+                    a: "Miễn là bạn có phần mềm PopClip được chạy sẵn trên máy. Wright sẻ có thể liên kết tự tạo thêm menu rút gọn sau thao tác bạn Chọn bôi đen (highlight) chữ trên màn. Thao tác gọi trực tiếp này sẽ lướt qua luôn bàn phím - không cần nhớ bấm tổ hợp Phím rườm rà. Tìm link tải plugin popclip trong giao diện Settings của Wright nhé!"
                 },
                 q5: {
-                    q: "Dữ liệu có an toàn không?",
-                    a: "Có. Chúng tôi không thu thập dữ liệu của bạn."
+                    q: "Dữ kiện máy của tôi có an toàn tuyệt đối không?",
+                    a: "Chắc chắn là an toàn! Nó là tiêu chí hàng đầu của tôi. Ứng dụng Wright sẽ không tự động cào bất kỳ dữ liệu cá nhân hay thói quen nào của bạn! Những con chữ bạn gắp đều được đẩy qua hạ tầng đám mây máy chủ xử lý rồi trả tận kết quả cuối vào tay bạn thôi - Chúng tôi xin không trộm hay ghi chép chúng. Chào mừng xem kỹ trang Bảo Mật dữ liệu."
                 },
                 q6: {
-                    q: "Yêu cầu hệ thống?",
-                    a: "macOS 14.0 (Sonoma) hoặc mới hơn."
+                    q: "Bao gồm những yêu cầu phần cứng lẫn hệ điều hành ra sao để chạy được ư?",
+                    a: "Để ứng dụng Wright cất cánh cần macOS mã 14.0 (Tên bản Sonoma) hoặc đời kế mới hơn. Wright cần uỷ quyền 'Hỗ trợ nâng cao - Accessibility' để Wright thay mặt đọc vùng mã hay xoá ghi đè kết quả mới của toàn máy tính giúp bạn một cách liền mạch. App rất siêu nhẹ đặt mình tại thanh Trạng Thái (Menu bar app)."
                 },
                 q7: {
-                    q: "Phím tắt?",
-                    a: "Phím tắt toàn cầu có thể tùy chỉnh."
+                    q: "Vậy làm sao thiết lập thao tác nhanh của Shortcut?",
+                    a: "Chắc chắn rồi. Global Keyboard Shortcuts (Nút Lệnh Cầu Toàn Cục) chạy đa luồng mọi phần mềm trên một máy MacOS giúp việc làm trở nên tiện lợi. Lựa và bấm sẽ ra giao diện nổi lẹ nhất để có luôn copy hay chuyển tiếp. Điều chuyển nó ở trang Cài Đặt (Settings) -> Kéo sang Menu Của Shortcut nhé!"
                 }
             },
             contact: {
-                title: "Liên hệ",
-                email: "Hỗ trợ Email",
-                response: "Phản hồi trong 24 giờ."
+                title: "Địa Chỉ Yêu Cầu Gặp Mặt/ Liên Lạc",
+                email: "Kết Nối bằng Hòm Thư",
+                response: "Email phản phồi theo tiêu chuẩn dưới mức 1 ngày (24 giờ)."
             }
         },
         privacy: {
@@ -4218,56 +4288,61 @@ const translations = {
             links: {
                 guide: {
                     title: "Gebruikershandleiding",
-                    desc: "Stap-voor-stap installatie.",
+                    desc: "Stapsgewijze installatie en permissies, snelkoppelingen en aangepaste AI-rollen instellen.",
                     cta: "Bekijk Gids"
                 },
                 issue: {
-                    title: "Probleem Melden",
-                    desc: "Bug gevonden?",
-                    cta: "Verzenden"
+                    title: "Rapporteer Eigenaardigheid (Bug) of Klachtensupport",
+                    desc: "Fout gezien? Stel 'm gelijk gerust voor op ons portal van Github of geef ons nieuwe raad.",
+                    cta: "Probleem Melden"
                 }
             },
             faq: {
-                title: "Veelgestelde Vragen",
+                title: "Veelgestelde Vragen En Antwoorden (FAQ)",
                 q1: {
-                    q: "Wat kan Wright doen?",
-                    a: "Wright is een AI-schrijfassistent voor macOS.",
+                    q: "Wat heeft lokaal het product Wright ons speciaal in voordeel in het aanbod te voorzien?",
+                    a: "Wright is je intelligente Artificial bot-software tool direct ingebouwd op Mac. Je hebt 3 hoofdfacetten die globaal uit welke applicatie dat men het ook maar in aanroept, aansturing doorgeeft per popclip of per knoppensetup:",
                     list: [
-                        "<strong>Herschrijven</strong> — Tekst polijsten.",
-                        "<strong>Vertalen</strong> — Directe vertaling.",
-                        "<strong>Chatten</strong> — Chat met AI."
+                        "<strong>Herschrijven</strong> — Verbeter je blok textuele selectie omtrent grammatica fouten of toon zettingen puur net zonder maar ook echt de oorspronkelijke visie de nek af te leggen.",
+                        "<strong>Vertalen</strong> — Tolk op abrupte en preciese snelheid woorden vanuit en tussen verscheidinde vreemde dialecten.",
+                        "<strong>Chat/Conversatie</strong> — Draag de verantwoording naar buiten, of ga het babbelen of discussiëren rechtstreeks met de bot te lijf. Als de snelvenstermodus is gesloten kan men makkelijk ook doorspringen naat een hele uitgebreidere UI om langer aanhorende dialoog voortdurend achteraf te evalueren."
                     ]
                 },
                 q2: {
-                    q: "Welke modellen worden ondersteund?",
-                    a: "Wright ondersteunt:",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "Welke A.I. modules worden precies door jullie actief geacht op dit model?",
+                    a: "Wright haalt kracht recht uit alle van de meest toonaangevende AI giganten technologie:",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "Aangepaste Rollen?",
-                    a: "Creëer AI-persoonlijkheden."
+                    q: "De op maat toegewezen zogenaamde A I bot rollen - de Custom AI Roles, de waarheid wat houdt dit nu in?",
+                    a: "Maatwerk Personage Rollen laat jullie speciale A I zielen opbouwen gedreven in specifieke eigen system prompt instructie commandos in zogeheten prompt tekst velden. Concretiseer eens bijvoorbeeld het als \"De Coderings Inspecteur\" taakanroep, of je \"Reclame Maker Copywriter\", of simpelwaarts op \"Tolk\".  Zij acteren elk zo totaal andermaal via de ingevulde parameters van jou wensen in de instelliingen. Makkelijke verzeiling tuusen deze karakters in een omgang van Quick view is perfect!"
                 },
                 q4: {
-                    q: "PopClip-integratie?",
-                    a: "Acties toevoegen aan PopClip-menu."
+                    q: "In verband gesteld tot PopClip integraties. Hoe werkt het nou precies bij jullie integratie daarmee met PopClip in het algemeen?",
+                    a: "Wanneer meneer/mevrouw voorzien in installaties van app PopCLip op de Mac zelf, laat hierbij WRight er extra actie aanbieden per the Popcilp uitschuivend kleine balkje zodra er tekst is doorgeselecteerd aan gegaan van muiskoek! Vraag op de popcilp de wright herziening commando of praat commando's dan ook af via de muis alleen is ook makkelijker om zodoende de onthoudde insteling en shortcuts achter zich laten te vervliegen! Importeer the PopClip script configuratie via de Setting pagina recht vanuit je WRight interface."
                 },
                 q5: {
-                    q: "Zijn mijn gegevens veilig?",
-                    a: "Ja. We verzamelen uw gegevens niet."
+                    q: "Data beveiligingen - blijft dit eigenlijk nog stiekem privé tussen mij of komt t openbaar ?",
+                    a: "Klok helder; Natuurlijk veilig ! Wright haalt of steelt nooit informatie die jullie prive behoren in bestanden dezer Mac en doet dat pertinent nooit onafgezien het geselecteerd text gebied dan. Na aamvraag de bot word dan en enkel uitsluitend en voor niks doorgevoerd vanuit je acties via the cloude servers! WRight verzameld echt 0 van jou inhoud bij de logs in!! Graag een verwijzing doen op documentatiie genaamd Privacy Beleid pagina om in full text detail verder op de de hoogte in ingelezen gezet the raaken"
                 },
                 q6: {
-                    q: "Systeemvereisten?",
-                    a: "macOS 14.0 (Sonoma) of nieuwer."
+                    q: "Wats dit op te lossen minimaal van het Mac operationele systeem kwa prestatie (System Reqs)?",
+                    a: "In feite om WRight ten gehore werkend vlot toe gepast ter laten reageren vraagt zich voor Wright dit; MacOS the softwareversie versie minimaal de v14.00 die te samen bekent als we (The Macos OS Sonoma Editie) of nieuwren versies!. Om je text gebied buiten WRIght ui interface of scherm globaal de oppakking mee te maken dient de veiligsheids vergunningen binnen Toegankelijkheid en controle ingeschakeld the hooft er zijn. App groote is niks waard te zwaar en zit er puur als lte en onmerkbaar te draaien met the Menu Bar bovenscherm op The MaC ."
                 },
                 q7: {
-                    q: "Sneltoetsen?",
-                    a: "Globale aanpasbare sneltoetsen."
+                    q: "Wat gaat dit met het globaal inzet van dit keyboard Toesen commando regels en short-keys te keer ?",
+                    a: "Doormiddel met Global Keyboards (Wereldijd system command) werkten u en men de combinaties voor commandos binnen een app die een mac runt prima!. En dus past deze instel commandos ook aan The Setting ->  Shortcuts! Ga er wat highlight overheen doen de op de teskt the een mac and en raak dan uw sleutels via sneltoets naar voorkeuren dan tikt et Wright uit z'n schuil plaats de weergaven de paneel Quick View naar zicht vvooruit sneller openbaart het met the return verzoek.. van hier u verder in je keus kopieer dat of pas het tekst of stap er met t zelf en op the Full de Chat sessie op gang!"
                 }
             },
             contact: {
-                title: "Contact",
-                email: "E-mailondersteuning",
-                response: "Reactie binnen 24u."
+                title: "Een moment in de communicatie op nemen - Contact Center",
+                email: "Onze Suppord Ticket per email afdeling en help desk mails",
+                response: "Gemiddeldes aan tijdslimieten van onze terug rapport is binenn the volle een klok 24 urige omzetten."
             }
         },
         privacy: {
@@ -4513,56 +4588,61 @@ const translations = {
             links: {
                 guide: {
                     title: "Przewodnik Użytkownika",
-                    desc: "Konfiguracja krok po kroku.",
+                    desc: "Konfiguracja krok po kroku: uprawnienia dostępności, skróty klawiszowe i niestandardowe role.",
                     cta: "Zobacz Przewodnik"
                 },
                 issue: {
                     title: "Zgłoś Problem",
-                    desc: "Znalazłeś błąd?",
-                    cta: "Wyślij"
+                    desc: "Znalazłeś błąd lub masz sugestię? Otwórz zgłoszenie na GitHub.",
+                    cta: "Prześlij Zgłoszenie"
                 }
             },
             faq: {
-                title: "FAQ",
+                title: "Często Zadawane Pytania",
                 q1: {
-                    q: "Co może robić Wright?",
-                    a: "Wright to asystent pisania AI dla macOS.",
+                    q: "Co potrafi Wright?",
+                    a: "Wright to asystent sztucznej inteligencji dla macOS. Posiada trzy podstawowe funkcje, które możesz wywołać z dowolnej aplikacji za pomocą skrótów klawiszowych lub narzędzia PopClip:",
                     list: [
-                        "<strong>Przeredaguj</strong> — Polerowanie tekstu.",
-                        "<strong>Tłumacz</strong> — Tłumaczenie natychmiastowe.",
-                        "<strong>Czatuj</strong> — Czat z AI."
+                        "<strong>Przepisywanie</strong> — Popraw wybrany tekst pod kątem gramatyki, tonu i przejrzystości, zachowując pierwotne znaczenie.",
+                        "<strong>Tłumaczenie</strong> — Błyskawicznie przetłumacz zaznaczony tekst między różnymi językami świata.",
+                        "<strong>Czat</strong> — Zadawaj pytania i prowadź konwersację z AI z możliwością przejścia z małego panela Szybkiego podglądu (Quick View) do pełnego i okienkowego widoku konwersacji."
                     ]
                 },
                 q2: {
-                    q: "Jakie modele są obsługiwane?",
-                    a: "Wright obsługuje:",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "Jakie modele sztucznej inteligencji są obsługiwane i obecne na ten moment pracy asystenta?",
+                    a: "Aplikacja pod tytułem WRight ta jest wspierana systemem pod maską najnowszym generowaniem przodujących inteligencji:",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "Własne Role?",
-                    a: "Twórz osobowości AI."
+                    q: "Czym w ogóle polegają Custom AI Role czyli Osobiste i wybrane ramy od AI modela na czym on to ma i stoi?",
+                    a: "Wybrane role jako Twoja nowa wytyczna pozwalają kreować spersonalizowaną twarz danego bohatera - profil z indywidualnymi promptami napisanymi w okna dla systemu baz. Stwórzże z wyboru profil o nazwie \"Wytrawny Inżynier Kodowania (Reviewer) \", by być to do tekstowych przekazów np, do reklamy na stronkach czy pod internet wpis profil nazwany jako to : \"Redaktor Copywright(Copywriter)\" a każdy zachowa zgoła inaczej twój zamysł poleceń za sprawa innych od was ujętych komend nakazow pod profil ten lub ów, Zmieniaj i skacz z opcji jakby z opcje jednego lub drugie przez to klik do na szybkiego po klikni w oknie i czatu w mgnieniu chwili lub w pod okienku bez opor."
                 },
                 q4: {
-                    q: "Integracja z PopClip?",
-                    a: "Dodaj akcje do menu PopClip."
+                    q: "Jak by działała integrcja wspolna Wrigta s programy pod od nazwy tego co jest PopClip? no wiec jak?",
+                    a: "O jezeli masz ze Ty posiadasz po stronie twego kompa te Mac narzezedzy tak PopClip program wiec od juz Wright da w panelku tak mu dodtkowe menu ikony bez ustawów recznie pod guzki w tablice by i to by to na pisanie tak. Zakreśli czy wybieri u z Macu słowny czlon tak o w tym on mu wysuna mu obcje paska do opcji w tym czy w tam do na Tłum, Przpisywania o też w Rozmowę czate - z i bez uciażliwie co naciskania by tak kombinatorycznie reka klik, no by to na PopciP ze wziasc tu ze z srodek programów the pod aplikacja panel settingow tam tego link extension bedz"
                 },
                 q5: {
-                    q: "Czy moje dane są bezpieczne?",
-                    a: "Tak. Nie zbieramy Twoich danych."
+                    q: "Czy me no te tu informacje o no tu u wpisó u mni z macu sa bezbieczy bo prywatnos mam mie a mam jak to jest u nas w tej z tego WRighta to jest ok z no bo te prawne bezpieczestwa czy te ma pan to?",
+                    a: "Bezzwątpi.! No on bez nie nie groman czy i on to no nie trzyma żadnych bo żadne dane prywaci we osob z was do serwera, Wright a ten do z na tak do tlu pod do robienie tamte na siec pod ruc pod was od u was ten tylko dla te by on wam za robic do w odpowiedzi na cel tam u siec o i nie no po u serwe tak w to u niego. I nie by z zapisku bez z pamien na the o w historie. W to pod czytaj ta pod pism po nazwe z Privacy Policies by pod w deetal to i tu sie dowi. tak o te wiecej w tym po tak z tego!"
                 },
                 q6: {
-                    q: "Wymagania systemowe?",
-                    a: "macOS 14.0 (Sonoma) lub nowszy."
+                    q: "Czym i w tym od tu z na wymagań z no dla systemowe ma od me po czym by byo dla kompatera do mac tego aby działa z tym we?",
+                    a: "Użytkować w tej pełnu z to po by móc używasz Wrigtu program tego by to było wymag ze pod wersjowe mCOS The s Sonoma po w gór na Mac 14 no w o czy ze tam tak dal. On z tak z w by mus u opcji the z dostępe Ułwatien tak ze Accessibility the do praw w po przez aby dla cał do chwyt z słow tekte no tego by o. Wright leki we u 1 rzede bez ma no u paseku we gore od Mac do a po na by u no u boku po tchu do pra we ciagu w bez z tam zakóc do dzialy ze cichy z no ukryty od tyu."
                 },
                 q7: {
-                    q: "Skróty klawiszowe?",
-                    a: "Globalne konfigurowalne skróty."
+                    q: "Wyjasni bo o The Skrotow to z klawi we ten w Global o we The Keyboard jak ma ze no użyte dzila ta ta no opcja we o tym we w?",
+                    a: "Do pracy to tu u Wright we tych z u no the Globally z dla o co the by klawisch po klawi we po wszy w dzia on on we w aplkack. To by na z tymi po po we the Skróto no z do Ustaw (The SETTINGS ) na po te tam na -> Shortcut po co w kon w zak o zmiane dla was we w jak z a jak co tam by. O no pod ze The wybierz u jak za po te skro po z nacic za no o w reka z no klik i te wys z wy niku po ze naty na the chwi powro - po the skopiuj the to i lub o ze dla tu the na no do czata na no rozw u koncza we ses the full z. do"
                 }
             },
             contact: {
-                title: "Kontakt",
-                email: "Wsparcie Email",
-                response: "Odpowiedź w 24h."
+                title: "Stąd I Tu I Z Tego Do Kontakti Z I Pomoc Co No Od Nas",
+                email: "Emaile pod tu Od Z Help do i Wsparce ze Nas i to Od Meile do the Z Help",
+                response: "My z u nas co w zwrot po z na norm w czasie we 1 dniu co na u po the godzin do u 24 the g the. odpowied na o tym the to i od do!"
             }
         },
         privacy: {
@@ -4808,56 +4888,61 @@ const translations = {
             links: {
                 guide: {
                     title: "Panduan Pengguna",
-                    desc: "Penyiapan langkah demi langkah.",
-                    cta: "Lihat Panduan"
+                    desc: "Setting pelan-pelan urutan persetujuan masuk mesin ijeksi OS, atur kombo tuts pada keyboard kompi dari role spesial",
+                    cta: "Liat-liat buku panduan ini bro!"
                 },
                 issue: {
-                    title: "Laporkan Masalah",
-                    desc: "Menemukan bug?",
-                    cta: "Kirim"
+                    title: "Lapor dan Keluh Kesah Tentang Kutuan program (BUGS)",
+                    desc: "Ketemu KUTU dan erot? Apa juga punya usul idaman saran? Buka lah keluh kesah di panggung GITHub ya..!",
+                    cta: "Buka Keluhan Ticket Sekarang!"
                 }
             },
             faq: {
-                title: "FAQ",
+                title: "Soalan yang lumrahnya diajukann orang disini (S.Y.L.D.H)",
                 q1: {
-                    q: "Apa yang bisa dilakukan Wright?",
-                    a: "Wright adalah asisten penulis AI untuk macOS.",
+                    q: "Lah Emang Ngapa wright Ini ? Bisa Ngapain si Die Di mac?",
+                    a: "Wright itu pembantu beneran artificial intelligent (AI) orang-orang OS MAC OSX. Ada 3 fungsi lumrah pada aplikasi manajalah yg kalian tekan itu tuts shortcut nya juga dari si bantuan poppup the POpCllip :",
                     list: [
-                        "<strong>Tulis Ulang</strong> — Poles teks.",
-                        "<strong>Terjemahkan</strong> — Terjemahan instan.",
-                        "<strong>Obrolan</strong> — Mengobrol dengan AI."
+                        "<strong>Tulis Ulang Dari Jelek menjadi Ganteng (Rewritten)</strong> — Ganti grammar kacrut elu jadi elok rupa plus susunan katanya tanpa ngebuang maksud utama dari yg lu tuju didalam kalimat yg tadinya kurang kece tsb.",
+                        "<strong>Translator Gila Secepat Kilat (TRanslate)</strong> — Langsung ngetranslet ga mikir 2 detik apa yg kalian blok didalem area layar kompi..",
+                        "<strong>Nanyain dan ngbrl santai (chatterbox) </strong> — Nanya a-z pada Aii.. dari jendela layar transparan dan nembus nembus (Quic K ViEW) maupun nyemplung ngomong ke yg lebih gede panjang di Mode Chat Box Gedeeee penuuh layarnya!"
                     ]
                 },
                 q2: {
-                    q: "Model apa yang didukung?",
-                    a: "Wright mendukung:",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "Ota-kotak mesin yg ngebantun apaa aja dibelakang ni the Wright?",
+                    a: "Wright punya amunisie dari vendor model kecerdasan raksasa pantes ngacir! :",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "Peran Khusus?",
-                    a: "Buat persona AI."
+                    q: "Eemangnya KArkter asisten itu the Costoum AI apa an Maksudnya bro?",
+                    a: "Tuh kan jadi lu dikasi kesempatan ngatur role - alias profesi dari tuh mbak robot untuk dijadiin apa keahliannya di ruang kendali prmot lu. Kaya misalkan disuru : 'LO jd programer buat koding gw yah - the reviewer \", atau lho tak suru lu jadi tukang penulis di majalah - tthe Copywriter, apalagilah bebas bbas bosskuu... Pokoe die berubah watak kek apa lu masukkin printah dari UI itu dlu . Bis tu di layar ngobrol lo ganti ganti dech sesuka hti.!"
                 },
                 q4: {
-                    q: "Integrasi PopClip?",
-                    a: "Tambahkan tindakan ke menu PopClip."
+                    q: "Si aplikasi dari PopClip yg ada integrasinye apa nyambungnya dan apa caranya ini maslahnya nyambungnya begimane tuh ?",
+                    a: "Lu ada app thePopCPli? yaudah install aja nanti Wright nempel dah ikutan nongkrong dideretan menu kalo lu klik mouse blok / ngelewatin sbuah kata d layar.. nah dstu ada pilihan mau ngapasin kata nya.. translate? apa di cakepin kata nya. Ga usa lu apalin combinasi key-press dilayout tuts mu.. cari instalannya di settinggan WRight juga dah trsedia The eXtenSIOn tuh popoclipp!"
                 },
                 q5: {
-                    q: "Apakah data saya aman?",
-                    a: "Ya. Kami tidak mengumpulkan data Anda."
+                    q: "Eeh privasi gw dan tulisan gwe itu bnr aman kaga , nnt lo jual lagih kerahasiaan kpd makelar2 yack data lu?",
+                    a: "Ho Oh, Jangan takut bouss!! Wight anti ngumpulin data peribados user, gak dikoleksi ato disimpen juga ga dikantongginn!!. Cuma diambil dipikirin ama AI, The Wruight ga masukin databasa log.. di hapus saat dikasih lu hasil the endnya ajeee. Silakhken dibaca juga halamn policy kita yeuh kl kurank lega dah"
                 },
                 q6: {
-                    q: "Persyaratan sistem?",
-                    a: "macOS 14.0 (Sonoma) atau lebih baru."
+                    q: "Apa saaj syarat kompi ku ni y buat jalan tuh Wright bosskU?, Ram n memory gawat gag?",
+                    a: "Pokok nya kompi lu the Macintos Macnya yg OS The sonoma 14 , yg palingan atas lg itu os yg lbh muda lgi the sequoia itu oke smua broooo!! Lu suruh ke the Settings trs security lu idupin yg acessibility tuh biar die ada kuasa ngambil dan ngelempar hsil tulisan yg dia robah di dalem smua tempat layar kompilo. Ini ringan banget the lightweigt di dalem bar atas mac mu The meny bAR nya!!"
                 },
                 q7: {
-                    q: "Pintasan keyboard?",
-                    a: "Pintasan global yang dapat disesuaikan."
+                    q: "Tuu fungsi kombinasi pencetan keybord di komPiku begimana mas berkerja dan idup the shrtcut ?",
+                    a: "Pencetan tombol Wright tuch jalan nya di level system boss kaga cuma jalan d dlam dia ajah The GLobL KEYBoad the shortcut gitu jalan dimana aaja app yg lu pke wkt itu. Ubh di setitng -> terus ke yg bagian shortcut .. kl lg di the mana bae lu block pencen cklik lu , Wright muncul tba2 ngekek lu.. terus die udang ngeluarin dah kopiin dstu.. bisa lu pencet klik ngulang / apa juts gae copy"
                 }
             },
             contact: {
-                title: "Kontak",
-                email: "Dukungan Email",
-                response: "Respon dalam 24 jam."
+                title: "Call Gue Di Siennee (Contact) the Team",
+                email: "SUUport The Email / Bantuan Ke Masalahan dr Emial the COntct!",
+                response: "24 JM kta bisa balikin The Mail dari lo lu boss! the ResPns dlm weaktu normal tu 24 J M!"
             }
         },
         privacy: {
@@ -5103,56 +5188,61 @@ const translations = {
             links: {
                 guide: {
                     title: "คู่มือผู้ใช้",
-                    desc: "การตั้งค่าทีละขั้นตอน",
-                    cta: "ดูแลคู่มือ"
+                    desc: "ขั้นตอนสู่ระบบและการขอเข้าตั้งค่าและปุ่มตามทางของค่าตัวรวมไปจนระบบเซ็ตโปรตัวปลอมๆเพื่อรับบท AI ต่างๆ!",
+                    cta: "พุ่งสู่การอ่านคู่มือของเรา"
                 },
                 issue: {
-                    title: "รายงานปัญหา",
-                    desc: "พบข้อบกพร่อง?",
-                    cta: "ส่ง"
+                    title: "เปิดรายการรับความผิดเพื่อทางแก้ไข",
+                    desc: "คุณเจอปัญหาของของหรือป่าว ถ้าเจอละต้องการส่งเสนออะไร แวะหาเราเพื่อโพสสู่การแจ้งเตือนสิ",
+                    cta: "ช่องส่งรายงานเข้าฐานของ The GiTub"
                 }
             },
             faq: {
-                title: "คำถามที่พบบ่อย",
+                title: "คลังไขคำตอบ",
                 q1: {
-                    q: "Wright ทำอะไรได้บ้าง?",
-                    a: "Wright คือผู้ช่วยเขียน AI สำหรับ macOS",
+                    q: "The แอพลิเคชชั่นระบบตัวนี้ WRight ช่วยแบ่งภาระเพื่อผมยังไงบ้างน้อ?",
+                    a: "น้อนน Wright น่ะหรอเขาทำเพื่อชุดโปรมแกรม MAcos! จัดจ้างเพื่อหลักๆการเป็นระบบ AI ทั่วหน้าต่างการใช้งานคุณ เพียงคุณใช้คอมโบ The Keys ของเราบนหน้าต่างๆ กับเรียกใช้งาน The POPlcip บน Mac ",
                     list: [
-                        "<strong>เขียนใหม่</strong> — ขัดเกลาข้อความ",
-                        "<strong>แปลภาษา</strong> — แปลทันที",
-                        "<strong>แชท</strong> — แชทกับ AI"
+                        "<strong>ปั่นและกรอกบทของข้อความของคุณให้จึ้ง (RewRittnn) </strong> — ตัวรับโหมดเพื่อขจัดปัดกวายความหยาบแบบเรียลเวลา พร้อมแต่งและทำสวยความสมูธทางหลักของการพิมพ์ ไม่ข้ามหน้าของใจควมจริงๆ",
+                        "<strong>จัเสือไปเป็นแมว ทรา้นทเรตทันใด!!</strong> — ทะลวงกำแพงเพื่อให้แปลแบบเร็วในลากการครอบตัวบรรทัดตัวอกษาร ในไม่พริบใด",
+                        "<strong>ทัดเทียมห้องถามหาและต่อเรื่องพูดและคุยให้จบบนระบบ </strong> — สงสัยและขยี้ต่ออย่างเมาท์มันๆด้วย AI จะโผล่และคอยช่วยต่อบนป๊อบกล่องที่ลอยไปลอยมาหรือจะไปนั่งแช่บนถังหน้าเดอะแชตและจบสิ้นด้วย The FUlL CHattinG!! "
                     ]
                 },
                 q2: {
-                    q: "รองรับโมเดลใดบ้าง?",
-                    a: "Wright รองรับ:",
-                    list: ["OpenAI", "Google Gemini", "Groq", "Grok"]
+                    q: "โมเดลดอะไรที่รับอยู่ในรุ่น WRight ของ The น้อนๆ พวกนี้ครับผม",
+                    a: "ไร้วิรเกต ไซคิค! เราได้ดึงตัวตึงระดับเบ่งกล้ามคอยซัฟตัว Wrihgght เพัยบบบบๆ",
+                    list: [
+                        "OpenAI ChatGPT",
+                        "Google Gemini",
+                        "Grok (xAI)",
+                        "Groq"
+                    ]
                 },
                 q3: {
-                    q: "บทบาทที่กำหนดเอง?",
-                    a: "สร้างบุคลิก AI"
+                    q: "ไอโหมดบทของแต่ละบุลคนตัวของ AI The CUSTOM บทพวกนี้ๆ AI Role มันก็คือหยังก่า!?",
+                    a: "เป็นเรื่องของการให้ตังสมรสร่าง The PROmMt สั่งทิ้งให้เขานะรับร่างของความเป็นมืออาชีพใดๆ อย่างสวมการเป็นนักจับผิดโคงของนักเว็ปเดฟ \", หรือร่างThe โปปี้ไวท์ \"CopyWrtter\" ตัวจริง! หรือแปลจดหมาย... แต่ละการรับจะมีเอกลักษณ์แตกต่าง!! และคุณจะกระโดจาก A ไป b ของความคอยให้เปลี่ยนรับร่างที่เปลี่ยนในทันใดเลยเพื่อรองเรื่องตรงนั้ยได้รัดกุม"
                 },
                 q4: {
-                    q: "การรวม PopClip?",
-                    a: "เพิ่มการกระทำในเมนู PopClip"
+                    q: "รวมรวมความป๊อปปอละคลอป The PoPCLip มันจับยังไงนะ",
+                    a: "มีโหมดตัวแอพท่ซื่อ PopCOCLip ลงในฝั่งเครื่ิงป่าวล่ะ? น้อนไรท์ตัตัว The WRitght เนี่ย มันจับคู่และเอาตัวเองใส่ลงสู่ The PöP CliP ขแองระบบบ๊อซ์อั้ฟเลย พอลากจิกดำมันก่อขึ้นทางเลือกเลยทันทีไม่ต้องตั่งนิ้วทาบปุ่มทางลัดด้วยซ่ำไปนะบอกเลย! หาโหลดที่ตัว The ExtenSion ที่การตั้งคำขอตัวปั๊กอนนนี้เลยที่ Setting ของตัวแอปเรา!"
                 },
                 q5: {
-                    q: "ข้อมูลของฉันปลอดภัยไหม?",
-                    a: "ใช่ เราไม่เก็บรวบรวมข้อมูลของคุณ"
+                    q: "ข้อมูลแสนทูนรักษานีของข้ายงจะหลับดีมีอะไรให้เสียหรือเปล่าน้อกับ แอพตัวนั้",
+                    a: "แม่นแล่ว ไม่ต้องร้องห่มด้วย แอพจะไม่ได้ล้วงและเกบงำ หรือขโมยจับความนึกคิดใดๆบนการประมวนตัวอักษระ! เมื่อ AI จับรันแล้วตอบคุณผลคือล้างหาย และ เรา ไม่มีที่สะสมใดๆหรือคอลเลกของมูลล! โปดชะเง่อหมองตตามกฎขอตัว PöRIVaCy POLisCY!! เดอะข้อมูลได้!"
                 },
                 q6: {
-                    q: "ความต้องการของระบบ?",
-                    a: "macOS 14.0 (Sonoma) หรือใหม่กว่า"
+                    q: "ชุดปูพร้อมรองการให้คอมแบนนี้เล่นก็อขไรในความมักงายน้ะ?",
+                    a: "MacOS ที่ต้องการขั้นขอตัวระบบ MÀC Os 14 อย่างตัว เดอะโซโนม่า ! ขึ้นบน! แอพยังเรียกร้องคำสั่งจากโหมดการทไรับ AcceSSIbilty ของอแปเปิลพื่อมที่จะแบนให้แทนตัวคำของการประมวนสู่กระบานยอ! และของนี่น่ะเป็นโปรแรรมแอบบจิว้! The MENu BA R แอพนี่เองเบาอย่างขนนกเลยนะจะบอก"
                 },
                 q7: {
-                    q: "คีย์ลัด?",
-                    a: "คีย์ลัดทั่วโลกที่ปรับแต่งได้"
+                    q: "กด The โชคัท (SörtCUts )ยังไงของมันและกานรับปุปนะ??",
+                    a: "ของนี่มันสวม The GLOaBl l The CKEYBOA RD (เดอะโกบลองรับในตัวคียบอดทุกบานเกลด) ดังนั้นมันจึงออกรับในหน้าแอมทุกแอพบนเครื่ิงได้สบายๆ เปลี่ยนมันสิ ตรงการสลับที่ THe SeTTings ของเรมา! จากกนั้นไม่ว่าท่านจะไฮไรลที่ไดในปัฐพีแค่ใช้มือตบ The kE ys ของเราท่านก็จะได้การซํพและการเรียกงานที่เร็วปานลิงๆลอก แล้วจบเอาไแต่อการ The CopY ขิงคำเพื่อความเนียนต่อไปล"
                 }
             },
             contact: {
-                title: "ติดต่อ",
-                email: "อีเมลช่วยเหลือ",
-                response: "ตอบกลับภายใน 24 ชม."
+                title: "โอมมาแวะนัดจับและพูดคุัยตามจดหมายของ THe Team M E MBERS!",
+                email: "ศูนย์The emaiLL ทูThe SuPPPort ",
+                response: "เราคูรตอบเมล์เร็วอยุ่ทีเดือและThe ทีม 24 ช้วมงในการรัน!ตอบจดหมาย"
             }
         },
         privacy: {
