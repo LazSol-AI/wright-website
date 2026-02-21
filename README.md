@@ -1,68 +1,51 @@
-# Wright - Your AI-Powered Writing Assistant
+# Wright - Your AI Assistant for macOS
 
-> Write with confidence, communicate with clarity - Wright is your AI writing partner.
+> Write with confidence, cross language barriers, and chat intelligently — Wright is your all-in-one customizable AI partner.
 
-[Wright](https://wright.lazsol.com) is an intelligent writing companion designed for macOS that seamlessly enhances your writing experience across all applications. Whether you're composing emails, writing documents, or crafting messages, Wright is there to help you communicate more effectively.
+[Wright](https://wright.lazsol.com) is an intelligent, customizable AI assistant for macOS that seamlessly enhances your workflow across all applications. Whether you're composing emails, translating documents, reviewing code, or crafting messages, Wright provides the right tools directly at your fingertips.
 
 ## Key Features
 
-### ✨ Text Polish & Enhancement
+### ✨ One-Key Rewrite
+- Polish selected text for grammar, tone, and clarity while keeping your original meaning intact.
+- Fix typos and awkward phrasing instantly without switching apps.
+- Automatic source language detection—works seamlessly across multiple languages.
 
-- One-click text improvement for better clarity and professionalism
-- Maintains your original tone while enhancing expression
-- Perfect for business communications and academic writing
-- Supports both English and Chinese text polishing
+### 🌐 Instant Translation
+- Translate selected text between any languages instantly with a simple keyboard shortcut.
+- Fast, context-aware translations without needing to open a browser tab.
+- Maintains formatting and structure during translation.
 
-### 🌐 Universal Translation
+### 🤖 Custom AI Roles
+- Build specialized AI personas with your own system prompts. 
+- Set up a "Code Reviewer", "Copywriter", or "Tone Adjuster" role — each behaves differently based on your predefined instructions.
+- Switch between roles instantly depending on your current task.
 
-- Instant translation between English and Chinese with a simple keyboard shortcut
-- Intelligent language detection automatically determines the source language
-- Maintains formatting and structure during translation
-- Works in any application - from Messages to Microsoft Word
+### 💬 Quick View & Full Chat
+- Ask questions and converse with AI from a lightweight Quick View floating window. 
+- When a conversation needs more depth, transition seamlessly into a full Chat interface—all your context is carried over automatically.
 
-### 🤖 Quick Chat with LLM with customisable roles
+### ⚡ PopClip Integration & Global Shortcuts
+- Use global keyboard shortcuts to access Wright from anywhere (Mail, Notes, Safari, Slack, etc.).
+- Perfect synergy with [PopClip](https://www.popclip.app): Select text in any app, and PopClip will show options to rewrite, translate, or chat — no keyboard shortcut needed!
 
-- Customizable AI roles to start a quick chat with your favourite AI models
-- Fast and reliable processing with streaming responses
+## Powered by Leading AI Models
+Wright connects you to the best language models available, allowing you to choose the right intelligence for your specific needs:
+- **OpenAI ChatGPT**
+- **Google Gemini**
+- **Grok (xAI)**
+- **Groq**
 
-### 💻 Native macOS Experience
+## Privacy First
+Wright is designed with your privacy in mind. We believe in transparency and minimize data collection to the absolute essentials.
+- **Your data is secure**: We do not access, log, or store your conversation content or selected text. 
+- **Direct Processing**: Your text is processed by the AI and the result is returned directly to you.
 
-- Clean, modern interface that feels native to macOS
-- Global keyboard shortcuts for quick access
-- Floating window design that never gets in your way
-- Dark mode support and system-native appearance
+## Native macOS Experience
+- Clean, modern, "Liquid Glass" interface that feels native to macOS.
+- Built for macOS 14.0 (Sonoma) and later.
+- Extremely lightweight, running quietly as a menu bar app.
 
-## Productivity Benefits
+---
 
-### Save Time
-
-Quick text improvements without manual editing
-Instant translations without switching applications
-Efficient quick chat to chat and go
-
-### Improve Quality
-
-Consistent tone and style in communications
-Reduced errors and improved clarity
-Professional-grade writing enhancement
-
-### Work Smarter
-
-Context-aware suggestions
-Learn from AI improvements
-Build better writing habits
-
-### Stay Focused
-
-No need to switch between apps
-Minimal interface disruption
-Quick results that keep you in flow
-
-## Perfect For
-
-Students writing academic papers
-Content creators and writers
-Anyone who writes in English or Chinese
-Professionals working in international environments
-
-[User Guide](https://wright.lazsol.com/guide/)
+[Visit Website](https://wright.lazsol.com) | [User Guide](https://wright.lazsol.com/guide/) | [Support & FAQ](https://wright.lazsol.com/support/)
